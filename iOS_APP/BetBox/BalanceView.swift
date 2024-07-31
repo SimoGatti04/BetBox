@@ -96,7 +96,7 @@ struct SiteBalanceView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(site)
+                Image(site.lowercased())
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
