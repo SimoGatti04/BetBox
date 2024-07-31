@@ -1,10 +1,3 @@
-//
-//  BalanceView.swift
-//  BetBox
-//
-//  Created by Aurora Bellini on 18/07/24.
-//
-
 import SwiftUI
 
 struct BalanceView: View {
@@ -14,9 +7,9 @@ struct BalanceView: View {
         NavigationView {
             List(balances) { balance in
                 HStack {
-                    Text(balance.siteName)
+                    Text(balance.site)
                     Spacer()
-                    Text("\(balance.amount, specifier: "%.2f")")
+                    Text(balance.balance)
                 }
             }
             .navigationTitle("Balances")
@@ -25,32 +18,42 @@ struct BalanceView: View {
     }
 
     func loadBalances() {
-        guard let url = URL(string: "https://tuo-server.com/balances") else {
+        guard let url = URL(string: "https://b757-78-210-250-76.ngrok-free.app/balances/all") else {
             print("Invalid URL")
             return
         }
 
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data {
-                if let decodedBalances = try? JSONDecoder().decode([Balance].self, from: data) {
-                    DispatchQueue.main.async {
-                        self.balances = decodedBalances
-                    }
-                    return
-                }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
             }
-
-            print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
-        }
-
-        task.resume()
+            
+            guard let data = data else {
+                print("No data received")
+                return
+            }
+            
+            do {
+                let decodedBalances = try JSONDecoder().decode([Balance].self, from: data)
+                DispatchQueue.main.async {
+                    self.balances = decodedBalances
+                }
+            } catch {
+                print("Decoding error: \(error)")
+            }
+        }.resume()
     }
 }
 
 struct Balance: Identifiable, Decodable {
     let id = UUID()
-    let siteName: String
-    let amount: Double
+    let site: String
+    let balance: String
+    
+    enum CodingKeys: String, CodingKey {
+        case site, balance
+    }
 }
 
 struct BalanceView_Previews: PreviewProvider {
