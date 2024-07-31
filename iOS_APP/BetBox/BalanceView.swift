@@ -28,6 +28,7 @@ struct BalanceView: View {
                 }
             }
         }
+        .onAppear(perform: loadSavedBalances)
     }
     
     func loadSavedBalances() {
@@ -57,9 +58,13 @@ struct BalanceView: View {
                             balances[balance.site] = balance.balance
                         }
                         saveBalances()
+                        NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
                     }
                 } catch {
-                    print("Decoding error: \(error)")
+                    print("Errore di decodifica: \(error)")
+                    if let dataString = String(data: data, encoding: .utf8) {
+                        print("Dati ricevuti: \(dataString)")
+                    }
                 }
             }
         }.resume()
@@ -78,9 +83,14 @@ struct BalanceView: View {
                     DispatchQueue.main.async {
                         balances[decodedBalance.site] = decodedBalance.balance
                         saveBalances()
+                        print("Saldo aggiornato per \(decodedBalance.site): \(decodedBalance.balance)")
+                        NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
                     }
                 } catch {
-                    print("Decoding error: \(error)")
+                    print("Errore di decodifica: \(error)")
+                    if let dataString = String(data: data, encoding: .utf8) {
+                        print("Dati ricevuti: \(dataString)")
+                    }
                 }
             }
         }.resume()
@@ -115,6 +125,9 @@ struct SiteBalanceView: View {
         .padding()
         .background(Color.gray.opacity(0.1))
         .cornerRadius(10)
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("BalanceLoaded"))) { _ in
+            isLoading = false
+        }
     }
 }
 
