@@ -28,7 +28,6 @@ struct BalanceView: View {
                 }
             }
         }
-        .onAppear(perform: loadSavedBalances)
     }
     
     func loadSavedBalances() {
@@ -43,7 +42,7 @@ struct BalanceView: View {
     
     func loadAllBalances() {
         isLoading = true
-        guard let url = URL(string: "https://a40a-78-210-250-76.ngrok-free.app/balances/all") else {
+        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/all") else {
             print("Invalid URL")
             return
         }
@@ -67,7 +66,7 @@ struct BalanceView: View {
     }
     
     func loadBalance(for site: String) {
-        guard let url = URL(string: "https://a40a-78-210-250-76.ngrok-free.app/balances/\(site)") else {
+        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/\(site)") else {
             print("Invalid URL")
             return
         }
@@ -92,6 +91,7 @@ struct SiteBalanceView: View {
     let site: String
     let balance: String
     let action: () -> Void
+    @State private var isLoading = false
     
     var body: some View {
         VStack {
@@ -101,9 +101,13 @@ struct SiteBalanceView: View {
                     .scaledToFit()
                     .frame(width: 50, height: 50)
                 Spacer()
-                Button(action: action) {
+                Button(action: {
+                    isLoading = true
+                    action()
+                }) {
                     Image(systemName: "arrow.clockwise")
                 }
+                .disabled(isLoading)
             }
             Text(balance)
                 .font(.headline)
