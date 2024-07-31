@@ -25,7 +25,6 @@ struct BalanceView: View {
                     .disabled(isLoading)
                 }
             }
-            .onAppear(perform: loadBalances)
         }
     }
 
