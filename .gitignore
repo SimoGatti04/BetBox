@@ -3,4 +3,5 @@ betboxscrapernodejs/.idea/
 betboxscrapernodejs/cookies/
 betboxscrapernodejs/sessions/
 betboxscrapernodejs/.env
+iOS_APP/BetBox.xcodeproj/project.xcworkspace/xcuserdata
 *.DS_Store
