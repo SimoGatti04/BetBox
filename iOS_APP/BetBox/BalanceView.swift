@@ -1,7 +1,21 @@
 import SwiftUI
 
+class BalanceManager: ObservableObject {
+    @Published var balances: [String: String] = [:]
+    
+    func loadSavedBalances() {
+        if let savedBalances = UserDefaults.standard.dictionary(forKey: "balances") as? [String: String] {
+            balances = savedBalances
+        }
+    }
+    
+    func saveBalances() {
+        UserDefaults.standard.set(balances, forKey: "balances")
+    }
+}
+
 struct BalanceView: View {
-    @State private var balances: [String: String] = [:]
+    @StateObject private var balanceManager = BalanceManager()
     @State private var isLoading = false
     
     let sites = ["goldbet", "bet365", "eurobet", "sisal", "snai", "lottomatica", "cplay"]
@@ -11,7 +25,7 @@ struct BalanceView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(sites, id: \.self) { site in
-                        SiteBalanceView(site: site, balance: balances[site] ?? "N/A") {
+                        SiteBalanceView(site: site, balance: balanceManager.balances[site.lowercased()] ?? "N/A") {
                             loadBalance(for: site)
                         }
                     }
@@ -28,22 +42,12 @@ struct BalanceView: View {
                 }
             }
         }
-        .onAppear(perform: loadSavedBalances)
-    }
-    
-    func loadSavedBalances() {
-        if let savedBalances = UserDefaults.standard.dictionary(forKey: "balances") as? [String: String] {
-            balances = savedBalances
-        }
-    }
-    
-    func saveBalances() {
-        UserDefaults.standard.set(balances, forKey: "balances")
+        .onAppear(perform: balanceManager.loadSavedBalances)
     }
     
     func loadAllBalances() {
         isLoading = true
-        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/all") else {
+        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/all") else {
             print("Invalid URL")
             return
         }
@@ -55,9 +59,9 @@ struct BalanceView: View {
                     let decodedBalances = try JSONDecoder().decode([Balance].self, from: data)
                     DispatchQueue.main.async {
                         for balance in decodedBalances {
-                            balances[balance.site] = balance.balance
+                            balanceManager.balances[balance.site.lowercased()] = balance.balance
                         }
-                        saveBalances()
+                        balanceManager.saveBalances()
                         NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
                     }
                 } catch {
@@ -71,7 +75,7 @@ struct BalanceView: View {
     }
     
     func loadBalance(for site: String) {
-        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/\(site)") else {
+        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/\(site)") else {
             print("Invalid URL")
             return
         }
@@ -81,8 +85,8 @@ struct BalanceView: View {
                 do {
                     let decodedBalance = try JSONDecoder().decode(Balance.self, from: data)
                     DispatchQueue.main.async {
-                        balances[decodedBalance.site] = decodedBalance.balance
-                        saveBalances()
+                        balanceManager.balances[decodedBalance.site.lowercased()] = decodedBalance.balance
+                        balanceManager.saveBalances()
                         print("Saldo aggiornato per \(decodedBalance.site): \(decodedBalance.balance)")
                         NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
                     }
