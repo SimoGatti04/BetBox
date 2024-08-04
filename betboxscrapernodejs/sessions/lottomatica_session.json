@@ -1,0 +1,531 @@
+{
+  "cookies": [
+    {
+      "name": "ak_bmsc",
+      "value": "5B45B9B8ECAC8D66437F533D215DF5E9~000000000000000000000000000000~YAAQRqYXAiA6BQeRAQAAgjQDHhigDZdXzhPeBJ59rH5DbuT2XywNPID4ZSyF2Pb0cTgjuLIdIdeu8Khaf/UvykLz25gRjYfZNHjRzAHhLdCLYL31bYF+bmVj4LWIvKXOpIsIER+/r3+YlcjIbZfyZ81ynTfHYzzKRHYkOVbfWcKankkdK4AzpA9yQjALHeBAsv7qR/GAfE7bppPQTCET595LJm47FjP0Y3TV77NaZmLBEqswaOMMxGWW/jOXJ0ObKlftWJIoz7K/F4wFmrmOcFHanfjiB6vuAkCG7KgFnDf+9FIkecO8XElq3UtVbXFqwH8VN5jvHpwSkBxrbnooA4GpndeyYvSS/3AVS5Qm8Nd6DaoMX4m2rl0psml1VOFM6c9GdpeDnoMA4qEQHlA=",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722792612.128701,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "jIDsession",
+      "value": "cf084aae-63c5-4d98-8bce-1f3f3765c354",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722786654,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "jIDsession",
+      "value": "cf084aae-63c5-4d98-8bce-1f3f3765c354",
+      "domain": "www.lottomatica.it",
+      "path": "/",
+      "expires": 1722786654,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "io_token_7c6a6574-f011-4c9a-abdd-9894a102ccef",
+      "value": "B0/gRl7fFVFJJxE4BwTVI5KkbZ3NZUQMIrWCWUgcXiA=",
+      "domain": "mpsnare.iesnare.com",
+      "path": "/",
+      "expires": 1754321425.769044,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "fp_token_7c6a6574-f011-4c9a-abdd-9894a102ccef",
+      "value": "P+h68Ie6twVTL8YRepjL6WkxMLPBDkvFbBR/vWW8/Nc=",
+      "domain": "www.lottomatica.it",
+      "path": "/",
+      "expires": 1754321426.762128,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "TS01fe7a25",
+      "value": "01ffae651b6199b1f518e963f65be7d499825c3feca0eebef10984d27551eb27b4800c64ae182d4c7b2dc97f128992dc97073637c70bc51574c9636e46054e10467a6f043f",
+      "domain": ".www.lottomatica.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sv",
+      "value": "858F2B8C257E8600D0C905A4FE0DE48D~YAAQRqYXAuhBBQeRAQAAWGYDHhjSKT6UCa/hAfJuQ4F14Sho1UgeZmGnu9G0Uu31lu77y3bkJ75LzA0Mm6sXdNV0JWRtBVIQpNzBadMGmFtaqrXEl3ZgkTsCOi0V+NcVWF41cYDupFOWm3dRzGINOrlBcYePkxIxtoi8sGmytWEY14kXYL4CMk6B6ELL1AkjAW8rotyhzyK302VhzGhJqnsoGDRrCnd+3fBlCGvr2Dltd8LZgrprKgfWgpVJ+KnXl1ZN7A==~1",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722792624.897629,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=www.lottomatica.it&si=8f380639-c1af-4519-99ac-6c771fb6b08c&ss=lzfpybbl&sl=1&tt=5sb&rl=1\"",
+      "domain": ".www.lottomatica.it",
+      "path": "/",
+      "expires": 1723390225,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cVuS",
+      "value": "2",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1754321426,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cVuS",
+      "value": "2",
+      "domain": "www.lottomatica.it",
+      "path": "/",
+      "expires": 1754321426,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonAlertBoxClosed",
+      "value": "2024-08-04T15:30:35.276Z",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1738337435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "c_prof",
+      "value": "true",
+      "domain": "www.lottomatica.it",
+      "path": "/",
+      "expires": 1722871854,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sun+Aug+04+2024+17%3A30%3A35+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5a7ad09b-ce1b-4ba8-ad25-bd1991652773&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0002%3A1%2CC0003%3A1&AwaitingReconsent=false&intType=1",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1738337435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dyid",
+      "value": "4530622171750309522",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dyjsession",
+      "value": "c3lkr97eo8sij79o6g8yk6g6akqb5m46",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722787255.065909,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_csc_ses",
+      "value": "c3lkr97eo8sij79o6g8yk6g6akqb5m46",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722787855.066928,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dy_fs_page",
+      "value": "www.lottomatica.it%2Farea-personale%2Flogin",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_toffset",
+      "value": "-2",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_df_geo",
+      "value": "Italy..Milan",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_geo",
+      "value": "IT.EU.IT_25.IT_25_Milan",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dycnst",
+      "value": "dg",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dycst",
+      "value": "dk.m.c.ms.fst.",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725377435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1408192948.1722785436",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1757345435.803019,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_c",
+      "value": "0",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1756949435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CLID",
+      "value": "17fa4542328d4e638926cf350fc8a38c.20240804.20250804",
+      "domain": "www.clarity.ms",
+      "path": "/",
+      "expires": 1754321436.085466,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clck",
+      "value": "1ex3dqe%7C2%7Cfo1%7C0%7C1677",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1754321436,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "MUID",
+      "value": "373033D5CBE06C8323E02704CA976DC8",
+      "domain": ".bing.com",
+      "path": "/",
+      "expires": 1756481438.125121,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1723390238.12536,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SRM_B",
+      "value": "373033D5CBE06C8323E02704CA976DC8",
+      "domain": ".c.bing.com",
+      "path": "/",
+      "expires": 1756481438.125463,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SM",
+      "value": "C",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MUID",
+      "value": "373033D5CBE06C8323E02704CA976DC8",
+      "domain": ".clarity.ms",
+      "path": "/",
+      "expires": 1756481438.225211,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "MR",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1723390238.225449,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ANONCHK",
+      "value": "0",
+      "domain": ".c.clarity.ms",
+      "path": "/",
+      "expires": 1722786038.225581,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_id",
+      "value": "9e17988f-5235-abd5-fb27-6efcacfd7370.1722785435.1.1722785454.1722785435.1.1756949435969.1",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1756949435,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_s",
+      "value": "2.0.0.1722787254053",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722787254,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_GYTSDDPY45",
+      "value": "GS1.1.1722785435.1.1.1722785455.0.0.0",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1757345455.136675,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTP",
+      "value": "Q-_4Wu7urlZEINej7Kp71uAXUCyFsazvlkh7ax5rykw",
+      "domain": ".onetag-sys.com",
+      "path": "/",
+      "expires": 1756972153,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_clsk",
+      "value": "uyqdxg%7C1722785455230%7C2%7C0%7Cq.clarity.ms%2Fcollect",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722871855,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.lottomatica.it",
+      "localStorage": [
+        {
+          "name": "fp_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
+          "value": "P+h68Ie6twVTL8YRepjL6WkxMLPBDkvFbBR/vWW8/Nc="
+        },
+        {
+          "name": "footerJsonList_0",
+          "value": "{\"FooterModelList\":[{\"Titolo\":\"Lottomatica\",\"Production\":true,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[{\"Titolo\":\"Chi Siamo\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com/gruppo/chi-siamo\"},{\"Titolo\":\"Lottomatica\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Contattaci\",\"Production\":true,\"Link\":\"../../guida/contatti\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Aprire un Conto Gioco\",\"Production\":true,\"Link\":\"../../guida/registrazione/registrazione-online\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Depositi\",\"Production\":true,\"Link\":\"../../guida/ricarica/strumenti-di-ricarica\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Prelievi\",\"Production\":true,\"Link\":\"../../guida/prelievo/strumenti-di-prelievo\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Apri un Punto Vendita\",\"Production\":true,\"Link\":\"../../guida/apri-un-punto-vendita\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]}]},{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/normative\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Carta Servizi e Reclami\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/servizi-e-reclami\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Contratto\",\"Production\":true,\"Link\":\"../../guida/conto-gioco/contratto\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Termini e Condizioni\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/termini-e-condizioni\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Privacy\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/informativa-privacy\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Sicurezza\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/sicurezza\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Codice Etico\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/codice-etico\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Modello 231\",\"Production\":true,\"Link\":\"../../guida/norme-regolamenti/modello-231\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]}]},{\"Titolo\":\"Info\",\"Production\":true,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[{\"Titolo\":\"Gioco Responsabile\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Tutela dei Minori\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/tutela-dei-Minori\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Limiti di Gioco\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/limiti-di-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"Probabilità di Vincita\",\"Production\":true,\"Link\":\"../../guida/giochi/scommesse/scommesse-sportive/probabilita-vincita-payout\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Slot e Tavoli\",\"Production\":true,\"Link\":\"../../guida/giochi/casino/rtp-slot-e-tavoli\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Casinò Live\",\"Production\":true,\"Link\":\"../../guida/giochi/casino-live/rtp-casino-live\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Poker\",\"Production\":true,\"Link\":\"../../guida/giochi/poker/prob-vincita-payout\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Bingo\",\"Production\":true,\"Link\":\"../../guida/giochi/bingo/probabilita-di-vincita-e-premi\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Carte\",\"Production\":true,\"Link\":\"../../guida/giochi/carte/vincite-probabilita-di-vincita-payout\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Ippica\",\"Production\":true,\"Link\":\"../../guida/giochi/scommesse/scommesse-sportive/probabilita-vincita-payout\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"RTP Totocalcio\",\"Production\":true,\"Link\":\"../../guida/giochi/scommesse/scommesse-sportive/probabilita-vincita-payout\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]}]},{\"Titolo\":\"FAQ\",\"Production\":true,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[{\"Titolo\":\"Centro Assistenza\",\"Production\":true,\"Link\":null,\"Verticale\":null,\"DestinationUrlMobile\":278,\"DestinationUrlDesktop\":278,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Il Mio Conto\",\"Production\":true,\"Link\":\"../../guida/conto-gioco/credenziali-accesso\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Registrazione\",\"Production\":true,\"Link\":\"../../guida/registrazione/faq-registrazione\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Scommesse\",\"Production\":true,\"Link\":\"../../guida/giochi/scommesse/scommesse-sportive/faq-scommesse\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Casinò\",\"Production\":true,\"Link\":\"../../guida/giochi/casino/faq\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Casinò Live\",\"Production\":true,\"Link\":\"../../guida/giochi/casino-live/faq\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Poker\",\"Production\":true,\"Link\":\"../../guida/giochi/poker/faq\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Bingo\",\"Production\":true,\"Link\":\"../../guida/giochi/bingo/faq\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Carte\",\"Link\":\"../../guida/giochi/carte/faq\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Lotterie\",\"Link\":\"../../guida/giochi/lotterie/faq\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Totocalcio\",\"Link\":\"../../guida/giochi/giochi/scommesse/giochi-a-totalizzatore\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]},{\"Titolo\":\"FAQ Premium Club\",\"Link\":\"../../guida/bonus/premium-club\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":null,\"BgColorHover\":null,\"Children\":[]}]}],\"ExpiredTime\":1722807013313}"
+        },
+        {
+          "name": "85bdeae0a9e0dad7fdd022d8f90da5d3a241b3d0",
+          "value": "Mac OS 10.15.7"
+        },
+        {
+          "name": "_dy_tsrc",
+          "value": "Referral"
+        },
+        {
+          "name": "menuCGJson",
+          "value": "{\"titolo\":\"menu\",\"children\":[{\"titolo\":\"Panoramica\",\"id\":65,\"iconUrl\":\"dashboard\",\"link\":\"/panoramica\",\"environment\":[0,1,2,3]},{\"titolo\":\"Gestione conto\",\"iconUrl\":\"account_circle\",\"id\":85,\"children\":[{\"titolo\":\"Cassa\",\"link\":\"/gestione-conto/cassa\",\"id\":85,\"environment\":[0,1,2,3]},{\"titolo\":\"Bonus\",\"link\":\"/gestione-conto/bonus\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Storico conto\",\"id\":60,\"iconUrl\":\"local_atm\",\"children\":[{\"titolo\":\"Free Spin\",\"link\":\"/storico/free-spin\",\"environment\":[0,1,2,3]},{\"titolo\":\"Lista Giocate\",\"link\":\"/storico/giocate\",\"environment\":[0,1,2,3]},{\"titolo\":\"Storico Accessi\",\"link\":\"/storico/accessi\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Messaggi\",\"iconUrl\":\"mail_outline\",\"link\":\"/messaggi\",\"id\":90,\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":3}},{\"titolo\":\"Profilo\",\"iconUrl\":\"lock_open\",\"id\":99,\"badge\":0,\"data\":{\"id\":1},\"children\":[{\"titolo\":\"Dati personali\",\"link\":\"/profilo/dati-personali\",\"id\":99,\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":4}},{\"titolo\":\"Sicurezza\",\"link\":\"/profilo/sicurezza\",\"environment\":[0,1,2,3]},{\"titolo\":\"Privacy\",\"link\":\"/profilo/privacy\",\"environment\":[0,1,2,3]},{\"titolo\":\"Documenti\",\"link\":\"/profilo/documenti\",\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":2}},{\"titolo\":\"Contratto di gioco\",\"link\":\"/profilo/contratto-gioco\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Gioco Responsabile\",\"iconUrl\":\"emoji_objects_outline\",\"id\":100,\"link\":\"/gioco-responsabile\",\"environment\":[0,1,2,3]},{\"labelGroup\":\"Assistenza\",\"id\":101,\"children\":[{\"titolo\":\"Contatti\",\"iconUrl\":\"help_outline\",\"destinationUrlMobile\":37,\"destinationUrlDesktop\":37,\"environment\":[0,1,2,3]},{\"titolo\":\"FAQ\",\"iconUrl\":\"help_outline\",\"destinationUrlMobile\":60,\"destinationUrlDesktop\":60,\"environment\":[0,1,2,3]}]}],\"expiredTime\":1722789027117}"
+        },
+        {
+          "name": "0b006d8eb623b8ea11b73d61f1e483b47b9d7422",
+          "value": "Mac OS"
+        },
+        {
+          "name": "19a826c7f361268a43da3a46a12047f3",
+          "value": "3f8d46c8-6a78-4cac-b959-1727148b7a4d"
+        },
+        {
+          "name": "_dyid",
+          "value": "4530622171750309522"
+        },
+        {
+          "name": "_dy_toffset",
+          "value": "-2"
+        },
+        {
+          "name": "_dy_csc_ses",
+          "value": "c3lkr97eo8sij79o6g8yk6g6akqb5m46"
+        },
+        {
+          "name": "resultJsonListMsg",
+          "value": "{\"ResultCodeList\":[{\"ResultCode\":-1,\"Message\":\"Ci sono problemi di comunicazione\",\"Action\":\"\"},{\"ResultCode\":13,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":16,\"Message\":\"Saldo non sufficiente\",\"Action\":\"\"},{\"ResultCode\":24,\"Message\":\"Utente non abilitato\",\"Action\":\"\"},{\"ResultCode\":25,\"Message\":\"Conto in autoesclusione\",\"Action\":\"\"},{\"ResultCode\":1222,\"Message\":\"Saldo prelevabile non sufficiente\",\"Action\":\"\"},{\"ResultCode\":1250,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5026,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5027,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5119,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5120,\"Message\":\"REF2001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5712,\"Message\":\"REF1001 - Al momento non è possibile effettuare una ricarica Diretta su questo Conto Gioco: il documento del cliente non è stato ancora validato\",\"Action\":\"\"},{\"ResultCode\":10003,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":30105,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5045,\"Message\":\"<a href=\\\"/account/passwordDimenticata\\\" style=\\\"cursor: pointer;\\\">Clicca qui</a> per effettuare un nuovo recupero password\",\"Action\":\"\"},{\"ResultCode\":18,\"Message\":\"Errore durante l'avvio della sessione di gioco\",\"Action\":\"\"},{\"ResultCode\":4010,\"Message\":\"Il documento risulta già caricato\",\"Action\":\"\"},{\"ResultCode\":5217,\"Message\":\"Ti informiamo che il numero di cellulare inserito non è temporaneamente modificabile\",\"Action\":\"\"},{\"ResultCode\":5218,\"Message\":\"Il numero di telefono non è valido contatta l’assistenza\",\"Action\":\"\"},{\"ResultCode\":9009,\"Message\":\"Ci siamo quasi, riprova tra poco per scoprire il nuovo sito\",\"Action\":\"\"},{\"ResultCode\":5071,\"Message\":\"Il tuo conto gioco è bloccato, hai inserito dati errati per troppe volte. Contattaci per assistenza.\",\"Action\":\"\"},{\"ResultCode\":8103,\"Message\":\"La sessione ha subito variazioni rispetto all'inizio della procedura di chiusura.\",\"Action\":\"\"},{\"ResultCode\":55,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":56,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5094,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null}],\"ExpiredTime\":1722807013478}"
+        },
+        {
+          "name": "authData",
+          "value": "{\"AuthToken\":\"4d9acf1f-d462-46c7-b673-4302eed23bd8\",\"IdUtente\":3758356,\"IdSoggetto\":2705320,\"Username\":\"Lasalforno\",\"Nome\":\"SIMONE\",\"Cognome\":\"GATTI\",\"Email\":\"simogatti004@gmail.com\",\"CodiceFiscale\":\"GTTSMN04P13A794S\",\"UltimoAccesso\":\"2024-08-04T17:30:24.323\",\"TentativiRimasti\":0,\"Saldo\":588,\"SaldoPrelevabile\":588,\"SaldoBonus\":80,\"SaldoPlayBonus\":0,\"SaldoBonusRigioco\":0,\"IdStatoContratto\":4,\"IdSpecializzazione\":33,\"CodiceContratto\":\"15017-5088613\",\"Indirizzo\":\"S.Spaventa, 21\",\"DataNascita\":\"2004-09-13T00:00:00\",\"Citta\":\"Cividate Al Piano\",\"Nazione\":\"Italia\",\"Sesso\":\"M\",\"Cap\":\"24050\",\"TestUser\":false,\"Telefono\":\"3923040999\",\"Provincia\":\"BG\",\"CambioPasswordObbligatorio\":false,\"AccettazioneConsensiMarketingObbligatorio\":false,\"AutolimitazioneObbligatoria\":false,\"InserimentoDomandaSegretaObbligatorio\":false,\"MessaggiAltaPriorita\":false,\"AutoesclusioneAttiva\":false,\"UtenteMigrato\":false,\"IdRichiestaIovation\":214749772,\"BTAG\":null,\"ValidazioneContatti\":0,\"Brand\":2,\"UtenteLTM\":false,\"PromoBenvenutoRetail\":null,\"PreferenzaInvioOTP\":2,\"DescPreferenzaInvioOTP\":\"Documento\",\"FlgRicezioneOTP\":null,\"RecapitoPredefinitoIovation\":null,\"BS\":true,\"ListIdTipoBS\":[1],\"FlgRegistrazioneTipster\":false,\"IdTipoStatoTipster\":null,\"FlgCondivisioneAutomaticaTipster\":null,\"CategoryCluster\":[],\"Message\":null,\"ResultCode\":0,\"Skip\":true,\"MenuCdg\":[{\"Title\":\"Storico Conto\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Lista Giocate\",\"DestinationUrl\":\"\",\"IdDestination\":6,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Lista Movimenti\",\"DestinationUrl\":\"\",\"IdDestination\":5,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Storico Accessi\",\"DestinationUrl\":\"\",\"IdDestination\":17,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Profilo\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Dati Personali\",\"DestinationUrl\":\"\",\"IdDestination\":4,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Sicurezza\",\"DestinationUrl\":\"\",\"IdDestination\":9,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contratto di gioco\",\"DestinationUrl\":\"\",\"IdDestination\":14,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Privacy\",\"DestinationUrl\":\"\",\"IdDestination\":12,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"FAQ\",\"DestinationUrl\":\"\",\"IdDestination\":62,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contatti\",\"DestinationUrl\":\"\",\"IdDestination\":37,\"Children\":null,\"AzioniDaCompletare\":0}]}"
+        },
+        {
+          "name": "28214019-fad0-4a25-8f60-19885fb32f22",
+          "value": "MjAyNC8wOC8wNCAxNTozMDoxMy40Mjg7ZDkxYzgxMmEtZTQ1ZC00ZjdmLThmNzgtNjBiYWE1MzEwYmUyO2NyPzM3NTI4NGYyMGFkYTJhNjQ0OWUyZmYyY2NiZmEwYjE5YzJiMzBkNTQ="
+        },
+        {
+          "name": "_dy_geo",
+          "value": "IT.EU.IT_25.IT_25_Milan"
+        },
+        {
+          "name": "_dyaud_page",
+          "value": "*2024-08-04*0"
+        },
+        {
+          "name": "d0df7f0a4c2724ff587c1cfb3e315b432e2d1f50",
+          "value": "false"
+        },
+        {
+          "name": "_dycst",
+          "value": "dk.m.c.ms.fst."
+        },
+        {
+          "name": "4ba302311571f45d57f1aa75e428b9b78d59a7a2",
+          "value": "desktop"
+        },
+        {
+          "name": "headerJsonList_0",
+          "value": "{\"VerticalsModelList\":[{\"Titolo\":\"Home\",\"Verticale\":206,\"DestinationUrlMobile\":206,\"DestinationUrlDesktop\":206,\"Link\":\"/\",\"LinkSeo\":\"/\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Area Personale\",\"Verticale\":200,\"DestinationUrlMobile\":200,\"DestinationUrlDesktop\":200,\"Link\":\"/area-personale\",\"LinkSeo\":\"/area-personale\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Scommesse\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#1bb14c\",\"BgColorHover\":\"#1bb14c\",\"Children\":[{\"Titolo\":\"Sport\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Live\",\"LabelGroup\":\"Live\",\"Verticale\":8,\"DestinationUrlMobile\":26,\"DestinationUrlDesktop\":25,\"Link\":\"/scommesse/live/tutti-gli-eventi\",\"LinkSeo\":\"/scommesse/live/tutti-gli-eventi\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Villaggio\",\"LabelGroup\":\"Villaggio\",\"Verticale\":209,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/villaggio\",\"LinkSeo\":\"/scommesse/villaggio\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":false,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Virtuali\",\"LabelGroup\":\"Virtuali\",\"Verticale\":2,\"DestinationUrlMobile\":241,\"DestinationUrlDesktop\":23,\"Link\":\"/scommesse/virtuali\",\"LinkSeo\":\"/scommesse/virtuali\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Ippica\",\"LabelGroup\":\"Ippica\",\"Verticale\":14,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/ippica/\",\"LinkSeo\":\"/scommesse/ippica/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Totocalcio\",\"LabelGroup\":\"Totocalcio\",\"Verticale\":27,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/totocalcio/\",\"LinkSeo\":\"/scommesse/totocalcio/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Slot\",\"LabelGroup\":\"Slot\",\"Verticale\":3,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/slot-machine\",\"LinkSeo\":\"/casino/slot-machine/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ecaf1d\",\"BgColorHover\":\"#ecaf1d\",\"Production\":true,\"Children\":[{\"Titolo\":\"Table Games\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Soft Games\",\"LabelGroup\":\"Soft Games\",\"Verticale\":15,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/soft-games\",\"LinkSeo\":\"/casino/soft-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":false},{\"Titolo\":\"Bonus Casino\",\"LabelGroup\":\"\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus/casino\",\"LinkSeo\":\"/bonus/casino\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino Live\",\"LabelGroup\":\"Casino Live\",\"Verticale\":5,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino-live\",\"LinkSeo\":\"/casino-live/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#e93933\",\"BgColorHover\":\"#e93933\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Carte\",\"LabelGroup\":\"Carte\",\"Verticale\":13,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/carte\",\"LinkSeo\":\"/carte/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#2b9e84\",\"BgColorHover\":\"#2b9e84\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bingo\",\"LabelGroup\":\"Bingo\",\"Verticale\":7,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bingo/\",\"LinkSeo\":\"/bingo/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#48b0e1\",\"BgColorHover\":\"#48b0e1\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Poker\",\"LabelGroup\":\"Poker\",\"Verticale\":6,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/poker/\",\"LinkSeo\":\"/poker/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#a02326\",\"BgColorHover\":\"#a02326\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Lotterie\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/\",\"LinkSeo\":\"/lotterie/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#f18200\",\"BgColorHover\":\"#f18200\",\"Children\":[{\"Titolo\":\"Tutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie\",\"LinkSeo\":\"/lotterie\",\"Type\":0,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"10 e Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":18,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/10elotto\",\"LinkSeo\":\"/lotterie/10elotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":17,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotto\",\"LinkSeo\":\"/lotterie/lotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gratta e vinci\",\"LabelGroup\":\"Lotterie\",\"Verticale\":16,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/grattaevinci\",\"LinkSeo\":\"/lotterie/grattaevinci\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Million Day\",\"LabelGroup\":\"Lotterie\",\"Verticale\":19,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/millionday\",\"LinkSeo\":\"/lotterie/millionday\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotteria Italia\",\"LabelGroup\":\"Lotterie\",\"Verticale\":29,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotteriaitalia\",\"LinkSeo\":\"/lotterie/lotteriaitalia\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SuperEnalotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":20,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/superenalotto\",\"LinkSeo\":\"/lotterie/superenalotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SiVinceTutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":21,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/sivincetutto\",\"LinkSeo\":\"/lotterie/sivincetutto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"EuroJackpot\",\"LabelGroup\":\"Lotterie\",\"Verticale\":22,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/eurojackpot\",\"LinkSeo\":\"/lotterie/eurojackpot\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"VinciCasa\",\"LabelGroup\":\"Lotterie\",\"Verticale\":23,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/vincicasa\",\"LinkSeo\":\"/lotterie/vincicasa\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Classico\",\"LabelGroup\":\"Lotterie\",\"Verticale\":24,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifeclassico\",\"LinkSeo\":\"/lotterie/winforlifeclassico\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Grattacieli\",\"LabelGroup\":\"Lotterie\",\"Verticale\":25,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifegrattacieli\",\"LinkSeo\":\"/lotterie/winforlifegrattacieli\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Play Your Date\",\"LabelGroup\":\"Lotterie\",\"Verticale\":28,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/playyourdate\",\"LinkSeo\":\"/lotterie/playyourdate\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bonus\",\"Verticale\":9,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus\",\"LinkSeo\":\"/bonus\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Premium Club\",\"Verticale\":210,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/club\",\"LinkSeo\":\"/premium-club\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"NATALE\",\"Verticale\":null,\"DestinationUrlMobile\":237,\"DestinationUrlDesktop\":237,\"Link\":\"/bonus/xmas/xmas-2022\",\"LinkSeo\":\"/bonus/xmas/xmas-2022\",\"Type\":1,\"DateFrom\":\"2022-12-07T08:00:00Z\",\"DateTo\":\"2023-01-06T23:00:00Z\",\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"ExpiredTime\":1722789013355}"
+        },
+        {
+          "name": "seoJson_0",
+          "value": "{\"Seo\":{\"OgImage\":\"https://repo.lottomaticagroup.com/intplatform/common/loghi-lottomatica/Logo_Better.svg\",\"SeoVerticals\":[{\"Id\":3,\"PageTitle\":\"Slot Machine Online: tutti i giochi slot su Lottomatica.it\",\"Name\":\"slot\",\"TagDescription\":\"Su Lottomatica.it hai a disposizione i giochi di Slot Machine da desktop e mobile. Potrai cimentarti con le slot online oppure scaricare il Software di gioco Casinò.\",\"H1\":\"Slot Machines Online\"},{\"Id\":4,\"PageTitle\":\"Casino Online Lottomatica: Giochi da Casinò Italia\",\"Name\":\"casino\",\"TagDescription\":\"Nel Casino online di Lottomatica trovi un’ampia gamma di giochi da tavolo e puoi giocare anche gratis e da mobile in tutta sicurezza su un sito certificato ADM.\",\"H1\":\"Casino Online\"},{\"Id\":5,\"PageTitle\":\"Casino Live online: tutti i giochi dal vivo su Lottomatica\",\"Name\":\"casinolive\",\"TagDescription\":\"Nel Casino Live di Lottomatica puoi divertirti con la variegata scelta di giochi online e con i nostri dealer che servono al tavolo da gioco in tempo reale.\",\"H1\":\"Casino Live Online\"},{\"Id\":6,\"PageTitle\":\"Poker Online: Texas Hold’Em, Omaha e Cash Game\",\"Name\":\"poker\",\"TagDescription\":\"Su Lottomatica è possibile giocare a Poker online a 5 carte, Texas Hold’em ed altre varianti, il gioco del Poker è un mix di abilità, fortuna e strategia.\",\"H1\":\"Poker Online\"},{\"Id\":7,\"PageTitle\":\"Bingo Online: come giocare al gioco digitale su Lottomatica\",\"Name\":\"bingo\",\"TagDescription\":\"Vuoi provare il Bingo live in italiano? Con Lottomatica.it puoi giocare a Bingo online con soldi veri, scegliendo le tue cartelle come in una vera sala e consultare le regole del gioco.\",\"H1\":\"Bingo Online\"},{\"Id\":9,\"PageTitle\":\"Bonus Benvenuto: tutti i Welcome Bonus e Bonus Registrazione su Lottomatica\",\"Name\":\"promo\",\"TagDescription\":\"All’apertura del conto gioco su Lottomatica.it ottieni i Bonus di Benvenuto Scommesse, i Bonus Benvenuto Casinò, i Bonus Poker e i Bonus Bingo. Puoi scoprire in questa sezione come funzionano tutti i Bonus disponibili.\",\"H1\":null},{\"Id\":11,\"PageTitle\":\"Tutte le news e gli aggiornamenti online su Lottomatica.it\",\"Name\":\"news\",\"TagDescription\":\"Cliccando qui puoi rimanere aggiornato su tutte le ultime news dal mondo Lottomatica.it su avvenimenti, promozioni e approfondimenti.\",\"H1\":null},{\"Id\":12,\"PageTitle\":\"Lotto Online: come si gioca su Lottomatica\",\"Name\":\"lotterie\",\"TagDescription\":\"Su Lottomatica.it puoi giocare e trovare le info su tutte le lotterie: MillionDay, il Gioco del Lotto, 10eLotto, SuperEnalotto e Gratta e Vinci sono disponibili online 24 ore al giorno 7 giorni su 7.\",\"H1\":null},{\"Id\":13,\"PageTitle\":\"Giochi di Carte Online: gioca anche gratis su Lottomatica\",\"Name\":\"skillgames\",\"TagDescription\":\"Entrando nella sezione Skill Games di Lottomatica.it puoi scoprire l’offerta dei principali giochi di carte: dalla Scala 40 al Burraco, alla Scopa Online, oltre a Briscola, Tresette, Bestia, Cirulla e altri giochi di abilità.\",\"H1\":\"Giochi classici di carte online\"},{\"Id\":14,\"PageTitle\":\"Scommesse Ippiche online: quote corse cavalli - Lottomatica\",\"Name\":\"ippica\",\"TagDescription\":\"Sei appassionato di Ippica e cerchi le quote per le tue scommesse sulle corse dei cavalli di oggi? Su Lottomatica trovi tutte le quote del giorno per le tue scommesse ippiche.\",\"H1\":null},{\"Id\":15,\"PageTitle\":\"Soft Games Casinò: instant games online su Lottomatica.it\",\"Name\":\"softgames\",\"TagDescription\":\"Soft Games è la sezione dedicata ai giochi del Casinò con diverse ambientazioni e nuovi personaggi da scoprire.\",\"H1\":\"Soft Games Online\"},{\"Id\":16,\"PageTitle\":\"Gratta e Vinci online: la lotteria istantanea su Lottomatica\",\"Name\":\"grattaevinci\",\"TagDescription\":\"Puoi giocare ai Gratta e Vinci online su Lottomatica scegliendo il tuo biglietto tra quelli disponibili online e scoprire i premi messi in palio.\",\"H1\":null},{\"Id\":17,\"PageTitle\":\"Lotto Online: come si gioca su Lottomatica\",\"Name\":\"lotto\",\"TagDescription\":\"Su Lottomatica puoi giocare al Lotto online, seguire le ultime estrazioni e verificare i numeri estratti. Ti attendono tanti bonus per giocare i tuoi numeri del Lotto fortunati online.\",\"H1\":\"Lotto online\"},{\"Id\":18,\"PageTitle\":\"10eLotto online: come riscuotere su Lottomatica\",\"Name\":\"diecielotto\",\"TagDescription\":\"Su Lottomatica puoi giocare al 10 e Lotto compilando la schedina direttamente online: puoi scoprire quanto si vince, come riscuotere e seguire le estrazioni in ogni momento.\",\"H1\":null},{\"Id\":19,\"PageTitle\":\"Million Day online: risultati ultime estrazioni di oggi – Lottomatica\",\"Name\":\"millionday\",\"TagDescription\":\"Con il Million Day puoi provare ad aggiudicarti 1 milione di euro. Per giocare basta compilare la schedina online con 5 numeri su 55 disponibili. Ogni giorno potrai seguire l’estrazione su Lottomatica.it\",\"H1\":null},{\"Id\":20,\"PageTitle\":\"Verifica schedina Superenalotto: come riscuotere le vincite - Lottomatica\",\"Name\":\"superenalotto\",\"TagDescription\":\"Su Lottomatica trovi tutte le informazioni su come verificare online la schedina e come riscuotere le vincite al Superenalotto.\",\"H1\":null},{\"Id\":21,\"PageTitle\":\"SiVinceTutto: schedina online e estrazioni su Lottomatica\",\"Name\":\"sivincetutto\",\"TagDescription\":\"Per giocare a SiVinceTutto SuperEnalotto su Lottomatica occorre scegliere 12 numeri sulla tua schedina online: puoi seguire le estrazioni ogni mercoledì sera alle 20:00.\",\"H1\":null},{\"Id\":22,\"PageTitle\":\"EuroJackpot online: numeri e informazioni - Lottomatica\",\"Name\":\"eurojackpot\",\"TagDescription\":\"Eurojackpot è il primo gioco con un montepremi in comune tra 17 Paesi europei: ogni settimana è a disposizione un jackpot sempre milionario. Su Lottomatica.it è possibile giocare online all’Eurojackpot.\",\"H1\":null},{\"Id\":23,\"PageTitle\":\"VinciCasa: schedina online e controllo estrazioni su Lottomatica\",\"Name\":\"vincicasa\",\"TagDescription\":\"Registrandoti su Lottomatica, ogni mercoledì sera, puoi giocare con VinciCasa e scegliere 5 numeri su 40 per provare a vincere la casa dei tuoi sogni.\",\"H1\":null},{\"Id\":24,\"PageTitle\":\"WinForLife online - Lottomatica\",\"Name\":\"winforlifeclassico\",\"TagDescription\":\"Win for Life è un gioco basato sull'estrazione di 10 numeri e un numerone. In palio un premio fino a 4.000€ al mese per 20 anni.\",\"H1\":null},{\"Id\":25,\"PageTitle\":\"Win for Life Grattacieli\",\"Name\":\"winforlifegrattacieli\",\"TagDescription\":\"Come nella versione “classica”, il Win For Life Grattacieli è una lotteria giornaliera con in palio una rendita mensile per 20 anni: ora puoi giocare online anche su Lottomatica.it\",\"H1\":null},{\"Id\":26,\"PageTitle\":\"Play Six online - Lottomatica\",\"Name\":\"playsix\",\"TagDescription\":\"Per giocare online con PlaySix basta compilare la schedina per poi scoprire tutti i premi disponibili su Lottomatica.it\",\"H1\":null},{\"Id\":27,\"PageTitle\":\"Totocalcio: pronostico prossimo concorso - Lottomatica\",\"Name\":\"totocalcio\",\"TagDescription\":\"Giocare la schedina del Totocalcio è semplice: su Lottomatica puoi fare il tuo pronostico sul prossimo concorso e il Nuovo Totocalcio ti aspetta direttamente online.\",\"H1\":null},{\"Id\":28,\"PageTitle\":\"Play Your Date: gioca adesso online la tua data preferita\",\"Name\":\"playyourdate\",\"TagDescription\":\"Play Your Date è il nuovo gioco di lotteria a totalizzatore in cui puoi puntare a vincere giocando la tua data preferita. Su Lottomatica puoi giocare online e rimanere aggiornato sulle ultime estrazioni.\",\"H1\":null},{\"Id\":29,\"PageTitle\":\"Lotteria Italia 2024: biglietti e premi su Lottomatica\",\"Name\":\"lotteriaitalia\",\"TagDescription\":\"Su Lottomatica puoi scoprire come partecipare all'estrazione giornaliera della Lotteria Italia, i premi in palio e dove acquistare i biglietti.\",\"H1\":\"Lotteria Italia\"},{\"Id\":206,\"PageTitle\":\"Lottomatica.it: Scommesse, Poker, Casinò, Bingo e Giochi Online\",\"Name\":\"home\",\"TagDescription\":\"Su Lottomatica.it puoi giocare al casinò e scommettere online grazie al palinsesto di quote a disposizione. Inoltre, puoi avvalerti delle nostre promozioni e dei bonus di benvenuto.\",\"H1\":null}],\"ResultCode\":0,\"Message\":\"Success\"},\"ExpiredTime\":1722792613483}"
+        },
+        {
+          "name": "_dy_df_geo",
+          "value": "Italy..Milan"
+        },
+        {
+          "name": "onetag_sid",
+          "value": "g-hw_paRZcZ_TviAR4BYAsbrbgvucHmPtYMIqm3e2sU"
+        },
+        {
+          "name": "_genesys.widgets.inFocus",
+          "value": "4ac4bfc438-18816-5a53b-791dc-dd74e7445285c0e"
+        },
+        {
+          "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
+          "value": "B0/gRl7fFVFJJxE4BwTVI5KkbZ3NZUQMIrWCWUgcXiA="
+        },
+        {
+          "name": "_dy_device",
+          "value": "{\"brand\":\"Apple\",\"type\":\"desktop\",\"os\":\"macos\"}"
+        },
+        {
+          "name": "_dyaud_nchc",
+          "value": "1919203.1914531.1919205.1936181.1762959*15175846@2.16511604@2**1762959@1.1889033@1.1889040@1.1892263@1.1894528@1.1895367@1.1895368@1.1904775@1.1904777@1.1910786@1.1912025@1.1912026@1.1912033@1.1912037@1.1914384@1.1914530@1.1914531@1.1914672@1.1914673@1.1914674@1.1914675@1.1916532@1.1916544@1.1917075@1.1917076@1.1919203@nu.1919205@1.1920777@1.1921537@1.1926134@1.1926476@1.1926656@1.1926657@1.1926658@1.1926660@1.1928292@1.1931158@1.1936181@1.1936193@1.1937717@1"
+        },
+        {
+          "name": "990a6d8eb6cbb8ea44b73d21f1e473b43b9c74ea",
+          "value": "prod"
+        },
+        {
+          "name": "_dycnst",
+          "value": "dg"
+        },
+        {
+          "name": "_dyexps",
+          "value": "1560128|102973095::0:1722785426625:42694:32168:2:3:0:0.8122857888229191|101906631:102051545|0|32168:1722785426625"
+        },
+        {
+          "name": "_dy_csc",
+          "value": "{\"_pv\":5,\"_ses\":1,\"firstpv\":{\"ts\":1722785426620,\"ses\":1,\"pv\":1}}"
+        },
+        {
+          "name": "staticUrlJsonList_0",
+          "value": "{\"StaticlUrl\":{\"CasinoLive\":\"/casino-live/\",\"StoreLocator\":\"/store-locator\",\"AppHomepage\":\"/app/tutte\",\"AppSport\":\"/app/sport/\",\"AppVirtuali\":\"/app/virtuali/\",\"AppPoker\":\"/app/poker/\",\"Aams\":\"https://www.adm.gov.it/portale/\",\"Contatti\":\"/guida/contatti\",\"GuidaChiusuraSessioni\":\"/guida/chiusura-sessioni\",\"GuidaLimitiDiGioco\":\"/guida/gioco-responsabile/limiti-di-gioco\",\"GuidaImpostazioniScommesse\":\"/guida/impostazioni-scommesse\",\"RegoleScommesseSport\":\"/guida/scommesse-regolamento-generale\",\"RegoleScommesseVirtuali\":\"/guida/regole-gioco-virtuali\",\"RegoleCasino\":\"/guida/regole-generali-casino\",\"RegoleCasinoLive\":\"/guida/regole-giochi-casino-live\",\"RegolePoker\":\"/guida/regolamento-poker\",\"RegoleBingo\":\"/guida/regolamento-generale-bingo\",\"PortaleEsercenti\":\"/esercenti\",\"ContattiPortaleEsercenti\":\"/guida/contatti-esercenti\",\"AreaPersonale\":\"/area-personale\",\"AreaPersonale_Registrazione\":\"/area-personale/registrati\",\"AreaPersonale_DatiPersonali\":\"/area-personale/profilo/dati-personali\",\"AreaPersonale_Panoramica\":\"/area-personale/panoramica\",\"AreaPersonale_Ricarica\":\"/area-personale/gestione-conto/cassa/ricarica\",\"AreaPersonale_Preleva\":\"/area-personale/gestione-conto/cassa/prelievo\",\"AreaPersonale_StoricoMovimenti\":\"/area-personale/gestione-conto/cassa/movimenti\",\"AreaPersonale_StoricoGiocate\":\"/area-personale/storico/giocate\",\"AreaPersonale_Messaggi\":\"/area-personale/messaggi\",\"AreaPersonale_StoricoBonus\":\"/area-personale/gestione-conto/bonus\",\"AreaPersonale_FreeSpin\":\"/area-personale/storico/free-spin\",\"AreaPersonale_StoricoAccessi\":\"/area-personale/storico/accessi\",\"AreaPersonale_Sicurezza\":\"/area-personale/profilo/sicurezza\",\"AreaPersonale_Contratto\":\"/area-personale/profilo/contratto-gioco\",\"AreaPersonale_GiocoResponsabile\":\"/area-personale/gioco-responsabile\",\"AreaPersonale_Privacy\":\"/area-personale/profilo/privacy\",\"AreaPersonale_Documenti\":\"/area-personale/profilo/documenti\",\"AreaPersonale_PasswordDimenticata\":\"/area-personale/account/password-dimenticata\",\"Scommesse_Sport\":\"/scommesse-new/sport\",\"Scommesse_Live\":\"/scommesse-new/live\",\"Scommesse_SportCopertura\":\"/scommesse-new/sport/copertura\",\"Scommesse_SportRigioca\":\"/scommesse-new/sport/rigioca\",\"FaqTecnica\":\"/guida/assistenza-tecnica\",\"Guida\":\"/guida\",\"Contratto\":\"/guida/contratto\",\"TerminiCondizioni\":\"/guida/termini-e-condizioni\",\"DepositiEPrelievi\":\"/guida/ricarica/strumenti-di-ricarica\",\"Privacy\":\"/guida/informativa-privacy\",\"GiocoResponsabile\":\"/guida/gioco-responsabile\",\"TutelaDeiMinori\":\"/guida/gioco-responsabile/tutela-dei-minori\",\"ProbabilitaDiVincita\":\"/guida/giochi/scommesse/scommesse-sportive/probabilita-vincita-payout\",\"ZenDeskLogout\":\"https://lottomatica.zendesk.com/access/logout\",\"ZenDeskLogoutColl\":\"https://lottomatica1658838651.zendesk.com/access/logout\",\"SonectGooglePlay\":\"https://play.google.com/store/apps/details?id=ch.sonect.app&hl=it&gl=US\",\"SonectAppStore\":\"https://apps.apple.com/ch/app/sonect-easy-cash-withdrawal/id1185348506?l=it\",\"PeCDGRegistrazioneCodAff\":\"/area-personale/registrati?codAff=\",\"OnBoardingEsternaVillaggio\":\"/scommesse/villaggio?onb=\",\"AreaPersonaleOldRegistrati\":\"/area-riservata-old/registrati\",\"AreaPersonaleOldRegistratiApp\":\"/area-riservata-old/registrati/app\"},\"ExpiredTime\":1722807013310}"
+        },
+        {
+          "name": "dy_fs_page",
+          "value": "www.lottomatica.it/area-personale/login"
+        },
+        {
+          "name": "511a26f4be2047a348064e4abe8ce2a9",
+          "value": "2024-08-04T15:30:18.052Z"
+        },
+        {
+          "name": "_dy_weather_9880547",
+          "value": "[]"
+        },
+        {
+          "name": "647a3d19ac2647f361068a43df3a4da1",
+          "value": "3f8d46c8-6a78-4cac-b959-1727148b7a4d"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AJ8j0XduvA5jMpVoWs4UyRM01FnPGs9q4Tc5RGy5I2UXidxVq9d6ltWjL7wp_sPtlgDj864LJcYQ013B2OJ2bps",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1738337848.568671,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ParametersCookie",
+      "value": "endcallbackurl=https://www.sisal.it/&cancelcallbackurl=https://www.sisal.it/&intcmp=home|header|accedi",
+      "domain": "areaprivata.sisal.it",
+      "path": "/loginJwt",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "username",
+      "value": "Lasalforno",
+      "domain": "areaprivata.sisal.it",
+      "path": "/loginJwt",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxVisitor",
+      "value": "1722785823422911LEK0ET216QNHSP4FS1LAAVSL8BLOU",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtPC",
+      "value": "-34$185823413_727h1vFMJFBUBVOFMOVACTUHMLIGHKRFDHMPND-0e0",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtSa",
+      "value": "-",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "akaalb_betting_it",
+      "value": "~op=betting_sisal_it:farm-a-betting_IT|~rv=66~m=farm-a-betting_IT:0|~os=7e3c2469c276ac9f83abff0fc0704b0b~id=383abf98d63c08a2f79b25b0ccca7502",
+      "domain": "betting.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "CAC4E170B883B927B6D7F4AC882B52E9~000000000000000000000000000000~YAAQ0BXfrQhuA+OQAQAAWIgJHhjcZghTJ1TSeMRVEVR7M+5fYOA8/w6YL3Eabu8/HmRYMmXG5ET7d7wjwgx+Lrnm0Y2VCRD2g+4Xpdpo908NV5+ExROu/wUDhC+a7LL5HRMI13IJAK4ehiFL8FezeuFYTO3CFaIPO+BFFpa5qTRed+AWTtTIn23Gk//zbco2kPz/2ISH5lE2qdzSLQHaowuV+zu3ZVtAQDRZjd69LTYRBQeyif3reCUU1gB0E3G0stoQoTPqNOYzqJEyaS/t/YVSFF1FxTGoFbYXFUmtmapX/WI+eKGLZqpHKBh8UGhyQtFqBp/ucAt8MCxMxG8C7GpBV4tBx7fg2Np4ou0PY964t57KQjzZejcd9OVBYhrPb20dOiUQui6dlDx6NMxp3wGsT/AcwDtu5/xYagyt0oaWFO0YhiAmFJJctiy25c6/krl0JfgKbflxGg==",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722793023.785781,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "provParameter",
+      "value": "",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_fid",
+      "value": "499107E601A1B2AD-1448F357CE760639",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.77062,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_lv_s",
+      "value": "First%20Visit",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787653,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "gvsC",
+      "value": "New",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cm",
+      "value": "SEO%7Chttps%3A%2F%2Fwww.google.it%2F%7CGoogle%20-%20Italy%7CNo%20Keyword",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SC_LINKS_S",
+      "value": "%5B%5BB%5D%5D",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1667527946.1722785828",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.866677,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "demdex",
+      "value": "08962944588415063861611261707679535452",
+      "domain": ".demdex.net",
+      "path": "/",
+      "expires": 1738337828.211447,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kndctr_45974CD958010CB40A495E7C_AdobeOrg_cluster",
+      "value": "irl1",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787654,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kndctr_45974CD958010CB40A495E7C_AdobeOrg_identity",
+      "value": "CiYwOTI3NDA5MTUxMjE0MDQ1Njg3MTY1MzYxMTkxMzM2NTc0ODQ3M1ITCJabpvCRMhABGAEqBElSTDEwAPABlpum8JEy",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1756913828,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AMCV_45974CD958010CB40A495E7C%40AdobeOrg",
+      "value": "MCMID|09274091512140456871653611913365748473",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1756481828,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "s_dur",
+      "value": "1722785828545",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787654,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_vnc365",
+      "value": "1754321828549%26vn%3D1",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1754344799,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_ivc",
+      "value": "true",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787654,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxvt",
+      "value": "1722787631905|1722785823425",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtCookie",
+      "value": "v_4_srv_2_sn_A0BUT6LOT0O6457URQLVQ7UL4P2RC4EP_perc_100000_ol_0_mul_1_app-3Af5087d32441d6d78_0_app-3A24666996558c94c6_0",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "akaalb_areaprivata",
+      "value": "2147483647~op=areaprivata:farm-a-areaprivata|~rv=29~m=farm-a-areaprivata:0|~os=bb0c830bc823f9416f25dee2867bde62~id=2df2163705e723109b078efc8348bdc5",
+      "domain": "areaprivata.sisal.it",
+      "path": "/",
+      "expires": 1757345833.744662,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_f",
+      "value": "a79c427c-9e82-4042-9967-e877e06e3084-01911e09a9bb",
+      "domain": "areaprivata.sisal.it",
+      "path": "/",
+      "expires": 1754321843,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_sq",
+      "value": "sisalpreprod%3D%2526pid%253Dlogin%25253Alogin%2526pidt%253D1%2526oid%253Dfunctionur%252528%252529%25257B%25257D%2526oidt%253D2%2526ot%253DBUTTON",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "XSRF-TOKEN",
+      "value": "03c5bc14-0b75-44b8-8bb9-a84a35cd0cdb",
+      "domain": "areaprivata.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_abck",
+      "value": "5A7F3461496BEEF2F7690C710C339AFC~0~YAAQ0BXfrVl2A+OQAQAAq98JHgxJqZ0lPLaFe2SC06+6hflujP/Dt2QhjX625XhQ4uBeSkpf+EYPUo04f7pVNLz89gLHM548wXLY5nSW7oqtDEU6n4vp/KNCcBTyKAraejU9NX5qcWwI9EeLTqB8Lbmr9gQ8dyXwLTh+mGlVT33/d7kumfVZ24Lkdu6mlADx5zjdMUTvS9GcJgNApMEOAcP6M2Pd9Z4pf0qV8NGJz8UYAlE1PCOPuhqsqtmsn0DoZnMTDRBZ4369As85Fr2x9tmDJ0++s+391TPNwXnE7qRkOduKdDGKT5QUtmuySLyU/fF0LbDgGvaL+hIifvIB9g2kesb8bXRKFPxC5lSi+8H0NSoPS9aOXpdW2YXeb44t1H7BroYgqXjEYRVZwfVcct1hqhaJoxe6ggSnnxJiQ/ngGMVoo1sUzyJK6HvQrPTrkBLLvfBX0pWO09yvoulOHYZw~-1~-1~-1",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1754321849.260377,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "primoDepTstamp",
+      "value": "19/08/2023-12:58:22",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ultimoDepTstamp",
+      "value": "06/07/2024-14:15:41",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "xtn_auth",
+      "value": "eyJhbGciOiJkaXIiLCJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwidHlwIjoiSldUIn0..2Kvq6UrGGgqWL51C.GqxWqM2gvtsOquBWnDaaPefb0vV2ROGScJ7q7fJeEXkd9nl-N6cI-X1U5W-nN8yru_6b9WDBw2ftsnFJLPjorFLx54XX8bgoBR2xnikiZ9MNmUeBNRNabfQFWY_oEpiaNGToWk3u1fndGNhkvkrKBRv2TjAOaP_8eGA4-Cy0gRSNdUxRt-7NQ0qGtZfLl_q_s7e-vM_rLAfHNzxmd9OKiSw8WrdjekuqocFhiWU-jvH6PU94gfY5RmPQCBwn82aSIDbwE7Bd3ulTV_mRI0oEjS2cINIsoCM2NvzAIN4iuXrq-pzRwsEskIHtOFMwbmgr48zM5AhKVwk9nCgSbWu5JQGDloRp6aZBA1az4wnll_KjsO9VBHhP7IRdS_GQVzEUQ78fCMiSd71np0yCzRlp7fDSny9g85wlJjDRJnibnfsbrUL22A-aeTkS4fqOa_fTnk1L4DLNxsR9azRHAttdnh0SAaYCEDWkRTov8nZaW4dHltPdXfo1Fn9hmMdbinSt5ANYQcMN5eDChqoo2CpOfb4K9g-oqGFMtJ4nVk4Y7aYTp_A3TcN7KeLxkbN03QumO1misjlQJpoot9W44Rc4fBgUhETTTzpS7OWl0CtSeICgvRUtiZwm0SM-z4UicEoFf3GpNrXKv5xoWqmCA4CfpZCFi2QfoKxB_US72X2VYAhJYLVtznKrVninqnpxh6w.XiPam5DUZdfJ4puvrhsYQw",
+      "domain": ".xtn-lab.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "JSESSIONID",
+      "value": "node0499kz6ezmphx1uomympzw4nbp593633.node0",
+      "domain": "www.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JWT",
+      "value": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwidGFnIjoiaXlyTkExTzA2a2ZlczZOR1JqenpEQSIsImFsZyI6IkEyNTZHQ01LVyIsIml2IjoiZllNLVJGOVpjZEpEdVZ3RSJ9.N53eoTBY0JwexVV-2RNfnVxlHsXxy4TeUdziGNEJjLM.7Sod0SaJsF0pWUSU.g6XmWRDp-cgxEKot_UxjCLpD4HIkGBQqSEZAxYTsVPccgjyCB265_GlVhhbbJZe1f42Tb4uXtTVjjSH2SRRXlHWRey-7NTVXgYfb4MowfmBw4aGG9DPRHjaI-A2uYIR9qTScj52gckifC59mEzjVSrqxZgeKBP6Fs0liRKvSQ__eHmi0rUABtg8FtZIEFkdmVTn-thJllWHX99EaJAMoXzBfsBNQohsF7swTylg0d0Y658W74iOACfcGRCzziA_W8nZdV6XeHlinBR5mC-w05aGVmlvsGV3POF66fLG0fDiO7CmgluQgokiRaCatf_shOtxzp6m8XnmqjQ5IxPMNXVLLxHXZyM9aNFnD56my5DBDWqshuXs24eGontrqkwHrBzTxNy7XQQ3MtAkKBCZKfS6PiPV18F2NrVGaDtjuQFrb8ax-ZR-j94djKsSYVcWxcrVOCHnnQAaWU33VgCtv-_dxf3EieqDCHTGtPmGas5cr07sEyk1fyFDybmaNntmvWoIJkg2a81f3_TY_5giZ7mj48QQoGA3HwHwngA.AKomW7iuNLGURqzVZ3eF-w",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787053,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "gameBreakSet",
+      "value": "login",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "pvd",
+      "value": "GE9005",
+      "domain": "www.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sz",
+      "value": "5B0A6364E16D07DEB3C0CFD5F8BA97F2~YAAQ0BXfrSF3A+OQAQAA2OcJHhhTT0syQKre06nosBb51X14a3Ogi06L+pairVVmAlvRMjHmQq7KE2qn/Mi7OwYs8QTHJasXmgyUfMtihgb1bbGbPO623RqP/CrZFRFOc5X+pX495imcI1EVYQl7+dMxueXYMMiN5Rpf3+XjhdeD7L0UQTGzzXM2GPY8VfotSAvuy0wZ/bxjiEEY0hVcrI4s6SwNZ/yPwz9EAhN4d91rpi/gb5beCdrgzf/sfmmBHcAICubjHh8knd4AfZFQWJPz44DUnSZ4MPcczXr+i4M+dYNnGJX7k1X7y1q1NT+Cvd03AjO+IDvskjQ8jx4x9dQkBT+BEhA3RLQm2ILmLTywRMdpkX/hAjuSIPDx/XB5Ructdn6ewhULMd/v9WK9lNznPesir7/QROQJtzmsxEEwIZFpbNWm~4342597~3621427",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722800223.310447,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main",
+      "value": "v_id:01911e0986ee004878ecb8f5cda005075001506d007e8$_sn:1$_se:4$_ss:0$_st:1722787652638$ses_id:1722785826543%3Bexp-session$_pn:4%3Bexp-session$_prevpage:undefined%3Bexp-1722789452659$vapi_domain:sisal.it",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1754321852,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lg_idc",
+      "value": "5093624",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mm_dp_ct",
+      "value": "15566c1cbc1b54ebec920e3ed70f7dac",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722872253,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "akaalb_areaprivata_k8s",
+      "value": "1722787653~op=areaprivata_k8s:farm-c-k8s-areaprivata|~rv=6~m=farm-c-k8s-areaprivata:0|~os=dd03fa8a11190c6108e78fa392bf53c1~id=68d3dee93603bc040646e3a46bf0b34a",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787653.750846,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "s_nr",
+      "value": "1722785853771-New",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1730561853,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_lv",
+      "value": "1722785853772",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.772687,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_keywordStack",
+      "value": "%5B%5B%27Natural%2520%255Bno%2520keyword%255D%27%2C%271722785853775%27%5D%5D",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.775732,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_channelStack",
+      "value": "%5B%5B%27SEO%27%2C%271722785853776%27%5D%5D",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.776956,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_gpv_pn",
+      "value": "homepage",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787653,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_2F7HDG66KD",
+      "value": "GS1.1.1722785828.1.1.1722785853.0.0.0",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1757345853.865195,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userInfo",
+      "value": "JTdCJTIyc3RhdHVzJTIyOiUyMlNVQ0NFU1MlMjIsJTIyY2hhbm5lbCUyMjo2MiwlMjJyZXF1ZXN0SWQlMjI6JTIyN2MwZGM2ZDEtZjQxMy00NTdkLWE1ODUtOTdhNTFmZWNjYTNjJTIyLCUyMmRhdGV0aW1lJTIyOiUyMjA0LTA4LTIwMjQlMjAxNzozNzozMyUyMiwlMjJsYXN0QWNjZXNzRGF0ZSUyMjolMjIwNC8wOC8yMDI0JTIwMDE6MjQ6MTMlMjIsJTIycGVyc29uYWxEYXRhJTIyOiU3QiUyMm5hbWUlMjI6JTIyU0lNT05FJTIyLCUyMnN1cm5hbWUlMjI6JTIyR0FUVEklMjIsJTIyZ2VuZGVyJTIyOiUyMk0lMjIsJTIyZmlzY2FsQ29kZSUyMjolMjJHVFRTTU4wNFAxM0E3OTRTJTIyLCUyMmRhdGVPZkJpcnRoJTIyOiUyMjEzLzA5LzIwMDQlMjIsJTIyY291bnRyeU9mQmlydGglMjI6JTIyQkVSR0FNTyUyMiwlMjJkaXN0cmljdE9mQmlydGglMjI6JTIyQkclMjIsJTIybXVuaWNpcGFsaXR5T2ZCaXJ0aCUyMjolMjJJVEFMSUElMjIsJTIyYmlsbENvZGUlMjI6JTIyMTY4MjAwODAzMzg1Mjc5MCUyMiwlMjJiaWxsQ29kZUlkJTIyOjUwOTM2MjQsJTIyYmlsbFR5cGUlMjI6JTIyTyUyMiwlMjJwYXNzd29yZEV4cGlyYXRpb25EYXlzJTIyOjAsJTIyYWNjZXNzRGF0YSUyMjolN0IlMjJ1c2VybmFtZSUyMjolMjJMQVNBTEZPUk5PJTIyLCUyMmVtYWlsJTIyOiUyMnNpbW9nYXR0aTAwNEBnbWFpbC5jb20lMjIsJTIycGhvbmVQcmVmaXglMjI6JTIyKzM5JTIyLCUyMnBob25lTnVtYmVyJTIyOiUyMjM5MjMwNDA5OTklMjIlN0QsJTIyZG9jdW1lbnQlMjI6JTdCJTIycHJvdG9jb2xTdGF0ZSUyMjoyLCUyMnR5cGUlMjI6MSwlMjJudW1iZXIlMjI6JTIyQ0E0MzgzMkpLJTIyLCUyMnJlbGVhc2VQbGFjZSUyMjolMjJDSVZJREFURSUyMEFMJTIwUElBTk8lMjIsJTIycmVsZWFzZURhdGUlMjI6JTIyMjIvMDcvMjAyMSUyMiwlMjJleHBpcmF0aW9uRGF0ZSUyMjolMjIxMy8wOS8yMDI2JTIyLCUyMmlzc3VpbmdCb2R5JTIyOjEsJTIyZG9jdW1lbnRTdGF0ZSUyMjolMjIxMDAwMDAwMDMlMjIlN0QsJTIyZG9taWNpbGUlMjI6JTdCJTIyYWRkcmVzcyUyMjolMjJTSUxWSU8lMjBTUEFWRU5UQSUyMDIxJTIyLCUyMmNvdW50cnklMjI6JTIyQ0lWSURBVEUlMjBBTCUyMFBJQU5PJTIyLCUyMmRpc3RyaWN0JTIyOiUyMkJHJTIyLCUyMnBvc3RhbENvZGUlMjI6JTIyWjAwMCUyMiU3RCwlMjJyZXNpZGVuY2UlMjI6JTdCJTIyYWRkcmVzcyUyMjolMjJTSUxWSU8lMjBTUEFWRU5UQSUyMDIxJTIyLCUyMmNvdW50cnklMjI6JTIyQ0lWSURBVEUlMjBBTCUyMFBJQU5PJTIyLCUyMmRpc3RyaWN0JTIyOiUyMkJHJTIyLCUyMnBvc3RhbENvZGUlMjI6JTIyWjAwMCUyMiU3RCwlMjJwcm90b2NvbCUyMjolN0IlMjJwcm92aXNpb25hbE51bWJlciUyMjozMTcwNjA5LCUyMmRlZmluaXRpdmVOdW1iZXIlMjI6MzE3MDY0NCwlMjJzdGF0ZSUyMjoyLCUyMnJlYXNvbiUyMjolMjI2JTIyLCUyMmRheXNEZWFkbGluZURvY3VtZW50YXRpb24lMjI6LTElN0QsJTIyZW5hYmxlZFByb2R1Y3RzJTIyOiU1QjEsMyw0LDUsNiw3LDgsOSwxMCwxMSwxMiwxMywxNCwxNSU1RCU3RCU3RA==",
+      "domain": "www.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "login",
+      "value": "codiceConto=1682008033852790%3Btoken=1DEB3AF01941163CBB5AEEC34120E1FB%3Bpvd=GE9005%3BbillCodeId=5093624%3Bic=5093624%3Bmm=15566c1cbc1b54ebec920e3ed70f7dac%3Bprodotti=[1%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15]%3Bflag_prima_login_affiliation=0%3BultimoDepAmount=1000%3Bap_id_cliente=%3BultimoDepTstamp=06/07/2024+14:15:41%3Bflag_affiliation=0%3BprimoDepTstamp=19/08/2023+12:58:22%3Bap_campagna=%3Bat_id_affiliato=%3Bat_id_partner=371%3Bat_id_campagna=5%3Bmn_id_affiliato=%3Bap_servizio=%3BprimoDepAmount=1000%3Bap_affiliato=%3Bmn_id_campagna=1%3Bmn_id_partner=471%3BidSessione=node0499kz6ezmphx1uomympzw4nbp593633-org.apache.sling",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787053,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "login_fr",
+      "value": "codiceConto=1682008033852790%3Btoken=1DEB3AF01941163CBB5AEEC34120E1FB%3Bpvd=GE9005%3BbillCodeId=5093624%3Bic=5093624%3Bmm=15566c1cbc1b54ebec920e3ed70f7dac%3Bprodotti=[1%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15]%3Bflag_prima_login_affiliation=0%3BultimoDepAmount=1000%3Bap_id_cliente=%3BultimoDepTstamp=06/07/2024+14:15:41%3Bflag_affiliation=0%3BprimoDepTstamp=19/08/2023+12:58:22%3Bap_campagna=%3Bat_id_affiliato=%3Bat_id_partner=371%3Bat_id_campagna=5%3Bmn_id_affiliato=%3Bap_servizio=%3BprimoDepAmount=1000%3Bap_affiliato=%3Bmn_id_campagna=1%3Bmn_id_partner=471%3BidSessione=node0499kz6ezmphx1uomympzw4nbp593633-org.apache.sling",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722787053,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "channelId",
+      "value": "62",
+      "domain": "www.sisal.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sun+Aug+04+2024+17%3A37%3A34+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202401.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=ba224d51-d21f-4a5a-a40c-c4be4bb2c566&interactionCount=1&landingPath=NotLandingPage&groups=C0003%3A0%2CC0001%3A1%2CC0002%3A0%2CC0004%3A0&AwaitingReconsent=false",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1754321854,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "akaalb_www",
+      "value": "1722787655~op=www_aem:farm-a-www-aem|~rv=13~m=farm-a-www-aem:0|~os=19998e1be61d868e4c1c9f44b9332069~id=e066dedea200cf3d69174b44c7b905c8",
+      "domain": "www.sisal.it",
+      "path": "/",
+      "expires": 1722787655.212893,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bm_sv",
+      "value": "D02B3BDF5B778B8FF271CDEDC0DBD545~YAAQ0BXfrW14A+OQAQAAZfcJHhhuNf9hu0L8b5F8aAnyTaDKD9zWFgxOWq720uCQACXslfVQ9epwV7D9796cymfhALR7AK2hC8uUMXrwwPMxs5Rv2hAWi6P6zS9NIHu7jKENSjSYIANYxwg8f4riy2r/Wf6iXU42ayBuK+xaGsoslNe06FPWlvnIWnf1er/t8QUJqVetzTH/xQaIbO72bn7E2ZXHqDIyckxIb7DeCjwoOLRmvO8qf8wN1P+MOhg=~1",
+      "domain": ".sisal.it",
+      "path": "/",
+      "expires": 1722793025.213173,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.sisal.it",
+      "localStorage": [
+        {
+          "name": "registeredInCompLab",
+          "value": "true"
+        },
+        {
+          "name": "SISAL_ENDPOINT",
+          "value": "{\"SSOEndpoint\":\"https://areaprivata.sisal.it:443\",\"SSOAuthorization\":\"c2lzYWxtczpFSCV4MnpyZw==\",\"BackEndBetting\":\"https://betting.sisal.it:443\",\"LotteryEndpoint\":\"https://www.gntn-pgd.it:443\",\"LotteryGameEndpoint\":\"https://www.gntn-pgd.it:443\",\"PlayYourDateEndpoint\":\"www.gntn-pgd.it/dli-play-your-date-web\",\"LotteryDesktopScriptEndpoint\":\"https://www.gntn-pgd.it/gntn-pgd-web/js/gntn-pgd.js\",\"VetrinaPremiumScriptEndpoint\":\"https://lit.grattaevinci.com/showcase/scripts/pm.js\",\"LotteriaItaliaPmScript\":\"https://ldt.igt-italia.it/showcase/scripts/pm.js\",\"LotteryMobileScriptEndpoint\":\"https://www.gntn-pgd.it/gntn-pgd-web/js/gntn-pgd-mobile.js\",\"BettingOnDemandEndpoint\":\"https://scommesseondemand.sisal.it\",\"SuperEnalottoWinboxEndpoint\":\"https://verificavincite.sisal.it/verificavincite/servlet/winbox\",\"SuperWinForLifeEndpoint\":\"lottery-services.gntn-pgd.it/superwinforlife\",\"VideoExtractionEndpoint\":\"https://sisal.servizi3emme2a.it/wp-json/api\",\"CreateSessionEndpoint\":\"/api/authentication-ms/ar/auth/create/session/game?auth=c2lzYWxhcjpBTHk/cXBUZEtMSE02ZjV1\",\"SkywindTickerEndpoint\":\"https://jpn-ticker-gcp-str.sw420201.com/v1/ticker\",\"ConsulabsEndpoint\":\"https://sisal.consulabs.it/get_jackpot_prize\",\"GoTickerEndpoint\":\"https://sisal.live.giocaonline.casino/feed/jackpot.php\",\"JackpotPlayNGoEndpoint\":\"https://itacw.playngonetwork.com/Jackpots?pid=1353&currency=EUR\",\"compLabGatewayApiUrl\":\"https://gateway.ziqni.com/api/v1/sisal_it/members/reference/\",\"compLabGatewayApiKey\":\"cf76fe93b76e4e469e71bee58149ba58\",\"wonCompetitionApiEndpoint\":\"/messages?eventRefType=ContestType&messageType=Reward&status=New\",\"competitionApiEndpoint\":\"https://gateway.ziqni.com/api/v1/sisal_it/competitions\",\"memberOptinApiEndpoint\":\"https://gateway.ziqni.com/api/v1/sisal_it/members/reference/:memberRefId/competition/:competitionId/optin\",\"competitionJoinedApiEndpoint\":\"https://gateway.ziqni.com/api/v1/sisal_it/members/reference/:memberRefId/competition/:competitionId/entrants\",\"EvolutionHeader\":\"049ZAA92wh\",\"SisalGameOpenPage\":\"https://www.sisal.it/technical-pages/sisal-game-open-page\",\"FindOutIfYouWonSettings\":\"https://www.gntn-pgd.it/gntn-info-verifica-schedina-nlp/rest/conf\",\"MissionAPIUrl\":\"https://api.ziqni.com:443/member-token\",\"MissionAPIKey\":\"5e5fd260ae382a46bfa8e59a29aad568\",\"MissionResourceType\":\"ziqni-gapi\",\"BonusManagerHttpHost\":\"www.sisal.it\",\"BonusManagerProtocol\":\"https\",\"BonusManagerPort\":443,\"BonusManagerGetBonusListEndpoint\":\"/bin/bonus-manager/getBonusList\",\"NpplPromoHttpHost\":\"www.sisal.it\",\"NpplPromoProtocol\":\"https\",\"NpplPromoPort\":443,\"NpplPromoGetPromotionEndpoint\":\"/bin/getPromotions\",\"NpplPromoGetPromoCardsEndpoint\":\"/bin/promo/card\",\"SuperEnalottoMieSchedineEndpoint\":\"https://areaprivata.sisal.it/gntn/archive/\",\"VivochaEndpointUrl\":\"https://d365b2cfunctions.azurewebsites.net\",\"npplPublicUrl\":\"https://public-promo.sisal.it\",\"npplPublicApiPath\":\"/ext-svc/auth/external/login\",\"npplEncryptionKey\":\"u@DVz27A!PeMWu$9\",\"npplCheckSpinAPIPath\":\"/ext-svc/bonuswheel/public/spinned\",\"npplGetPrizeAPIPath\":\"/ext-svc/bonuswheel/public/get-a-prize\",\"npplConfigurationAPIPath\":\"/ext-svc/bonuswheel/public/configuration\"}"
+        },
+        {
+          "name": "SISAL_cache_ttl",
+          "value": "1722785827269"
+        },
+        {
+          "name": "SISAL_PROMO_CARDS",
+          "value": "[{\"promoId\":308869,\"startDatePromo\":\"24/07/2024 00:00\",\"endDatePromo\":\"30/01/2026 23:59\",\"promoTitle\":\"Fino a |7.000€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":307719,\"startDatePromo\":\"15/07/2024 11:35\",\"endDatePromo\":\"04/08/2024 23:59\",\"promoTitle\":\"Italia a cavallo\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":308354,\"startDatePromo\":\"01/08/2024 00:00\",\"endDatePromo\":\"10/08/2024 23:59\",\"promoTitle\":\"I Giorni d'Oro di Playson\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/08/2024 al 10/08/2024.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale.</li>\\n<li>Il bonus dovrà essere giocato almeno una volta per poter prelevare le vincite corrispondenti. <br>\\n</li>\\n<li>Sisal Italia S.p.A. si riserva il diritto di non erogare il bonus ai soggetti non aventi diritto.</li>\\n<li>Per segnalare problemi o ricevere assistenza su questa promozione comunica il codice identificativo della promozione:&nbsp;308354</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"Scopri\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":302722,\"startDatePromo\":\"29/03/2024 17:02\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Mistery Bounty\",\"promoFullDescription\":\"<p>Elimina gli avversari e porta a casa la loro taglia.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/mistery-bounty/Mystery-bounty-hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/mistery-bounty/Mystery-bounty-hero_tablet_hp_800.png\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/mistery-bounty/Mystery-bounty-hero_desk_1920.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/mistery-bounty/Mystery-bounty-hero_tablet_hp_800.png\"},{\"promoId\":302339,\"startDatePromo\":\"19/03/2024 00:00\",\"endDatePromo\":\"31/12/2030 23:59\",\"promoTitle\":\"Fino a |5.150€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297097,\"startDatePromo\":\"25/10/2023 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Lucky Weekend\",\"promoFullDescription\":\"<p>12 partite fortunate al giorno nella&nbsp;<b>Sala delle Meraviglie</b>!</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/lucky-weekend/Lucky weekend_hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/lucky-weekend/Lucky weekend_hero_tablet_hp_800.png\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/lucky-weekend/Lucky weekend_hero_desk_1920.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/lucky-weekend/Lucky weekend_hero_tablet_hp_800.png\"},{\"promoId\":307217,\"startDatePromo\":\"29/07/2024 00:00\",\"endDatePromo\":\"18/08/2024 23:59\",\"promoTitle\":\"Twister Races\",\"promoFullDescription\":\"<p>Scala la classifica e ricevi parte del montepremi di 26.000€&nbsp;</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/twister-races/Twister Race_hero-HP-desk.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/twister-races/Twister Race_hero-HP-mobile.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/twister-races/Twister Race_hero-HP-desk.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/twister-races/Twister Race_hero-HP-mobile.jpg\"},{\"promoId\":302492,\"startDatePromo\":\"05/04/2024 17:40\",\"endDatePromo\":\"31/12/2037 23:59\",\"promoTitle\":\"Invita un amico\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297753,\"startDatePromo\":\"13/11/2023 10:08\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Premio più Matto \",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/giochi-pm/100k premiomatto_hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/giochi-pm/100k premiomatto_hero_tablet_interno_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/giochi-pm/100k premiomatto_hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/giochi-pm/100k premiomatto_hero_tablet_interno_800.jpg\"},{\"promoId\":300441,\"startDatePromo\":\"05/02/2024 00:00\",\"endDatePromo\":\"17/12/2024 23:59\",\"promoTitle\":\"Big Quiz Live Trivia\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<p><b>1. Quando è attiva la promozione?</b></p>\\n<ul>\\n<li>La promozione è valida ogni martedi e venerdì a partire dal 5/02/2024 al 17/12/2024</li>\\n</ul>\\n<p><b>2. Come ottieni il bonus?</b></p>\\n<ul>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre entrare nella lobby di Playtech alle ore 22:00</li>\\n<li>La promozione prevede oltre 1.800€ di bonus al giorno.</li>\\n</ul>\\n<p><b>3. Quando riceverai il bonus?</b></p>\\n<ul>\\n<li>Riceverai il tuo bonus&nbsp;entro 3 giorni dalla fine della promozione e potrai spenderlo per giocare ai Casinò Live entro 7 giorni dalla data di accredito</li>\\n</ul>\\n<p><b>4. Cos'altro devi sapere?</b></p>\\n<ul>\\n<li>Questa promozione è riservata al tuo conto gioco. Sisal Italia S.p.A. si riserva a proprio insindacabile giudizio di non assegnare il bonus ai soggetti non aventi diritto.</li>\\n<li>ll bonus dovrà essere giocato almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/casino-live/immagini/big-quiz-live-trivia/Big_Quiz-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/casino-live/immagini/big-quiz-live-trivia/Big_Quiz-hero_tablet_interno_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/casino-live/immagini/big-quiz-live-trivia/Big_Quiz-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/casino-live/immagini/big-quiz-live-trivia/Big_Quiz-hero_tablet_hp_800.jpg\"},{\"promoId\":309146,\"startDatePromo\":\"30/07/2024 00:00\",\"endDatePromo\":\"31/12/2027 23:59\",\"promoTitle\":\"Fino a |5.050€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":112675,\"startDatePromo\":\"13/03/2023 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Quasi Bingo\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/quasi-bingo/quasi_bingo_-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/quasi-bingo/quasi_bingo_-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/quasi-bingo/quasi_bingo_-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/quasi-bingo/quasi_bingo_-hero_tablet_hp_800.jpg\"},{\"promoId\":299303,\"startDatePromo\":\"04/01/2024 00:00\",\"endDatePromo\":\"12/01/2025 23:59\",\"promoTitle\":\"Tipster Reward\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":299299,\"startDatePromo\":\"04/01/2024 10:45\",\"endDatePromo\":\"12/01/2025 23:59\",\"promoTitle\":\"Tipstart\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297647,\"startDatePromo\":\"09/11/2023 00:00\",\"endDatePromo\":\"09/11/2024 23:59\",\"promoTitle\":\"Fino a |5.250€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297642,\"startDatePromo\":\"09/11/2023 00:00\",\"endDatePromo\":\"09/11/2024 23:59\",\"promoTitle\":\"Fino a |5.250€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297643,\"startDatePromo\":\"09/11/2023 00:00\",\"endDatePromo\":\"09/11/2024 23:59\",\"promoTitle\":\"Fino a |5.250€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":95925,\"startDatePromo\":\"21/04/2022 12:15\",\"endDatePromo\":\"22/04/2025 23:59\",\"promoTitle\":\"Bonus Multipla Virtual\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297648,\"startDatePromo\":\"09/11/2023 00:00\",\"endDatePromo\":\"09/11/2024 23:59\",\"promoTitle\":\"Fino a |5.250€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":302514,\"startDatePromo\":\"25/03/2024 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Caccia al Bonus\",\"promoFullDescription\":\"<p>Ogni giorno lancia i tuoi dadi e raccogli fantastici premi.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/caccia-al-bonus/Caccia_al_Bonus-dettaglio_promo.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/caccia-al-bonus/Caccia_al_Bonus-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/caccia-al-bonus/Caccia_al_Bonus-dettaglio_promo.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/caccia-al-bonus/Caccia_al_Bonus-hero_tablet_hp_800.jpg\"},{\"promoId\":302789,\"startDatePromo\":\"29/03/2024 16:27\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Sblocca il Badge\",\"promoFullDescription\":\"<p>Completa le missioni e distinguiti dagli avversari.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/sblocca-il-bedge/Sblocca_il_badge-hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/sblocca-il-bedge/Sblocca_il_badge-hero_tablet_hp_800.png\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/sblocca-il-bedge/Sblocca_il_badge-hero_desk_1920.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/sblocca-il-bedge/Sblocca_il_badge-hero_tablet_hp_800.png\"},{\"promoId\":117062,\"startDatePromo\":\"15/05/2023 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Tombolino\",\"promoFullDescription\":\"<p>Un nuovo premio ti aspetta!</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"https://www.sisal.it/eventi/eventi-details?card=117062\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/tombolino/tombolino-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/tombolino/tombolino-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/tombolino/tombolino-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/tombolino/tombolino-hero_tablet_hp_800.jpg\"},{\"promoId\":308813,\"startDatePromo\":\"01/08/2024 00:00\",\"endDatePromo\":\"07/08/2024 23:59\",\"promoTitle\":\"Settimana delle meraviglie\",\"promoFullDescription\":\"<p>Gioca nella Sala delle Meraviglie e ottieni il tuo bonus subito!</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"https://www.sisal.it/bonus/dettaglio?card=308813\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[\"/content/sisal-cards/it/it/bingo/sala-delle-meraviglie\",\"/content/sisal-cards/it/it/bingo/sala-meraviglie\"],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"Settimana delle meraviglie\",\"popupDescriptionPromo\":\"<p>Ricevi 1€ di bonus ogni volta che fai una giocata di almeno 5€ nella Sala delle Meraviglie.</p>\\n\",\"popupBonusPromo\":\"Puoi ricevere fino ad un massimo di 15€ euro!\",\"popupCtaPromoText\":\"Scopri\",\"popupCtaPromoLink\":\"https://www.sisal.it/bonus/dettaglio?card=308813\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/settimana-delle-meraviglie/sala delle meraviglie_hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/settimana-delle-meraviglie/sala delle meraviglie_hero_tablet_hp_800.png\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/settimana-delle-meraviglie/sala delle meraviglie_hero_desk_1920.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/settimana-delle-meraviglie/sala delle meraviglie_hero_tablet_hp_800.png\"},{\"promoId\":308815,\"startDatePromo\":\"29/07/2024 00:00\",\"endDatePromo\":\"04/08/2024 23:59\",\"promoTitle\":\"Golden Twister MAXI\",\"promoFullDescription\":\"<p>Ricarica almeno 15€ e ricevi un Golden Twister FR e 3€ di bonus.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"https://areaprivata.sisal.it/area-riservata/ricarica\",\"quickLinkTextPromo\":\"Ricarica\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"Doppia Carica\",\"popupDescriptionPromo\":\"<p><b>Ricarica&nbsp;</b>il tuo conto giochi con il codice&nbsp;<b>DC-UNO&nbsp;</b>per partecipare al Torneo Freeroll di Uno che mette in palio</p>\\n<p>&nbsp;</p>\\n\",\"popupBonusPromo\":\"500€ di bonus\",\"popupCtaPromoText\":\"Ricarica\",\"popupCtaPromoLink\":\"https://areaprivata.sisal.it/area-riservata/ricarica\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/golden-twister-maxi/Golden_Twister_Maxi-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/golden-twister-maxi/Golden_Twister_Maxi-hero_tablet_interno_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/golden-twister-maxi/Golden_Twister_Maxi-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/golden-twister-maxi/Golden_Twister_Maxi-hero_desk_1920.jpg\"},{\"promoId\":303304,\"startDatePromo\":\"23/04/2024 10:59\",\"endDatePromo\":\"11/04/2085 23:59\",\"promoTitle\":\"Ruota dei Bonus\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":301140,\"startDatePromo\":\"21/02/2024 16:49\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Club Privato\",\"promoFullDescription\":\"<p>Grazie al CLUB, giocare insieme agli amici non è mai stato così semplice.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/club-privato/Club_Privato-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/club-privato/Club_Privato-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/club-privato/Club_Privato-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/club-privato/Club_Privato-hero_tablet_hp_800.jpg\"},{\"promoId\":307668,\"startDatePromo\":\"03/07/2024 00:00\",\"endDatePromo\":\"31/12/2030 23:59\",\"promoTitle\":\"Fino a |5.050€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":308821,\"startDatePromo\":\"02/08/2024 00:00\",\"endDatePromo\":\"04/08/2024 23:59\",\"promoTitle\":\"Heads App\",\"promoFullDescription\":\"<p>Gioca da App Poker e ottieni una rakeback del 25%.</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"https://www.sisal.it/bonus/dettaglio?card=308821\",\"quickLinkTextPromo\":\"Scopri \",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"Heads App\",\"popupDescriptionPromo\":\"<p>Gioca da App Poker e ottieni una rakeback del 25%&nbsp;</p>\\n\",\"popupBonusPromo\":\"fino a 20€ di bonus\",\"popupCtaPromoText\":\"Scopri\",\"popupCtaPromoLink\":\"https://www.sisal.it/bonus/dettaglio?card=308821\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Attiva la promozione\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/heads-app/Heads-APP-24-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/heads-app/Heads-APP-24-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/heads-app/Heads-APP-24-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/heads-app/Heads-APP-24-hero_tablet_hp_800.jpg\"},{\"promoId\":294870,\"startDatePromo\":\"30/08/2023 10:23\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Salva il Bottino\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":308438,\"startDatePromo\":\"01/08/2024 00:00\",\"endDatePromo\":\"24/08/2024 23:59\",\"promoTitle\":\"Summer Challenge\",\"promoFullDescription\":\"<p>Completa le missioni e ottieni ricche scratch cards!</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/summer-challenge/SUMMERCHALLENGE_24-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/summer-challenge/SUMMERCHALLENGE_24-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/summer-challenge/SUMMERCHALLENGE_24-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/summer-challenge/SUMMERCHALLENGE_24-hero_tablet_hp_800.jpg\"},{\"promoId\":308439,\"startDatePromo\":\"28/07/2024 00:00\",\"endDatePromo\":\"25/08/2024 23:59\",\"promoTitle\":\"Avatar Hunt\",\"promoFullDescription\":\"<p>Gioca a Poker e ottieni il nuovo avatar!</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/avatar-hunt-dragon/-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/avatar-hunt-dragon/-home_banner_mobile_280x100.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/avatar-hunt-dragon/-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/avatar-hunt-dragon/-home_banner_mobile_280x100.jpg\"},{\"promoId\":307666,\"startDatePromo\":\"04/07/2024 00:00\",\"endDatePromo\":\"31/12/2030 23:59\",\"promoTitle\":\"Fino a |6.111€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":308455,\"startDatePromo\":\"04/08/2024 00:00\",\"endDatePromo\":\"04/08/2024 23:59\",\"promoTitle\":\"Sunday Relax\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"https://www.sisal.it/bonus/dettaglio?card=308455\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<p><b>1. Quando è attiva la promozione?</b><br>\\n</p>\\n<ul>\\n<li>La promozione è valida il giorno 4/08/2024&nbsp;</li>\\n</ul>\\n<p><b>2. Come ottieni il bonus?</b></p>\\n<ul>\\n<li>La promozione mette in palio un fun bonus di 80€. Si richiede di giocare almeno 20€ complessivi a&nbsp;Ulisse, Lucky Chicken, Oink Oink Oink e Blue Wizard</li>\\n</ul>\\n<ul>\\n<li>Il fun bonus è associato ad un “coefficiente di giocata” X40 che, moltiplicato al valore del Fun Bonus stesso, stabilisce l’ammontare minimo di giocate che devi raggiungere per trasformare il Fun Bonus in Real Bonus. Se raggiunto l’ammontare di giocate determinato dal “coefficiente di giocata”, il saldo Fun Bonus rimanente sarà convertito in Real Bonus fino a un massimo di 80€.&nbsp;</li>\\n</ul>\\n<p><b>3. Quando riceverai il bonus?</b></p>\\n<ul>\\n<li>Riceverai il tuo bonus&nbsp;entro 3 giorni dalla fine della promozione e potrai spenderlo per giocare alle Slot entro 7 giorni dalla data di accredito</li>\\n</ul>\\n<p><b>4. Cos'altro devi sapere?</b></p>\\n<ul>\\n<li>Questa promozione è riservata al tuo conto gioco. Sisal Italia S.p.A. si riserva a proprio insindacabile giudizio di non assegnare il bonus ai soggetti non aventi diritto.</li>\\n<li>ll bonus dovrà essere giocato almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Per segnalare problemi o ricevere assistenza su questa promozione comunica il codice identificativo della promozione: 308455</li>\\n</ul>\\n\",\"sisalCards\":[\"/content/sisal-cards/it/it/slot/next-digital/lucky-chicken\",\"/content/sisal-cards/it/it/slot/playtech-dbox/oink-oink-oink\",\"/content/sisal-cards/it/it/slot/playtech-dbox/blue-wizard\",\"/content/sisal-cards/it/it/slot/capecod-dbox/ulisse\"],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"Sunday Relax\",\"popupDescriptionPromo\":\"<p>Gioca almeno 20€ per ricevere un fun bonus di</p>\\n\",\"popupBonusPromo\":\"80€\",\"popupCtaPromoText\":\"Scopri\",\"popupCtaPromoLink\":\"https://www.sisal.it/bonus/dettaglio?card=308455\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":305639,\"startDatePromo\":\"03/06/2024 08:50\",\"endDatePromo\":\"11/08/2024 23:59\",\"promoTitle\":\"Slot Series Summer Edition\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<p><b>1. Quando è attiva l'iniziativa?</b></p>\\n<ul>\\n<li>&nbsp;La promozione è valida dal 3/06/2024 all' 11/08/2024</li>\\n</ul>\\n<p><b>2. Quando ricevi i bonus?</b></p>\\n<ul>\\n<li>I premi in&nbsp;<i>Fun Bonus</i>&nbsp;saranno accreditati&nbsp;entro 3 giorni dalla fine di ciascuna Race&nbsp;potrai&nbsp;utilizzarli&nbsp;solo per le Slot della categoria Fun Bonus&nbsp;entro 7 giorni&nbsp;dall'accredito.</li>\\n</ul>\\n<p><b>3. Cos'altro devi sapere?</b></p>\\n<ul>\\n<li>Trasformazione Fun bonus: per convertire il Fun bonus in Real bonus, dovrai soddisfare un requisito di giocate pari a x40 il valore del Fun Bonus ottenuto. Una volta raggiunto questo requisito, il saldo Fun bonus verrà convertito in Real Bonus fino a un massimo di 1 volta l’importo del fun bonus ottenuto. Per ulteriori informazioni sul fun bonus, trovi tutti i dettagli alla pagina&nbsp;<a href=\\\"https://www.sisal.it/slot/come-si-gioca/fun-bonus\\\">https://www.sisal.it/slot/come-si-gioca/fun-bonus</a></li>\\n<li>· I criteri per la trasformazione del Fun Bonus in Real Bonus verranno di volta in volta esplicitati nel regolamento di ciascuna delle 10 Slot Race che vanno a comporre la Slot Series da 6 Milioni</li>\\n<li>Le giocate&nbsp;effettuate&nbsp;su slot diverse da quelle&nbsp;indicate&nbsp;nella Slot Race non verranno considerate per il posizionamento in classifica.</li>\\n<li>Ricorda che il bonus deve essere giocato almeno una volta per poter prelevare le vincite.</li>\\n<li>Sisal Italia S.p.A. si riserva il diritto di non erogare il bonus ai soggetti non aventi diritto.</li>\\n<li>Per segnalare problemi o ricevere assistenza su questa promozione comunica il codice identificativo della promozione: 305639</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"Scopri\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/slot-series-summer-edition/8-evento/summer_8_hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/slot-series-summer-edition/8-evento/summer_8_6M-hero_tablet_interno_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/slot-series-summer-edition/8-evento/summer_8_hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/slot-series-summer-edition/8-evento/summer_8_6M_tablet_hp_800.jpg\"},{\"promoId\":308963,\"startDatePromo\":\"29/07/2024 00:00\",\"endDatePromo\":\"04/08/2024 23:59\",\"promoTitle\":\"Virtual Sun&Fun\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":306798,\"startDatePromo\":\"24/06/2024 08:47\",\"endDatePromo\":\"22/06/2025 23:59\",\"promoTitle\":\"Drops & Wins\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 24/06/2024 al 22/06/2025.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla carta promozionale.</li>\\n<li>Le vincite nel Fun Bonus saranno soggette ad un requisito minimo di puntata pari a trentacinque volte il loro valore (x35).</li>\\n<li>Il bonus dovrà essere giocato almeno una volta per poter prelevare la vincita corrispondente. <br>\\n</li>\\n<li>Sisal Italia SpA si riserva il diritto di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/drops-wins-2-edizione/drops_and_win_it_hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/drops-wins-2-edizione/drops_and_win_it_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/drops-wins-2-edizione/drops_and_win_it_hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/casino-slot-quick/slot/immagini/drops-wins-2-edizione/drops_and_win_it_tablet_hp_800.jpg\"},{\"promoId\":92266,\"startDatePromo\":\"01/01/2022 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Freeroll Poker\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-poker/-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-poker/-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-poker/-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-poker/-hero_tablet_hp_800.jpg\"},{\"promoId\":305641,\"startDatePromo\":\"03/06/2024 12:14\",\"endDatePromo\":\"29/12/2024 23:59\",\"promoTitle\":\"Corto Muso\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":296938,\"startDatePromo\":\"17/10/2023 12:59\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Chat Games Bingo\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/chat-games/chat_games-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/chat-games/chat_games_-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/chat-games/chat_games-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/chat-games/chat_games_-hero_tablet_hp_800.jpg\"},{\"promoId\":297066,\"startDatePromo\":\"01/11/2023 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"New Spin a Wheel \",\"promoFullDescription\":\"<p>Il premio è assicurato!&nbsp;</p>\\n\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/spin-a-wheel/New_Spin_a_Wheel-hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/spin-a-wheel/New_Spin_a_Wheel-hero_tablet_interno_800.png\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/spin-a-wheel/New_Spin_a_Wheel-hero_desk_1920.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/spin-a-wheel/New_Spin_a_Wheel-hero_tablet_interno_800.png\"},{\"promoId\":298612,\"startDatePromo\":\"11/12/2023 17:11\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Freeroll Giochi Di Carte\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-gdc/Sisal_Freeroll_GDC-hero_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-gdc/Sisal_Freeroll_GDC-hero_tablet_interno_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-gdc/Sisal_Freeroll_GDC-hero_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/freeroll-gdc/Sisal_Freeroll_GDC-hero_tablet_interno_800.jpg\"},{\"promoId\":305142,\"startDatePromo\":\"22/05/2024 00:00\",\"endDatePromo\":\"31/12/2030 23:59\",\"promoTitle\":\"Fino a |5.800€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":299121,\"startDatePromo\":\"01/01/2024 00:00\",\"endDatePromo\":\"29/12/2024 23:59\",\"promoTitle\":\"Bonus Multipla Ippica\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":92281,\"startDatePromo\":\"01/01/2022 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Classifiche Omaha \",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/classifica-omaha/classifica-Omaha_hero-HP-desk.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/classifica-omaha/classifica-Omaha_hero-HP-mobile.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/classifica-omaha/classifica-Omaha_hero-HP-desk.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/poker-e-gdc/twister-races/Twister Race_hero-HP-mobile.jpg\"},{\"promoId\":106744,\"startDatePromo\":\"01/01/2023 00:00\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Bingo garantito Domenica\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/bingo-garantito-domenica/Bingo_garantito_domenica_desk_1920.jpg\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/bingo-garantito-domenica/Bingo_garantito_domenica_-hero_tablet_hp_800.jpg\",\"urlImageHpDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/bingo-garantito-domenica/Bingo_garantito_domenica_desk_1920.jpg\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/bingo-garantito-domenica/Bingo_garantito_domenica_-hero_tablet_hp_800.jpg\"},{\"promoId\":307705,\"startDatePromo\":\"04/07/2024 00:00\",\"endDatePromo\":\"31/12/2026 23:59\",\"promoTitle\":\"Fino a |5.070€\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"\",\"urlImageMobile\":\"\",\"urlImageHpDesk\":\"\",\"urlImageHpMobile\":\"\"},{\"promoId\":297210,\"startDatePromo\":\"06/11/2023 11:25\",\"endDatePromo\":\"31/12/2024 23:59\",\"promoTitle\":\"Nuova Sala Super Bingo\",\"promoFullDescription\":\"\",\"labelBonusPromo\":\"Promo\",\"quickLinkPromo\":\"\",\"quickLinkTextPromo\":\"Scopri\",\"quickLinkTargetPromo\":\"_self\",\"termsConditionPromoTitle\":\"Termini e condizioni\",\"termsConditionPromoText\":\"<ul>\\n<li>La promozione è valida dal 1/12/2023 al 20/12/2023.</li>\\n<li>Per partecipare alla promozione non è necessario aderire alla card promozionale. Occorre giocare alla Mega Fire Blaze Roulette Live nella fascia oraria compresa tra le h18.00 e le h24.00 di ciascun giorno promozionale..</li>\\n<li>Tutti i bonus dovranno essere giocati almeno una volta per poter prelevare le vincite corrispondenti.</li>\\n<li>Sisal Italia S.p.A si riserva, a proprio insindacabile giudizio, la facoltà di non erogare il bonus ai soggetti non aventi diritto.</li>\\n</ul>\\n\",\"sisalCards\":[null],\"popup\":{\"popupFullTitle\":\"<p>È disponibile una nuova promo per questo gioco</p>\\n\",\"popupSubtitlePromo\":\"\",\"popupDescriptionPromo\":\"\",\"popupBonusPromo\":\"\",\"popupCtaPromoText\":\"\",\"popupCtaPromoLink\":\"\",\"popupCtaPromoTarget\":\"_self\",\"popupDisclaimerPromo\":\"Aderisci subito alla promo oppure gioca senza aderire.\",\"popupCtaGiocoPromoText\":\"Aderisci\",\"popupCtaSenzaPromoText\":\"Gioca senza aderire\",\"alreadyJoinedTitlePromo\":\"Hai già aderito al bonus.\",\"alreadyJoinedDescriptionPromo\":\"\",\"alreadyJoinedCtaGiocoPromoText\":\"Gioca\",\"thankyouTitlePromo\":\"Complimenti!! Hai aderito al bonus\",\"thankyouDescriptionPromo\":\"\",\"thankyouCtaGiocoPromoText\":\"Gioca\",\"errorPopupTitlePromo\":\"Ops! Qualcosa è andato storto...\",\"errorPopupDescriptionPromo\":\"\",\"errorPopupCtaPromoText\":\"Vai al gioco\"},\"urlImageDesk\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/super-bingo/Super_bingo_hero_desk_1920.png\",\"urlImageMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/super-bingo/Super_bingo_hero_tablet_hp_800.png\",\"urlImageHpDesk\":\"content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/super-bingo/Super_bingo_hero_tablet_hp_800.png\",\"urlImageHpMobile\":\"/content/dam/new-dam/italy/canali/nppl/promo-pubbliche/immagini/poker-skill-bingo/bingo/super-bingo/Super_bingo_hero_tablet_hp_800.png\"}]"
+        }
+      ]
+    },
+    {
+      "origin": "https://areaprivata.sisal.it",
+      "localStorage": [
+        {
+          "name": "vvcdata-sisal-surveyMedallia",
+          "value": "{\"vvcid\":\"11fd6823-1742-4886-9642-7a1836e75e4a\",\"value\":{}}"
+        },
+        {
+          "name": "vvcdata-sisal-vvcu",
+          "value": "{\"vvcid\":\"11fd6823-1742-4886-9642-7a1836e75e4a\",\"value\":{\"vvcu\":{\"first_visit\":1722785843244,\"last_visit\":1722785843244,\"curr_visit\":1722785843244,\"visits\":1,\"pages\":1,\"last_view\":1722785844744,\"widgets\":[],\"views\":2}}}"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AJ8j0Xds-dI9k5FD3ZNKX8ezeH4EkhHgVRiHLgSI_Nq5Cv4SyV8YLAJTiVypek-r7TRqw0I5m-YFqaaofDcp-HrhbEhE9AvNtMkk5A"
+        },
+        {
+          "name": "vvcdata-sisal-vvct",
+          "value": "{\"vvcid\":\"11fd6823-1742-4886-9642-7a1836e75e4a\",\"value\":{\"vvct\":{\"visit_ts\":1722785843244,\"pages\":1,\"last_view\":1722785844744,\"widgets\":[],\"views\":2}}}"
+        },
+        {
+          "name": "_f",
+          "value": "a79c427c-9e82-4042-9967-e877e06e3084-01911e09a9bb"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "MW5ndnNmeTE4YmdsazE="
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJ8j0XfkxLCuKejc2-tFnbekrku2mwdTUj8yLrKBwi7BjzAvrWdWx2rWr4bww6FXUGqSgyo"
+        }
+      ]
+    }
+  ]
+}

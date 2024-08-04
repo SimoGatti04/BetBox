@@ -1,0 +1,258 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AJ8j0XcKS6ze1_2Sy0UxcXomEoS_eUFg8QpWWqf6JqLMGj0anUx-3-shBiBwZK3rQdEE0vfCcnw7EUSF3CdvjNg",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1738334876.00142,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cflb",
+      "value": "02DiuH88gCYcfmbdqvRW8q67nBKAuELTWRMGy94bbj7x8",
+      "domain": "www.eurobet.it",
+      "path": "/",
+      "expires": 1722865665.104184,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "MRBrrpHHRIh2Xxhn_IK_EEP1VBpZcOAC.O9MuIfcLls-1722782865-1.0.1.1-wt6_o2p76sAUmKuYP.lAmoOxyzcOrrhSG4Sb3h3NzmyAiCozRfCMYMOCJvA4zecvQJGQLgwcgUL2n6aHMQnVqQ",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1722784665.10828,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "showSplash",
+      "value": "false",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318867,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mboxEdgeCluster",
+      "value": "37",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1722784774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kndctr_45F10C3A53DAEC9F0A490D4D_AdobeOrg_identity",
+      "value": "CiY5MTE3MDQ0NjIzNTg5NDU4NTg3MTM4NDEwOTM5NzQ0OTE4ODk2MFITCJLG8e6RMhABGAEqBElSTDEwAPABksbx7pEy",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1756910868,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "kndctr_45F10C3A53DAEC9F0A490D4D_AdobeOrg_cluster",
+      "value": "irl1",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1722784774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "nickname",
+      "value": "SIMONE GATTI",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318876,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sid",
+      "value": "246716224851262261722192",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318876,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CustomerId",
+      "value": "11016350",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318876,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cidTarget",
+      "value": "11016350",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318876,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "User-Type",
+      "value": "logged",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318876,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sun+Aug+04+2024+16%3A49%3A34+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&consentId=3006e4c3-48e3-4da3-9cac-767551afcc71&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fwww.eurobet.it%2Fit%2F&groups=C0001%3A1%2CBG143%3A0%2CC0004%3A0%2CBG144%3A0%2CC0002%3A0%2CC0003%3A0&hosts=H9%3A0%2CH67%3A0%2CH81%3A0%2CH100%3A0%2CH208%3A0%2CH301%3A0%2CH331%3A0%2CH340%3A0%2CH351%3A0%2CH353%3A0%2CH572%3A0&genVendors=V1%3A0%2C",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318974,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "mbox",
+      "value": "session#91170446235894585871384109397449188960-HFPJxM#1722784834",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1757342974.927954,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ADRUM_BTn",
+      "value": "R:22|n:customer1_e973bb1a-df13-4259-a051-d70bb42bca23",
+      "domain": "www.eurobet.it",
+      "path": "/",
+      "expires": 1722783006.151583,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "SameSite",
+      "value": "None",
+      "domain": "www.eurobet.it",
+      "path": "/",
+      "expires": 1722783006.151659,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ADRUM_BTa",
+      "value": "R:22|g:813f077a-39e8-49c7-8b36-f9c46ca1c7b5|n:customer1_e973bb1a-df13-4259-a051-d70bb42bca23",
+      "domain": "www.eurobet.it",
+      "path": "/",
+      "expires": 1722783006.15139,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ADRUM_BTg",
+      "value": "R:22|g:84b58124-cd6e-40ba-94e9-18a94a25f98f",
+      "domain": "www.eurobet.it",
+      "path": "/",
+      "expires": 1722783006.151495,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "fs_lua",
+      "value": "1.1722782976426",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1722784776,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "fs_uid",
+      "value": "#o-4E1B-eu1#e442a26d-1f01-410f-a616-4c1eff2c45bf:802564b2-73e3-4b24-b691-1c9e27f0d8e7:1722782870845::2#/1754318872",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1754318872,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=eurobet.it&si=6686a48e-8550-465c-a9b0-6e601daa141d&ss=lzfofpy9&sl=2&tt=bzs&bcn=%2F%2F02179914.akstat.io%2F&ld=2gec\"",
+      "domain": ".eurobet.it",
+      "path": "/",
+      "expires": 1723387779,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.eurobet.it",
+      "localStorage": [
+        {
+          "name": "_boomr_akamaiXhrRetry",
+          "value": "{\"items\":{},\"expires\":1722784674042}"
+        },
+        {
+          "name": "Eurobet",
+          "value": "{\"userData\":{\"isLogged\":true,\"userEpis\":{},\"userId\":\"Lasalforno\",\"autenticatedProps\":{\"name\":\"SIMONE\",\"surname\":\"GATTI\",\"userName\":\"SIMONE GATTI\",\"gender\":\"M\",\"accountId\":\"11016350\",\"sessionId\":\"246716224851262261722192\",\"fiscalCode\":null,\"lastLogin\":1722727415000,\"messageNumber\":0,\"segment\":\"Not Classified\"},\"userBalance\":{\"balance\":395,\"bonus\":0,\"bonusSport\":0,\"bonusCasino\":0},\"lastCheckTimestamp\":1722782975761,\"show\":false,\"input\":{\"username\":{\"value\":\"\",\"isValid\":true,\"error\":\"\"},\"password\":{\"value\":\"\",\"isValid\":true,\"error\":\"\"}}},\"marcoPoloData\":{\"avatarId\":null,\"userAvatarId\":null,\"universeId\":null,\"errorLogin\":true},\"_persist\":\"{\\\"version\\\":7,\\\"rehydrated\\\":true}\"}"
+        },
+        {
+          "name": "_fs_lua",
+          "value": "1.1722782976426"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AJ8j0XebuWki6RIdseAH9N3IoXvLupb_py-infXnDTBmIvFwG51N2EIMyP6ljJLfUwy_VSWZp-UXksDdtl1JjXrUfHSFLP1x76jdXA"
+        },
+        {
+          "name": "marcopolo",
+          "value": "{}"
+        },
+        {
+          "name": "_fs_uid",
+          "value": "#o-4E1B-eu1#e442a26d-1f01-410f-a616-4c1eff2c45bf:802564b2-73e3-4b24-b691-1c9e27f0d8e7:1722782870845::2#/1754318872"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "bmF5bXRoODZ4aDM2"
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJ8j0XdSMM88ekjkOQCePFZsOW9L76CzJ6xW7EN-kvzMt0_JBrbPw60nfGFJvn-4N4Ogvzg"
+        }
+      ]
+    }
+  ]
+}

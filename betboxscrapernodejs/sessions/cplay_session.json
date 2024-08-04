@@ -1,0 +1,182 @@
+{
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AJ8j0XdB-t__-0NSSVClGG1qy_yryKi2gas65mZ1Pzvd03Ezw7uEcV54SCjS0yhVUROP7BHEixSPZdgFHPneqDc",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1738335018.150806,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.582838020.1722781544",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1757343005.010313,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__smartico_ls_id",
+      "value": "feb582e3-18fe-4b64-ac80-b6f221a453f4",
+      "domain": "cplay.it",
+      "path": "/",
+      "expires": 1757341580.821832,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__smartico_ls_create_t",
+      "value": "1722781580821",
+      "domain": "cplay.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "WX5d.bsxJJlrx6iy7A__Jac48ZscR51BJXGG.hA0W7w-1722782998-1.0.1.1-2VNG3tJ8FdSSXKkaFH_tkFx66Q6Y0hTIYZN6rAJSwwBPgA4XbjaASyh8AEMSekO4SdpNmWXxMcE1frm3qCAo5g",
+      "domain": ".onesignal.com",
+      "path": "/",
+      "expires": 1722784798.13429,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mp_7e975e3812cd3ba21516f8f9a76c4a7e_mixpanel",
+      "value": "%7B%22distinct_id%22%3A%20%22%24device%3A1911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24device_id%22%3A%20%221911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24search_engine%22%3A%20%22google%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%0A%5D%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%0A%5D%7D",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1754318998,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=cplay.it&si=d4f0be8e-9590-41dc-9d8b-940f2c3ae9cd&ss=lzfoiixo&sl=1&tt=27a&rl=1&ld=27e&nu=207re2x3&cl=4t1\"",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1723387801,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_iub_cs-11500199",
+      "value": "%7B%22timestamp%22%3A%222024-08-04T14%3A25%3A43.095Z%22%2C%22version%22%3A%221.64.2%22%2C%22purposes%22%3A%7B%221%22%3Atrue%2C%222%22%3Atrue%2C%223%22%3Atrue%2C%224%22%3Atrue%2C%225%22%3Atrue%7D%2C%22id%22%3A%2211500199%22%2C%22cons%22%3A%7B%22rand%22%3A%22e9d24a%22%7D%7D",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1754317543,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "usprivacy",
+      "value": "%7B%22uspString%22%3A%221YN-%22%2C%22firstAcknowledgeDate%22%3A%222024-08-04T14%3A25%3A43.094Z%22%2C%22optOutDate%22%3Anull%7D",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1754319004,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_119N2ND7M1",
+      "value": "GS1.1.1722781544.1.1.1722783019.0.0.0",
+      "domain": ".cplay.it",
+      "path": "/",
+      "expires": 1757343019.589877,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__smartico_ls_use_t",
+      "value": "1722783019827",
+      "domain": "cplay.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://cplay.it",
+      "localStorage": [
+        {
+          "name": "__smartico_login_tracker1",
+          "value": "{\"dt\":1722783021341,\"ext_user_id\":9962950}"
+        },
+        {
+          "name": "IsLoggedIn",
+          "value": "true"
+        },
+        {
+          "name": "V3_UserSettings",
+          "value": "{\"UserId\":\"00d8c993-21e2-457e-a5dd-8c805b0b9c6f\",\"AvancedPlayer\":false,\"GamesAdvancedPlayer\":false,\"Layout\":{\"DisableCordovaAppInstallAppBar\":false,\"DisableBackToOldVersion\":false,\"DisableVibration\":false,\"PrematchHome_GiocanoOraLiveCollapsed\":false,\"__dirty_PrematchHome_GiocanoOraLiveCollapsed\":false,\"PrematchHome_PiuGiocatiCollapsed\":false,\"__dirty_PrematchHome_PiuGiocatiCollapsed\":false,\"PrematchHome_AndamentoMercatoCollapsed\":false,\"__dirty_PrematchHome_AndamentoMercatoCollapsed\":false,\"PrematchHome_PopolariCollapsed\":false,\"__dirty_PrematchHome_PopolariCollapsed\":false,\"PrematchHome_PromosCollapsed\":false,\"__dirty_PrematchHome_PromosCollapsed\":false,\"PrematchEventDetail_TopCollapsed\":false,\"__dirty_PrematchEventDetail_TopCollapsed\":false,\"LiveEventDetail_TopCollapsed\":false,\"__dirty_LiveEventDetail_TopCollapsed\":false,\"OddsRangePicker_Hidden\":true,\"__dirty_OddsRangePicker_Hidden\":false,\"TypesFilters_StartCollapsed\":true,\"__dirty_TypesFilters_StartCollapsed\":true,\"PrematchGroup_MainOddsExpanded\":false,\"__dirty_PrematchGroup_MainOddsExpanded\":false,\"LiveEventDetail_BetRadarVisualization2\":true,\"__dirty_LiveEventDetail_BetRadarVisualization2\":false},\"History\":[],\"Favourites\":[],\"PurchasedEvents\":[],\"LastSportsOpened\":[],\"Cart\":{\"LiveFastBet\":false,\"ConfirmBeforePurchase\":false,\"KeepCartAfterPurchase\":false,\"PrintTicketAfterPurchase\":false,\"AcceptVariations\":null,\"CartDefaultAmount\":1},\"CouponsActivated\":[],\"CouponActivatedWhenNotLogged\":null,\"RegistrationSettings\":[],\"ServerMessages\":[{\"Id\":\"0757a33a-18fb-35b7-9e7a-c14ba5040ec4\",\"ViewCount\":2,\"InsDate\":\"2024-08-04T14:25:30.436Z\"},{\"Id\":\"f2f3e837-a110-4819-a384-5598579013f5\",\"ViewCount\":1,\"InsDate\":\"2024-08-04T14:26:21.274Z\"}],\"LastWhatsNewVersion\":null,\"LastDepositValues\":null,\"UseSportBookClassic\":false,\"ForceUseSportBookOolixy\":false,\"UseSportBookClassicMobile\":false,\"ForceUseSportBookOolixyMobile\":false,\"PrimaRicaricaRecoveryChecked\":true,\"PrimaRicaricaRecoveryValue\":false,\"PromosPasswordProtected\":[],\"PrematchWelcomePage\":null,\"LastUpdateTimeStamp\":\"2024-08-04T14:50:19.634Z\"}"
+        },
+        {
+          "name": "os_pageViews",
+          "value": "1"
+        },
+        {
+          "name": "__smartico_identify_last_time1",
+          "value": "1722783020989"
+        },
+        {
+          "name": "_boomr_akamaiXhrRetry",
+          "value": "{\"items\":{},\"expires\":1722783329480}"
+        },
+        {
+          "name": "Token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmltYXJ5c2lkIjoiMTU2Njk5NSIsInVuaXF1ZV9uYW1lIjoiTGFzYWFsZm9ybm8iLCJnaXZlbl9uYW1lIjoiU0lNT05FIiwiaXNfYWRtaW4iOiJGYWxzZSIsImF1dGhfaWQiOiI5M2FiMzFiOS00NmFjLTQzMWEtYjA3Zi00NzdiYzk4MjIzMzAiLCJuYmYiOjE3MjI3ODMwMTksImV4cCI6MTcyMjg2OTQxOSwiaWF0IjoxNzIyNzgzMDE5LCJpc3MiOiJodHRwOi8vYXBpMi5jcGxheS5pdCIsImF1ZCI6Imh0dHA6Ly9hcGkyLmNwbGF5Lml0In0.lwQRcR2TDuyII_lUMsR7Qu5J8a39lDC0IRJegVt79bM"
+        },
+        {
+          "name": "_grecaptcha",
+          "value": "09AJ8j0XdyvbVPXPKgy4th3v96LpcpEge2P3fKtuZMmYbmDCSmKzSHuT0UsGwXdvGwj69KepW1lX10pK2FxvCe2jemdg_EUnAIo2pkyA"
+        },
+        {
+          "name": "__smartico_device_id",
+          "value": "b6bb0a5f-7a16-4beb-918d-fd901cebfe73"
+        },
+        {
+          "name": "__smartico_identify_last_hash1",
+          "value": "9962950:null:{}"
+        },
+        {
+          "name": "UniqueDeviceToken_lasaalforno",
+          "value": "67fbe764-848f-4a32-8dae-882703241def"
+        },
+        {
+          "name": "CurrentSiteReferrer",
+          "value": "www.google.it"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "OW9mdW9qb2E2a2g2"
+        },
+        {
+          "name": "rc::f",
+          "value": "0aAJ8j0Xd3hAsXP1pAnLEuCY5eXWDmDUfQh0vdB_8g1Fu5F4Jk_oEmPsEgq9IFsOta48tLqG0"
+        }
+      ]
+    }
+  ]
+}
