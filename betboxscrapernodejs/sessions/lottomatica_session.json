@@ -15,7 +15,7 @@
       "value": "cf084aae-63c5-4d98-8bce-1f3f3765c354",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1722786654,
+      "expires": 1722787480,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -25,7 +25,7 @@
       "value": "cf084aae-63c5-4d98-8bce-1f3f3765c354",
       "domain": "www.lottomatica.it",
       "path": "/",
-      "expires": 1722786654,
+      "expires": 1722787480,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -35,7 +35,7 @@
       "value": "B0/gRl7fFVFJJxE4BwTVI5KkbZ3NZUQMIrWCWUgcXiA=",
       "domain": "mpsnare.iesnare.com",
       "path": "/",
-      "expires": 1754321425.769044,
+      "expires": 1754322265.319635,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -45,30 +45,10 @@
       "value": "P+h68Ie6twVTL8YRepjL6WkxMLPBDkvFbBR/vWW8/Nc=",
       "domain": "www.lottomatica.it",
       "path": "/",
-      "expires": 1754321426.762128,
+      "expires": 1754322266.083442,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "TS01fe7a25",
-      "value": "01ffae651b6199b1f518e963f65be7d499825c3feca0eebef10984d27551eb27b4800c64ae182d4c7b2dc97f128992dc97073637c70bc51574c9636e46054e10467a6f043f",
-      "domain": ".www.lottomatica.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "bm_sv",
-      "value": "858F2B8C257E8600D0C905A4FE0DE48D~YAAQRqYXAuhBBQeRAQAAWGYDHhjSKT6UCa/hAfJuQ4F14Sho1UgeZmGnu9G0Uu31lu77y3bkJ75LzA0Mm6sXdNV0JWRtBVIQpNzBadMGmFtaqrXEl3ZgkTsCOi0V+NcVWF41cYDupFOWm3dRzGINOrlBcYePkxIxtoi8sGmytWEY14kXYL4CMk6B6ELL1AkjAW8rotyhzyK302VhzGhJqnsoGDRrCnd+3fBlCGvr2Dltd8LZgrprKgfWgpVJ+KnXl1ZN7A==~1",
-      "domain": ".lottomatica.it",
-      "path": "/",
-      "expires": 1722792624.897629,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
     },
     {
       "name": "RT",
@@ -85,7 +65,7 @@
       "value": "2",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1754321426,
+      "expires": 1754322266,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -95,7 +75,7 @@
       "value": "2",
       "domain": "www.lottomatica.it",
       "path": "/",
-      "expires": 1754321426,
+      "expires": 1754322266,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -115,17 +95,7 @@
       "value": "true",
       "domain": "www.lottomatica.it",
       "path": "/",
-      "expires": 1722871854,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Sun+Aug+04+2024+17%3A30%3A35+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5a7ad09b-ce1b-4ba8-ad25-bd1991652773&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0002%3A1%2CC0003%3A1&AwaitingReconsent=false&intType=1",
-      "domain": ".lottomatica.it",
-      "path": "/",
-      "expires": 1738337435,
+      "expires": 1722872675,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -135,7 +105,7 @@
       "value": "4530622171750309522",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1725377435,
+      "expires": 1725378275,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -145,7 +115,7 @@
       "value": "c3lkr97eo8sij79o6g8yk6g6akqb5m46",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1722787255.065909,
+      "expires": 1722788073.439822,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -155,7 +125,7 @@
       "value": "c3lkr97eo8sij79o6g8yk6g6akqb5m46",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1722787855.066928,
+      "expires": 1722788673.442059,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -171,21 +141,11 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_dy_toffset",
-      "value": "-2",
-      "domain": ".lottomatica.it",
-      "path": "/",
-      "expires": 1725377435,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "_dy_df_geo",
       "value": "Italy..Milan",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1725377435,
+      "expires": 1725378275,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -195,7 +155,7 @@
       "value": "IT.EU.IT_25.IT_25_Milan",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1725377435,
+      "expires": 1725378275,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -205,7 +165,7 @@
       "value": "dg",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1725377435,
+      "expires": 1725378275,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -215,7 +175,7 @@
       "value": "dk.m.c.ms.fst.",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1725377435,
+      "expires": 1725378275,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -225,7 +185,7 @@
       "value": "GA1.1.1408192948.1722785436",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1757345435.803019,
+      "expires": 1757346266.998899,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -321,18 +281,78 @@
       "sameSite": "None"
     },
     {
-      "name": "ANONCHK",
-      "value": "0",
-      "domain": ".c.clarity.ms",
+      "name": "TS01fe7a25",
+      "value": "01ffae651bf50c2ac12bf2f377e47835f243585f0963e2fc77c9403f9cd475b44a4b2067d9b818895cd2362aa32d294ceddc4de88eeea12633b67df1d0887f461131ce7f87",
+      "domain": ".www.lottomatica.it",
       "path": "/",
-      "expires": 1722786038.225581,
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sv",
+      "value": "858F2B8C257E8600D0C905A4FE0DE48D~YAAQXqYXAtEY5wCRAQAAqj8QHhhHJqV1ofw2rdUi/HVQ423z2YLG0r4UnwXIF8Z9rpNssMuJq4H3yq+7CoDqTWNdg6VX89SFc9hn8nq28q1qu0Z4RrptyaE81SHiQyYeQnSZrIkFXpHqnh8d4RcYAC+y+BL4bFEwu0YSvshwyZPeQwg1qMYOGAcjaxS7Q+fJ616FbIBXB8XrGBv6Za8qWm+Ofxn4hG/fBJBcC2kW7Q1l9jYuQQwApcpq7R3svLvERy0KQw==~1",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722792623.902621,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_soct",
+      "value": "1276513.2099944.1722786273",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1754322273,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "DYID",
+      "value": "4530622171750309522",
+      "domain": ".dynamicyield.com",
+      "path": "/",
+      "expires": 1754322274.328245,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
+      "name": "_dy_toffset",
+      "value": "-1",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1725378275,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTP",
+      "value": "lxueQhCQQjALugbJf5xLXhr8xKN8tUbIxyt0uhyV2uo",
+      "domain": ".onetag-sys.com",
+      "path": "/",
+      "expires": 1756972974,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Sun+Aug+04+2024+17%3A44%3A36+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5a7ad09b-ce1b-4ba8-ad25-bd1991652773&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0002%3A1%2CC0003%3A1&AwaitingReconsent=false&intType=1&geolocation=IT%3B25",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1738338276,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "_cs_id",
-      "value": "9e17988f-5235-abd5-fb27-6efcacfd7370.1722785435.1.1722785454.1722785435.1.1756949435969.1",
+      "value": "9e17988f-5235-abd5-fb27-6efcacfd7370.1722785435.1.1722786276.1722785435.1.1756949435969.1",
       "domain": ".lottomatica.it",
       "path": "/",
       "expires": 1756949435,
@@ -342,40 +362,30 @@
     },
     {
       "name": "_cs_s",
-      "value": "2.0.0.1722787254053",
+      "value": "3.0.0.1722788076908",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1722787254,
+      "expires": 1722788076,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "uyqdxg%7C1722786277973%7C3%7C0%7Cq.clarity.ms%2Fcollect",
+      "domain": ".lottomatica.it",
+      "path": "/",
+      "expires": 1722872677,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_GYTSDDPY45",
-      "value": "GS1.1.1722785435.1.1.1722785455.0.0.0",
+      "value": "GS1.1.1722785435.1.1.1722786279.0.0.0",
       "domain": ".lottomatica.it",
       "path": "/",
-      "expires": 1757345455.136675,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "OTP",
-      "value": "Q-_4Wu7urlZEINej7Kp71uAXUCyFsazvlkh7ax5rykw",
-      "domain": ".onetag-sys.com",
-      "path": "/",
-      "expires": 1756972153,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_clsk",
-      "value": "uyqdxg%7C1722785455230%7C2%7C0%7Cq.clarity.ms%2Fcollect",
-      "domain": ".lottomatica.it",
-      "path": "/",
-      "expires": 1722871855,
+      "expires": 1757346279.238109,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -406,6 +416,10 @@
           "value": "{\"titolo\":\"menu\",\"children\":[{\"titolo\":\"Panoramica\",\"id\":65,\"iconUrl\":\"dashboard\",\"link\":\"/panoramica\",\"environment\":[0,1,2,3]},{\"titolo\":\"Gestione conto\",\"iconUrl\":\"account_circle\",\"id\":85,\"children\":[{\"titolo\":\"Cassa\",\"link\":\"/gestione-conto/cassa\",\"id\":85,\"environment\":[0,1,2,3]},{\"titolo\":\"Bonus\",\"link\":\"/gestione-conto/bonus\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Storico conto\",\"id\":60,\"iconUrl\":\"local_atm\",\"children\":[{\"titolo\":\"Free Spin\",\"link\":\"/storico/free-spin\",\"environment\":[0,1,2,3]},{\"titolo\":\"Lista Giocate\",\"link\":\"/storico/giocate\",\"environment\":[0,1,2,3]},{\"titolo\":\"Storico Accessi\",\"link\":\"/storico/accessi\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Messaggi\",\"iconUrl\":\"mail_outline\",\"link\":\"/messaggi\",\"id\":90,\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":3}},{\"titolo\":\"Profilo\",\"iconUrl\":\"lock_open\",\"id\":99,\"badge\":0,\"data\":{\"id\":1},\"children\":[{\"titolo\":\"Dati personali\",\"link\":\"/profilo/dati-personali\",\"id\":99,\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":4}},{\"titolo\":\"Sicurezza\",\"link\":\"/profilo/sicurezza\",\"environment\":[0,1,2,3]},{\"titolo\":\"Privacy\",\"link\":\"/profilo/privacy\",\"environment\":[0,1,2,3]},{\"titolo\":\"Documenti\",\"link\":\"/profilo/documenti\",\"badge\":0,\"environment\":[0,1,2,3],\"data\":{\"id\":2}},{\"titolo\":\"Contratto di gioco\",\"link\":\"/profilo/contratto-gioco\",\"environment\":[0,1,2,3]}]},{\"titolo\":\"Gioco Responsabile\",\"iconUrl\":\"emoji_objects_outline\",\"id\":100,\"link\":\"/gioco-responsabile\",\"environment\":[0,1,2,3]},{\"labelGroup\":\"Assistenza\",\"id\":101,\"children\":[{\"titolo\":\"Contatti\",\"iconUrl\":\"help_outline\",\"destinationUrlMobile\":37,\"destinationUrlDesktop\":37,\"environment\":[0,1,2,3]},{\"titolo\":\"FAQ\",\"iconUrl\":\"help_outline\",\"destinationUrlMobile\":60,\"destinationUrlDesktop\":60,\"environment\":[0,1,2,3]}]}],\"expiredTime\":1722789027117}"
         },
         {
+          "name": "215d26f4be2047f348066e44ee7fe3d6",
+          "value": "3758356"
+        },
+        {
           "name": "0b006d8eb623b8ea11b73d61f1e483b47b9d7422",
           "value": "Mac OS"
         },
@@ -419,7 +433,7 @@
         },
         {
           "name": "_dy_toffset",
-          "value": "-2"
+          "value": "-1"
         },
         {
           "name": "_dy_csc_ses",
@@ -431,7 +445,7 @@
         },
         {
           "name": "authData",
-          "value": "{\"AuthToken\":\"4d9acf1f-d462-46c7-b673-4302eed23bd8\",\"IdUtente\":3758356,\"IdSoggetto\":2705320,\"Username\":\"Lasalforno\",\"Nome\":\"SIMONE\",\"Cognome\":\"GATTI\",\"Email\":\"simogatti004@gmail.com\",\"CodiceFiscale\":\"GTTSMN04P13A794S\",\"UltimoAccesso\":\"2024-08-04T17:30:24.323\",\"TentativiRimasti\":0,\"Saldo\":588,\"SaldoPrelevabile\":588,\"SaldoBonus\":80,\"SaldoPlayBonus\":0,\"SaldoBonusRigioco\":0,\"IdStatoContratto\":4,\"IdSpecializzazione\":33,\"CodiceContratto\":\"15017-5088613\",\"Indirizzo\":\"S.Spaventa, 21\",\"DataNascita\":\"2004-09-13T00:00:00\",\"Citta\":\"Cividate Al Piano\",\"Nazione\":\"Italia\",\"Sesso\":\"M\",\"Cap\":\"24050\",\"TestUser\":false,\"Telefono\":\"3923040999\",\"Provincia\":\"BG\",\"CambioPasswordObbligatorio\":false,\"AccettazioneConsensiMarketingObbligatorio\":false,\"AutolimitazioneObbligatoria\":false,\"InserimentoDomandaSegretaObbligatorio\":false,\"MessaggiAltaPriorita\":false,\"AutoesclusioneAttiva\":false,\"UtenteMigrato\":false,\"IdRichiestaIovation\":214749772,\"BTAG\":null,\"ValidazioneContatti\":0,\"Brand\":2,\"UtenteLTM\":false,\"PromoBenvenutoRetail\":null,\"PreferenzaInvioOTP\":2,\"DescPreferenzaInvioOTP\":\"Documento\",\"FlgRicezioneOTP\":null,\"RecapitoPredefinitoIovation\":null,\"BS\":true,\"ListIdTipoBS\":[1],\"FlgRegistrazioneTipster\":false,\"IdTipoStatoTipster\":null,\"FlgCondivisioneAutomaticaTipster\":null,\"CategoryCluster\":[],\"Message\":null,\"ResultCode\":0,\"Skip\":true,\"MenuCdg\":[{\"Title\":\"Storico Conto\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Lista Giocate\",\"DestinationUrl\":\"\",\"IdDestination\":6,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Lista Movimenti\",\"DestinationUrl\":\"\",\"IdDestination\":5,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Storico Accessi\",\"DestinationUrl\":\"\",\"IdDestination\":17,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Profilo\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Dati Personali\",\"DestinationUrl\":\"\",\"IdDestination\":4,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Sicurezza\",\"DestinationUrl\":\"\",\"IdDestination\":9,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contratto di gioco\",\"DestinationUrl\":\"\",\"IdDestination\":14,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Privacy\",\"DestinationUrl\":\"\",\"IdDestination\":12,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"FAQ\",\"DestinationUrl\":\"\",\"IdDestination\":62,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contatti\",\"DestinationUrl\":\"\",\"IdDestination\":37,\"Children\":null,\"AzioniDaCompletare\":0}]}"
+          "value": "{\"AuthToken\":\"4d9acf1f-d462-46c7-b673-4302eed23bd8\",\"IdUtente\":3758356,\"IdSoggetto\":2705320,\"Username\":\"Lasalforno\",\"Nome\":\"SIMONE\",\"Cognome\":\"GATTI\",\"Email\":\"simogatti004@gmail.com\",\"CodiceFiscale\":\"GTTSMN04P13A794S\",\"UltimoAccesso\":\"2024-08-04T17:30:24.323\",\"TentativiRimasti\":0,\"Saldo\":588,\"SaldoPrelevabile\":588,\"SaldoBonus\":80,\"SaldoPlayBonus\":0,\"SaldoBonusRigioco\":0,\"IdStatoContratto\":4,\"IdSpecializzazione\":33,\"CodiceContratto\":\"15017-5088613\",\"Indirizzo\":\"S.Spaventa, 21\",\"DataNascita\":\"2004-09-13T00:00:00\",\"Citta\":\"Cividate Al Piano\",\"Nazione\":\"Italia\",\"Sesso\":\"M\",\"Cap\":\"24050\",\"TestUser\":false,\"Telefono\":\"3923040999\",\"Provincia\":\"BG\",\"CambioPasswordObbligatorio\":false,\"AccettazioneConsensiMarketingObbligatorio\":false,\"AutolimitazioneObbligatoria\":false,\"InserimentoDomandaSegretaObbligatorio\":false,\"MessaggiAltaPriorita\":false,\"AutoesclusioneAttiva\":false,\"UtenteMigrato\":false,\"IdRichiestaIovation\":214749772,\"BTAG\":null,\"ValidazioneContatti\":0,\"Brand\":2,\"UtenteLTM\":false,\"PromoBenvenutoRetail\":null,\"PreferenzaInvioOTP\":2,\"DescPreferenzaInvioOTP\":\"Documento\",\"FlgRicezioneOTP\":null,\"RecapitoPredefinitoIovation\":null,\"BS\":true,\"ListIdTipoBS\":[1],\"FlgRegistrazioneTipster\":false,\"IdTipoStatoTipster\":null,\"FlgCondivisioneAutomaticaTipster\":null,\"CategoryCluster\":[],\"Message\":null,\"ResultCode\":0,\"Skip\":true,\"MenuCdg\":[{\"Title\":\"Storico Conto\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Lista Giocate\",\"DestinationUrl\":\"\",\"IdDestination\":6,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Lista Movimenti\",\"DestinationUrl\":\"\",\"IdDestination\":5,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Storico Accessi\",\"DestinationUrl\":\"\",\"IdDestination\":17,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Profilo\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Dati Personali\",\"DestinationUrl\":\"\",\"IdDestination\":4,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Sicurezza\",\"DestinationUrl\":\"\",\"IdDestination\":9,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contratto di gioco\",\"DestinationUrl\":\"\",\"IdDestination\":14,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Privacy\",\"DestinationUrl\":\"\",\"IdDestination\":12,\"Children\":null,\"AzioniDaCompletare\":0}],\"AzioniDaCompletare\":0},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"FAQ\",\"DestinationUrl\":\"\",\"IdDestination\":62,\"Children\":null,\"AzioniDaCompletare\":0},{\"Title\":\"Contatti\",\"DestinationUrl\":\"\",\"IdDestination\":37,\"Children\":null,\"AzioniDaCompletare\":0}],\"HasHistoryBonus\":true,\"Bonus\":[{\"IdBonus\":258,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":5,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-08T05:07:54.873\",\"DataErogazione\":\"2024-08-04T05:07:54.873\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":7,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":5,\"DescrizioneBonusBO\":\"Bonus Bingo validità 4 giorni\"},{\"IdBonus\":127,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":25,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-07T05:07:28.983\",\"DataErogazione\":\"2024-08-03T05:07:28.977\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":3,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":25,\"DescrizioneBonusBO\":\"Bonus Slot 4 giorni\"},{\"IdBonus\":620,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":50,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-06T05:08:01.303\",\"DataErogazione\":\"2024-08-02T05:08:01.303\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":12,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":50,\"DescrizioneBonusBO\":\"bonus lotto 10 lotto validità 4 giorni\"}]}"
         },
         {
           "name": "28214019-fad0-4a25-8f60-19885fb32f22",
@@ -458,6 +472,10 @@
           "value": "desktop"
         },
         {
+          "name": "_dy_att_exps",
+          "value": "1682574|103277341::0:1722786273473:19578:32168:1:0:0.44618622586131096:0.08348049875348806|102300937:103109670|2|32168:1722786273475"
+        },
+        {
           "name": "headerJsonList_0",
           "value": "{\"VerticalsModelList\":[{\"Titolo\":\"Home\",\"Verticale\":206,\"DestinationUrlMobile\":206,\"DestinationUrlDesktop\":206,\"Link\":\"/\",\"LinkSeo\":\"/\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Area Personale\",\"Verticale\":200,\"DestinationUrlMobile\":200,\"DestinationUrlDesktop\":200,\"Link\":\"/area-personale\",\"LinkSeo\":\"/area-personale\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Scommesse\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#1bb14c\",\"BgColorHover\":\"#1bb14c\",\"Children\":[{\"Titolo\":\"Sport\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Live\",\"LabelGroup\":\"Live\",\"Verticale\":8,\"DestinationUrlMobile\":26,\"DestinationUrlDesktop\":25,\"Link\":\"/scommesse/live/tutti-gli-eventi\",\"LinkSeo\":\"/scommesse/live/tutti-gli-eventi\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Villaggio\",\"LabelGroup\":\"Villaggio\",\"Verticale\":209,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/villaggio\",\"LinkSeo\":\"/scommesse/villaggio\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":false,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Virtuali\",\"LabelGroup\":\"Virtuali\",\"Verticale\":2,\"DestinationUrlMobile\":241,\"DestinationUrlDesktop\":23,\"Link\":\"/scommesse/virtuali\",\"LinkSeo\":\"/scommesse/virtuali\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Ippica\",\"LabelGroup\":\"Ippica\",\"Verticale\":14,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/ippica/\",\"LinkSeo\":\"/scommesse/ippica/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Totocalcio\",\"LabelGroup\":\"Totocalcio\",\"Verticale\":27,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/totocalcio/\",\"LinkSeo\":\"/scommesse/totocalcio/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Slot\",\"LabelGroup\":\"Slot\",\"Verticale\":3,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/slot-machine\",\"LinkSeo\":\"/casino/slot-machine/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ecaf1d\",\"BgColorHover\":\"#ecaf1d\",\"Production\":true,\"Children\":[{\"Titolo\":\"Table Games\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Soft Games\",\"LabelGroup\":\"Soft Games\",\"Verticale\":15,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/soft-games\",\"LinkSeo\":\"/casino/soft-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":false},{\"Titolo\":\"Bonus Casino\",\"LabelGroup\":\"\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus/casino\",\"LinkSeo\":\"/bonus/casino\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino Live\",\"LabelGroup\":\"Casino Live\",\"Verticale\":5,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino-live\",\"LinkSeo\":\"/casino-live/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#e93933\",\"BgColorHover\":\"#e93933\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Carte\",\"LabelGroup\":\"Carte\",\"Verticale\":13,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/carte\",\"LinkSeo\":\"/carte/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#2b9e84\",\"BgColorHover\":\"#2b9e84\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bingo\",\"LabelGroup\":\"Bingo\",\"Verticale\":7,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bingo/\",\"LinkSeo\":\"/bingo/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#48b0e1\",\"BgColorHover\":\"#48b0e1\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Poker\",\"LabelGroup\":\"Poker\",\"Verticale\":6,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/poker/\",\"LinkSeo\":\"/poker/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#a02326\",\"BgColorHover\":\"#a02326\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Lotterie\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/\",\"LinkSeo\":\"/lotterie/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#f18200\",\"BgColorHover\":\"#f18200\",\"Children\":[{\"Titolo\":\"Tutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie\",\"LinkSeo\":\"/lotterie\",\"Type\":0,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"10 e Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":18,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/10elotto\",\"LinkSeo\":\"/lotterie/10elotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":17,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotto\",\"LinkSeo\":\"/lotterie/lotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gratta e vinci\",\"LabelGroup\":\"Lotterie\",\"Verticale\":16,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/grattaevinci\",\"LinkSeo\":\"/lotterie/grattaevinci\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Million Day\",\"LabelGroup\":\"Lotterie\",\"Verticale\":19,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/millionday\",\"LinkSeo\":\"/lotterie/millionday\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotteria Italia\",\"LabelGroup\":\"Lotterie\",\"Verticale\":29,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotteriaitalia\",\"LinkSeo\":\"/lotterie/lotteriaitalia\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SuperEnalotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":20,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/superenalotto\",\"LinkSeo\":\"/lotterie/superenalotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SiVinceTutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":21,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/sivincetutto\",\"LinkSeo\":\"/lotterie/sivincetutto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"EuroJackpot\",\"LabelGroup\":\"Lotterie\",\"Verticale\":22,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/eurojackpot\",\"LinkSeo\":\"/lotterie/eurojackpot\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"VinciCasa\",\"LabelGroup\":\"Lotterie\",\"Verticale\":23,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/vincicasa\",\"LinkSeo\":\"/lotterie/vincicasa\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Classico\",\"LabelGroup\":\"Lotterie\",\"Verticale\":24,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifeclassico\",\"LinkSeo\":\"/lotterie/winforlifeclassico\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Grattacieli\",\"LabelGroup\":\"Lotterie\",\"Verticale\":25,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifegrattacieli\",\"LinkSeo\":\"/lotterie/winforlifegrattacieli\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Play Your Date\",\"LabelGroup\":\"Lotterie\",\"Verticale\":28,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/playyourdate\",\"LinkSeo\":\"/lotterie/playyourdate\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bonus\",\"Verticale\":9,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus\",\"LinkSeo\":\"/bonus\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Premium Club\",\"Verticale\":210,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/club\",\"LinkSeo\":\"/premium-club\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"NATALE\",\"Verticale\":null,\"DestinationUrlMobile\":237,\"DestinationUrlDesktop\":237,\"Link\":\"/bonus/xmas/xmas-2022\",\"LinkSeo\":\"/bonus/xmas/xmas-2022\",\"Type\":1,\"DateFrom\":\"2022-12-07T08:00:00Z\",\"DateTo\":\"2023-01-06T23:00:00Z\",\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"ExpiredTime\":1722789013355}"
         },
@@ -475,7 +493,7 @@
         },
         {
           "name": "_genesys.widgets.inFocus",
-          "value": "4ac4bfc438-18816-5a53b-791dc-dd74e7445285c0e"
+          "value": "e4226121b9-5a832-f61c4-f1e89-c6bd3ec4f200825"
         },
         {
           "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
@@ -487,7 +505,7 @@
         },
         {
           "name": "_dyaud_nchc",
-          "value": "1919203.1914531.1919205.1936181.1762959*15175846@2.16511604@2**1762959@1.1889033@1.1889040@1.1892263@1.1894528@1.1895367@1.1895368@1.1904775@1.1904777@1.1910786@1.1912025@1.1912026@1.1912033@1.1912037@1.1914384@1.1914530@1.1914531@1.1914672@1.1914673@1.1914674@1.1914675@1.1916532@1.1916544@1.1917075@1.1917076@1.1919203@nu.1919205@1.1920777@1.1921537@1.1926134@1.1926476@1.1926656@1.1926657@1.1926658@1.1926660@1.1928292@1.1931158@1.1936181@1.1936193@1.1937717@1"
+          "value": "1914531.1919203.1919205.1936181.1762959*15175846@3.16511604@3**1762959@1.1889033@1.1889040@1.1892263@1.1894528@1.1895367@1.1895368@1.1904775@1.1904777@1.1910786@1.1912025@1.1912026@1.1912033@1.1912037@1.1914384@1.1914530@1.1914531@1.1914672@1.1914673@1.1914674@1.1914675@1.1916532@1.1916544@1.1917075@1.1917076@1.1919203@nu.1919205@1.1920777@1.1921537@1.1926134@1.1926476@1.1926656@1.1926657@1.1926658@1.1926660@1.1928292@1.1931158@1.1936181@1.1936193@1.1937717@1"
         },
         {
           "name": "990a6d8eb6cbb8ea44b73d21f1e473b43b9c74ea",
@@ -499,11 +517,11 @@
         },
         {
           "name": "_dyexps",
-          "value": "1560128|102973095::0:1722785426625:42694:32168:2:3:0:0.8122857888229191|101906631:102051545|0|32168:1722785426625"
+          "value": "1560128|102973095::0:1722785426625:42694:32168:2:3:0:0.8122857888229191|101906631:102051545|0|32168:1722786273462##1682574|103277341::0:1722786273473:19578:32168:1:0:0.44618622586131096:0.08348049875348806|102300937:103109670|1|32168:1722786273475"
         },
         {
           "name": "_dy_csc",
-          "value": "{\"_pv\":5,\"_ses\":1,\"firstpv\":{\"ts\":1722785426620,\"ses\":1,\"pv\":1}}"
+          "value": "{\"_pv\":7,\"_ses\":1,\"firstpv\":{\"ts\":1722785426620,\"ses\":1,\"pv\":1}}"
         },
         {
           "name": "staticUrlJsonList_0",
@@ -512,6 +530,10 @@
         {
           "name": "dy_fs_page",
           "value": "www.lottomatica.it/area-personale/login"
+        },
+        {
+          "name": "_dy_soct",
+          "value": "1276513.2099944.1722786273"
         },
         {
           "name": "511a26f4be2047a348064e4abe8ce2a9",
@@ -523,7 +545,7 @@
         },
         {
           "name": "647a3d19ac2647f361068a43df3a4da1",
-          "value": "3f8d46c8-6a78-4cac-b959-1727148b7a4d"
+          "value": "ed176ed533b58a0a"
         }
       ]
     }

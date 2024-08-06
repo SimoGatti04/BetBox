@@ -32,12 +32,15 @@ async function getEurobetBalance() {
     const loggedIn = await isUserLoggedIn(page);
 
     if (!loggedIn) {
-      console.log('Attesa del pulsante "Accedi"');
-      await page.waitForSelector('button.header__login--desktop.generic-button.generic-button--dark.generic-button--md', { state: 'visible' });
+      try {
+        console.log('Attesa del pulsante "Accedi"');
+        await page.waitForSelector('button.header__login--desktop.generic-button.generic-button--dark.generic-button--md', {state: 'visible'});
 
-      console.log('Clic sul pulsante "Accedi"');
-      await page.click('button.header__login--desktop.generic-button.generic-button--dark.generic-button--md');
-
+        console.log('Clic sul pulsante "Accedi"');
+        await page.click('button.header__login--desktop.generic-button.generic-button--dark.generic-button--md');
+      } catch (error){
+        console.log('Errore durante la verifica del pulsante "Accedi".');
+      }
       console.log('Attesa del campo username');
       await page.waitForSelector('input[name="username"]', { state: 'visible' });
 
@@ -68,7 +71,8 @@ async function getEurobetBalance() {
     await page.waitForSelector('div.header__balance', { state: 'visible' });
 
     console.log('Recupero del saldo');
-    const saldo = await page.$eval('div.header__balance', el => el.textContent.trim());
+    const saldoText = await page.$eval('div.header__balance', el => el.textContent.trim());
+    const saldo = saldoText.replace('Saldo ', '');
 
     console.log('Il tuo saldo è:', saldo);
 
