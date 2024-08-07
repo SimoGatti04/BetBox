@@ -43,23 +43,41 @@ async function simulateTyping(page, selector, text) {
 }
 
 async function setupBrowser(botName) {
+  console.log(`Inizializzazione del browser per ${botName}`);
+
+  console.log('Avvio di chromium...');
   const browser = await chromium.launch({ headless: false });
+  console.log('Browser avviato con successo');
+
   const sessionFile = getSessionFile(botName);
+  console.log(`File di sessione: ${sessionFile}`);
+
+  console.log('Selezione dello User-Agent...');
   const userAgent = USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
+  console.log(`User-Agent selezionato: ${userAgent}`);
 
   let context;
   if (fs.existsSync(sessionFile)) {
+    console.log('File di sessione esistente trovato, caricamento...');
     context = await browser.newContext({
       storageState: sessionFile,
       userAgent: userAgent
     });
+    console.log('Contesto creato con stato di archiviazione esistente');
   } else {
+    console.log('Nessun file di sessione trovato, creazione di un nuovo contesto...');
     context = await browser.newContext({ userAgent: userAgent });
+    console.log('Nuovo contesto creato');
   }
 
+  console.log('Creazione di una nuova pagina...');
   const page = await context.newPage();
+  console.log('Nuova pagina creata');
+
+  console.log(`Setup del browser completato per ${botName}`);
   return { browser, context, page };
 }
+
 
 module.exports = {
   delay,
