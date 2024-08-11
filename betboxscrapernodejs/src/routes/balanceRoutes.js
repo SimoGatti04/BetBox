@@ -1,29 +1,28 @@
 const express = require('express');
-const { getGoldbetBalance } = require('../bots/goldbetBot');
-const { getLottomaticaBalance } = require('../bots/lottomaticaBot');
-const { getBet365Balance } = require('../bots/bet365Bot');
-const { getEurobetBalance } = require('../bots/eurobetBot');
-const { getSisalBalance } = require('../bots/sisalBot');
-const { getSnaiBalance } = require('../bots/snaiBot');
-const { getCplayBalance } = require('../bots/cplayBot');
+const { getGoldBetterBalance } = require('../bots/balances/goldBetterBot');
+const { getBet365Balance } = require('../bots/balances/bet365Bot');
+const { getEurobetBalance } = require('../bots/balances/eurobetBot');
+const { getSisalBalance } = require('../bots/balances/sisalBot');
+const { getSnaiBalance } = require('../bots/balances/snaiBot');
+const { getCplayBalance } = require('../bots/balances/cplayBot');
 
 const router = express.Router();
 
 router.get('/goldbet', async (req, res) => {
   try {
-    const balance = await getGoldbetBalance();
-    res.json({ site: 'Goldbet', balance });
+    const balance = await getGoldBetterBalance('Goldbet');
+    res.json({ balance });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: 'Errore nel recupero del saldo Goldbet' });
   }
 });
 
 router.get('/lottomatica', async (req, res) => {
   try {
-    const balance = await getLottomaticaBalance();
-    res.json({ site: 'Lottomatica', balance });
+    const balance = await getGoldBetterBalance('Lottomatica');
+    res.json({ balance });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: 'Errore nel recupero del saldo Lottomatica' });
   }
 });
 

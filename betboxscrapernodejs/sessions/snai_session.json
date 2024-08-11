@@ -31,16 +31,6 @@
       "sameSite": "None"
     },
     {
-      "name": "ai_session",
-      "value": "KD2f/NLfTbi+yMzEXnFICa|1722786068866|1722786068866",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": 1722787868.867803,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "__Host-next-auth.csrf-token",
       "value": "3f6f2e752ac014b3d650d6a9fde85c9ffbd2dc57c1212be2c21e82a02bc5f2e6%7C8070f95433ca53ebf5c5dfafa76a4b53cf6f653d90a5e472dde9f97949a2e595",
       "domain": "www.snai.it",
@@ -48,16 +38,6 @@
       "expires": -1,
       "httpOnly": true,
       "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ak_bmsc",
-      "value": "1EF13616CBD727BAE7C4CFC03DB8A91E~000000000000000000000000000000~YAAQX6YXAvFmBgORAQAAuzwNHhhphh9Sh3bFSaGbGPzqKRrh4FoLIgrVrK3ObY7N4jRpRQRaMHv6xnhATud4+vcAWYuvtoAiRGf3t3bdZgBDg4yoWvSuDuCl0Ff0kC7lbtv5GEws7E15p6burUuYiQWHQyQ4LaH8V2415vW83T+rFL7tYG3XZIBseyFBUddqf9x2Fz63T95d3MTY5Bp2iF9pymEKOJJ///45mbsFCZkZ05oFZ+nDuWsyT+D1KTz/0OcnlVsFxqjygbtSKTV+rh5HeI/JU/JoCJTyh4oQQWqk/56PmJVhleaV53Cjm84A4wL30+KIzq5ZWnMjCy1H6ULgQSxrk04khbk/xJhvPRT5kZtOC6lBwvGueB8ViU6aqkJ4Av6sL7tasIvTDevQibhmMRw2qHXz8lbs1Xi9wNp9mSnLTrCUoB9Np3dx0yGumpOufwVOvt/z",
-      "domain": ".snai.it",
-      "path": "/",
-      "expires": 1722793265.545185,
-      "httpOnly": false,
-      "secure": false,
       "sameSite": "Lax"
     },
     {
@@ -91,26 +71,6 @@
       "sameSite": "Lax"
     },
     {
-      "name": "RT",
-      "value": "\"z=1&dm=www.snai.it&si=fb9fbe6c-ad29-48f3-b586-2ed8662c8482&ss=lzfqcbdl&sl=1&tt=4ty&rl=1&ld=65d\"",
-      "domain": ".www.snai.it",
-      "path": "/",
-      "expires": 1723390873,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__Secure-next-auth.callback-url",
-      "value": "https%3A%2F%2Fwww.snai.it%2F",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
       "name": "sessiontime",
       "value": "1722786074522",
       "domain": "www.snai.it",
@@ -125,7 +85,7 @@
       "value": "GA1.1.725040945.1722786075",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1757346075.170236,
+      "expires": 1757944878.758406,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -145,7 +105,7 @@
       "value": "S7jdfnetrooqB01qUjrQGztCjCginqvCnUHufvI38dU=",
       "domain": "mpsnare.iesnare.com",
       "path": "/",
-      "expires": 1754322080.056018,
+      "expires": 1754920901.961652,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -155,7 +115,7 @@
       "value": "VZAzAcjPUCdb+CqfMxrbj6w4w4r7ltn4gTGKu8IlDlA=",
       "domain": "www.snai.it",
       "path": "/",
-      "expires": 1754322080.095739,
+      "expires": 1754920904.836691,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -171,31 +131,261 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_abck",
-      "value": "8286147A063F50C4B58E892CEDA9C50A~0~YAAQX6YXAqZrBgORAQAAgXwNHgwuZOoQ/17BO+O0XQUtbRJl8mgK8W2mtyLspn+7g7w8UUCI0IHyqupYkHtFburom6KMjDZM7r9vPc6AMm4PByPLZ/d+N8ZB1LciS6D+0nWkdU7cRza1jvdndJqkEyurMdE8UBJ9PP66oQuWr/pge9zA+oFmG/GQ+AGnRRXIycQmYnqg5+n1ioAO/KNI3keWx3GGB0W/bf0gGhgcM09nuzdv3d1Q1xwa8qca+oV/WjfaKF16CKOTce/K4YnGArprx0ji/CK25d50uFfnQLK12WD9ytEgbZDr+ZxxHS2e7iAtij5/yRN/9KkUdePTjm+XM3D1HSCJ0BFADX9DUHFDAwhbnbDtN331O1J5efHHABstTl6l5Thw6QAZXDK3qxy5A4hq+JFKO3sEt9L7FyEthISvYLGgIgMwvutuMExrTzEpHfQGL3trXp+b73Ifim4=~-1~-1~-1",
+      "name": "snai_first_login",
+      "value": "1722786086316",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": 1725378086,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ai_session",
+      "value": "jbwe1pmqe33NfsrPpoFVgt|1723384871798|1723384871798",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": 1723386671.801231,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=www.snai.it&si=fb9fbe6c-ad29-48f3-b586-2ed8662c8482&ss=lzpmuri2&sl=1&tt=25f&rl=1&ld=25i\"",
+      "domain": ".www.snai.it",
+      "path": "/",
+      "expires": 1723989671,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "2C7BA3970D413CBB8AECCFB7B1A01572~000000000000000000000000000000~YAAQV7V7XG15YzSRAQAAgFK+QRi9ChuYh6vN6PD3cMBZw7UDb9cQHWiVFYG6spBD1u+xKN00MXDeFDblmQwjVirqyXu5hfOWGIFsjm7Hzird/DZXfZOU8TCyBfEzQyFiH/bUL2BIYR5FrceBiSjP1YX6IAU+pRtnyTokznEnhgU1oJYtJ7uYkFXod3aXboMRRuxe+gwFRD4lQNsM7YqZQ/3DEek9k4EXx3dOJkLm4K8lVTzY9M25m+FHLbUNwhlWzoabvCcQAVmpTrramTTFies9EoyKiti6HAiQ2xADF8oTPSt8l9dHwgGpQZ1CE4j6R2XsLISWCLHazhVBWHdJJBuhCrRCJQvLgwclLbhMCv4T3Ob+2Aib31dUTKn1YJ9hI/ZVhc+absdKQnzh4ZnbtN1wjWQqWL7MVqdPlDHAY60pFUtKvzP3RslEFVEI4DUel/00U4qgA+twHjs=",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1754322085.923598,
+      "expires": 1723392069.703076,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "x-nonce",
+      "value": "Y2VhYTRiMGYtMmZkZC00MGI2LWJiMWItY2Q0NTFlODgxNDA4",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Fwww.snai.it%2Fsport",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTP",
+      "value": "Ha9ZenQZ9iwwy5nmb8YYom7g7p0bgcFOJkGtCL-Mz48",
+      "domain": ".onetag-sys.com",
+      "path": "/",
+      "expires": 1757571580,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rud",
+      "value": "H4sIAAAAAAAA_-MSNjU0sDSzMDUzNjExMzcyMjMxMRbiM9QNNswIT9dNDzZNtzQEAOEo36klAAAA",
+      "domain": ".rfihub.com",
+      "path": "/",
+      "expires": 1757080881.563951,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ruds",
+      "value": "H4sIAAAAAAAA_-MSNjU0sDSzMDUzNjExMzcyMjMxMRbiM9QNNswIT9dNDzZNtzQEAOEo36klAAAA",
+      "domain": ".rfihub.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "zync-uuid",
+      "value": "2b6c916b-6793-4d17-ad22-a59d218aa52b:1723384884.024877",
+      "domain": ".rezync.com",
+      "path": "/",
+      "expires": 1738936879.757431,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sd-session-id",
+      "value": ".eJwNysEOgyAMANB_6VkWKaUt_IwB4UA22SLuMuO_z-NL3gnLp-5b6rUfEI_9WydYX-3WgHjCaL-tPiGCt3Ng9eyIWBCZyME1wahjtHdfWrkPZl6D5WxYgjNUrJhUEE3yoaDVlDzmaAWdU1Klx4ykInD9AYLOJT4.ZrjENA.eTm4M7RkAB5fotYwFm0-TWRNkNQ",
+      "domain": "live.rezync.com",
+      "path": "/",
+      "expires": 1738936879.757638,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "dpm",
+      "value": "34886029345093258133829628675435273530",
+      "domain": ".dpm.demdex.net",
+      "path": "/",
+      "expires": 1738936879.215536,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "demdex",
+      "value": "34886029345093258133829628675435273530",
+      "domain": ".demdex.net",
+      "path": "/",
+      "expires": 1738936879.215774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "anj",
+      "value": "dTM7k!M4/YErk#WF']wIg2Il_dUmbX!]tbPl1MNu::wpAk`W=edYV+ely=Umk^pdak^L0ECvaU$]daY^!AXTO:4=sB!*N`Wu(K)r",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1731160879.256652,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uuid2",
+      "value": "310929588607296523",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1731160879.256834,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "fs_lua",
+      "value": "1.1723384879367",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1723386679,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "eud",
+      "value": "H4sIAAAAAAAA_13OsQ0CMQwFUIGgQlSZI-hi-2yHbRIyEeWVV1KmZARGoKRkBCo6UH759OX_vWyOyYjZxZ1FvIPv4Af4Df6Ar9vRK_gG7pjvRj_BfQ__HmA_KFW95KQ1qmWO0pLF0ohimXOj5KXMVM-_IzlNJG62hH-RsOZ1sE2vMA59AVfZq31JAQAA",
+      "domain": ".rfihub.com",
+      "path": "/",
+      "expires": 1757080881.563807,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "euds",
+      "value": "H4sIAAAAAAAA_wXByRHAMAgEsE_aIRMWzOFuwFSSyi39j6HtJFuTeQrpsFMNQLVywFG10JsdIqER-n7QcL_mScw0OQAAAA",
+      "domain": ".rfihub.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "fs_uid",
+      "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:9713db65-9301-4525-8605-74b38b5d6a31:1723384879367::1#/1754920880",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1754920880,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "CMID",
+      "value": "ZrjENLmqPnwAADuNAn7k8wAA",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1754920879.491011,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPS",
+      "value": "4352",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1731160879.491115,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "CMPRO",
+      "value": "4352",
+      "domain": ".casalemedia.com",
+      "path": "/",
+      "expires": 1731160879.491187,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SERVERID",
+      "value": "17536~DM",
+      "domain": ".eyeota.net",
+      "path": "/",
+      "expires": 1723385479.719941,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_abck",
+      "value": "8286147A063F50C4B58E892CEDA9C50A~0~YAAQV7V7XM2EYzSRAQAADu6+QQzxufD7tY+gzTjBBhqVPyhbqkf0fjs5yxDMQKTiV3WZPbryuiWINTJDKBwObSOJIEMfpZ5sL0IaDZeDpVQHdJTadK8ZLasIN4WECUqsGjTG1v5DwKQKfAE3WN7cQhLPN+Z89NzIZyKgibvh72PlKgt6WBmX8KXmF2CG3jcdtM4NrnQ49l+Bh1Ru+TQlY57g/UHRgnYUFNa/zPl6Z1fkgBsimbVhMAqGbWA+MjM8aji4P/p4fUKUEzWq9CMgVXYvPFwxztN5KYZhBATYgzklBm4YpUZFmfDY6r2FQ52cwNTSju6iI6LIf6/ntn4ogU+JdUEt0smP3MT4TEvF/Vm/Bpxc/9l4hD0tYMSYMhJwLwRRRPrFOwIPIIe3fgXXuZgBbranDEGxf7Kua0Aafuxn4Y6IRXKUmtxI4RdcHEz6Lvz3+wFCN5cnL4RQsXSSspg=~-1~-1~-1",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1754920912.634857,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "bm_sz",
-      "value": "6C21C2BC18DE470F1E32D0D43572B11F~YAAQX6YXAqhrBgORAQAAgXwNHhg8dsp0u/lMkZGIs85/Z+aMgeFNaUlyFfjzfoUi5W+zARmNUiwj1JIyFJQN7TXAm7Ft0X8WiMJ+5IrwsAXJZNf3SaryU/RzNjXYC/SkluCs1CLv2LWpDPtGWlrVIMVV2viyY7SAJ5bUcGwy/xX0eYVQ0NI0m0ybW9QsDCtfiHB7H10eImfQH8Z/phcvkUVQOFT3dAY/0Xx77mLSqmualHlfXBznGm3yJt0T9+mO6oHh92dXUzxyyVcfKoTaWIUY0UWOs/OUxC2r8N9BdJSKbg/AE26zZoCVtx+nuk/qGSZ5FIfeyrVd5DEhRBDAiC4HY/zQmc36yW6e4ZD+f+beYUNdjEfYCp2MAI0Uak5kgtypgbEzWiR3aQeaS886sV5B~4601137~3752260",
+      "value": "DB40BF4605EAFB60172216A385EFB244~YAAQV7V7XM+EYzSRAQAADu6+QRijwYwOZ1FHmGHYdDDFCniDtWA9dl75N+LhwQ4clABy/8v83lGfQT/sWfLLZK2pFT3Op6Y/yAVT5BqC3wSUVrfVcz/Xqro5QiN3xSh8YNqC8ha89Octa3sD4xuHbF3OD7+1x1x5GmcPfe5cGxa4pubqgA+KavS8dnACN8n/GeIrvUl3TqMSultK8Bo4Ln8ghKUpByIt+zWEi5qhOxG+LkPIaD6KeXh8VyS0gdvCAidgg4UrfELRwzdxDmuvZfaC8aM++UxibtomYsBm+H4XCPj451wph3LVZN/Hf9DViTkOXUhUcwIO/S3QoEsKotG/mJ7FyNGEydk9PAGVIXMVlJWXSWqy5EIlIxW42r4mMkM5i66av9BQZm+PPklq2w2ubuFdwie+~3224116~3617093",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1722800464.923979,
+      "expires": 1723399269.635248,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__it-snai-auth:token",
-      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..Z2V2D07aKx4ulBTl.qLuxPWrmUkkyOlHiEjJakNUBkGE5zEQSWq6StIWIwi6rJfCwLhNAE7JHuo3nihoo291eREVSsj703Fz-DeDngPj0D9UmZC_QPkluO7v2ofbAqsam6nbd0dfKQKmwrglseQElTkppCvM8yNjJ66T2HBmn-bZLuEN-JgtpiLFCgvliKjKu9HIOdT12kWhmBTh7n79-S2KTbhW18vHWBGtiKCDUd3kdErXRz_ThBMfK603FUhkBR_4u7FuHuzin45YUkAjD95FS8adg6BnHuGTSiJMHLxSrkHdpgD4sYAQa2PdyHOkCRBfpDjUVHy-aZcaBYBtUbAP6CBV36ojDkIzyCeEoGSXDl7IftjMrOSD_4M76QuswNhhVNZOITRZQPuY_EQeR5g1sgEmodg2bZEhIpYEdeSktXgf-XjnRpeSm8vcFzhMblcpPwBSGAWEtsmzQ3yYp-bHERqo0NT11x3hSZaabkidm0pBoKQtlqe3NqslWiPmGjs-rwvGZHrPWYk3SpnYhcSInLjnygqD09JBVRunfbqQkhYqvp72fTNyWKcIEl9KK7d-qPKNMFvpVvYbTAwa6W7szBv3tWd349AudIDQ263AobcxQ3i0cyOPBvUskrtsDfVMQ2jbdyiAVnL7gsLwdbJnbg4VgtHMkTZVplohoPEnjQo9qRpozcl5T7P3BaLxrLISgPKZLrS1IQmVdx-g_kMpL9rS1e3QDN0O6Scm0E3wE6lvnYEBrgyQx-DI6Afn0mb8TEVx1MzdAAH26Vgsr8LCBKShVhGtG8AjgP2tzAM028UzX-KcEtgk_DBodvZh8D3ge7NxIsfShO_XLRPDVzOblSfW86EF5Q5qAVg24xAfty1uMqLLoQZydSWNJ-YnF9Iv7KI2hjvq_dZL8JcjbH7k9JKRBjpHdon1RSAO5I-nTi0NZOAcLcNnaOsO7_J8ETKKlPasGEqK_pKdvVJKxsawGd_05PP0sHdCK4PJ9PQDnRqhhoX8Tfn7CvvC4_8qUPcMRvoQTjBX0nkc-z6F4farcOCMb3ScLYcG9DOD8VGksWRLaW3bFSgve9Yzzu3zAdYX0TFCRWVBkMjuIjL5uRGYb2Mfpc95AsO-EUJ6FOXQaZ1VX6xc3juN2CU_N0E27YtSkzfE1WouX-x3wTxtr_rw49hIqTBLZzxV8Y7_XRSGFsTR_o4OuM_hBRMkoqIGIB4PBSlgnaGfUXcJGo7UIFN9qKMCLB0nsxKJPoFUTZnApwARMqsQpCOtGFNUhQD5Tr0oIct5THTg-w_GY_XlI26D5JIMksetO8CazKShBFKDRXQoPGNKCjF8hnl146_03rRqNwCVtLjgJ7SekOWR2x94TV4KebmTfnKaX67BGNWjtQoO8FHkvuBilzOtNz70OSowqQYLbD4N8_pUVs4gzKG-2v8WBgKcwLlei_jt5ta-zwa2GmHrnUkZs4ZmPgdYdTcBYc_Bf-5kAo1fmqDQp9n-gdg7vkr17F_aXJfOXJXKnlBV_I5YLR8AfEvObSWAG4_C2Ik5CcgbqlR3q6BjoA_RokINRp_KbxCeqGAfDXVHtUe2VG9T0_V-_MS860PGbvMNMUPv-2Kt7KDtsBTf5g02y3fFHTIUdMQG9SXAI1DExgz1gL8YTFmwjCPu641whgcZ4n5ZUkeS-eT5PPo5uN0FR2LbrSh_3QfQj5q5df9T7v2V5Ajx61lKgntlmtvWGuzIsRpR6w8bS5ET_n-GvFYmeBrG20EePFu9trLPuxM2nY1J664-2LWENkedf7NzBXWYBIZYUaHxcDsBuD3Ne-Zve9H7tJ65yjxq8v7cP7K-ysreZHrGVGhturUWe5T0AU5tXfYp3qRlbuIo1YsulVdQgA87Kcpkf6yGfRDllAlEMdGyKns4wE3R5M_rn_NexBi6b7Q45vSG9QNWcHPlBu-AhqePoLOQ693-nUXpplKRfW6qnFcbe6Nh3dtUKw_Jioqm7eENMBG88e_kbw3qNr9Zx-feG3wLNIlbb65I8yZWYT2Il5VV5baEZQdIZViU4UMho7BjCHM42JezuUG4fscVLF2VJVCBmEyXvTJ8ktfyMC_bfk1vIzECgq1Kl2H6V-nvDM3c9Kz62I4tO9vVMdp5AULZpDb8PRu58dbzTkb29W763ODeLBrFI19AgX8xY5fpBITf9tvok3vC5Ey1bwTxUcXKZ0Qff4Awvz6fBtxtOxc0Zyinwsjz48qxf1xS6seZ5x1Y3VmeAnCRErPoHfUXMmKBYSHUR4Uq9SKvQKHctLq0MzpR2ib4PO-Plqqi2nGl851YLsbNASKsmiUkJYXg2wD7Gx9vbUAKFKWiUm5nvZInkaE2R4VaPJZE--Bl4UwqWSyRWR8GPE94zRdTadG4muQA_E2hPUqCYJL0tetg8aT5a_wo6NoyvlL5-nmMERVEWoT07B9XfXFvvPge5yKN3NsAXiki3HKnZLUQr9ABd5Nc18GX2NUMN131xEAD-XbY_5VQg-6kjFs8wnYu-CuukUDiCLubAch4n89Wk21_B1Pk2gSd2jRlx_5b4DBQUA1qt4QjopoksqwJy4TjZa-5EcMi5DhSDgpoPuCpD5dGOE817-Ag4l79FmC7hkFoxCl-rkdAbyzhSJqODJABJydlIFU3J45ZUjpXSxeQawIJeej87f1DHgKShwWKbc2Zi16ZBsM-1-GxQC310hgt7iXAv67ZifOnULqVBezso7zBnz6xHJk9kmPP2-1KlOoAdcl2358WzgGmc57ToJFKb_p7lvWPV0R7h6eoR0Yt5VdH7_cmUfC4fV_CDhiPiXQuBG9Evyt5U8EFGR9L_xoho-OxxVVETPd01FL4_d4_hz6gNaWS-6IYY13Shagb-BFOGiEIoFhffnB6ANgiUbw0QJgPMc1BxU9p6eDyWDGDNwXz5dKMkDr9RxtYMJS-Wm0_1dCG-9pNLyZ3NGlRM6-uTIXgYPbcnQUPp5QxPSXRUgkBgv_1Q3fr0mn66rm90k5TnjhMtg3JEislBOLlYBKNEFsM688BWti2XCumxrSxrk2zRq2Mu8MpJk6oGHEXVTzBAmNJV-RSVa7ym_IKmg287jF12j3TybIhM_iQRJMceg5XvEg2-Hqv98WBRhHUXNCNwr3zlnVf-e5hLW5Az4TbQVjmpp6o-cmK7WqjgaRkJON36Pmp7cqIr2jG585OgtCHntC5RCrv4E0KNfANl7o7SysbWzdQUDtz8JvClGUkakpfIAPzAMqo-nPYVmc8mppyXC4rUn-7-S8CTaz2ZC6iHuTxCElf_-fXqlt9ivgIyf-yxc6bCmunPWf_W-NcFMUhbnJ9eL_i7K6SZ3r56TQDjzqdfSETWfqnjiDDWD2CqQrqgWJeFWVXeRZAOQS2jdAtEyBbuHvBcqwq0M3DEgp66TXrum9_EqWkJRnDsCwE9FBp_wGRqwTHywbr5eCcKc-lGBLVr3t16CEK0WyQ9gsbjr-HBbzezvZBLcd3ehiuKsbqxh-VGtqRygnLxSYQbAw7qvuDzn69A02C7mIxZyRqUc3-iglMex65xsbPcV6AfntPkNBaKfx3kHB5pDnDkHtBSJi1NCioFP-HOjcbE_jrC4Vp_xGh8_DENYpg.6BTp0Bzdkchq18-iBzCqxA",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..ykAMxeK6QvB4Gsfm.ZoRSUUIkGOFx8PEykfR43LQjLtJfdDnta2roNSJJvxsrtSRWVEqOoe6YehJi4tDdA_GJ72r6baFDRwOeYcQsnGdjTmTBY9owY2V3sfYbDx_1THQ5k6nlR3x44TfWZm9gODv7ydFXQbrlsm2MALG3-gsijQcs1XB7KULf98rDR5HcAvkp8ksCaAjEimF3I8PaBQFZuzoYoZKj58rY99qR7cW_lPuxfcsXgtVORCZjPcANTa9Sc3Y6F3RP9FI_Tzi5LGbTjxuWLfV4qo6VMmumReNCxbaxcjm-iKacvhsbpV-UgWknRMx9dldvuTOhLD7ijdylSqc8bkabEck2sSYL9tEziUhinaOwlGEWhPejh4Azqnj3CVaigGvyPGYLdTs2XrRHlgqaGCNtosA8u-gOl4BaMxFvN0Tf1IdpLiuNPB0QRoVQP7kb7H7tuds--ZHQzvyzd9hQswjfgKy73IcMkgvHI_HQpJnR9G5VDUArYV8NnD_3ouW4_QbCuP2gjnvUwYfjyvDNUe9lQ6_8ZiXFZCf0rH_No9PoYm_6DmamcNsGxk0lj6tFkxg1MGS84YjTuSeSAMkBpvDmMAa52Q1PDwkMA3g-iMFQdCz1gFv1sgLVN85DW7AAT0JTWf9NwSQ4UBCyAJLRm2Y2OKXBwNyWe0f3xhZW3RDio6aY5-bI85Ey2XHtVoJ_FijnedhUCLE1SwdnA79QHfjNL9mJM-sratW6MCQcFqaF3vwBjBYD7_Zps0TIYVbAp6rH5OHBYVvD3qr196g5m84InQ0_wMWKy940K6VUWpcnHpx4g8E3xXlAkEyrhY5y_wMm4DNX28aE14GZlKf2drxqrx9CktufYA7Aza0CwiJKZ5maeTDfmchDg9rENLK7f1IDyohFEPokloUG6ZUnL8K-7ftV6eQh4d6ZpjdOgQiMl0-KN-BTeVqsEnQQmS-worxJ9oQ06VOFYrmW05eK_3C3sILp_mKt6WBcoNxi-pQ0JmeBW9AhyPA86-CccY4-NCp0cUNiz8cKo6MGVFsC4cABsm2BCCDGPijg16NTy58UjGbMHluTrMNMwSdIMH0ZRKoOpG5pOhe845zb5eP26r366iHlKKUnIloV6jL_f3aUa0ZPzuzaB2VlL2MBKVOIUDEh-AMyOOAXMksBqcvZAPRF0KNkRX_UjNMRtRyHaOmdwq9UfpepPR4wDJwriN79aMk6Ils8fu5r4S9WewEuLgUhAvHAkM5ccWGS89-qfcEwD775tiMkF2aEwgM8EgvA807keG5j2RX0X4TvxKqjCuQhYZDmsa5RVsufyPjLcEtE0bE_l8f4BxV6JeqRzXWFnX9dljkJgeK9Av1p69e2vTiaejAi0OudD3H5iUzGWk8KIqR3ecgBKOQ4hj7Z2IZPFI8kTP7bMaaniV-awNjCafTzEp2u4uvWzcxI0s7nzFPaWYZaPpi694JD1EVa1AeXHvnwXhYT-fRFmpxE2nCb1uSI0IfOh1DQzzyqw1HHB1fVMiPtzFkUcCH5yiK48lvYAujNWb5QYh_VaC04P3dNpGz5TLjzTlQOkK1dyGPLthNNWHU7QR_kt1Fe8i0Fo3fnKqiUjsMrus5HhHr8gvJxXggbt8mA-L7_zHhRInua5jGEYMu20G-siC5Wb9rTKRL0ckm_x6vxkYcIeyXJtKTTqmh2zbUFDNNWjsM-xhjqY9MmazX791hnCzbt8eHpItRvT3cYgVbgg-yeX7ej7II5uSfCM105K7HCBkbfq8CouPxMt3rVC-xeaWOEpWIdlHWmmbib3EmBdT4P7KbU-JFakmLhsBAnYXmK51OOH3Wjo8yedKLPMghjlhWl2jNgOFagq9a1W3jkYErZCC0uXeiyZUi5CEV9L8zGAWqYU3ehOtoVGAgv16SlHeswJM_S6rGf5nMlJnBiuzDa7M41f4PjXH9v1G-US20xp5OjrBKxZe6HyMK9dTNXQXtj-M872dOK2LjvE45dzC-8zA-HjnAt9G6mlIIGJaf33PLUEB2mnPussee8aVjtTIPo5T1nRRu8QJ8Lqnp1PFudydIOl3h6wnQyjOLGytXhEoqSSOMhSxOLAXjHRZp-rKk11JEluvNP-kINDMvUc9ffHR6v7hvIrdd3kQJCjt48itQnDwttSv9Ap7qyuEUmAyMYggVcjy7YrVJpyEEG9m_3um3uuyk9w9_Vl7z_EPdAMFrIHaOTMjzByQ22CqcuG3MQDf_tfmUZmmG7t6XIm4wcJAw05ium8lDe4LZ99JZYf6iu5E-YtJmCS3fy_2unE8U1he4eKLIOYHUYO_usmIs0pL_iWriTpAj4XoPAq5BdKzWSVopoN92CAERqme1jW-CRdCE8neRmbHH5A-T_UUWK2iBQ_iXWLZKKl-Y4MxMhBso_D__sWc3UP5_qYq_B0pb8pOkOx4YamnF5LsNqUh58kkEhqyICJHiILUfndmK2UII4_A_M2aMWeJZ6SnzW3Sfu4OpowAXCye91dlxoqNeUiJm3laDSoG_ZuALrmygnbS7s8zSKKRbLV7tt5crefHOOtRycBO43nZpFHp6UepEE6nGUwInUKS0On0nLEXbSE_84LEkOSK2dBk9aq8igIkreO-WIaCScSC9umoNyJ4-24FP8D4dIvt3PpK3bQazMsIa9a4d1eAHKfqBEX6835ySEjzmneuat7fdpeXqZDqviOWEkge1fQ998RTj6WCZjipIGxbEnUtAiQiQZ1Z-hhjiAYCVh2mQ7RA2eYWhEZQeTTenDqVjxpXITcHW1EOgV-Gk7mx2GOsrcWl7CnhVLjxsexXzkhj794_M48j1T7u9Iv8YtpKt4298tZlOibXrhOz6hDtYaRZOzPJkqf0lAdlCSGWMMlF3dEJvukwBX4Lb0LOxo0bDIoAM_xE6RdtF_3HED5_rZ5vDHcRYQ-aQ-UyPqpdkT8pqZj59gEDPzU4ZdEdr2WufPjuSuem_jVZH-b9CmaUSUoaIfQMdHafEd5r-LHSU_IYIiclbUMO5ekHFTOJNGapvzEqOlOk8pgyGhLSGsHdUx7RobGjyFQAnOeah_0YoG7FQHQAnbu127VP7578m2qeQMMfZNxQL1w9tYhDosI8kpXIDHxhYYbLgnOQNWP8IwQ6Lr2r7VTxYu1alZo79Z2UOTAuaeyZdTFhRkHIDmo8Ja-0imAs607mml3DWdIMQou4qEl5Swdgdx8p6ANRnPQxFujJNLg3WSdGoSLpaGeMa_zWy57m14uDY8u4Szq9uSbK6o4KGepe6GHjgDIbSDAdOwd0VT2C0uTOMPnDr0Zj0GSWCnBSb_aTbd7EjAa-WVXRlpo0iluQy8RGO7L2LDfKdfg2SrvidKa7aMaskF1-0vd7_HdnrqcVoxWwy15eyCk2EJrHR4cBpCWijuXLOtnuXSgaESulaNtseb2FGfLRVbE1XEZ00bIqh-T_aT6KN3gP8tltJppLPydtxv0c0mSfAU-xUh4OzczDufZ4ajCbOsZ0o3BTrcy4b4HkvFhlVscCQnqwUl9PerN5dk05EwCfHgoakNdR1OMd8E2yhdkQpxKrNeB26ZdvC_HD28cibFXMEGToWlNhpWZiaei0ybeyVbjrc3jMwiYcg.PWWMvdrsNfte6ETqdkq7UA",
       "domain": "www.snai.it",
       "path": "/",
-      "expires": 1722793286.235829,
+      "expires": 1723392112.827126,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -212,27 +402,17 @@
     },
     {
       "name": "_ga_XJDX7S49KC",
-      "value": "GS1.1.1722786075.1.1.1722786086.0.0.0",
+      "value": "GS1.1.1723384878.2.1.1723384913.0.0.0",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1757346086.312137,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "snai_first_login",
-      "value": "1722786086316",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": 1725378086,
+      "expires": 1757944913.016567,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__it-snai:refresh",
-      "value": "{\"token_type\":\"Bearer\",\"ts\":1722786083673,\"expiresIn\":1200,\"expireDate\":1722787163673,\"clientIP\":\"78.210.174.41\",\"expires\":\"2024-09-03T15:41:26.351Z\",\"refreshToken\":\"def502007008eac3c777c12e945dc7ceb193698ca5cfe2e9433116b697efb3a367cf1b9208b152bada5bf4ec487adeca5b183800bfcfa508430100006b9853838a9a7ecef2ac3654addb655f1786c11bcb6f357100024a96d83103fd0c8d13e57da68ee1b4d2d61e8d0685c2fa554719749da1dd197d25a877504b052f251ea8eb9c88bfd8970e1a74791da0ad2ba15621eb9ed186c8cd90f0541cbf00b5941da5e4a1a699f5f0886de6ce764989f0b43c75627f3159a0fef509ae93741c4cc79d383ae513c6a879b8498d6b793c7b3359ae185eec100fc8f8ee3befb01e26c867877083980b51c789d4a3bf612f3efa4d5be16ecbd1b495b8f9266b2f5c1bccbe63875baccc9b2c2fd456d2d0e5f85f990572885598c4082e4f7de5e9af1d5d9b7dc1048a74047e3783e0e8d82b498e9ea5138ae07bf506b850d968ed435ae97a41e28a41b3a5597b1b28bf94bdb11d0a9a4ebfb2cf6bb2135add300b0b8c0f4514493c2e2a12a03fbc0bc9972aa557309e16dce8baf8ef9e8dc2d1eba088f08f039ef32fb0793acc40e2cee4a56d62\"}",
+      "value": "{\"ts\":1723384916050,\"expireDate\":1723385996050,\"expires\":\"2024-09-10T14:01:57.773Z\",\"refreshToken\":\"def50200e284811a7e3ff406498e29aa0476337e4bdfe7aab22b296c616f613df5877c6059a177ec80c1b271559807d20d933f58175715ddf0d302399f9a3a552407048c80cf3b0500eb6a30aecf7c8419ee2063693c5f6c6115432168d4d8795b498162d289fcac45ce6ad92ed69881cb50e1c15eabff5f73091e1f0a36c717a8c002636cbcb39d17e3c84193bc10273673a50fce288d94738348afabd321d6fcf7aa727becdeaadd135bc935305d0af65ab8f4adfbc3fd20c31c3be5ca999db57a6e0e7c987e643de7c1d7f44b4cd283d3db316c7a0352d8581cbba7e84fc1cd35232540aafb3e9eef1c34416e1bc37cdd22132a9c7cda191d3efa1620e0d4c5e42c423e17c452df9c9b63724c5708b7c84c128302af18f842d00ae0e78c10522efef2119a8dfbaded99b3b12cc30bce609dae736fe54632934fe0e63e89f1d3ac84b2301fe6ebae17442a4468e7192c09f9a4abab6e38008e325990fd91c5dd75586a7ee22a0fdbf12e0452e06a89003f970123570152ecd35dfa9cd0f43cfd1f9678e6186ee6dd0b427552b37019\"}",
       "domain": "www.snai.it",
       "path": "/",
       "expires": -1,
@@ -242,7 +422,17 @@
     },
     {
       "name": "__it-snai:token",
-      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpdC5zbmFpLmFwaWdhZCIsImp0aSI6ImE2NjM4YWZkYmMzY2ZlOGJkMDM0YWJkNTE0MmY4NjUyY2UyNzBjYTJmMzUwNjQ0MjE0ZmI0NDAyZWVmOWIzZjhmYjU4NTJhNTQ0NGU0MDkxIiwiaWF0IjoxNzIyNzg2MDg0LjIxMTQwNCwibmJmIjoxNzIyNzg2MDg0LjIxMTQwNywiZXhwIjoxNzIyNzg3Mjg0LjE0ODQ2OCwic3ViIjoiJDE1NTkyMTc3OWQzYzFkMTc5MTk0ZDhkN2UyN2E1Y2Q0Iiwic2NvcGVzIjpbXSwic25haS10b2tlbiI6ImNkYzRmODYzMjA0NWI2ZjY4ZjFlYmM1OWI0NmU5MTU2Iiwic25haS10b2tlbl9jcnlwdCI6IjM4NTE2YTY1NzQ3OTJiNjkzNDYxNjI0YzQ5Njk0YjJiNzk2ZTUyMzY3MTc0NmM1NzQ0NmQ3NjRjMzI0Yjc4NGU0ZTRiMzk3NDRjNzgzMDM3MzM2YTM2NTA2ODQ0NzI3NjU1NGQ3NTRlMzQyZjQzNTg2YzZmMzI0Mjc1NzQ2YzczM2E0ZDU0NDk3OTRkN2E1NTMxNGU2YTUxMzM0ZTZkNWE2YzVhNDc0ZTY5NTk1MTNkM2QiLCJzbmFpLWNhcnRhIjoiNjAzMTk4MDAyMTkxNTcyMiJ9.VrD7J-Le7UuLgPT_66lwTgZ4lhO2EEhmsmpvswCEDWCgxoD5LP7tvHwBbjWxh8TDoz7lyVaLVTLpZcDQZ4WM-pVkUKy03P-t7MHlx9IZJ5mzAOBCBp9MWyi7whsLKP8XJaO25HwFdL1b2rSS2EZuII7Ur7OC8o-kgkFEOFRi36C202eu1XJMmzu9DAAOcuvTrI196sx3kHquE6t4NhW-PVGEBLRIaFITFGu-ZgO1Uqr88G3NB8rpZaAGNChTpmRjydtSLVe9szYtAF-Fvi_bkf_97lUL0JBaFvKWxPvLv4slTxnIj-S-7Igf0oMB1Odi9ojvjz16cFRslobYcQDAGg",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpdC5zbmFpLmFwaWdhZCIsImp0aSI6ImNlMmE0M2Q3NmFhNjk0MDc1NGU2M2MwNDA2ZjYyNGI0NGQ4YTc3MjcxYzMzYzc3ODlkOGQ0OGI3N2FhOGI3Yjk3ODFjMWM5ZjY1YzM1OTFhIiwiaWF0IjoxNzIzMzg0OTE2LjM4MzU0NSwibmJmIjoxNzIzMzg0OTE2LjM4MzU0OCwiZXhwIjoxNzIzMzg2MTE2LjMxNzExNywic3ViIjoiJDdlYTI5ODU4NzQyYWNlOTBjMDI1Njc1ODg4ZTc0NjBlIiwic2NvcGVzIjpbXSwic25haS10b2tlbiI6IjY1NTA3YjMxYWMwYjczMTYzODNlN2QyZjUxODNiMDY4Iiwic25haS10b2tlbl9jcnlwdCI6IjQ1NTA2NjUxMzA0ODc5NmI1NTc3NzQ0MzY3NDIzOTM5N2EzNzM0NzY3MDU1NTU2NTM4NTE3MzU0NjMzMjQ4NzgzMTQ0NDQ0ZTcxNmU3YTU4NmU0ZDc4NTg3MzQ4NTk3MjY5NzEzMjRkNTM3NzZhMzE2NjQ5NjQ3MjQ5NzI1NzYxM2E0ZDU0NDk3OTRkN2E1NTMxNGU2YTUxMzM0ZTZkNWE2YzVhNDc0ZTY5NTk1MTNkM2QiLCJzbmFpLWNhcnRhIjoiNjAzMTk4MDAyMTkxNTcyMiJ9.nGwCnt4RMPwxIbIBjtrF5qEHuKRnQ9eYnMcQ5PRMW-X-xJQUwYnFhk0o5AL0U0KvRH-871NsItKzvPgG88nUQPpDnFT9HDkeBk6nloxAs_HzF-PhmOqcp2ohnxk_oMkv8U-_wCNZZUtZ3YOOZMcXgBesamtLXeFXdfX76xvQ2bHLRa_8uZ_gwnyhWHd4a1-JKf9IfexAsNbrvziKsJt-3HdbQoL3Da1ST0v30lVfQGNZFMJwxwIguNH6DZoyCTCSDUs-4XdobgAJk1rArKywcz3j4AuYT6IJrFoVzfRJeTcZnH0pYPCJ1EOuzQib9ic-_W2jE9jmmNTLjrqStyTGWw",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__it-snai-idle:mgmt",
+      "value": "1723378913032",
       "domain": "www.snai.it",
       "path": "/",
       "expires": -1,
@@ -252,20 +442,10 @@
     },
     {
       "name": "bm_sv",
-      "value": "03F1F6AE5BD8AA5A4DBA220ED9C45AF2~YAAQX6YXAvZrBgORAQAA5oANHhhbYJ23hP4ho7caYmc2sOUPz5ZhSnZvL9IZdlmEGZogeEV8HLdzSJLCnj5M3aWVxYue4BNgUFJCOq2OglM9/jijUZDq+vQQwHFhWvavjbbHj6geyqlBgy8bBPV73gLMVqwhnu7RWNEgfagtMYs1ODr7hfIZ+4IC0JNMpQCZQzXiuQkQ3m2CH4guE0D5CwJZUPoSpw+YgGM73A4hFgiDO0RR9S7cwzZgaf9G6Q==~1",
+      "value": "408D38F5DD3217A7D1C9FF847DEDE4CE~YAAQV7V7XCiFYzSRAQAA4PG+QRhdjRSKkuJdhI9vkxOhnsRAHbnW3tzhJ8ux83N3APjgr3dBFYxjYMvFHpO/2Ia6gR13eGww9cmo6iRibQ4Uve9Gkd8JWEYVA1gCxNThXbHz95B9C3VN/USuGFltf/R/OUvX3ZGLI9ji32fRPSr5h5COgrrb25doEae4WCEgU4e0LO3i9G/aOW+rIoAPXAPVuhmiwClJoo+3LTYO3/n15FMR+KRcS3dFXXC6mg==~1",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1722793268.997831,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__it-snai-idle:mgmt",
-      "value": "1722780087919",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": -1,
+      "expires": 1723392071.506141,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -276,40 +456,80 @@
       "origin": "https://www.snai.it",
       "localStorage": [
         {
-          "name": "cartaceo",
-          "value": "1"
-        },
-        {
           "name": "fp_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
           "value": "VZAzAcjPUCdb+CqfMxrbj6w4w4r7ltn4gTGKu8IlDlA="
         },
         {
+          "name": "~liveFavouriteAvvenimento",
+          "value": "{\"liveAvvenimentoList\":[]}"
+        },
+        {
+          "name": "onetag_sid",
+          "value": "Ha9ZenQZ9iwwy5nmb8YYom7g7p0bgcFOJkGtCL-Mz48"
+        },
+        {
           "name": "nextauth.message",
-          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1722786074}"
-        },
-        {
-          "name": "tot_versamenti",
-          "value": "23100"
-        },
-        {
-          "name": "28214019-fad0-4a25-8f60-19885fb32f22",
-          "value": "MjAyNC8wOC8wNCAxNTo0MToyMC4wMDg7MTZhNmZhY2UtOTQ2MS03NGJjLTZhN2MtMzJjMmRlNzg3N2U1O2NyP2RhZTJjNGVhOTFjZGIyYmQ4N2E4NmMyOWVlNmEyZDljODZmNmVmZDY="
-        },
-        {
-          "name": "cod_contratto",
-          "value": "21915722"
-        },
-        {
-          "name": "~dashboard",
-          "value": "{\"isSaldoVisible\":true,\"saldo\":628,\"bonusGold\":0,\"captainUpError\":true,\"saldoPrelevabile\":3,\"updateWalletTimestamp\":1722786388060}"
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1723384878}"
         },
         {
           "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
           "value": "S7jdfnetrooqB01qUjrQGztCjCginqvCnUHufvI38dU="
         },
         {
+          "name": "~settings",
+          "value": "{\"isVisualizzazioneEstesa\":false}"
+        },
+        {
+          "name": "_fs_uid",
+          "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:9713db65-9301-4525-8605-74b38b5d6a31:1723384879367::1#/1754920880"
+        },
+        {
           "name": "num_versamento",
           "value": "21"
+        },
+        {
+          "name": "~sportTicket",
+          "value": "{\"esiti\":{},\"isOpenCombinazioni\":false,\"puntataSingolaMultipla\":3,\"puntataPerScommessa\":{},\"sistemiDaGiocare\":[],\"errori\":{\"messaggi\":[],\"erroriCarrello\":[],\"erroriEvento\":[],\"erroriVendita\":[],\"erroriSistema\":{},\"erroriBetReferral\":[]},\"isScommettibile\":true,\"isOpenSettings\":false,\"importTicketAlertState\":{\"isOpen\":false},\"betReferral\":{\"isOpen\":false,\"isActive\":false},\"eventiSospesi\":{\"avvenimenti\":{},\"infoAggiuntive\":{}},\"snaiRunnerEsiti\":{}}"
+        },
+        {
+          "name": "cartaceo",
+          "value": "1"
+        },
+        {
+          "name": "tot_versamenti",
+          "value": "23100"
+        },
+        {
+          "name": "~ippicaTicket",
+          "value": "{\"esiti\":{},\"isOpenCombinazioni\":false,\"puntataSingolaMultipla\":3,\"puntataPerScommessa\":{},\"moltiplicatore\":100,\"sistemiDaGiocare\":[],\"errori\":{\"messaggi\":[],\"erroriCarrello\":[],\"erroriEvento\":[],\"erroriVendita\":[],\"erroriSistema\":{},\"erroriBetReferral\":[]},\"isScommettibile\":true,\"isOpenSettings\":false,\"importTicketAlertState\":{\"isOpen\":false}}"
+        },
+        {
+          "name": "28214019-fad0-4a25-8f60-19885fb32f22",
+          "value": "MjAyNC8wOC8wNCAxNTo0MToyMC4wMDg7MTZhNmZhY2UtOTQ2MS03NGJjLTZhN2MtMzJjMmRlNzg3N2U1O2NyP2RhZTJjNGVhOTFjZGIyYmQ4N2E4NmMyOWVlNmEyZDljODZmNmVmZDY="
+        },
+        {
+          "name": "_fs_lua",
+          "value": "1.1723384879367"
+        },
+        {
+          "name": "~dashboard",
+          "value": "{\"isSaldoVisible\":true,\"saldo\":0,\"bonusGold\":0,\"captainUpError\":true}"
+        },
+        {
+          "name": "cod_contratto",
+          "value": "21915722"
+        },
+        {
+          "name": "~virtualTicket",
+          "value": "{\"esiti\":{},\"isOpenCombinazioni\":false,\"puntataSingolaMultipla\":2,\"puntataPerScommessa\":{},\"sistemiDaGiocare\":[],\"errori\":{\"messaggi\":[],\"erroriCarrello\":[],\"erroriEvento\":[],\"erroriVendita\":[],\"erroriSistema\":{},\"erroriBetReferral\":[]},\"isScommettibile\":true,\"isOpenSettings\":false,\"importTicketAlertState\":{\"isOpen\":false}}"
+        },
+        {
+          "name": "gc_web_sdk_1485w2e",
+          "value": "STf0"
+        },
+        {
+          "name": "tabCount",
+          "value": "1"
         }
       ]
     }
