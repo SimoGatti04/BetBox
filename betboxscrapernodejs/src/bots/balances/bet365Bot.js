@@ -1,5 +1,5 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../utils/botUtils');
-const config = require('../../config/config');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const config = require('../../../config/config');
 
 async function getBet365Balance() {
   console.log('Inizio del processo di recupero del saldo da Bet365');

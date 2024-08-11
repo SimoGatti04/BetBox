@@ -1,5 +1,5 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../utils/botUtils');
-const config = require('../../config/config');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const config = require('../../../config/config');
 
 async function getSisalBalance() {
   console.log('Inizio del processo di recupero del saldo da Sisal');
