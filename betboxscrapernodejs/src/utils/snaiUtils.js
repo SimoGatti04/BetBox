@@ -31,7 +31,7 @@ async function acceptSnaiCookies(page) {
 
 async function snaiLogin(page){
   let isUserLoggedIn = false;
-  await acceptCookies(page);
+  await acceptSnaiCookies(page);
 
   try {
     console.log('Attesa del pulsante "Accedi"');
