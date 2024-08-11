@@ -3,7 +3,6 @@ const express = require('express');
 const balanceRoutes = require('./routes/balanceRoutes');
 const dailySpinRoutes = require('./routes/dailySpinRoutes');
 const {cleanupResources} = require("./services/cleanupService");
-const app = express();
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
 const http = require('http');
