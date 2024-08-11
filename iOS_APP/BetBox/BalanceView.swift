@@ -47,7 +47,7 @@ struct BalanceView: View {
     
     func loadAllBalances() {
         isLoading = true
-        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/all") else {
+        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/all") else {
             print("Invalid URL")
             return
         }
@@ -75,7 +75,7 @@ struct BalanceView: View {
     }
     
     func loadBalance(for site: String) {
-        guard let url = URL(string: "https://8b24-78-210-250-76.ngrok-free.app/balances/\(site)") else {
+        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/\(site)") else {
             print("Invalid URL")
             return
         }
