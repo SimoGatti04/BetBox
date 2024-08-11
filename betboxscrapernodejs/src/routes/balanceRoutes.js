@@ -11,7 +11,7 @@ const router = express.Router();
 router.get('/goldbet', async (req, res) => {
   try {
     const balance = await getGoldBetterBalance('Goldbet');
-    res.json({ balance });
+    res.json({ site: "Goldbet", balance });
   } catch (error) {
     res.status(500).json({ error: 'Errore nel recupero del saldo Goldbet' });
   }
@@ -20,7 +20,7 @@ router.get('/goldbet', async (req, res) => {
 router.get('/lottomatica', async (req, res) => {
   try {
     const balance = await getGoldBetterBalance('Lottomatica');
-    res.json({ balance });
+    res.json({ site: "Lottomatica", balance });
   } catch (error) {
     res.status(500).json({ error: 'Errore nel recupero del saldo Lottomatica' });
   }
