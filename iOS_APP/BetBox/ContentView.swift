@@ -19,6 +19,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Active Bets", systemImage: "list.bullet")
                 }
+            TerminalView()
+                .tabItem {
+                Image(systemName: "terminal")
+                Text("Terminale")
+                }
         }
     }
 }
