@@ -1,10 +1,16 @@
+//
+//  SpinView.swift
+//  BetBox
+//
+//  Created by Aurora Bellini on 14/08/24.
+//
 import SwiftUI
 import Combine
 
 struct SpinView: View {
     @ObservedObject private var spinManager = SpinManager.shared
     
-    let sites = ["goldbet", "bet365", "eurobet"]
+    let sites = ["goldbet", "lottomatica", "snai"]
     
     var body: some View {
         NavigationView {
@@ -139,8 +145,10 @@ class SpinManager: ObservableObject {
         let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTaskPublisher(for: url)
-            .retry(3)
+        var request = URLRequest(url : url)
+        request.httpMethod = "POST"
+        
+        URLSession.shared.dataTaskPublisher(for: request)
             .map(\.data)
             .decode(type: SpinResponse.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
@@ -232,3 +240,4 @@ private let itemFormatter: DateFormatter = {
     formatter.timeStyle = .short
     return formatter
 }()
+
