@@ -1,10 +1,3 @@
-//
-//  SpinView.swift
-//  BetBox
-//
-//  Created by Simo on 14/08/24.
-//
-
 import SwiftUI
 import Combine
 
@@ -18,7 +11,7 @@ struct SpinView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(sites, id: \.self) { site in
-                        SiteSpinView(site: site, spinStatus: spinManager.spinStatus[site] ?? false) {
+                        SiteSpinView(site: site, spinStatus: spinManager.spinStatus[site] ?? false, bonusHistory: spinManager.bonusHistory[site] ?? []) {
                             spinManager.performSpin(for: site)
                         }
                     }
@@ -34,14 +27,16 @@ struct SpinView: View {
                 }
             }
         }
-        .onAppear(perform: spinManager.loadSavedSpinStatus)
+        .onAppear(perform: spinManager.loadSavedData)
     }
 }
 
 struct SiteSpinView: View {
     let site: String
     let spinStatus: Bool
+    let bonusHistory: [BonusInfo]
     let action: () -> Void
+    @State private var showingBonusHistory = false
     
     var body: some View {
         VStack {
@@ -58,6 +53,13 @@ struct SiteSpinView: View {
             Text(spinStatus ? "Spin eseguito" : "Spin non eseguito")
                 .foregroundColor(spinStatus ? .green : .red)
                 .font(.caption)
+            
+            Button("Bonus History") {
+                showingBonusHistory = true
+            }
+            .sheet(isPresented: $showingBonusHistory) {
+                BonusHistoryView(bonusHistory: bonusHistory)
+            }
         }
         .padding()
         .background(Color.gray.opacity(0.1))
@@ -65,13 +67,34 @@ struct SiteSpinView: View {
     }
 }
 
+struct BonusHistoryView: View {
+    let bonusHistory: [BonusInfo]
+    
+    var body: some View {
+        List(bonusHistory) { bonus in
+            VStack(alignment: .leading) {
+                Text("Bonus: \(bonus.amount)")
+                Text("Date: \(bonus.date, formatter: itemFormatter)")
+            }
+        }
+        .navigationTitle("Bonus History")
+    }
+}
+
 class SpinManager: ObservableObject {
     @Published var spinStatus: [String: Bool] = [:]
+    @Published var bonusHistory: [String: [BonusInfo]] = [:]
     static let shared = SpinManager()
     private var cancellables = Set<AnyCancellable>()
     
     private init() {
+        loadSavedData()
+    }
+    
+    func loadSavedData() {
         loadSavedSpinStatus()
+        loadSavedBonusHistory()
+        cleanupOldBonuses()
     }
     
     func loadSavedSpinStatus() {
@@ -81,15 +104,33 @@ class SpinManager: ObservableObject {
         }
     }
     
+    func loadSavedBonusHistory() {
+        if let data = try? Data(contentsOf: getBonusHistoryFileURL()),
+           let savedHistory = try? JSONDecoder().decode([String: [BonusInfo]].self, from: data) {
+            bonusHistory = savedHistory
+        }
+    }
+    
     func saveSpinStatus() {
         if let data = try? JSONEncoder().encode(spinStatus) {
             try? data.write(to: getSpinStatusFileURL())
         }
     }
     
+    func saveBonusHistory() {
+        if let data = try? JSONEncoder().encode(bonusHistory) {
+            try? data.write(to: getBonusHistoryFileURL())
+        }
+    }
+    
     private func getSpinStatusFileURL() -> URL {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentsDirectory.appendingPathComponent("spinStatus.json")
+    }
+    
+    private func getBonusHistoryFileURL() -> URL {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentsDirectory.appendingPathComponent("bonusHistory.json")
     }
     
     func performSpin(for site: String) {
@@ -113,7 +154,11 @@ class SpinManager: ObservableObject {
                 LogManager.shared.finishAPIRequest()
             }, receiveValue: { [weak self] response in
                 self?.spinStatus[site] = response.success
+                if let bonus = response.bonus {
+                    self?.addBonusToHistory(site: site, bonus: bonus)
+                }
                 self?.saveSpinStatus()
+                self?.saveBonusHistory()
             })
             .store(in: &cancellables)
     }
@@ -145,13 +190,45 @@ class SpinManager: ObservableObject {
             })
             .store(in: &cancellables)
     }
+    
+    private func addBonusToHistory(site: String, bonus: String) {
+        let newBonus = BonusInfo(amount: bonus, date: Date())
+        if var siteHistory = bonusHistory[site] {
+            siteHistory.append(newBonus)
+            bonusHistory[site] = siteHistory
+        } else {
+            bonusHistory[site] = [newBonus]
+        }
+    }
+    
+    private func cleanupOldBonuses() {
+        let fiveDaysAgo = Calendar.current.date(byAdding: .day, value: -5, to: Date())!
+        for (site, bonuses) in bonusHistory {
+            bonusHistory[site] = bonuses.filter { $0.date > fiveDaysAgo }
+        }
+        saveBonusHistory()
+    }
 }
 
 struct SpinResponse: Codable {
     let success: Bool
+    let bonus: String?
 }
 
 struct SpinStatus: Codable {
     let site: String
     let spinPerformed: Bool
 }
+
+struct BonusInfo: Codable, Identifiable {
+    let id = UUID()
+    let amount: String
+    let date: Date
+}
+
+private let itemFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .short
+    formatter.timeStyle = .short
+    return formatter
+}()
