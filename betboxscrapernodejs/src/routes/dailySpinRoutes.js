@@ -15,8 +15,8 @@ router.post('/snai', async (req, res) => {
 
 router.post('/goldbet', async (req, res) => {
   try {
-    const result = await spinGoldBetterWheel('Goldbet');
-    console.log('Risposta del server per Goldbet:', result);
+    const result = await spinGoldBetterWheel('Goldbet', true);
+    console.log('Risposta del server per Goldbet:', JSON.stringify(result, null, 2));
     res.json(result);
   } catch (error) {
     console.error('Errore durante lo spin Goldbet:', error);
