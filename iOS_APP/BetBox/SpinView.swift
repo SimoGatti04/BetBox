@@ -178,7 +178,6 @@ class SpinManager: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .retry(3)
             .map(\.data)
             .decode(type: [SpinStatus].self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)

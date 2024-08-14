@@ -41,7 +41,6 @@ class BalanceManager: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .retry(3)
             .map(\.data)
             .decode(type: Balance.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
@@ -66,7 +65,6 @@ class BalanceManager: ObservableObject {
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
-            .retry(3)
             .map(\.data)
             .decode(type: [Balance].self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
