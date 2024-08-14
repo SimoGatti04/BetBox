@@ -5,7 +5,7 @@
       "value": "MDvbOQsZVhWaKKhod0drC1DiFGYqzxZO4fGpIazhNjQ=",
       "domain": "mpsnare.iesnare.com",
       "path": "/",
-      "expires": 1754923381.588807,
+      "expires": 1754954980.509568,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -15,7 +15,7 @@
       "value": "/7lmwGeUQvUG5aviy5PblhgIHMUbdjcoBttdtNJvcKA=",
       "domain": "www.goldbet.it",
       "path": "/",
-      "expires": 1754923382.682513,
+      "expires": 1754954985.21427,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -35,7 +35,7 @@
       "value": "true",
       "domain": "www.goldbet.it",
       "path": "/",
-      "expires": 1723473806,
+      "expires": 1723505407,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -45,37 +45,7 @@
       "value": "-6016808138370924790",
       "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1725979391,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_dy_toffset",
-      "value": "4",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1725979391,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_dy_df_geo",
-      "value": "Italy..Milan",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1725979391,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_dy_geo",
-      "value": "IT.EU.IT_25.IT_25_Milan",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1725979391,
+      "expires": 1726011020,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -85,7 +55,7 @@
       "value": "dg",
       "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1725979391,
+      "expires": 1726011018,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -95,7 +65,7 @@
       "value": "GA1.1.805125887.1723383564",
       "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1757947388.178886,
+      "expires": 1757979008.630637,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -191,56 +161,6 @@
       "sameSite": "None"
     },
     {
-      "name": "TS01d95b15",
-      "value": "01ffae651b85a3dd7bde99c77d04bbcd957d586b6954ded8baa8790ac78c4a46b861feda8bcb04858c6ece7396dd7652ccd822c1d38ba1000cd05f201f52a4b7d45c71321a",
-      "domain": ".www.goldbet.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ak_bmsc",
-      "value": "5F80E89E21D2185AA5A4610A89A7A4CA~000000000000000000000000000000~YAAQpQwVArzF4ziRAQAAGJbkQRjRoRol1uAJO9j1NkcbyyV6z0vleO5C4MqdWqqveQN6Md6HiM9nbzm0H/naM7qUtRWvU04VyO5uvZ2hKxE++jl7q5Qp5a37L/Kka4B4PzUzyq7aWtcXseIouTYpnBFSMn9RxSIpY9q8QMJRLym3omm2StS8lKUnQglvoLBcRKn+xHy8Pfh0vAZyIQNTDF+AJMxaVudu14oouiqqGNbQ2893YtrQK8uEPyK9onKXb5cbz4QOoQbwCMOETpDMUaInxu4wzdt6BPeqF03CTQXbPkl6nRHX9Kb5kdvbhiahNud4eJF5VAbJo3bKn7FVa3jrY2k++AaZfz2GNSp0rfQEzG5M9Mabzi/EGU7d0rfpoPTCiU7eXkykga/Ww5FV0FYJo7nsEjUCHlh7",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723390737.301763,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "jIDsession",
-      "value": "f2420f50-6614-4477-af48-7bbc6a90019e",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723388609,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "jIDsession",
-      "value": "f2420f50-6614-4477-af48-7bbc6a90019e",
-      "domain": "www.goldbet.it",
-      "path": "/",
-      "expires": 1723388609,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_dyjsession",
-      "value": "s36h87dpc4n9qwv68toq0cf9o46nhnuw",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723389190.430256,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "dy_fs_page",
       "value": "www.goldbet.it",
       "domain": ".goldbet.it",
@@ -251,104 +171,14 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_dy_csc_ses",
-      "value": "s36h87dpc4n9qwv68toq0cf9o46nhnuw",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723389790.433737,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_dy_soct",
-      "value": "1258203.2099953.1723387390",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1754923390,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "DYID",
       "value": "-6016808138370924790",
       "domain": ".dynamicyield.com",
       "path": "/",
-      "expires": 1754923390.016042,
+      "expires": 1754955013.915052,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "_dycst",
-      "value": "dk.m.c.ms.",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1725979391,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "RT",
-      "value": "\"z=1&dm=www.goldbet.it&si=5b3d20e3-b0a3-47b9-9a34-d209178653b6&ss=lzpocl34&sl=1&tt=9ao&rl=1&ld=9av\"",
-      "domain": ".www.goldbet.it",
-      "path": "/",
-      "expires": 1723992192,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_clsk",
-      "value": "1be9etf%7C1723387392758%7C1%7C1%7Cs.clarity.ms%2Fcollect",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723473792,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "cVuS",
-      "value": "2",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1754923400,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "cVuS",
-      "value": "2",
-      "domain": "www.goldbet.it",
-      "path": "/",
-      "expires": 1754923400,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga_LL9M2S10MP",
-      "value": "GS1.1.1723387388.2.1.1723387401.0.0.0",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1757947401.35568,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "bm_sv",
-      "value": "61197453C076FEDA6DD0390DB770B6DB~YAAQpQwVAuHn4ziRAQAAsujkQRhsb5QwnGNq9BBbSIpLTfCYgky/3JpI2xwaiQtJ/fmteOwv8/CgqCAMSnAJZR+KpIdw32PhSIuRvE3bIVpbCKQVu6Tsspk9/KVpRgu6plr8xhpptyMr7ag7D8HLv6V+jH4kjfNbOU3EACZ3t7KPx9RwtC+tI/s+Vbd7EKDJAvDQo5GNDSFlRLucfBaZWqosPGCVj38ORt0VB0UwKxdOPYR2qTVn+t2jvHDk76lx~1",
-      "domain": ".goldbet.it",
-      "path": "/",
-      "expires": 1723390740.463678,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
     },
     {
       "name": "toggleLegal",
@@ -361,8 +191,178 @@
       "sameSite": "Lax"
     },
     {
+      "name": "_dycst",
+      "value": "dk.w.c.ms.",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1726011020,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_geo",
+      "value": "IT.EU.IT_57.IT_57_Morrovalle",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1726011020,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_df_geo",
+      "value": "Italy..Morrovalle",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1726011020,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "D4A400087EB54F4EA8BB559D3CFD8E86~000000000000000000000000000000~YAAQaaYXAgtyXEGRAQAACbCJQxjAguVyNh+TjYRnB/zkfDzLP9JyqsdMpMiolzr3Zpm7XUKRheWJMplQ0SfUpi++8LQI72/55hyp6dAsjMmh00rLn7opV/IdmmjmBAMqCGIuPy+hdQAwxHzXdQV2ZAiCT+WJoMhCnUGFnGed7gHRmv+Oi35xofJt3buEvIigFSLW5Gqc/D/+XBjpU7upVgJXCEyy5UXefbL+2Nvt+PfgCVH7Fgk/f8zoiVu7ANlb6TFIXDqQW0eHnP/yAADd/oycQQMlKHBbXHSHCFt6rhzKKsNZD9SDm7T483dm885A1oX0ANzwufdz4paw2xwTfc5QqogmQZHuL0Rxe6Th9hiCC/7jRFgCbV6LNvzMzHGtx4DbX4kp/PYG3E2Q/PkAdlvIuG0WCsV6QWs=",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723421767.677041,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TS01d95b15",
+      "value": "01ffae651b19d294eaacd8a2d63cff8f28f15060231e806a56f6263cfd4b1feeb425d8016c2aaac3610f2859277358ebba2613b3ef336282346edcd4ad782d37ea0e813146",
+      "domain": ".www.goldbet.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "jIDsession",
+      "value": "df70adaf-a513-4c66-b538-8742c0475507",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723420219,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "jIDsession",
+      "value": "df70adaf-a513-4c66-b538-8742c0475507",
+      "domain": "www.goldbet.it",
+      "path": "/",
+      "expires": 1723420219,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dyjsession",
+      "value": "1j9gstmorgbcbm6o8fpy20rw1h8bv037",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723420813.659732,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_csc_ses",
+      "value": "1j9gstmorgbcbm6o8fpy20rw1h8bv037",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723421413.665218,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cVuS",
+      "value": "2",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1754954983,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cVuS",
+      "value": "2",
+      "domain": "www.goldbet.it",
+      "path": "/",
+      "expires": 1754954983,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=www.goldbet.it&si=5b3d20e3-b0a3-47b9-9a34-d209178653b6&ss=lzq70kpo&sl=1&tt=klr&rl=1\"",
+      "domain": ".www.goldbet.it",
+      "path": "/",
+      "expires": 1724023782,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sv",
+      "value": "741CAB3C2C10D43AE1E02EB564EF8403~YAAQRaYXAvZWBjORAQAAqMDGQxgq+vTsd0aTHkJxeZbbLfRPa9ritEJIs5XF86yz48mvdK5KQCIp/WhtVHQFVKJoxnNcOE5suN8QFT+uT5o15iZ9vRTlZc5LOdsHrLauo6MEH5VclLoAxYJYZBDNw9DsrUjVWLefor7bfx6TY/guLeLHEL61KVS7eC3tx1BNjOogs6ZGwQNPTCIFgo+IWi2WXXdm9SeGHBp5UYgL5akQs1kJJ4WynbARpwSDUEOL9w==~1",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723421769.621232,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTP",
+      "value": "B2s3ilVmzKIVcNfAVExr1T4RCujHt_aMtStdCv8yz4Y",
+      "domain": ".onetag-sys.com",
+      "path": "/",
+      "expires": 1757605707,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "persist_website",
+      "value": "!uf5k5xX/IPf9PyaQjPfvq38Lq6i1VjV+DwNhM/I+Wxi2dmD3EjSaBWi/L0KOWgq9t+uTFQynwEmyavkKva+dVbXJkUuPX2bwbet4zE5SOw==",
+      "domain": "repo.goldbet.it",
+      "path": "/",
+      "expires": 1723422610.836484,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TS01d39a0e",
+      "value": "01ffae651bf6a8115ebe0c3fada9ea16d1ec5c6f49f0a9caa9925bd4bff59a7f3b3f9a6970d51673d6fc817c5d5a8544fe4053b6a7cd10aa492aca3d81100d5eefcd49e0b3",
+      "domain": ".repo.goldbet.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dy_soct",
+      "value": "1258203.2099953.1723419013",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1754955013,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
       "name": "_cs_id",
-      "value": "137fb111-5235-a475-8290-3f931fead5a3.1723383564.2.1723387406.1723387391.1.1757547564383.1",
+      "value": "137fb111-5235-a475-8290-3f931fead5a3.1723383564.4.1723419015.1723418758.1.1757547564383.1",
       "domain": ".goldbet.it",
       "path": "/",
       "expires": 1757547564,
@@ -372,50 +372,50 @@
     },
     {
       "name": "_cs_s",
-      "value": "2.0.0.1723389206255",
+      "value": "3.5.0.1723420815717",
       "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1723389206,
+      "expires": 1723420815,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_LL9M2S10MP",
+      "value": "GS1.1.1723418755.4.1.1723419018.0.0.0",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1757979018.870137,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_clsk",
+      "value": "1vqvfzy%7C1723419019650%7C2%7C0%7Ct.clarity.ms%2Fcollect",
+      "domain": ".goldbet.it",
+      "path": "/",
+      "expires": 1723505419,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Sun+Aug+11+2024+16%3A43%3A28+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e0e8b711-25e7-4ad0-a847-166c73d283f9&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0002%3A1&AwaitingReconsent=false&intType=1&geolocation=IT%3B25",
+      "value": "isGpcEnabled=0&datestamp=Mon+Aug+12+2024+01%3A30%3A19+GMT%2B0200+(Ora+legale+dell%E2%80%99Europa+centrale)&version=202403.2.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=e0e8b711-25e7-4ad0-a847-166c73d283f9&interactionCount=2&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0004%3A1%2CC0002%3A1&AwaitingReconsent=false&intType=1&geolocation=IT%3B25",
       "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1738939408,
+      "expires": 1738971019,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "OTP",
-      "value": "tJlDlnHNsxdOlSX-k78RTbr1aciuYdugQnpZefqemvo",
-      "domain": ".onetag-sys.com",
+      "name": "_dy_toffset",
+      "value": "-7",
+      "domain": ".goldbet.it",
       "path": "/",
-      "expires": 1757574111,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "persist_website",
-      "value": "!JdBQs8H3dH7lYSKQjPfvq38Lq6i1VgfT0MBT5HZLbVgWWywpYq2IudjrG0SLjIWOqssc+qaHX3/qPlo3wEpFzUXv3Pe/J+5uZfkYw00Dlg==",
-      "domain": "repo.goldbet.it",
-      "path": "/",
-      "expires": 1723391009.440265,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "TS01d39a0e",
-      "value": "01ffae651bed17c5955c0287e816f2d427a4a274999de13a7a7ce3f3de542eb229547f7f29d4a1c6e25c3fac7a6e40dadba3bd720b34f181710893a240400471ba4edae660",
-      "domain": ".repo.goldbet.it",
-      "path": "/",
-      "expires": -1,
+      "expires": 1726011020,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -431,7 +431,7 @@
         },
         {
           "name": "footerJsonList_0",
-          "value": "{\"FooterModelList\":[{\"Titolo\":\"Goldbet\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Chi Siamo\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com/gruppo/chi-siamo\"},{\"Titolo\":\"Lottomatica\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Contattaci\",\"Production\":true,\"Link\":\"../../guida/contatti\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Aprire un Conto Gioco\",\"Production\":true,\"Link\":\"../../guida/conto-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Depositi\",\"Production\":true,\"Link\":\"../../guida/depositi\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Prelievi\",\"Production\":true,\"Link\":\"../../guida/prelievi\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Apri un Punto Vendita\",\"Production\":true,\"Link\":\"../../guida/apri-un-punto-vendita\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"Link\":\"../../guida/normative\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Carta Servizi e Reclami\",\"Production\":true,\"Link\":\"../../guida/servizi-e-reclami\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Contratto\",\"Production\":true,\"Link\":\"../../guida/contratto\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Termini e Condizioni\",\"Production\":true,\"Link\":\"../../guida/termini-e-condizioni\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Privacy\",\"Production\":true,\"Link\":\"../../guida/informativa-privacy\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Sicurezza\",\"Production\":true,\"Link\":\"../../guida/sicurezza\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Codice Etico\",\"Production\":true,\"Link\":\"../../guida/codice-etico\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Modello 231\",\"Production\":true,\"Link\":\"../../guida/modello-231\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"Info\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Gioco Responsabile\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Tutela dei Minori\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/tutela-dei-minori\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Limiti di Gioco\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/limiti-di-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Probabilità di Vincita\",\"Production\":true,\"Link\":\"../../guida/probabilita-scommesse\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Slot, Soft Games e Tavoli\",\"Production\":true,\"Link\":\"../../guida/rtp-slot-e-tavoli\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Casinò Live\",\"Production\":true,\"Link\":\"../../guida/rtp-casino-live\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Poker\",\"Production\":true,\"Link\":\"../../guida/rtp-poker\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Bingo\",\"Production\":true,\"Link\":\"../../guida/rtp-bingo\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Carte\",\"Production\":true,\"Link\":\"../../guida/rtp-skillgames\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Ippica\",\"Production\":true,\"Link\":\"../../guida/rtp-ippica\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Totocalcio\",\"Production\":true,\"Link\":\"../../guida/rtp-totocalcio\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"FAQ\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Centro Assistenza\",\"Production\":true,\"Link\":null,\"Verticale\":null,\"DestinationUrlMobile\":278,\"DestinationUrlDesktop\":278,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Il Mio Conto\",\"Production\":true,\"Link\":\"../../guida/faq-conto-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Scommesse\",\"Production\":true,\"Link\":\"../../guida/faq-scommesse\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Casinò\",\"Production\":true,\"Link\":\"../../guida/faq-casino\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Casinò Live\",\"Production\":true,\"Link\":\"../../guida/faq-casino-live\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Poker\",\"Production\":true,\"Link\":\"../../guida/faq-poker\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Bingo\",\"Production\":true,\"Link\":\"../../guida/faq-bingo\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Carte\",\"Production\":true,\"Link\":\"../../guida/faq-carte\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Lotterie\",\"Production\":true,\"Link\":\"../../guida/faq-lotterie\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Ippica\",\"Link\":\"../../guida/faq-ippica\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Totocalcio\",\"Link\":\"../../guida/faq-totocalcio\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Assistenza Tecnica\",\"Link\":\"../../guida/assistenza-tecnica\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Gold Club\",\"Link\":\"../../guida/faq-gold-club\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]}],\"ExpiredTime\":1723405140157}"
+          "value": "{\"FooterModelList\":[{\"Titolo\":\"Goldbet\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Chi Siamo\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com/gruppo/chi-siamo\"},{\"Titolo\":\"Lottomatica\",\"Production\":true,\"Link\":\"https://www.lottomaticagroup.com\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Contattaci\",\"Production\":true,\"Link\":\"../../guida/contatti\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Aprire un Conto Gioco\",\"Production\":true,\"Link\":\"../../guida/conto-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Depositi\",\"Production\":true,\"Link\":\"../../guida/depositi\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Prelievi\",\"Production\":true,\"Link\":\"../../guida/prelievi\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Apri un Punto Vendita\",\"Production\":true,\"Link\":\"../../guida/apri-un-punto-vendita\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Norme e Regolamenti\",\"Production\":true,\"Link\":\"../../guida/normative\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Carta Servizi e Reclami\",\"Production\":true,\"Link\":\"../../guida/servizi-e-reclami\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Contratto\",\"Production\":true,\"Link\":\"../../guida/contratto\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Termini e Condizioni\",\"Production\":true,\"Link\":\"../../guida/termini-e-condizioni\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Privacy\",\"Production\":true,\"Link\":\"../../guida/informativa-privacy\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Sicurezza\",\"Production\":true,\"Link\":\"../../guida/sicurezza\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Codice Etico\",\"Production\":true,\"Link\":\"../../guida/codice-etico\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Modello 231\",\"Production\":true,\"Link\":\"../../guida/modello-231\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"Info\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Gioco Responsabile\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Tutela dei Minori\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/tutela-dei-minori\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Limiti di Gioco\",\"Production\":true,\"Link\":\"../../guida/gioco-responsabile/limiti-di-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Probabilità di Vincita\",\"Production\":true,\"Link\":\"../../guida/probabilita-scommesse\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Slot, Soft Games e Tavoli\",\"Production\":true,\"Link\":\"../../guida/rtp-slot-e-tavoli\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Casinò Live\",\"Production\":true,\"Link\":\"../../guida/rtp-casino-live\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Poker\",\"Production\":true,\"Link\":\"../../guida/rtp-poker\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Bingo\",\"Production\":true,\"Link\":\"../../guida/rtp-bingo\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Carte\",\"Production\":true,\"Link\":\"../../guida/rtp-skillgames\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Ippica\",\"Production\":true,\"Link\":\"../../guida/rtp-ippica\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"RTP Totocalcio\",\"Production\":true,\"Link\":\"../../guida/rtp-totocalcio\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]},{\"Titolo\":\"FAQ\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Centro Assistenza\",\"Production\":true,\"Link\":null,\"Verticale\":null,\"DestinationUrlMobile\":278,\"DestinationUrlDesktop\":278,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Il Mio Conto\",\"Production\":true,\"Link\":\"../../guida/faq-conto-gioco\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Scommesse\",\"Production\":true,\"Link\":\"../../guida/faq-scommesse\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Casinò\",\"Production\":true,\"Link\":\"../../guida/faq-casino\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Casinò Live\",\"Production\":true,\"Link\":\"../../guida/faq-casino-live\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Poker\",\"Production\":true,\"Link\":\"../../guida/faq-poker\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Bingo\",\"Production\":true,\"Link\":\"../../guida/faq-bingo\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Carte\",\"Production\":true,\"Link\":\"../../guida/faq-carte\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Lotterie\",\"Production\":true,\"Link\":\"../../guida/faq-lotterie\",\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Ippica\",\"Link\":\"../../guida/faq-ippica\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Totocalcio\",\"Link\":\"../../guida/faq-totocalcio\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"Assistenza Tecnica\",\"Link\":\"../../guida/assistenza-tecnica\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]},{\"Titolo\":\"FAQ Gold Club\",\"Link\":\"../../guida/faq-gold-club\",\"Production\":true,\"Verticale\":199,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Type\":3,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[]}]}],\"ExpiredTime\":1723436169216}"
         },
         {
           "name": "85bdeae0a9e0dad7fdd022d8f90da5d3a241b3d0",
@@ -463,19 +463,19 @@
         },
         {
           "name": "_dy_toffset",
-          "value": "4"
+          "value": "-7"
         },
         {
           "name": "_dy_csc_ses",
-          "value": "s36h87dpc4n9qwv68toq0cf9o46nhnuw"
+          "value": "1j9gstmorgbcbm6o8fpy20rw1h8bv037"
         },
         {
           "name": "resultJsonListMsg",
-          "value": "{\"ResultCodeList\":[{\"ResultCode\":-1,\"Message\":\"Ci sono problemi di comunicazione\",\"Action\":\"\"},{\"ResultCode\":13,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":16,\"Message\":\"Saldo non sufficiente\",\"Action\":\"\"},{\"ResultCode\":24,\"Message\":\"Utente non abilitato\",\"Action\":\"\"},{\"ResultCode\":25,\"Message\":\"Conto in autoesclusione\",\"Action\":\"\"},{\"ResultCode\":1222,\"Message\":\"Saldo prelevabile non sufficiente\",\"Action\":\"\"},{\"ResultCode\":1250,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5026,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5027,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5119,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5120,\"Message\":\"REF2001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5712,\"Message\":\"REF1001 - Al momento non è possibile effettuare una ricarica Diretta su questo Conto Gioco: il documento del cliente non è stato ancora validato\",\"Action\":\"\"},{\"ResultCode\":10003,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":30105,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5045,\"Message\":\"<a href=\\\"/account/passwordDimenticata\\\" style=\\\"cursor: pointer;\\\">Clicca qui</a> per effettuare un nuovo recupero password\",\"Action\":\"\"},{\"ResultCode\":18,\"Message\":\"Errore durante l'avvio della sessione di gioco\",\"Action\":\"\"},{\"ResultCode\":4010,\"Message\":\"Il documento risulta già caricato\",\"Action\":\"\"},{\"ResultCode\":5217,\"Message\":\"Ti informiamo che il numero di cellulare inserito non è temporaneamente modificabile\",\"Action\":\"\"},{\"ResultCode\":5218,\"Message\":\"Il numero di telefono non è valido contatta l’assistenza\",\"Action\":\"\"},{\"ResultCode\":9009,\"Message\":\"Ci siamo quasi, riprova tra poco per scoprire il nuovo sito\",\"Action\":\"\"},{\"ResultCode\":5071,\"Message\":\"Il tuo conto gioco è bloccato, hai inserito dati errati per troppe volte. Contattaci per assistenza.\",\"Action\":\"\"},{\"ResultCode\":8103,\"Message\":\"La sessione ha subito variazioni rispetto all'inizio della procedura di chiusura.\",\"Action\":\"\"},{\"ResultCode\":55,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":56,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5094,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null}],\"ExpiredTime\":1723405140183}"
+          "value": "{\"ResultCodeList\":[{\"ResultCode\":-1,\"Message\":\"Ci sono problemi di comunicazione\",\"Action\":\"\"},{\"ResultCode\":13,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":16,\"Message\":\"Saldo non sufficiente\",\"Action\":\"\"},{\"ResultCode\":24,\"Message\":\"Utente non abilitato\",\"Action\":\"\"},{\"ResultCode\":25,\"Message\":\"Conto in autoesclusione\",\"Action\":\"\"},{\"ResultCode\":1222,\"Message\":\"Saldo prelevabile non sufficiente\",\"Action\":\"\"},{\"ResultCode\":1250,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5026,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5027,\"Message\":\"REF1001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5119,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5120,\"Message\":\"REF2001 - Le credenziali inserite non sono corrette. Verifica i tuoi dati (username e/o password) o consulta la sezione Contatti per ricevere assistenza.\",\"Action\":\"\"},{\"ResultCode\":5712,\"Message\":\"REF1001 - Al momento non è possibile effettuare una ricarica Diretta su questo Conto Gioco: il documento del cliente non è stato ancora validato\",\"Action\":\"\"},{\"ResultCode\":10003,\"Message\":\"Sessione scaduta\",\"Action\":\"\"},{\"ResultCode\":30105,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5045,\"Message\":\"<a href=\\\"/account/passwordDimenticata\\\" style=\\\"cursor: pointer;\\\">Clicca qui</a> per effettuare un nuovo recupero password\",\"Action\":\"\"},{\"ResultCode\":18,\"Message\":\"Errore durante l'avvio della sessione di gioco\",\"Action\":\"\"},{\"ResultCode\":4010,\"Message\":\"Il documento risulta già caricato\",\"Action\":\"\"},{\"ResultCode\":5217,\"Message\":\"Ti informiamo che il numero di cellulare inserito non è temporaneamente modificabile\",\"Action\":\"\"},{\"ResultCode\":5218,\"Message\":\"Il numero di telefono non è valido contatta l’assistenza\",\"Action\":\"\"},{\"ResultCode\":9009,\"Message\":\"Ci siamo quasi, riprova tra poco per scoprire il nuovo sito\",\"Action\":\"\"},{\"ResultCode\":5071,\"Message\":\"Il tuo conto gioco è bloccato, hai inserito dati errati per troppe volte. Contattaci per assistenza.\",\"Action\":\"\"},{\"ResultCode\":8103,\"Message\":\"La sessione ha subito variazioni rispetto all'inizio della procedura di chiusura.\",\"Action\":\"\"},{\"ResultCode\":55,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":56,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null},{\"ResultCode\":5094,\"Message\":\"Per ricevere maggiori informazioni sulle possibili cause puoi contattare il nostro Servizio Clienti allo 06.40400860\",\"Action\":null}],\"ExpiredTime\":1723436169168}"
         },
         {
           "name": "authData",
-          "value": "{\"IdSoggetto\":2701197,\"AuthToken\":\"cd5da3da-0493-443b-a414-329e61ea2f9e\",\"IdUtente\":3754242,\"SessionStatus\":0,\"Username\":\"Lasalforno\",\"Nome\":\"SIMONE\",\"Cognome\":\"GATTI\",\"Email\":\"simogatti004@gmail.com\",\"CodiceFiscale\":\"GTTSMN04P13A794S\",\"UltimoAccesso\":\"2024-08-11T16:19:05.317\",\"TentativiRimasti\":0,\"Saldo\":132,\"SaldoPrelevabile\":132,\"SaldoBonus\":30,\"SaldoBonusRigioco\":0,\"SaldoPlayBonus\":0,\"CambioPasswordObbligatorio\":false,\"InserimentoDomandaSegretaObbligatorio\":false,\"AccettazioneConsensiMarketingObbligatorio\":false,\"AutolimitazioneObbligatoria\":false,\"MessaggiAltaPriorita\":false,\"UtenteMigrato\":false,\"IdSpecializzazione\":33,\"CodiceContratto\":\"15226-5071920\",\"AutoesclusioneAttiva\":false,\"Sesso\":\"M\",\"DataNascita\":\"2004-09-13T00:00:00\",\"Telefono\":\"3923040999\",\"Citta\":\"Cividate Al Piano\",\"IdRegioneResidenza\":3,\"IdRichiestaIovation\":218411758,\"BTAG\":\"654441_63CC5C9AE60849068519899D755CE7AF\",\"HtmlPopupPostLogin\":null,\"ValidazioneContatti\":0,\"Brand\":1,\"DestinationUrl\":null,\"UtenteLTM\":false,\"PromoBenvenutoRetail\":null,\"PreferenzaInvioOTP\":2,\"DescPreferenzaInvioOTP\":\"Documento\",\"FlgRicezioneOTP\":null,\"RecapitoPredefinitoIovation\":null,\"IdOrigineRegistrazione\":0,\"FlgRegistrazioneTipster\":false,\"IdTipoStatoTipster\":null,\"FlgCondivisioneAutomaticaTipster\":null,\"BS\":true,\"GruppoLamp\":null,\"ListIdTipoBS\":[1],\"CategoryCluster\":[],\"Message\":\"Success\",\"ResultCode\":0,\"Skip\":true,\"MenuCdg\":[{\"Title\":\"Storico Conto\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Lista Giocate\",\"DestinationUrl\":\"\",\"IdDestination\":6},{\"Title\":\"Lista Movimenti\",\"DestinationUrl\":\"\",\"IdDestination\":5},{\"Title\":\"Storico Accessi\",\"DestinationUrl\":\"\",\"IdDestination\":17}]},{\"Title\":\"Profilo\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Dati Personali\",\"DestinationUrl\":\"\",\"IdDestination\":4},{\"Title\":\"Sicurezza\",\"DestinationUrl\":\"\",\"IdDestination\":9},{\"Title\":\"Contratto di gioco\",\"DestinationUrl\":\"\",\"IdDestination\":14},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10},{\"Title\":\"Privacy\",\"DestinationUrl\":\"\",\"IdDestination\":12}]},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10},{\"Title\":\"FAQ\",\"DestinationUrl\":\"\",\"IdDestination\":62},{\"Title\":\"Contatti\",\"DestinationUrl\":\"\",\"IdDestination\":37}],\"HasHistoryBonus\":true,\"Bonus\":[{\"IdBonus\":258,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":5,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-15T06:06:36.903\",\"DataErogazione\":\"2024-08-11T06:06:36.903\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":7,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":5,\"DescrizioneBonusBO\":\"Bonus Bingo validità 4 giorni\"},{\"IdBonus\":527,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":20,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-14T06:06:08.587\",\"DataErogazione\":\"2024-08-10T06:06:08.587\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":5,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":20,\"DescrizioneBonusBO\":\"Bonus casino live validità 4 giorni\"},{\"IdBonus\":258,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":5,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-12T06:05:54.41\",\"DataErogazione\":\"2024-08-08T06:05:54.407\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":7,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":5,\"DescrizioneBonusBO\":\"Bonus Bingo validità 4 giorni\"}]}"
+          "value": "{\"IdSoggetto\":2701197,\"AuthToken\":\"f3c88e87-7283-4430-a4d3-a54d5b14afee\",\"IdUtente\":3754242,\"SessionStatus\":0,\"Username\":\"Lasalforno\",\"Nome\":\"SIMONE\",\"Cognome\":\"GATTI\",\"Email\":\"simogatti004@gmail.com\",\"CodiceFiscale\":\"GTTSMN04P13A794S\",\"UltimoAccesso\":\"2024-08-12T00:16:45.213\",\"TentativiRimasti\":0,\"Saldo\":132,\"SaldoPrelevabile\":132,\"SaldoBonus\":30,\"SaldoBonusRigioco\":0,\"SaldoPlayBonus\":0,\"CambioPasswordObbligatorio\":false,\"InserimentoDomandaSegretaObbligatorio\":false,\"AccettazioneConsensiMarketingObbligatorio\":false,\"AutolimitazioneObbligatoria\":false,\"MessaggiAltaPriorita\":false,\"UtenteMigrato\":false,\"IdSpecializzazione\":33,\"CodiceContratto\":\"15226-5071920\",\"AutoesclusioneAttiva\":false,\"Sesso\":\"M\",\"DataNascita\":\"2004-09-13T00:00:00\",\"Telefono\":\"3923040999\",\"Citta\":\"Cividate Al Piano\",\"IdRegioneResidenza\":3,\"IdRichiestaIovation\":218650993,\"BTAG\":\"654441_63CC5C9AE60849068519899D755CE7AF\",\"HtmlPopupPostLogin\":null,\"ValidazioneContatti\":0,\"Brand\":1,\"DestinationUrl\":null,\"UtenteLTM\":false,\"PromoBenvenutoRetail\":null,\"PreferenzaInvioOTP\":2,\"DescPreferenzaInvioOTP\":\"Documento\",\"FlgRicezioneOTP\":null,\"RecapitoPredefinitoIovation\":null,\"IdOrigineRegistrazione\":0,\"FlgRegistrazioneTipster\":false,\"IdTipoStatoTipster\":null,\"FlgCondivisioneAutomaticaTipster\":null,\"BS\":true,\"GruppoLamp\":null,\"ListIdTipoBS\":[1],\"CategoryCluster\":[],\"Message\":\"Success\",\"ResultCode\":0,\"Skip\":true,\"MenuCdg\":[{\"Title\":\"Storico Conto\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Lista Giocate\",\"DestinationUrl\":\"\",\"IdDestination\":6},{\"Title\":\"Lista Movimenti\",\"DestinationUrl\":\"\",\"IdDestination\":5},{\"Title\":\"Storico Accessi\",\"DestinationUrl\":\"\",\"IdDestination\":17}]},{\"Title\":\"Profilo\",\"DestinationUrl\":null,\"IdDestination\":0,\"Children\":[{\"Title\":\"Dati Personali\",\"DestinationUrl\":\"\",\"IdDestination\":4},{\"Title\":\"Sicurezza\",\"DestinationUrl\":\"\",\"IdDestination\":9},{\"Title\":\"Contratto di gioco\",\"DestinationUrl\":\"\",\"IdDestination\":14},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10},{\"Title\":\"Privacy\",\"DestinationUrl\":\"\",\"IdDestination\":12}]},{\"Title\":\"Gioco Responsabile\",\"DestinationUrl\":\"\",\"IdDestination\":10},{\"Title\":\"FAQ\",\"DestinationUrl\":\"\",\"IdDestination\":62},{\"Title\":\"Contatti\",\"DestinationUrl\":\"\",\"IdDestination\":37}],\"HasHistoryBonus\":true,\"Bonus\":[{\"IdBonus\":258,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":5,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-15T06:06:36.903\",\"DataErogazione\":\"2024-08-11T06:06:36.903\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":7,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":5,\"DescrizioneBonusBO\":\"Bonus Bingo validità 4 giorni\"},{\"IdBonus\":527,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":20,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-14T06:06:08.587\",\"DataErogazione\":\"2024-08-10T06:06:08.587\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":5,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":20,\"DescrizioneBonusBO\":\"Bonus casino live validità 4 giorni\"},{\"IdBonus\":258,\"NomeCampagna\":\"Ruota dei Bonus\",\"BonusDisponibile\":5,\"TipoBonusDescrizione\":\"Real\",\"Bonus\":\"0\",\"VincoloCanale\":false,\"DataScadenza\":\"2024-08-12T06:05:54.41\",\"DataErogazione\":\"2024-08-08T06:05:54.407\",\"UrlTerminiECondizioni\":\"\",\"Verticale\":7,\"GiriGratuitiResidui\":null,\"TipoBonus\":1,\"Wagering\":null,\"BonusRigiocoPuntato\":null,\"PercentualeRigioco\":null,\"TurnoverSbloccaBonus\":null,\"BonusErogato\":5,\"DescrizioneBonusBO\":\"Bonus Bingo validità 4 giorni\"}]}"
         },
         {
           "name": "28214019-fad0-4a25-8f60-19885fb32f22",
@@ -483,11 +483,11 @@
         },
         {
           "name": "_dy_geo",
-          "value": "IT.EU.IT_25.IT_25_Milan"
+          "value": "IT.EU.IT_57.IT_57_Morrovalle"
         },
         {
           "name": "_dyaud_page",
-          "value": "*2024-08-11*0"
+          "value": "*2024-08-12*2024-08-11 00:00:00"
         },
         {
           "name": "d0df7f0a4c2724ff587c1cfb3e315b432e2d1f50",
@@ -495,7 +495,7 @@
         },
         {
           "name": "_dycst",
-          "value": "dk.m.c.ms."
+          "value": "dk.w.c.ms."
         },
         {
           "name": "4ba302311571f45d57f1aa75e428b9b78d59a7a2",
@@ -503,19 +503,19 @@
         },
         {
           "name": "_dy_att_exps",
-          "value": "1682580|103277361::0:1723387390472:71039:77833:1:0:0.633294528350234:0.5325863691978157|102300953:103109694|2|77833:1723387390472"
+          "value": "1682580|103277361::0:1723387390472:71039:77833:1:0:0.633294528350234:0.5325863691978157|102300953|2|31166:1723419013788"
         },
         {
           "name": "headerJsonList_0",
-          "value": "{\"VerticalsModelList\":[{\"Titolo\":\"Home\",\"Verticale\":206,\"DestinationUrlMobile\":206,\"DestinationUrlDesktop\":206,\"Link\":\"/\",\"LinkSeo\":\"/\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Area Personale\",\"Verticale\":200,\"DestinationUrlMobile\":200,\"DestinationUrlDesktop\":200,\"Link\":\"/area-personale\",\"LinkSeo\":\"/area-personale\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Scommesse\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Sport\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Live\",\"LabelGroup\":\"Live\",\"Verticale\":8,\"DestinationUrlMobile\":26,\"DestinationUrlDesktop\":25,\"Link\":\"/scommesse/live/tutti-gli-eventi\",\"LinkSeo\":\"/scommesse/live/tutti-gli-eventi\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Villaggio\",\"LabelGroup\":\"Villaggio\",\"Verticale\":209,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/villaggio\",\"LinkSeo\":\"/scommesse/villaggio\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":false,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Virtuali\",\"LabelGroup\":\"Virtuali\",\"Verticale\":2,\"DestinationUrlMobile\":241,\"DestinationUrlDesktop\":23,\"Link\":\"/scommesse/virtuali\",\"LinkSeo\":\"/scommesse/virtuali\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Ippica\",\"LabelGroup\":\"Ippica\",\"Verticale\":14,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/ippica/\",\"LinkSeo\":\"/scommesse/ippica/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Totocalcio\",\"LabelGroup\":\"Totocalcio\",\"Verticale\":27,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/totocalcio/\",\"LinkSeo\":\"/scommesse/totocalcio/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Slot\",\"LabelGroup\":\"Slot\",\"Verticale\":3,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/slot-machine\",\"LinkSeo\":\"/casino/slot-machine/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Production\":true,\"Children\":[{\"Titolo\":\"Table Games\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Soft Games\",\"LabelGroup\":\"Soft Games\",\"Verticale\":15,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/soft-games\",\"LinkSeo\":\"/casino/soft-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":false},{\"Titolo\":\"Bonus Casino\",\"LabelGroup\":\"\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus/casino\",\"LinkSeo\":\"/bonus/casino\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino Live\",\"LabelGroup\":\"Casino Live\",\"Verticale\":5,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino-live\",\"LinkSeo\":\"/casino-live/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Carte\",\"LabelGroup\":\"Carte\",\"Verticale\":13,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/carte\",\"LinkSeo\":\"/carte/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Production\":true,\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bingo\",\"LabelGroup\":\"Bingo\",\"Verticale\":7,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bingo/\",\"LinkSeo\":\"/bingo/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Poker\",\"LabelGroup\":\"Poker\",\"Verticale\":6,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/poker/\",\"LinkSeo\":\"/poker/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Lotterie\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/\",\"LinkSeo\":\"/lotterie/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Tutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie\",\"LinkSeo\":\"/lotterie\",\"Type\":0,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"10 e Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":18,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/10elotto\",\"LinkSeo\":\"/lotterie/10elotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":17,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotto\",\"LinkSeo\":\"/lotterie/lotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gratta e vinci\",\"LabelGroup\":\"Lotterie\",\"Verticale\":16,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/grattaevinci\",\"LinkSeo\":\"/lotterie/grattaevinci\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Million Day\",\"LabelGroup\":\"Lotterie\",\"Verticale\":19,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/millionday\",\"LinkSeo\":\"/lotterie/millionday\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotteria Italia\",\"LabelGroup\":\"Lotterie\",\"Verticale\":29,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotteriaitalia\",\"LinkSeo\":\"/lotterie/lotteriaitalia\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SuperEnalotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":20,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/superenalotto\",\"LinkSeo\":\"/lotterie/superenalotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SiVinceTutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":21,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/sivincetutto\",\"LinkSeo\":\"/lotterie/sivincetutto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"EuroJackpot\",\"LabelGroup\":\"Lotterie\",\"Verticale\":22,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/eurojackpot\",\"LinkSeo\":\"/lotterie/eurojackpot\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"VinciCasa\",\"LabelGroup\":\"Lotterie\",\"Verticale\":23,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/vincicasa\",\"LinkSeo\":\"/lotterie/vincicasa\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Classico\",\"LabelGroup\":\"Lotterie\",\"Verticale\":24,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifeclassico\",\"LinkSeo\":\"/lotterie/winforlifeclassico\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Grattacieli\",\"LabelGroup\":\"Lotterie\",\"Verticale\":25,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifegrattacieli\",\"LinkSeo\":\"/lotterie/winforlifegrattacieli\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Play Your Date\",\"LabelGroup\":\"Lotterie\",\"Verticale\":28,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/playyourdate\",\"LinkSeo\":\"/lotterie/playyourdate\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bonus\",\"Verticale\":9,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus\",\"LinkSeo\":\"/bonus\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gold Club\",\"Verticale\":210,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/club\",\"LinkSeo\":\"/gold-club\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"NATALE\",\"Verticale\":null,\"DestinationUrlMobile\":237,\"DestinationUrlDesktop\":237,\"Link\":\"/bonus/xmas/xmas-2022\",\"LinkSeo\":\"/bonus/xmas/xmas-2022\",\"Type\":1,\"DateFrom\":\"2022-12-07T08:00:00Z\",\"DateTo\":\"2023-01-06T23:00:00Z\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"ExpiredTime\":1723390982344}"
+          "value": "{\"VerticalsModelList\":[{\"Titolo\":\"Home\",\"Verticale\":206,\"DestinationUrlMobile\":206,\"DestinationUrlDesktop\":206,\"Link\":\"/\",\"LinkSeo\":\"/\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Area Personale\",\"Verticale\":200,\"DestinationUrlMobile\":200,\"DestinationUrlDesktop\":200,\"Link\":\"/area-personale\",\"LinkSeo\":\"/area-personale\",\"Type\":1,\"DateFrom\":\"1900-01-01T00:00:00Z\",\"DateTo\":\"1900-01-01T00:00:00Z\",\"Production\":false,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Scommesse\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Sport\",\"LabelGroup\":\"Sport\",\"Verticale\":1,\"DestinationUrlMobile\":3,\"DestinationUrlDesktop\":2,\"Link\":\"/scommesse/sport\",\"LinkSeo\":\"/scommesse/sport\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Live\",\"LabelGroup\":\"Live\",\"Verticale\":8,\"DestinationUrlMobile\":26,\"DestinationUrlDesktop\":25,\"Link\":\"/scommesse/live/tutti-gli-eventi\",\"LinkSeo\":\"/scommesse/live/tutti-gli-eventi\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Villaggio\",\"LabelGroup\":\"Villaggio\",\"Verticale\":209,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/villaggio\",\"LinkSeo\":\"/scommesse/villaggio\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":false,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Virtuali\",\"LabelGroup\":\"Virtuali\",\"Verticale\":2,\"DestinationUrlMobile\":241,\"DestinationUrlDesktop\":23,\"Link\":\"/scommesse/virtuali\",\"LinkSeo\":\"/scommesse/virtuali\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Ippica\",\"LabelGroup\":\"Ippica\",\"Verticale\":14,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/ippica/\",\"LinkSeo\":\"/scommesse/ippica/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Totocalcio\",\"LabelGroup\":\"Totocalcio\",\"Verticale\":27,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/scommesse/totocalcio/\",\"LinkSeo\":\"/scommesse/totocalcio/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Slot\",\"LabelGroup\":\"Slot\",\"Verticale\":3,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/slot-machine\",\"LinkSeo\":\"/casino/slot-machine/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Production\":true,\"Children\":[{\"Titolo\":\"Table Games\",\"LabelGroup\":\"Table Games\",\"Verticale\":4,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/table-games\",\"LinkSeo\":\"/casino/table-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Soft Games\",\"LabelGroup\":\"Soft Games\",\"Verticale\":15,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino/soft-games\",\"LinkSeo\":\"/casino/soft-games/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":false},{\"Titolo\":\"Bonus Casino\",\"LabelGroup\":\"\",\"Verticale\":null,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus/casino\",\"LinkSeo\":\"/bonus/casino\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Casino Live\",\"LabelGroup\":\"Casino Live\",\"Verticale\":5,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/casino-live\",\"LinkSeo\":\"/casino-live/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Carte\",\"LabelGroup\":\"Carte\",\"Verticale\":13,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/carte\",\"LinkSeo\":\"/carte/tutti\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Production\":true,\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bingo\",\"LabelGroup\":\"Bingo\",\"Verticale\":7,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bingo/\",\"LinkSeo\":\"/bingo/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Poker\",\"LabelGroup\":\"Poker\",\"Verticale\":6,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/poker/\",\"LinkSeo\":\"/poker/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Lotterie\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/\",\"LinkSeo\":\"/lotterie/\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[{\"Titolo\":\"Tutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":12,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie\",\"LinkSeo\":\"/lotterie\",\"Type\":0,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"10 e Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":18,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/10elotto\",\"LinkSeo\":\"/lotterie/10elotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":17,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotto\",\"LinkSeo\":\"/lotterie/lotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gratta e vinci\",\"LabelGroup\":\"Lotterie\",\"Verticale\":16,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/grattaevinci\",\"LinkSeo\":\"/lotterie/grattaevinci\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Million Day\",\"LabelGroup\":\"Lotterie\",\"Verticale\":19,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/millionday\",\"LinkSeo\":\"/lotterie/millionday\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Lotteria Italia\",\"LabelGroup\":\"Lotterie\",\"Verticale\":29,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/lotteriaitalia\",\"LinkSeo\":\"/lotterie/lotteriaitalia\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SuperEnalotto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":20,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/superenalotto\",\"LinkSeo\":\"/lotterie/superenalotto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"SiVinceTutto\",\"LabelGroup\":\"Lotterie\",\"Verticale\":21,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/sivincetutto\",\"LinkSeo\":\"/lotterie/sivincetutto\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"EuroJackpot\",\"LabelGroup\":\"Lotterie\",\"Verticale\":22,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/eurojackpot\",\"LinkSeo\":\"/lotterie/eurojackpot\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"VinciCasa\",\"LabelGroup\":\"Lotterie\",\"Verticale\":23,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/vincicasa\",\"LinkSeo\":\"/lotterie/vincicasa\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Classico\",\"LabelGroup\":\"Lotterie\",\"Verticale\":24,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifeclassico\",\"LinkSeo\":\"/lotterie/winforlifeclassico\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Win For Life Grattacieli\",\"LabelGroup\":\"Lotterie\",\"Verticale\":25,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/winforlifegrattacieli\",\"LinkSeo\":\"/lotterie/winforlifegrattacieli\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Play Your Date\",\"LabelGroup\":\"Lotterie\",\"Verticale\":28,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/lotterie/playyourdate\",\"LinkSeo\":\"/lotterie/playyourdate\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#fff\",\"BgColorHover\":\"#fff\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"Autoesclusione\":true,\"ShowAutoesclusione\":true},{\"Titolo\":\"Bonus\",\"Verticale\":9,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/bonus\",\"LinkSeo\":\"/bonus\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"Gold Club\",\"Verticale\":210,\"DestinationUrlMobile\":null,\"DestinationUrlDesktop\":null,\"Link\":\"/club\",\"LinkSeo\":\"/gold-club\",\"Type\":1,\"DateFrom\":null,\"DateTo\":null,\"Production\":true,\"BgColor\":\"#003594\",\"BgColorHover\":\"#003594\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false},{\"Titolo\":\"NATALE\",\"Verticale\":null,\"DestinationUrlMobile\":237,\"DestinationUrlDesktop\":237,\"Link\":\"/bonus/xmas/xmas-2022\",\"LinkSeo\":\"/bonus/xmas/xmas-2022\",\"Type\":1,\"DateFrom\":\"2022-12-07T08:00:00Z\",\"DateTo\":\"2023-01-06T23:00:00Z\",\"Production\":true,\"BgColor\":\"#ffcc00\",\"BgColorHover\":\"#ffcc00\",\"Children\":[],\"Autoesclusione\":false,\"ShowAutoesclusione\":false}],\"ExpiredTime\":1723422335305}"
         },
         {
           "name": "seoJson_0",
-          "value": "{\"Seo\":{\"OgImage\":\"https://repo.lottomaticagroup.com/intplatform/common/GoldBet%20Logo/logo-goldbet-01.jpg\",\"SeoVerticals\":[{\"Id\":3,\"PageTitle\":\"Slot Machine Online: prova giochi gratis su Goldbet\",\"Name\":\"slot\",\"TagDescription\":\"Vuoi giocare alle slot machine online e non sai da dove iniziare? Su Goldbet puoi scoprire i nostri giochi gratuitamente, anche da mobile, quando e dove vuoi.\",\"H1\":\"Slot Machines Online\"},{\"Id\":4,\"PageTitle\":\"Casino Online: Giochi da Casinò su Goldbet\",\"Name\":\"casino\",\"TagDescription\":\"Su GoldBet puoi trovare i migliori giochi da casino online in Italia: dai classici roulette e blackjack ai video poker e molto altro anche gratis in modalità demo..\",\"H1\":\"Casino Online\"},{\"Id\":5,\"PageTitle\":\"Casino Live Online: Roulette, Blackjack e Baccarat | Goldbet\",\"Name\":\"casinolive\",\"TagDescription\":\"Casino Live Online, Roulette, Blackjack e Baccarat. GoldBet offre i migliori giochi da casino online. Slot machine con Bonus e promozioni dedicate.\",\"H1\":\"Casino Live Online\"},{\"Id\":6,\"PageTitle\":\"Poker Online: il gioco e le varianti Texas Hold'em, Cash Game e altre\",\"Name\":\"poker\",\"TagDescription\":\"Poker Online, Texas Hold'em, Cash Game, Omaha e altri. GoldBet offre i migliori giochi di carte online. Bonus, promozioni dedicate e molto altro.\",\"H1\":\"Poker Online\"},{\"Id\":7,\"PageTitle\":\"Bingo Online: con soldi veri, digitale e in italiano \",\"Name\":\"bingo\",\"TagDescription\":\"Benvenuto nel Bingo online con soldi veri e virtuali di GoldBet: puoi scegliere la tua sala bingo digitale per giocare a Bingo 90, e non solo, quando e dove vuoi.\",\"H1\":\"Bingo Online\"},{\"Id\":9,\"PageTitle\":\"Bonus su Scommesse, Casino Live, Slot e altro ancora | Goldbet\",\"Name\":\"promo\",\"TagDescription\":\"GoldBet offre Bonus e promozioni dedicate per scommesse sportive, slot e casino online, lotterie, bingo e molto altro ancora.\",\"H1\":null},{\"Id\":11,\"PageTitle\":\"News | GoldBet\",\"Name\":\"news\",\"TagDescription\":\"Le news di GoldBet ti informano sulle nuove slot machine, con le notizie del casino live, le quote speciali per le scommesse e molto altro\",\"H1\":null},{\"Id\":12,\"PageTitle\":\"Lotterie: risultati estrazioni e giochi online | Goldbet\",\"Name\":\"lotterie\",\"TagDescription\":\"Giocare alle Lotterie online comodamente da casa o dal proprio smartphone oramai è semplice: basta aprire un conto gioco su Goldbet.it\",\"H1\":null},{\"Id\":13,\"PageTitle\":\"Giochi di Carte Online: Burraco, Briscola, Scopa e altri | Goldbet\",\"Name\":\"skillgames\",\"TagDescription\":\"Giochi di Carte Online, Burraco, Briscola, Scopa e altri. GoldBet offre i migliori giochi di carte online. Bonus, promozioni dedicate e molto altro.\",\"H1\":\"Giochi classici di carte online\"},{\"Id\":14,\"PageTitle\":\"Quote Ippica nazionale: scommesse corse cavalli online | Goldbet.it\",\"Name\":\"ippica\",\"TagDescription\":\"Cerchi le quote per scommettere sulle corse dei cavalli di oggi? I risultati e gli arrivi dell'ippica nazionale e internazionale di galoppo, trotto e tris li trovi su Goldbet.it\",\"H1\":null},{\"Id\":15,\"PageTitle\":\"Soft Games | Goldbet\",\"Name\":\"softgames\",\"TagDescription\":\"Soft Games. GoldBet offre i migliori giochi da casino online. Slot machine con Bonus e promozioni dedicate. Anche da App.\",\"H1\":\"Soft Games Online\"},{\"Id\":16,\"PageTitle\":\"Gratta e Vinci: biglietti GeV online su Goldbet\",\"Name\":\"grattaevinci\",\"TagDescription\":\"La semplicità di gioco, le probabilità di vincita e l’ampia gamma di biglietti sono tra i fattori di successo dei Gratta e Vinci: ora puoi giocare anche online su Goldbet.\",\"H1\":null},{\"Id\":17,\"PageTitle\":\"Lotto Online: ultime estrazioni e come giocare\",\"Name\":\"lotto\",\"TagDescription\":\"Il Gioco del Lotto è per natura sinonimo di Lotterie, rendendolo uno dei giochi più apprezzati degli italiani: ora puoi anche giocare al Lotto online su Goldbet.\",\"H1\":null},{\"Id\":18,\"PageTitle\":\"10 e Lotto Online: estrazioni ogni 5 minuti su Goldbet\",\"Name\":\"diecielotto\",\"TagDescription\":\"Il Dieci e Lotto è il gioco ad estrazione giornaliera che ti permette di vincere premi esclusivi, anche in modalità estrazione ogni 5 minuti. Su Goldbet puoi scoprire come si gioca online.\",\"H1\":null},{\"Id\":19,\"PageTitle\":\"Million Day Online: risultati estrazioni di oggi su Goldbet\",\"Name\":\"millionday\",\"TagDescription\":\"Con il Million Day hai la possibilità di vincere fino a un milione di euro al giorno alla lotteria e da oggi puoi comodamente giocare online da casa o da smartphone su Goldbet.\",\"H1\":null},{\"Id\":20,\"PageTitle\":\"SuperEnalotto estrazioni e gioco online su Goldbet\",\"Name\":\"superenalotto\",\"TagDescription\":\"Mai pensato di giocare al SuperEnalotto online? Oggi si può: basta aprire un conto su Goldbet.it per giocare e verificare i propri numeri per le tre estrazioni settimanali.\",\"H1\":null},{\"Id\":21,\"PageTitle\":\"Si Vince Tutto: estrazioni di oggi online su Goldbet\",\"Name\":\"sivincetutto\",\"TagDescription\":\"SiVinceTutto è il concorso speciale legato al SuperEnalotto in cui l’intero montepremi viene distribuito ai giocatori. Su Goldbet puoi scoprire come giocare online.\",\"H1\":null},{\"Id\":22,\"PageTitle\":\"EuroJackpot: puoi giocare alla lotteria europea su Goldbet\",\"Name\":\"eurojackpot\",\"TagDescription\":\"EuroJackpot è la lotteria paneuropea con in palio un jackpot milionario. L’estrazione avviene ogni venerdì sera alle 20. Su Goldbet puoi giocare online al costo di 2€.\",\"H1\":null},{\"Id\":23,\"PageTitle\":\"Vinci Casa Online: verifica estrazioni di oggi | Goldbet\",\"Name\":\"vincicasa\",\"TagDescription\":\"VinciCasa è il gioco a estrazioni quotidiane che permette di vincere un premio in denaro, ma anche una casa. Puoi giocare online da casa o in mobilità su Goldbet.\",\"H1\":null},{\"Id\":24,\"PageTitle\":\"Win for Life Classico: il gioco online | Goldbet\",\"Name\":\"winforlifeclassico\",\"TagDescription\":\"Win for Life Classico è una lotteria a estrazione giornaliera con in palio una rendita mensile per 20 anni: puoi giocare comodamente online da pc o smartphone su Goldbet.it\",\"H1\":null},{\"Id\":25,\"PageTitle\":\"Win for Life Gratacieli: puoi giocare online su Goldbet\",\"Name\":\"winforlifegrattacieli\",\"TagDescription\":\"Come nella versione “classica”, il Win For Life Grattacieli è una lotteria giornaliera con in palio una rendita mensile per 20 anni: ora puoi giocare online anche su Goldbet.it\",\"H1\":null},{\"Id\":26,\"PageTitle\":\"PlaySix Online: estrazioni ogni 5 minuti | Goldbet\",\"Name\":\"playsix\",\"TagDescription\":\"Un MiniEnalotto quotidiano, con estrazioni ogni 5 minuti, premi istantanei e vincite in denaro, questo è PlaySix. Puoi provarlo online su Goldbet.\",\"H1\":null},{\"Id\":27,\"PageTitle\":\"Totocalcio online: schedina di oggi - Goldbet\",\"Name\":\"totocalcio\",\"TagDescription\":\"Vuoi giocare la tua schedina del Totocalcio online? Puoi scoprire come si gioca al Nuovo Totocalcio e scommettere sul prossimo concorso su Goldbet.\",\"H1\":null},{\"Id\":28,\"PageTitle\":\"Play Your Date: gioca online le tue date preferite\",\"Name\":\"playyourdate\",\"TagDescription\":\"Punta sulle tue date preferite con il nuovo gioco numerico a totalizzatore Play Your Date disponibile su GoldBet. Entra nel divertimento dei giochi di lotteria online e scopri se la fortuna è dalla tua parte.\",\"H1\":null},{\"Id\":29,\"PageTitle\":\"Lotteria Italia 2023: i biglietti vincenti e i premi su Goldbet\",\"Name\":\"lotteriaitalia\",\"TagDescription\":\"La Lotteria Italia 2023 arriva anche su Goldbet: qui puoi scoprire come partecipare all'estrazione giornaliera, i premi in palio e i biglietti vincenti.\",\"H1\":\"Lotteria Italia\"},{\"Id\":206,\"PageTitle\":\"Goldbet: Scommesse Sportive, Virtuali, Casino, Slot e Poker Online\",\"Name\":\"home\",\"TagDescription\":\"Su Goldbet.it puoi Scommettere Online con tutte le Quote, anche le Virtuali, o puoi giocare al Casino e alle Slot Online. Registrandoti puoi ottenere un Bonus di benvenuto.\",\"H1\":null}],\"ResultCode\":0,\"Message\":\"Success\"},\"ExpiredTime\":1723390740151}"
+          "value": "{\"Seo\":{\"OgImage\":\"https://repo.lottomaticagroup.com/intplatform/common/GoldBet%20Logo/logo-goldbet-01.jpg\",\"SeoVerticals\":[{\"Id\":3,\"PageTitle\":\"Slot Machine Online: prova giochi gratis su Goldbet\",\"Name\":\"slot\",\"TagDescription\":\"Vuoi giocare alle slot machine online e non sai da dove iniziare? Su Goldbet puoi scoprire i nostri giochi gratuitamente, anche da mobile, quando e dove vuoi.\",\"H1\":\"Slot Machines Online\"},{\"Id\":4,\"PageTitle\":\"Casino Online: Giochi da Casinò su Goldbet\",\"Name\":\"casino\",\"TagDescription\":\"Su GoldBet puoi trovare i migliori giochi da casino online in Italia: dai classici roulette e blackjack ai video poker e molto altro anche gratis in modalità demo..\",\"H1\":\"Casino Online\"},{\"Id\":5,\"PageTitle\":\"Casino Live Online: Roulette, Blackjack e Baccarat | Goldbet\",\"Name\":\"casinolive\",\"TagDescription\":\"Casino Live Online, Roulette, Blackjack e Baccarat. GoldBet offre i migliori giochi da casino online. Slot machine con Bonus e promozioni dedicate.\",\"H1\":\"Casino Live Online\"},{\"Id\":6,\"PageTitle\":\"Poker Online: il gioco e le varianti Texas Hold'em, Cash Game e altre\",\"Name\":\"poker\",\"TagDescription\":\"Poker Online, Texas Hold'em, Cash Game, Omaha e altri. GoldBet offre i migliori giochi di carte online. Bonus, promozioni dedicate e molto altro.\",\"H1\":\"Poker Online\"},{\"Id\":7,\"PageTitle\":\"Bingo Online: con soldi veri, digitale e in italiano \",\"Name\":\"bingo\",\"TagDescription\":\"Benvenuto nel Bingo online con soldi veri e virtuali di GoldBet: puoi scegliere la tua sala bingo digitale per giocare a Bingo 90, e non solo, quando e dove vuoi.\",\"H1\":\"Bingo Online\"},{\"Id\":9,\"PageTitle\":\"Bonus su Scommesse, Casino Live, Slot e altro ancora | Goldbet\",\"Name\":\"promo\",\"TagDescription\":\"GoldBet offre Bonus e promozioni dedicate per scommesse sportive, slot e casino online, lotterie, bingo e molto altro ancora.\",\"H1\":null},{\"Id\":11,\"PageTitle\":\"News | GoldBet\",\"Name\":\"news\",\"TagDescription\":\"Le news di GoldBet ti informano sulle nuove slot machine, con le notizie del casino live, le quote speciali per le scommesse e molto altro\",\"H1\":null},{\"Id\":12,\"PageTitle\":\"Lotterie: risultati estrazioni e giochi online | Goldbet\",\"Name\":\"lotterie\",\"TagDescription\":\"Giocare alle Lotterie online comodamente da casa o dal proprio smartphone oramai è semplice: basta aprire un conto gioco su Goldbet.it\",\"H1\":null},{\"Id\":13,\"PageTitle\":\"Giochi di Carte Online: Burraco, Briscola, Scopa e altri | Goldbet\",\"Name\":\"skillgames\",\"TagDescription\":\"Giochi di Carte Online, Burraco, Briscola, Scopa e altri. GoldBet offre i migliori giochi di carte online. Bonus, promozioni dedicate e molto altro.\",\"H1\":\"Giochi classici di carte online\"},{\"Id\":14,\"PageTitle\":\"Quote Ippica nazionale: scommesse corse cavalli online | Goldbet.it\",\"Name\":\"ippica\",\"TagDescription\":\"Cerchi le quote per scommettere sulle corse dei cavalli di oggi? I risultati e gli arrivi dell'ippica nazionale e internazionale di galoppo, trotto e tris li trovi su Goldbet.it\",\"H1\":null},{\"Id\":15,\"PageTitle\":\"Soft Games | Goldbet\",\"Name\":\"softgames\",\"TagDescription\":\"Soft Games. GoldBet offre i migliori giochi da casino online. Slot machine con Bonus e promozioni dedicate. Anche da App.\",\"H1\":\"Soft Games Online\"},{\"Id\":16,\"PageTitle\":\"Gratta e Vinci: biglietti GeV online su Goldbet\",\"Name\":\"grattaevinci\",\"TagDescription\":\"La semplicità di gioco, le probabilità di vincita e l’ampia gamma di biglietti sono tra i fattori di successo dei Gratta e Vinci: ora puoi giocare anche online su Goldbet.\",\"H1\":null},{\"Id\":17,\"PageTitle\":\"Lotto Online: ultime estrazioni e come giocare\",\"Name\":\"lotto\",\"TagDescription\":\"Il Gioco del Lotto è per natura sinonimo di Lotterie, rendendolo uno dei giochi più apprezzati degli italiani: ora puoi anche giocare al Lotto online su Goldbet.\",\"H1\":null},{\"Id\":18,\"PageTitle\":\"10 e Lotto Online: estrazioni ogni 5 minuti su Goldbet\",\"Name\":\"diecielotto\",\"TagDescription\":\"Il Dieci e Lotto è il gioco ad estrazione giornaliera che ti permette di vincere premi esclusivi, anche in modalità estrazione ogni 5 minuti. Su Goldbet puoi scoprire come si gioca online.\",\"H1\":null},{\"Id\":19,\"PageTitle\":\"Million Day Online: risultati estrazioni di oggi su Goldbet\",\"Name\":\"millionday\",\"TagDescription\":\"Con il Million Day hai la possibilità di vincere fino a un milione di euro al giorno alla lotteria e da oggi puoi comodamente giocare online da casa o da smartphone su Goldbet.\",\"H1\":null},{\"Id\":20,\"PageTitle\":\"SuperEnalotto estrazioni e gioco online su Goldbet\",\"Name\":\"superenalotto\",\"TagDescription\":\"Mai pensato di giocare al SuperEnalotto online? Oggi si può: basta aprire un conto su Goldbet.it per giocare e verificare i propri numeri per le tre estrazioni settimanali.\",\"H1\":null},{\"Id\":21,\"PageTitle\":\"Si Vince Tutto: estrazioni di oggi online su Goldbet\",\"Name\":\"sivincetutto\",\"TagDescription\":\"SiVinceTutto è il concorso speciale legato al SuperEnalotto in cui l’intero montepremi viene distribuito ai giocatori. Su Goldbet puoi scoprire come giocare online.\",\"H1\":null},{\"Id\":22,\"PageTitle\":\"EuroJackpot: puoi giocare alla lotteria europea su Goldbet\",\"Name\":\"eurojackpot\",\"TagDescription\":\"EuroJackpot è la lotteria paneuropea con in palio un jackpot milionario. L’estrazione avviene ogni venerdì sera alle 20. Su Goldbet puoi giocare online al costo di 2€.\",\"H1\":null},{\"Id\":23,\"PageTitle\":\"Vinci Casa Online: verifica estrazioni di oggi | Goldbet\",\"Name\":\"vincicasa\",\"TagDescription\":\"VinciCasa è il gioco a estrazioni quotidiane che permette di vincere un premio in denaro, ma anche una casa. Puoi giocare online da casa o in mobilità su Goldbet.\",\"H1\":null},{\"Id\":24,\"PageTitle\":\"Win for Life Classico: il gioco online | Goldbet\",\"Name\":\"winforlifeclassico\",\"TagDescription\":\"Win for Life Classico è una lotteria a estrazione giornaliera con in palio una rendita mensile per 20 anni: puoi giocare comodamente online da pc o smartphone su Goldbet.it\",\"H1\":null},{\"Id\":25,\"PageTitle\":\"Win for Life Gratacieli: puoi giocare online su Goldbet\",\"Name\":\"winforlifegrattacieli\",\"TagDescription\":\"Come nella versione “classica”, il Win For Life Grattacieli è una lotteria giornaliera con in palio una rendita mensile per 20 anni: ora puoi giocare online anche su Goldbet.it\",\"H1\":null},{\"Id\":26,\"PageTitle\":\"PlaySix Online: estrazioni ogni 5 minuti | Goldbet\",\"Name\":\"playsix\",\"TagDescription\":\"Un MiniEnalotto quotidiano, con estrazioni ogni 5 minuti, premi istantanei e vincite in denaro, questo è PlaySix. Puoi provarlo online su Goldbet.\",\"H1\":null},{\"Id\":27,\"PageTitle\":\"Totocalcio online: schedina di oggi - Goldbet\",\"Name\":\"totocalcio\",\"TagDescription\":\"Vuoi giocare la tua schedina del Totocalcio online? Puoi scoprire come si gioca al Nuovo Totocalcio e scommettere sul prossimo concorso su Goldbet.\",\"H1\":null},{\"Id\":28,\"PageTitle\":\"Play Your Date: gioca online le tue date preferite\",\"Name\":\"playyourdate\",\"TagDescription\":\"Punta sulle tue date preferite con il nuovo gioco numerico a totalizzatore Play Your Date disponibile su GoldBet. Entra nel divertimento dei giochi di lotteria online e scopri se la fortuna è dalla tua parte.\",\"H1\":null},{\"Id\":29,\"PageTitle\":\"Lotteria Italia 2023: i biglietti vincenti e i premi su Goldbet\",\"Name\":\"lotteriaitalia\",\"TagDescription\":\"La Lotteria Italia 2023 arriva anche su Goldbet: qui puoi scoprire come partecipare all'estrazione giornaliera, i premi in palio e i biglietti vincenti.\",\"H1\":\"Lotteria Italia\"},{\"Id\":206,\"PageTitle\":\"Goldbet: Scommesse Sportive, Virtuali, Casino, Slot e Poker Online\",\"Name\":\"home\",\"TagDescription\":\"Su Goldbet.it puoi Scommettere Online con tutte le Quote, anche le Virtuali, o puoi giocare al Casino e alle Slot Online. Registrandoti puoi ottenere un Bonus di benvenuto.\",\"H1\":null}],\"ResultCode\":0,\"Message\":\"Success\"},\"ExpiredTime\":1723421769025}"
         },
         {
           "name": "_dy_df_geo",
-          "value": "Italy..Milan"
+          "value": "Italy..Morrovalle"
         },
         {
           "name": "onetag_sid",
@@ -523,7 +523,7 @@
         },
         {
           "name": "_genesys.widgets.inFocus",
-          "value": "0b495882f3-0c0c3-20845-ed345-00d1fe6977fe72d"
+          "value": "11653d98eef-70d72-130288-ba419-bcc44b235ecf3ca"
         },
         {
           "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
@@ -531,11 +531,11 @@
         },
         {
           "name": "_dy_device",
-          "value": "{\"brand\":\"Apple\",\"type\":\"desktop\",\"os\":\"macos\"}"
+          "value": "{\"brand\":\"Other\",\"type\":\"desktop\",\"os\":\"windows\"}"
         },
         {
           "name": "_dyaud_nchc",
-          "value": "1762950.1907565.1907567*15175838@2.16413336@3.16619203@1.16619211@1.16697659@1.16709941@1.16726326@1**1762950@1.1875766@1.1882522@1.1883684@1.1889025@1.1889041@1.1889683@1.1904768@1.1907522@1.1907565@1.1907567@1.1910781@1.1915588@1.1917096@1.1918987@1.1919906@1.1920707@1.1920924@1.1924389@1.1926126@1.1926133@1.1926655@1.1926661@1.1928291@1.1933421@1.1933422@1.1948543@1"
+          "value": "1762950.1875766.1889683.1907565*15175838@2.16338365@2.16413336@20.16619203@3.16619211@3.16697659@3.16709941@3.16726326@3**1762950@1.1875766@nu.1882522@1.1883684@1.1889025@1.1889041@1.1889683@1.1904768@1.1907522@1.1907565@1.1907567@1.1910781@1.1915588@1.1917096@1.1918987@1.1919906@1.1920707@1.1920924@1.1924389@1.1926126@1.1926133@1.1926655@1.1926661@1.1928291@1.1933421@1.1933422@1.1948543@1"
         },
         {
           "name": "990a6d8eb6cbb8ea44b73d21f1e473b43b9c74ea",
@@ -547,11 +547,11 @@
         },
         {
           "name": "_dyexps",
-          "value": "1560126|102973094::0:1723387390455:71039:77833:2:3:0.1372478543780744:0.5810272039379925|101906628:102051541|0|77833:1723387390458##1682580|103277361::0:1723387390472:71039:77833:1:0:0.633294528350234:0.5325863691978157|102300953:103109694|1|77833:1723387390472"
+          "value": "1560126|102973094::0:1723418757547:75556:31166:2:3:0.9306721980683506:0.2803411465138197|101906628:102051541|0|31166:1723419013721##1682580|103277361::0:1723387390472:71039:77833:1:0:0.633294528350234:0.5325863691978157|102300953:103109694|1|31166:1723419013788"
         },
         {
           "name": "_dy_csc",
-          "value": "{\"_pv\":7,\"_ses\":2,\"firstpv\":{\"ts\":1723383557109,\"ses\":1,\"pv\":1},\"lastevent_login\":{\"ts\":1723387403652,\"ses\":2,\"pv\":7}}"
+          "value": "{\"_pv\":21,\"_ses\":4,\"firstpv\":{\"ts\":1723383557109,\"ses\":1,\"pv\":1},\"lastevent_login\":{\"ts\":1723418772393,\"ses\":4,\"pv\":19}}"
         },
         {
           "name": "_dy_weather_9880546",
@@ -559,7 +559,7 @@
         },
         {
           "name": "staticUrlJsonList_0",
-          "value": "{\"StaticlUrl\":{\"CasinoLive\":\"/casino-live/\",\"StoreLocator\":\"/store-locator\",\"AppHomepage\":\"/app/goldbetapp\",\"AppSport\":\"/app/sport/\",\"AppVirtuali\":\"/app/virtuali/\",\"AppPoker\":\"/app/poker/\",\"Aams\":\"https://www.adm.gov.it/portale/\",\"Contatti\":\"/guida/contatti\",\"GuidaChiusuraSessioni\":\"/guida/chiusura-sessioni\",\"GuidaLimitiDiGioco\":\"/guida/gioco-responsabile/limiti-di-gioco\",\"GuidaImpostazioniScommesse\":\"/guida/impostazioni-scommesse\",\"RegoleScommesseSport\":\"/guida/scommesse-regolamento-generale\",\"RegoleScommesseVirtuali\":\"/guida/regole-gioco-virtuali\",\"RegoleCasino\":\"/guida/regole-generali-casino\",\"RegoleCasinoLive\":\"/guida/regole-giochi-casino-live\",\"RegolePoker\":\"/guida/regolamento-poker\",\"RegoleBingo\":\"/guida/regolamento-generale-bingo\",\"PortaleEsercenti\":\"/esercenti\",\"ContattiPortaleEsercenti\":\"/guida/contatti-esercenti\",\"AreaPersonale\":\"/area-personale\",\"AreaPersonale_Registrazione\":\"/area-personale/registrati\",\"AreaPersonale_DatiPersonali\":\"/area-personale/profilo/dati-personali\",\"AreaPersonale_Panoramica\":\"/area-personale/panoramica\",\"AreaPersonale_Ricarica\":\"/area-personale/gestione-conto/cassa/ricarica\",\"AreaPersonale_Preleva\":\"/area-personale/gestione-conto/cassa/prelievo\",\"AreaPersonale_StoricoMovimenti\":\"/area-personale/gestione-conto/cassa/movimenti\",\"AreaPersonale_StoricoGiocate\":\"/area-personale/storico/giocate\",\"AreaPersonale_Messaggi\":\"/area-personale/messaggi\",\"AreaPersonale_StoricoBonus\":\"/area-personale/gestione-conto/bonus\",\"AreaPersonale_FreeSpin\":\"/area-personale/storico/free-spin\",\"AreaPersonale_StoricoAccessi\":\"/area-personale/storico/accessi\",\"AreaPersonale_Sicurezza\":\"/area-personale/profilo/sicurezza\",\"AreaPersonale_Contratto\":\"/area-personale/profilo/contratto-gioco\",\"AreaPersonale_GiocoResponsabile\":\"/area-personale/gioco-responsabile\",\"AreaPersonale_Privacy\":\"/area-personale/profilo/privacy\",\"AreaPersonale_Documenti\":\"/area-personale/profilo/documenti\",\"AreaPersonale_PasswordDimenticata\":\"/area-personale/account/password-dimenticata\",\"Scommesse_Sport\":\"/scommesse-new/sport\",\"Scommesse_Live\":\"/scommesse-new/live\",\"Scommesse_SportCopertura\":\"/scommesse-new/sport/copertura\",\"Scommesse_SportRigioca\":\"/scommesse-new/sport/rigioca\",\"FaqTecnica\":\"/guida/assistenza-tecnica\",\"Guida\":\"/guida\",\"Contratto\":\"/guida/contratto\",\"TerminiCondizioni\":\"/guida/termini-e-condizioni\",\"DepositiEPrelievi\":\"/guida/depositi\",\"Privacy\":\"/guida/informativa-privacy\",\"GiocoResponsabile\":\"/guida/gioco-responsabile\",\"TutelaDeiMinori\":\"/guida/gioco-responsabile/tutela-dei-minori\",\"ProbabilitaDiVincita\":\"/guida/probabilita-scommesse\",\"ZenDeskLogout\":\"https://goldbet1.zendesk.com/access/logout\",\"ZenDeskLogoutColl\":\"https://lottomatica1658838564.zendesk.com/access/logout\",\"SonectGooglePlay\":\"https://play.google.com/store/apps/details?id=ch.sonect.app&hl=it&gl=US\",\"SonectAppStore\":\"https://apps.apple.com/ch/app/sonect-easy-cash-withdrawal/id1185348506?l=it\",\"PeCDGRegistrazioneCodAff\":\"/area-personale/registrati?codAff=\",\"OnBoardingEsternaVillaggio\":\"/scommesse/villaggio?onb=\",\"AreaPersonaleOldRegistrati\":\"/area-riservata-old/registrati\",\"AreaPersonaleOldRegistratiApp\":\"/area-riservata-old/registrati/app\",\"TipTopTerminiECondizioni\":\"/guida/termini-condizioni-villaggio\",\"TipTopGuidaVillaggio\":\"/guida/guida-villaggio\"},\"ExpiredTime\":1723405140230}"
+          "value": "{\"StaticlUrl\":{\"CasinoLive\":\"/casino-live/\",\"StoreLocator\":\"/store-locator\",\"AppHomepage\":\"/app/goldbetapp\",\"AppSport\":\"/app/sport/\",\"AppVirtuali\":\"/app/virtuali/\",\"AppPoker\":\"/app/poker/\",\"Aams\":\"https://www.adm.gov.it/portale/\",\"Contatti\":\"/guida/contatti\",\"GuidaChiusuraSessioni\":\"/guida/chiusura-sessioni\",\"GuidaLimitiDiGioco\":\"/guida/gioco-responsabile/limiti-di-gioco\",\"GuidaImpostazioniScommesse\":\"/guida/impostazioni-scommesse\",\"RegoleScommesseSport\":\"/guida/scommesse-regolamento-generale\",\"RegoleScommesseVirtuali\":\"/guida/regole-gioco-virtuali\",\"RegoleCasino\":\"/guida/regole-generali-casino\",\"RegoleCasinoLive\":\"/guida/regole-giochi-casino-live\",\"RegolePoker\":\"/guida/regolamento-poker\",\"RegoleBingo\":\"/guida/regolamento-generale-bingo\",\"PortaleEsercenti\":\"/esercenti\",\"ContattiPortaleEsercenti\":\"/guida/contatti-esercenti\",\"AreaPersonale\":\"/area-personale\",\"AreaPersonale_Registrazione\":\"/area-personale/registrati\",\"AreaPersonale_DatiPersonali\":\"/area-personale/profilo/dati-personali\",\"AreaPersonale_Panoramica\":\"/area-personale/panoramica\",\"AreaPersonale_Ricarica\":\"/area-personale/gestione-conto/cassa/ricarica\",\"AreaPersonale_Preleva\":\"/area-personale/gestione-conto/cassa/prelievo\",\"AreaPersonale_StoricoMovimenti\":\"/area-personale/gestione-conto/cassa/movimenti\",\"AreaPersonale_StoricoGiocate\":\"/area-personale/storico/giocate\",\"AreaPersonale_Messaggi\":\"/area-personale/messaggi\",\"AreaPersonale_StoricoBonus\":\"/area-personale/gestione-conto/bonus\",\"AreaPersonale_FreeSpin\":\"/area-personale/storico/free-spin\",\"AreaPersonale_StoricoAccessi\":\"/area-personale/storico/accessi\",\"AreaPersonale_Sicurezza\":\"/area-personale/profilo/sicurezza\",\"AreaPersonale_Contratto\":\"/area-personale/profilo/contratto-gioco\",\"AreaPersonale_GiocoResponsabile\":\"/area-personale/gioco-responsabile\",\"AreaPersonale_Privacy\":\"/area-personale/profilo/privacy\",\"AreaPersonale_Documenti\":\"/area-personale/profilo/documenti\",\"AreaPersonale_PasswordDimenticata\":\"/area-personale/account/password-dimenticata\",\"Scommesse_Sport\":\"/scommesse-new/sport\",\"Scommesse_Live\":\"/scommesse-new/live\",\"Scommesse_SportCopertura\":\"/scommesse-new/sport/copertura\",\"Scommesse_SportRigioca\":\"/scommesse-new/sport/rigioca\",\"FaqTecnica\":\"/guida/assistenza-tecnica\",\"Guida\":\"/guida\",\"Contratto\":\"/guida/contratto\",\"TerminiCondizioni\":\"/guida/termini-e-condizioni\",\"DepositiEPrelievi\":\"/guida/depositi\",\"Privacy\":\"/guida/informativa-privacy\",\"GiocoResponsabile\":\"/guida/gioco-responsabile\",\"TutelaDeiMinori\":\"/guida/gioco-responsabile/tutela-dei-minori\",\"ProbabilitaDiVincita\":\"/guida/probabilita-scommesse\",\"ZenDeskLogout\":\"https://goldbet1.zendesk.com/access/logout\",\"ZenDeskLogoutColl\":\"https://lottomatica1658838564.zendesk.com/access/logout\",\"SonectGooglePlay\":\"https://play.google.com/store/apps/details?id=ch.sonect.app&hl=it&gl=US\",\"SonectAppStore\":\"https://apps.apple.com/ch/app/sonect-easy-cash-withdrawal/id1185348506?l=it\",\"PeCDGRegistrazioneCodAff\":\"/area-personale/registrati?codAff=\",\"OnBoardingEsternaVillaggio\":\"/scommesse/villaggio?onb=\",\"AreaPersonaleOldRegistrati\":\"/area-riservata-old/registrati\",\"AreaPersonaleOldRegistratiApp\":\"/area-riservata-old/registrati/app\",\"TipTopTerminiECondizioni\":\"/guida/termini-condizioni-villaggio\",\"TipTopGuidaVillaggio\":\"/guida/guida-villaggio\"},\"ExpiredTime\":1723436169133}"
         },
         {
           "name": "dy_fs_page",
@@ -567,7 +567,7 @@
         },
         {
           "name": "_dy_soct",
-          "value": "1258203.2099953.1723387390"
+          "value": "1258203.2099953.1723419013"
         },
         {
           "name": "511a26f4be2047a348064e4abe8ce2a9",

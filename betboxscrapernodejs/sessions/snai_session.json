@@ -85,7 +85,7 @@
       "value": "GA1.1.725040945.1722786075",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1757944878.758406,
+      "expires": 1758017383.883693,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -105,7 +105,7 @@
       "value": "S7jdfnetrooqB01qUjrQGztCjCginqvCnUHufvI38dU=",
       "domain": "mpsnare.iesnare.com",
       "path": "/",
-      "expires": 1754920901.961652,
+      "expires": 1754993389.114773,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -115,7 +115,7 @@
       "value": "VZAzAcjPUCdb+CqfMxrbj6w4w4r7ltn4gTGKu8IlDlA=",
       "domain": "www.snai.it",
       "path": "/",
-      "expires": 1754920904.836691,
+      "expires": 1754993389.213574,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -141,46 +141,6 @@
       "sameSite": "Lax"
     },
     {
-      "name": "ai_session",
-      "value": "jbwe1pmqe33NfsrPpoFVgt|1723384871798|1723384871798",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": 1723386671.801231,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "RT",
-      "value": "\"z=1&dm=www.snai.it&si=fb9fbe6c-ad29-48f3-b586-2ed8662c8482&ss=lzpmuri2&sl=1&tt=25f&rl=1&ld=25i\"",
-      "domain": ".www.snai.it",
-      "path": "/",
-      "expires": 1723989671,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "ak_bmsc",
-      "value": "2C7BA3970D413CBB8AECCFB7B1A01572~000000000000000000000000000000~YAAQV7V7XG15YzSRAQAAgFK+QRi9ChuYh6vN6PD3cMBZw7UDb9cQHWiVFYG6spBD1u+xKN00MXDeFDblmQwjVirqyXu5hfOWGIFsjm7Hzird/DZXfZOU8TCyBfEzQyFiH/bUL2BIYR5FrceBiSjP1YX6IAU+pRtnyTokznEnhgU1oJYtJ7uYkFXod3aXboMRRuxe+gwFRD4lQNsM7YqZQ/3DEek9k4EXx3dOJkLm4K8lVTzY9M25m+FHLbUNwhlWzoabvCcQAVmpTrramTTFies9EoyKiti6HAiQ2xADF8oTPSt8l9dHwgGpQZ1CE4j6R2XsLISWCLHazhVBWHdJJBuhCrRCJQvLgwclLbhMCv4T3Ob+2Aib31dUTKn1YJ9hI/ZVhc+absdKQnzh4ZnbtN1wjWQqWL7MVqdPlDHAY60pFUtKvzP3RslEFVEI4DUel/00U4qgA+twHjs=",
-      "domain": ".snai.it",
-      "path": "/",
-      "expires": 1723392069.703076,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "x-nonce",
-      "value": "Y2VhYTRiMGYtMmZkZC00MGI2LWJiMWItY2Q0NTFlODgxNDA4",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
       "name": "__Secure-next-auth.callback-url",
       "value": "https%3A%2F%2Fwww.snai.it%2Fsport",
       "domain": "www.snai.it",
@@ -191,21 +151,11 @@
       "sameSite": "Lax"
     },
     {
-      "name": "OTP",
-      "value": "Ha9ZenQZ9iwwy5nmb8YYom7g7p0bgcFOJkGtCL-Mz48",
-      "domain": ".onetag-sys.com",
-      "path": "/",
-      "expires": 1757571580,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "rud",
       "value": "H4sIAAAAAAAA_-MSNjU0sDSzMDUzNjExMzcyMjMxMRbiM9QNNswIT9dNDzZNtzQEAOEo36klAAAA",
       "domain": ".rfihub.com",
       "path": "/",
-      "expires": 1757080881.563951,
+      "expires": 1757153385.768632,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -225,18 +175,8 @@
       "value": "2b6c916b-6793-4d17-ad22-a59d218aa52b:1723384884.024877",
       "domain": ".rezync.com",
       "path": "/",
-      "expires": 1738936879.757431,
+      "expires": 1739009384.594677,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "sd-session-id",
-      "value": ".eJwNysEOgyAMANB_6VkWKaUt_IwB4UA22SLuMuO_z-NL3gnLp-5b6rUfEI_9WydYX-3WgHjCaL-tPiGCt3Ng9eyIWBCZyME1wahjtHdfWrkPZl6D5WxYgjNUrJhUEE3yoaDVlDzmaAWdU1Klx4ykInD9AYLOJT4.ZrjENA.eTm4M7RkAB5fotYwFm0-TWRNkNQ",
-      "domain": "live.rezync.com",
-      "path": "/",
-      "expires": 1738936879.757638,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
@@ -245,7 +185,7 @@
       "value": "34886029345093258133829628675435273530",
       "domain": ".dpm.demdex.net",
       "path": "/",
-      "expires": 1738936879.215536,
+      "expires": 1739009384.321387,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -255,18 +195,8 @@
       "value": "34886029345093258133829628675435273530",
       "domain": ".demdex.net",
       "path": "/",
-      "expires": 1738936879.215774,
+      "expires": 1739009384.321486,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "anj",
-      "value": "dTM7k!M4/YErk#WF']wIg2Il_dUmbX!]tbPl1MNu::wpAk`W=edYV+ely=Umk^pdak^L0ECvaU$]daY^!AXTO:4=sB!*N`Wu(K)r",
-      "domain": ".adnxs.com",
-      "path": "/",
-      "expires": 1731160879.256652,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
@@ -275,28 +205,8 @@
       "value": "310929588607296523",
       "domain": ".adnxs.com",
       "path": "/",
-      "expires": 1731160879.256834,
+      "expires": 1731233384.316909,
       "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "fs_lua",
-      "value": "1.1723384879367",
-      "domain": ".snai.it",
-      "path": "/",
-      "expires": 1723386679,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
-      "name": "eud",
-      "value": "H4sIAAAAAAAA_13OsQ0CMQwFUIGgQlSZI-hi-2yHbRIyEeWVV1KmZARGoKRkBCo6UH759OX_vWyOyYjZxZ1FvIPv4Af4Df6Ar9vRK_gG7pjvRj_BfQ__HmA_KFW95KQ1qmWO0pLF0ohimXOj5KXMVM-_IzlNJG62hH-RsOZ1sE2vMA59AVfZq31JAQAA",
-      "domain": ".rfihub.com",
-      "path": "/",
-      "expires": 1757080881.563807,
-      "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
@@ -311,21 +221,11 @@
       "sameSite": "None"
     },
     {
-      "name": "fs_uid",
-      "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:9713db65-9301-4525-8605-74b38b5d6a31:1723384879367::1#/1754920880",
-      "domain": ".snai.it",
-      "path": "/",
-      "expires": 1754920880,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Strict"
-    },
-    {
       "name": "CMID",
       "value": "ZrjENLmqPnwAADuNAn7k8wAA",
       "domain": ".casalemedia.com",
       "path": "/",
-      "expires": 1754920879.491011,
+      "expires": 1754993384.033707,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -345,47 +245,147 @@
       "value": "4352",
       "domain": ".casalemedia.com",
       "path": "/",
-      "expires": 1731160879.491187,
+      "expires": 1731233384.036825,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "RT",
+      "value": "\"z=1&dm=www.snai.it&si=fb9fbe6c-ad29-48f3-b586-2ed8662c8482&ss=lzqu0olk&sl=0&tt=0\"",
+      "domain": ".www.snai.it",
+      "path": "/",
+      "expires": 1724062174,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ai_session",
+      "value": "MrfYzBH8f7It7smRtDIMpX|1723457374627|1723457374627",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": 1723459174.629512,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "0F0B6D223D9838D5329C4D0C7E3AD62F~000000000000000000000000000000~YAAQG2jerYasBTKRAQAAH4wQRhhhjollMMMD2oKHHKDLI7ts5P7ASndkWtsYdGBrVOKOffAxYJVm7m2rMXFPtXGF2SZdA1eRsLLvl9Q8a8ZpAF6MflS/iznPI9UsEUk14aeNFFSQqajzlG3JVbGSSm9colZ6kC5mdfD8brw7sHM/aCY9F8WyEkFyHKdz1kJsSIVft+Wg9E9H8Vy6W50sOBELL518qkYZ+O8Q51O9YWn3uDgPr/MyUT3th4pw7MhdPeRqd5Kucjg9ZHbIc/255suz0YQJJCo+MwVhIujG6R84zqzvGloUuj6InqI3AErZ9EanI0oE5VCxPGuSmyvdCtI3qwDNUFMPnHj5AXl1wxpHU0vPjLNgBDgyq1ShoVKvzgulvV4BxPiTn5wDX1w5ekwgCUsh0hTFpCaHHECn6N7I8qJjig3XVA8iOuvgx2QP+1p8C1EG+JAsWA==",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1723464568.28285,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "x-nonce",
+      "value": "YjZmZGMxY2ItODc4ZC00NDEwLWJhMDItYmVhZmFiZDM4MDAz",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTP",
+      "value": "hloCbVXeRy5pJYFo43IZhSoSOjbx30k-qbNOiL6fv-o",
+      "domain": ".onetag-sys.com",
+      "path": "/",
+      "expires": 1757644081,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "anj",
+      "value": "dTM7k!M4/YErk#WF']wIg2Il_dUmbX!]ta]wlsNbE$:<C.xpH^Gmi[pFpGilEt*uhEt?0nEs$7$s:*?L]daY^!AXTO:4=sB!.%FTftHHE",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1731233384.316677,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sd-session-id",
+      "value": ".eJwNysEOgyAMANB_6VkWKaUt_IwB4UA22SLuMuO_z-NL3gnLp-5b6rUfEI_9WydYX-3WgHjCaL-tPiGCt3Ng9eyIWBCZyME1wahjtHdfWrkPZl6D5WxYgjNUrJhUEE3yoaDVlDzmaAWdU1Klx4ykInD9AYLOJT4.ZrnfaA.CgpW-U0f57YqP5rGcmaaYt0UaKs",
+      "domain": "live.rezync.com",
+      "path": "/",
+      "expires": 1739009384.595213,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "eud",
+      "value": "H4sIAAAAAAAA_13OsQ0CMQwFUIGgQlSZI4jYTuywTUImorzySsqUjMAIlJSMQIWu4vLLpy__72lzDEosUdlYNHbwA_wEf8Bf8G07egbfwR3z3ejX2jlR38O_B9h3iWq65pCqT5rZSwvqSyPyJeZGwUqJVC_LEZuYyelMYqqT-xcJq86j7e3GoR8ZrXWjSQEAAA",
+      "domain": ".rfihub.com",
+      "path": "/",
+      "expires": 1757153385.768863,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "SERVERID",
-      "value": "17536~DM",
+      "value": "20022~DM",
       "domain": ".eyeota.net",
       "path": "/",
-      "expires": 1723385479.719941,
+      "expires": 1723457984.405814,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "_abck",
-      "value": "8286147A063F50C4B58E892CEDA9C50A~0~YAAQV7V7XM2EYzSRAQAADu6+QQzxufD7tY+gzTjBBhqVPyhbqkf0fjs5yxDMQKTiV3WZPbryuiWINTJDKBwObSOJIEMfpZ5sL0IaDZeDpVQHdJTadK8ZLasIN4WECUqsGjTG1v5DwKQKfAE3WN7cQhLPN+Z89NzIZyKgibvh72PlKgt6WBmX8KXmF2CG3jcdtM4NrnQ49l+Bh1Ru+TQlY57g/UHRgnYUFNa/zPl6Z1fkgBsimbVhMAqGbWA+MjM8aji4P/p4fUKUEzWq9CMgVXYvPFwxztN5KYZhBATYgzklBm4YpUZFmfDY6r2FQ52cwNTSju6iI6LIf6/ntn4ogU+JdUEt0smP3MT4TEvF/Vm/Bpxc/9l4hD0tYMSYMhJwLwRRRPrFOwIPIIe3fgXXuZgBbranDEGxf7Kua0Aafuxn4Y6IRXKUmtxI4RdcHEz6Lvz3+wFCN5cnL4RQsXSSspg=~-1~-1~-1",
+      "name": "fs_lua",
+      "value": "1.1723457385824",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1754920912.634857,
+      "expires": 1723459185,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "fs_uid",
+      "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:b7766d86-225a-41c0-b128-57086c35e75e:1723457385824::1#/1754920882",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1754920882,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_abck",
+      "value": "8286147A063F50C4B58E892CEDA9C50A~0~YAAQG2jerUeuBTKRAQAA0NYQRgzzfkzzMIAKMg4bWOGQnn3HFnSOrd33OY93VGvffg4UjbP1X9iNXxeFwB4k7op68ZnNe8lx0PolDNb/VGp5L9CLPPF1h+pr6IU0wEw/xj0octk5fL6jBNW7zR8Xxq8QU3xSQrSbYkwvkKGGueR1+baOBY16hyasASzX+RU3tBH96sUkpq2E2zHvVHbSnqmWMMXvCvpvLiqliHkzcz3XzPmtBj05ieFIjM/hly0ySyYcQKkvp4hnaH/H3TomGZAusOtRliCXIRNnIBBVKAYJKO6Luc+H9/1A0MKvn2ipRfks8TqHrSZ5UX/uHQiubEA5K/5lc8WeYNtcS8Yi7lhv1UDSsAxcCJyuFKEEyKS3Wyt7GPtr6SBffCQwrK4BLJ8h5OKXSre7+VZzr1cNOUKE4aEkqOgyndxbRWnlyRH0Lcp3r9I3LcZguyBBSF/5Ldw=~-1~-1~-1",
+      "domain": ".snai.it",
+      "path": "/",
+      "expires": 1754993394.402022,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "bm_sz",
-      "value": "DB40BF4605EAFB60172216A385EFB244~YAAQV7V7XM+EYzSRAQAADu6+QRijwYwOZ1FHmGHYdDDFCniDtWA9dl75N+LhwQ4clABy/8v83lGfQT/sWfLLZK2pFT3Op6Y/yAVT5BqC3wSUVrfVcz/Xqro5QiN3xSh8YNqC8ha89Octa3sD4xuHbF3OD7+1x1x5GmcPfe5cGxa4pubqgA+KavS8dnACN8n/GeIrvUl3TqMSultK8Bo4Ln8ghKUpByIt+zWEi5qhOxG+LkPIaD6KeXh8VyS0gdvCAidgg4UrfELRwzdxDmuvZfaC8aM++UxibtomYsBm+H4XCPj451wph3LVZN/Hf9DViTkOXUhUcwIO/S3QoEsKotG/mJ7FyNGEydk9PAGVIXMVlJWXSWqy5EIlIxW42r4mMkM5i66av9BQZm+PPklq2w2ubuFdwie+~3224116~3617093",
+      "value": "FF73B1E99877F1D4F9F03CDF406F1C46~YAAQG2jerUmuBTKRAQAA0NYQRhi4lYMiII6edMdtEFMekvmfHl8IiXpy6Wi5ME7st26m0cnzxrbw7Eg2KW/GxMK21CnFqAqxW8xCDAdInE19tX1R2QbylthAKweZ2CIUq3vD9pjP9i4JUli9sRu3X152WzRYj28akn4BY6Ht82gvdJu7bNnW18380n5JDDqykWAEgL7DRyOIkmlDKhH4eYKo/m72dpmkDxTg9jXEDPnYtCTF2m3Ye54JWIYPqKnovmVAUvGEWH+5PVe1s0QQ8KnwN3f5v0By1qqoyB1Xd1ByN53UBdHG+TvgdT5huC3v7LKvd+pmE7/yOELTpglus9JR1KirBJjgFU94c0mJbSli7xlURevV/BlUZSVfz1J/UGLv7tJhuxYkw8XdRu9QBS01yK5mlk8=~4604978~4470593",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1723399269.635248,
+      "expires": 1723471768.402688,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__it-snai-auth:token",
-      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..ykAMxeK6QvB4Gsfm.ZoRSUUIkGOFx8PEykfR43LQjLtJfdDnta2roNSJJvxsrtSRWVEqOoe6YehJi4tDdA_GJ72r6baFDRwOeYcQsnGdjTmTBY9owY2V3sfYbDx_1THQ5k6nlR3x44TfWZm9gODv7ydFXQbrlsm2MALG3-gsijQcs1XB7KULf98rDR5HcAvkp8ksCaAjEimF3I8PaBQFZuzoYoZKj58rY99qR7cW_lPuxfcsXgtVORCZjPcANTa9Sc3Y6F3RP9FI_Tzi5LGbTjxuWLfV4qo6VMmumReNCxbaxcjm-iKacvhsbpV-UgWknRMx9dldvuTOhLD7ijdylSqc8bkabEck2sSYL9tEziUhinaOwlGEWhPejh4Azqnj3CVaigGvyPGYLdTs2XrRHlgqaGCNtosA8u-gOl4BaMxFvN0Tf1IdpLiuNPB0QRoVQP7kb7H7tuds--ZHQzvyzd9hQswjfgKy73IcMkgvHI_HQpJnR9G5VDUArYV8NnD_3ouW4_QbCuP2gjnvUwYfjyvDNUe9lQ6_8ZiXFZCf0rH_No9PoYm_6DmamcNsGxk0lj6tFkxg1MGS84YjTuSeSAMkBpvDmMAa52Q1PDwkMA3g-iMFQdCz1gFv1sgLVN85DW7AAT0JTWf9NwSQ4UBCyAJLRm2Y2OKXBwNyWe0f3xhZW3RDio6aY5-bI85Ey2XHtVoJ_FijnedhUCLE1SwdnA79QHfjNL9mJM-sratW6MCQcFqaF3vwBjBYD7_Zps0TIYVbAp6rH5OHBYVvD3qr196g5m84InQ0_wMWKy940K6VUWpcnHpx4g8E3xXlAkEyrhY5y_wMm4DNX28aE14GZlKf2drxqrx9CktufYA7Aza0CwiJKZ5maeTDfmchDg9rENLK7f1IDyohFEPokloUG6ZUnL8K-7ftV6eQh4d6ZpjdOgQiMl0-KN-BTeVqsEnQQmS-worxJ9oQ06VOFYrmW05eK_3C3sILp_mKt6WBcoNxi-pQ0JmeBW9AhyPA86-CccY4-NCp0cUNiz8cKo6MGVFsC4cABsm2BCCDGPijg16NTy58UjGbMHluTrMNMwSdIMH0ZRKoOpG5pOhe845zb5eP26r366iHlKKUnIloV6jL_f3aUa0ZPzuzaB2VlL2MBKVOIUDEh-AMyOOAXMksBqcvZAPRF0KNkRX_UjNMRtRyHaOmdwq9UfpepPR4wDJwriN79aMk6Ils8fu5r4S9WewEuLgUhAvHAkM5ccWGS89-qfcEwD775tiMkF2aEwgM8EgvA807keG5j2RX0X4TvxKqjCuQhYZDmsa5RVsufyPjLcEtE0bE_l8f4BxV6JeqRzXWFnX9dljkJgeK9Av1p69e2vTiaejAi0OudD3H5iUzGWk8KIqR3ecgBKOQ4hj7Z2IZPFI8kTP7bMaaniV-awNjCafTzEp2u4uvWzcxI0s7nzFPaWYZaPpi694JD1EVa1AeXHvnwXhYT-fRFmpxE2nCb1uSI0IfOh1DQzzyqw1HHB1fVMiPtzFkUcCH5yiK48lvYAujNWb5QYh_VaC04P3dNpGz5TLjzTlQOkK1dyGPLthNNWHU7QR_kt1Fe8i0Fo3fnKqiUjsMrus5HhHr8gvJxXggbt8mA-L7_zHhRInua5jGEYMu20G-siC5Wb9rTKRL0ckm_x6vxkYcIeyXJtKTTqmh2zbUFDNNWjsM-xhjqY9MmazX791hnCzbt8eHpItRvT3cYgVbgg-yeX7ej7II5uSfCM105K7HCBkbfq8CouPxMt3rVC-xeaWOEpWIdlHWmmbib3EmBdT4P7KbU-JFakmLhsBAnYXmK51OOH3Wjo8yedKLPMghjlhWl2jNgOFagq9a1W3jkYErZCC0uXeiyZUi5CEV9L8zGAWqYU3ehOtoVGAgv16SlHeswJM_S6rGf5nMlJnBiuzDa7M41f4PjXH9v1G-US20xp5OjrBKxZe6HyMK9dTNXQXtj-M872dOK2LjvE45dzC-8zA-HjnAt9G6mlIIGJaf33PLUEB2mnPussee8aVjtTIPo5T1nRRu8QJ8Lqnp1PFudydIOl3h6wnQyjOLGytXhEoqSSOMhSxOLAXjHRZp-rKk11JEluvNP-kINDMvUc9ffHR6v7hvIrdd3kQJCjt48itQnDwttSv9Ap7qyuEUmAyMYggVcjy7YrVJpyEEG9m_3um3uuyk9w9_Vl7z_EPdAMFrIHaOTMjzByQ22CqcuG3MQDf_tfmUZmmG7t6XIm4wcJAw05ium8lDe4LZ99JZYf6iu5E-YtJmCS3fy_2unE8U1he4eKLIOYHUYO_usmIs0pL_iWriTpAj4XoPAq5BdKzWSVopoN92CAERqme1jW-CRdCE8neRmbHH5A-T_UUWK2iBQ_iXWLZKKl-Y4MxMhBso_D__sWc3UP5_qYq_B0pb8pOkOx4YamnF5LsNqUh58kkEhqyICJHiILUfndmK2UII4_A_M2aMWeJZ6SnzW3Sfu4OpowAXCye91dlxoqNeUiJm3laDSoG_ZuALrmygnbS7s8zSKKRbLV7tt5crefHOOtRycBO43nZpFHp6UepEE6nGUwInUKS0On0nLEXbSE_84LEkOSK2dBk9aq8igIkreO-WIaCScSC9umoNyJ4-24FP8D4dIvt3PpK3bQazMsIa9a4d1eAHKfqBEX6835ySEjzmneuat7fdpeXqZDqviOWEkge1fQ998RTj6WCZjipIGxbEnUtAiQiQZ1Z-hhjiAYCVh2mQ7RA2eYWhEZQeTTenDqVjxpXITcHW1EOgV-Gk7mx2GOsrcWl7CnhVLjxsexXzkhj794_M48j1T7u9Iv8YtpKt4298tZlOibXrhOz6hDtYaRZOzPJkqf0lAdlCSGWMMlF3dEJvukwBX4Lb0LOxo0bDIoAM_xE6RdtF_3HED5_rZ5vDHcRYQ-aQ-UyPqpdkT8pqZj59gEDPzU4ZdEdr2WufPjuSuem_jVZH-b9CmaUSUoaIfQMdHafEd5r-LHSU_IYIiclbUMO5ekHFTOJNGapvzEqOlOk8pgyGhLSGsHdUx7RobGjyFQAnOeah_0YoG7FQHQAnbu127VP7578m2qeQMMfZNxQL1w9tYhDosI8kpXIDHxhYYbLgnOQNWP8IwQ6Lr2r7VTxYu1alZo79Z2UOTAuaeyZdTFhRkHIDmo8Ja-0imAs607mml3DWdIMQou4qEl5Swdgdx8p6ANRnPQxFujJNLg3WSdGoSLpaGeMa_zWy57m14uDY8u4Szq9uSbK6o4KGepe6GHjgDIbSDAdOwd0VT2C0uTOMPnDr0Zj0GSWCnBSb_aTbd7EjAa-WVXRlpo0iluQy8RGO7L2LDfKdfg2SrvidKa7aMaskF1-0vd7_HdnrqcVoxWwy15eyCk2EJrHR4cBpCWijuXLOtnuXSgaESulaNtseb2FGfLRVbE1XEZ00bIqh-T_aT6KN3gP8tltJppLPydtxv0c0mSfAU-xUh4OzczDufZ4ajCbOsZ0o3BTrcy4b4HkvFhlVscCQnqwUl9PerN5dk05EwCfHgoakNdR1OMd8E2yhdkQpxKrNeB26ZdvC_HD28cibFXMEGToWlNhpWZiaei0ybeyVbjrc3jMwiYcg.PWWMvdrsNfte6ETqdkq7UA",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..g0iq9BUt36aL3gCH.bGk32g0LNW7baFZ_bpy-dDszNQvIRMqD5dB15-6fOFppx0dvrtn-n-LMy48pr-C1VYq12TjtJ-3R7xV9E8Xv-vGf_i_4_CqrpM1Q4DgrbXrKl-0mtWddZbYuu6n43ZVzmNPmqqdG3qETlvj2Fa1vCvhtt_d-cWFV_2KtU5WUOXjZV3yJ-DRchdC84EAN74Ow7hSyrJE8LiVY7y6f4Eo2oFsLLzhlxlGe3AKfgx131pm95C1jQ70HamdzaomXMY2m7_c-79I4uMe1XaiQyRZo5GHQD-wTv3fIUSCJqqUyA2mdqqW055DiK0UPgkfdXBEwMkaqL_P6Uox37VnUerbyay2EJrLTfCmvSOckKAHvLPK7XLC81CdlqCQe8peuIWonwXg-Qwz5YaHMI55jiIb150HW2kNEr4Q4dNjaySKM53vWBnuBX_Vlm5fQX81ObyWVbICKUSC8OFH5labHxJO8ePZyvGVZqq3XR_jXKNou00If1IIFzsPRqWmMtDU7rB3BNzK8HeI_OPyFqJA2M9gU3Doa0qrvw40qLImM9CjAOgmjKQ33aNAgo4MiGbl47ydaM9YeBrvvoOBTUT579i7zAb_Ba1kwTyb1twC0mxIMxigH3ibtoU6-o-asTJ4mJHaaAuEeWhwqIpzh3QKoUdcoLlpvd69s2obUmrzILPdNj_o7Vlqx9FtRN3KuQq8qpMFd2Bhbz_BM1A2hM-kKc3SrAS1LKQ_l7eue3SUHR8cMBow3Tg2YiJCXmewjXLGN4w6YtWyDfjfcmOitfyHPd77EGKJbT7xBwuMIVsLASl0KXp1YXbdl62M38Y1BubECv5m0f13mC53oI3I4yY6T5nDOPyBaiEIXSn1CjRuYnfbnPnBJvQHJcQeNt98ozgIDs0DYuvIY-U2KkpuAup5Z_E7YilmcAVZmpEQJlwqd8Kaibxq1f9rPGigxUzR9qZ61K6cd5kCB9x9BkheKWDtAM4jzk6sKwGMV6-FLPxdJWfGZ3NshJKo8UE3IILu8JZLorYW8nPiQs3mkzyZC82aFLEctHh2UHqoJWQKYBVwnUvFd-49IM6M3nixlpnHwnzHxMFrhnI6QS3FylhFO9RVd_3QeIUD2qK7wfexITHHluLH8S7TjpD2M41dCFIo9QskXX8tNErUMJm-pljXTfbdDO1aNQ7BQPYAvXrtZB_TbJOgbpDJiGS2_-Rrep39Y9CKEu9yL23N6fmfhFRvJDLkGMMWtaGLImQrx22tkDOxzp-hAU-obKYOiur41lHeskU4x6yWnWT8J3yY6-Mt7oi4HDOXvAoPVL64B-pnMK1uebu-0GyMjRaZLA0-1pxQ9AesfNeC4x14qjvaaTMG_ZXQd6H3kBIefM9dC8EWcaNyRy5NAZXHFKJU4lw39q8UVeV7DbWIBeQLthW7028fyqvdDVdmWq5k0nPQwuxensANG8jSQ5jdyGPhOyIzvIKj-NpjGjA95IAMXh3brQxt3vo3PdqmRLQMdf5KTcrbw_PguUFagstU89b83jEyZ6DjE3leLrgEO0sUkY6jPR7MdO4-2XenZ8L1ebB6fqkxz2d0IChlDJg1wUhuZa7CiwT1dIzHwaCmSt5xqgPyT6YaJmLyM1BbixzXlw-sRbysxI1QeQfFcV1zbBp-15XCsL_uB8SGt8aB3Ya9VTmPexAbd-caFJuLc7_-46Eeg1ySbRWy-4tT1pcKqXHTH8pypc75osCMc5c6Ho8GzSBQv5Z156Il-VkLGfdcqRmDIQ3aeEHOGzvA5nZeYgM-X30ikE8ADBM-CUq_xao-ILSNVIODYDt42lXN01E82Ia0dtvdIJdtPS0t4mSK2hrVtLIR3osqKtOaYnK1WRp45nxCAqREOQr1dc0JAcZuPnVP8tmtGuHj65FwV8vqstcF67DBygsQornBhX30k7VEddJUEuVBz_U5IYTeJKQ2K5StbgklSw-hvh74EiSCsQ4MCI-hmrulVeoXIxrBJJt3G5FQuNiQkuSJrZYht6NqisxC8qH8aHOrT5A_ihQ7NNBscWhk5Qcz0R5Iii_92ISwOoiqrJQPFTMoLMvlm3o47gz9d2PmM6Hj0luV9N8IbRGy5A8sm-ZUG3cYjYlofgLWBtc8ZKEuUj2fD4kLM7kJ2jgPDvUOSEr6BAOGc67SrnCdFKYpJSnXZIUz3cSkLQaG39XGQUadMO8zTRvJ_HQ1wBIPCWc-CtEYd_zzf0siE5dHpQqVyO5v67MdCtDzAvzPO5CwJVQMcdG4_5hsJExItH8NjmRWQOJHSsJC_B6XFGjHkI7Uj5qrZK7LRlawiHFGtlBxytYANr1QPOf8K4fGWD8oMfwb17QI0UjE3w2Nn7ENkne4IXDQvwpYC8jb6esE192f5ICIy3fRv6dGa0RHwmgE23ZQm6unx85AxTVsXSlMlluN0_LnI2UrZwakDqpi9d1UVIpKCvef_3BxOUPqbtHEQQGiyljbR_zqTdeUAI3fV5k2FKIv3-ArIo_iTyOC5iCoNdf2wcTYsB06St5w661XXHyBKVcRXBhlrpzjGbptixmBCKjcJZlJlD07zmX2o2B4_BzqwAaLnL6mnikvHy1Uiom0CxQli58Giw3ugBm1L-A5LO87PhsFaVWj0ySLOZhufbzVbFz96e6hYNuwhYKUlPr_FIn9m1QQJEonBhTTboyFg6HS3M4AYkMZGqNuii1_k_INE7yd44wQbmAcIbBUA9YbqVBXYuIwzaRiEphYsnSXZ0AwzuxR7a0d3BH7OxnSH7VBY1r1sDx3R_3VPYIpP1chcv6d1I6a9Ar_XeWXVhUdj6zgoe1X6f1EkWQ15Gm8mW6h69pUflODpp6DN9rtUvTpMnPiNQOZEcXOPfyosU3htPm-U2OL26UOcsxcWUn2VDvQMA9GmtoZkJSut6-fJCYWIfHHF4Fve9NmDTKFtdu2cHAN6nkbpr-3mZLsQ87FrE0_tMgeE18eQaPH8KLPRovRJDnThoEAWamRdfhO7vrabCzc9z7pI7bWxPGfVXbPnN2HdUeeB9TJKGdKR7bO7ZYREPVIvpT0cynwOSQTkLKrJOevWuElwILLrCWtPzaTfaS__LubVNJ_YPakUBox52yUWE4EqELSz5nhWi1L2mCWCkl33EWNInSrcSNhHPNCOuItqlrZYOU0Ygaeb7do4ri2arXFoqcot1PNMGepkYVVUPCFZrHLgyh7jlA0_dskzH2A4uoFPVHwGWkuJklC2RlPKrBKSNgCyu2ZUMGSZWfo8A3nwYNlB-_fCRV1W8YPzAZ7Vb0gQCqhs1R13pM3OBGwvjhGQCkiDE0QJZ9-wwv8tUA7xoBUMWpF0r0YqA9CZsa9DiAhRv-dvneM59QCCAYYnTPSlO0yEQQWUmSo87CnCW3OjMMzSFbQG_n4Kye1dOICb_90zy86IcucMFas58RZ2uSdNg3gj-r-AAPZjLLYGqfwzy5UEUiz8LSHjix5BODYgPmTY3Tx8BKj-d8g5sBKxi4QYBm2ZjAZg6FKyFq1WUzBo0UQIDezk5jQBXOoi5RzXk0ggOse2BHRX4JIPTLExqZg74lorSFyFj0TUWU-kzapzuFhtjySP16FOdJFxoW3HIBFoMj8.y3sGeGC2-GgemANc9A__KA",
       "domain": "www.snai.it",
       "path": "/",
-      "expires": 1723392112.827126,
+      "expires": 1723464594.638561,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -402,17 +402,17 @@
     },
     {
       "name": "_ga_XJDX7S49KC",
-      "value": "GS1.1.1723384878.2.1.1723384913.0.0.0",
+      "value": "GS1.1.1723457383.3.1.1723457394.0.0.0",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1757944913.016567,
+      "expires": 1758017394.854323,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__it-snai:refresh",
-      "value": "{\"ts\":1723384916050,\"expireDate\":1723385996050,\"expires\":\"2024-09-10T14:01:57.773Z\",\"refreshToken\":\"def50200e284811a7e3ff406498e29aa0476337e4bdfe7aab22b296c616f613df5877c6059a177ec80c1b271559807d20d933f58175715ddf0d302399f9a3a552407048c80cf3b0500eb6a30aecf7c8419ee2063693c5f6c6115432168d4d8795b498162d289fcac45ce6ad92ed69881cb50e1c15eabff5f73091e1f0a36c717a8c002636cbcb39d17e3c84193bc10273673a50fce288d94738348afabd321d6fcf7aa727becdeaadd135bc935305d0af65ab8f4adfbc3fd20c31c3be5ca999db57a6e0e7c987e643de7c1d7f44b4cd283d3db316c7a0352d8581cbba7e84fc1cd35232540aafb3e9eef1c34416e1bc37cdd22132a9c7cda191d3efa1620e0d4c5e42c423e17c452df9c9b63724c5708b7c84c128302af18f842d00ae0e78c10522efef2119a8dfbaded99b3b12cc30bce609dae736fe54632934fe0e63e89f1d3ac84b2301fe6ebae17442a4468e7192c09f9a4abab6e38008e325990fd91c5dd75586a7ee22a0fdbf12e0452e06a89003f970123570152ecd35dfa9cd0f43cfd1f9678e6186ee6dd0b427552b37019\"}",
+      "value": "{\"ts\":1723457392921,\"expireDate\":1723458472921,\"expires\":\"2024-09-11T10:09:54.601Z\",\"refreshToken\":\"def50200fc04553bc404d9b42e9f1490e50b7d8e8db621b7a70cfebcf4414e7e33bce5613758bdd3c8a2decb663f1b63bbbbcd61b18af5315e21eec24eb8be4c69371575a99bf723ae607282c9d9f3a804404e550ed4c48dd8ccc5b1dea1b8a08c90bdb0928d435d2b2295bdbb8d24a148780cb4417261db7ba1d2c6e55afaa9191f142a2373f9db39cae337c2b99040fbdfaaea6f5ff5fb57034b4094f25d652297ec9729a34787923bec1b805485809f8dc5970f86b1d9096b1f225154f2a2a8c696f8849abd3a838614c970ecffe60e41f25d64616ebe876730b82b514b1d3634baefe305c916f6a04a2a7500c1593d585d7666d56092e0cf79f820ad8adec49b60cac2bc6e9c64835c27a52675345a7e5ff831386bfe82c8823af3a702f4ea1b878a408e88dc35b3a47101cee68ebb0ed85310483607418b5ab672e4818c9ab050374cc33d6e4f853285355a25a64e3340c55fff1a3bf4d74c9ea13bf8783996c24cb9d2f8e5ca5a79a8fa9875b8eaf4cbe2c2b093d970c378dfdd929d4c059ade66e913bd4a5f85c3bdcd542eb9\"}",
       "domain": "www.snai.it",
       "path": "/",
       "expires": -1,
@@ -422,17 +422,7 @@
     },
     {
       "name": "__it-snai:token",
-      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpdC5zbmFpLmFwaWdhZCIsImp0aSI6ImNlMmE0M2Q3NmFhNjk0MDc1NGU2M2MwNDA2ZjYyNGI0NGQ4YTc3MjcxYzMzYzc3ODlkOGQ0OGI3N2FhOGI3Yjk3ODFjMWM5ZjY1YzM1OTFhIiwiaWF0IjoxNzIzMzg0OTE2LjM4MzU0NSwibmJmIjoxNzIzMzg0OTE2LjM4MzU0OCwiZXhwIjoxNzIzMzg2MTE2LjMxNzExNywic3ViIjoiJDdlYTI5ODU4NzQyYWNlOTBjMDI1Njc1ODg4ZTc0NjBlIiwic2NvcGVzIjpbXSwic25haS10b2tlbiI6IjY1NTA3YjMxYWMwYjczMTYzODNlN2QyZjUxODNiMDY4Iiwic25haS10b2tlbl9jcnlwdCI6IjQ1NTA2NjUxMzA0ODc5NmI1NTc3NzQ0MzY3NDIzOTM5N2EzNzM0NzY3MDU1NTU2NTM4NTE3MzU0NjMzMjQ4NzgzMTQ0NDQ0ZTcxNmU3YTU4NmU0ZDc4NTg3MzQ4NTk3MjY5NzEzMjRkNTM3NzZhMzE2NjQ5NjQ3MjQ5NzI1NzYxM2E0ZDU0NDk3OTRkN2E1NTMxNGU2YTUxMzM0ZTZkNWE2YzVhNDc0ZTY5NTk1MTNkM2QiLCJzbmFpLWNhcnRhIjoiNjAzMTk4MDAyMTkxNTcyMiJ9.nGwCnt4RMPwxIbIBjtrF5qEHuKRnQ9eYnMcQ5PRMW-X-xJQUwYnFhk0o5AL0U0KvRH-871NsItKzvPgG88nUQPpDnFT9HDkeBk6nloxAs_HzF-PhmOqcp2ohnxk_oMkv8U-_wCNZZUtZ3YOOZMcXgBesamtLXeFXdfX76xvQ2bHLRa_8uZ_gwnyhWHd4a1-JKf9IfexAsNbrvziKsJt-3HdbQoL3Da1ST0v30lVfQGNZFMJwxwIguNH6DZoyCTCSDUs-4XdobgAJk1rArKywcz3j4AuYT6IJrFoVzfRJeTcZnH0pYPCJ1EOuzQib9ic-_W2jE9jmmNTLjrqStyTGWw",
-      "domain": "www.snai.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__it-snai-idle:mgmt",
-      "value": "1723378913032",
+      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJpdC5zbmFpLmFwaWdhZCIsImp0aSI6ImQ1ZWQwMmZkZmZhZTdiMjkxNGU5Mzk5YjU4NDM1M2EzOGJmNDFiMTc1ZjIzNDY1NzY4YTU4NGRhZWIwYzRiMDdiYTljOTBlMjA0N2VlZTA2IiwiaWF0IjoxNzIzNDU3MzkzLjM5MzIwOCwibmJmIjoxNzIzNDU3MzkzLjM5MzIxMiwiZXhwIjoxNzIzNDU4NTkzLjMwNjcxNiwic3ViIjoiJDA5MTU5NjFhZTYwMGM1YzgzMzY2MDFlMDczNjVkMzA2Iiwic2NvcGVzIjpbXSwic25haS10b2tlbiI6IjU5NGJkOWJhZTRhMjZkNjQxYTZmM2UxYjUyYTQzYWIwIiwic25haS10b2tlbl9jcnlwdCI6IjZlNzU2YzRhNGE2MzQ1NjI0NzY1NGQzMzRiMzIzOTU4NTc0YTM0NDczMzc0NTM3MDY2MzM0NTdhNDE0Nzc0MmI1NDY5NGEzNDMwNzQyZjMyNGY2YjYyNzM1NDU4NzMzNTUxNzg3MTcyNGU1NTc3NmE2YjZmNmU0MTc1NGQ2YTQyM2E0ZDU0NDk3OTRkN2E1NTMxNGU2YTUxMzM0ZTZkNWE2YzVhNDc0ZTY5NTk1MTNkM2QiLCJzbmFpLWNhcnRhIjoiNjAzMTk4MDAyMTkxNTcyMiJ9.MkEy7oJv8KMdjAeR6fCaESDXs3WqFM7grpjg2qS9Prw97KVxnFu_rYnLwWYArDk6YQwGXo2UBWLETAMZRxO8P18lS-OXBdVUaqSI2TIx7M5z1M4IsFK2QUPyXjgg1HQIfaOWT9jGrAX9XbLWiAR1tdOu2uyvoOiQ3wphcGchS5UNFLMPQfh5Q9i-_4kjeWRa4wrelJewzeeTsJps_WtFA80z0Co2_WkA4BROVYTOqxCTjbi7BeN21spYhEmHgg94Ai8JIkVddcPnyjNg15NcYdvfDKxOO4yJ9CgeH2BKCY_iZAnSorKBnHoSiJOaYBufFR_0fMne4R1NXtGEunjMWw",
       "domain": "www.snai.it",
       "path": "/",
       "expires": -1,
@@ -442,12 +432,62 @@
     },
     {
       "name": "bm_sv",
-      "value": "408D38F5DD3217A7D1C9FF847DEDE4CE~YAAQV7V7XCiFYzSRAQAA4PG+QRhdjRSKkuJdhI9vkxOhnsRAHbnW3tzhJ8ux83N3APjgr3dBFYxjYMvFHpO/2Ia6gR13eGww9cmo6iRibQ4Uve9Gkd8JWEYVA1gCxNThXbHz95B9C3VN/USuGFltf/R/OUvX3ZGLI9ji32fRPSr5h5COgrrb25doEae4WCEgU4e0LO3i9G/aOW+rIoAPXAPVuhmiwClJoo+3LTYO3/n15FMR+KRcS3dFXXC6mg==~1",
+      "value": "BA60E0337CF6EBD58CC9A5191A6307D7~YAAQG2jerXquBTKRAQAAaNoQRhhZifNMK+JgKNl4G4h0tja7tHy64imRKIFxHYVOUOBLNafvpSMOtp6aJUwmeW6ErmESmT3XpS03lPGIhRS6JrNNqlFPxj1nIbII/WHcgg4PVq/90px5tkFSYvYNDOvDksnNatgIAEI+0ZK9bjhYEeszRt2pAs9siMSEg38u+nqhpk13l/YCVTd/+2ZIszebKJcQPCsUKRG/qsntwZYSscfHMxEEhA5x5RDmwQ==~1",
       "domain": ".snai.it",
       "path": "/",
-      "expires": 1723392071.506141,
+      "expires": 1723464573.318543,
       "httpOnly": false,
       "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "pas[snaicasinopiazza][real][token]",
+      "value": "O6ZLibiE1KWN4zdIJiaRkCDQUIAAcCBI",
+      "domain": "login-it.casino.pokersnai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "pas[snaicasinopiazza][real][username]",
+      "value": "6031980021915722",
+      "domain": "login-it.casino.pokersnai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "pas[snaicasinopiazza][real][clientParameters]",
+      "value": "eyJjbGllbnRQbGF0Zm9ybSI6IndlYiIsImlwQWRkcmVzcyI6IjE4OC4xNS4xMjAuNDIiLCJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTI3LjAuMC4wIFNhZmFyaS81MzcuMzYgUFQvMS4wICh7XCJzZWMtY2gtdWEtcGxhdGZvcm1cIjpcIlxcXCJXaW5kb3dzXFxcIlwifSkifQ%3D%3D",
+      "domain": "login-it.casino.pokersnai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__it-snai-idle:mgmt",
+      "value": "1723451403542",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dcdd218e08cf151d113eb4b0a7bebd11d0f5821ef82424f966adbfce5971964c",
+      "value": "Bs34WEwFw7074wvpMzwiE5GRadFkdSIhmQJVcP4dvdwSDaZxE/Hgsz6OeYdrjdz0m6tqeK1pnWfvqu4tgTi0jx2UXtEk6xlkmxXKb411.RYw03Mn3frUN2eAO4AwgTwbuGMphMgBW.",
+      "domain": "www.snai.it",
+      "path": "/",
+      "expires": 1754993404,
+      "httpOnly": false,
+      "secure": false,
       "sameSite": "Lax"
     }
   ],
@@ -464,12 +504,16 @@
           "value": "{\"liveAvvenimentoList\":[]}"
         },
         {
+          "name": "dcdd218e08cf151d113eb4b0a7bebd11d0f5821ef82424f966adbfce5971964c",
+          "value": "Bs34WEwFw7074wvpMzwiE5GRadFkdSIhmQJVcP4dvdwSDaZxE/Hgsz6OeYdrjdz0m6tqeK1pnWfvqu4tgTi0jx2UXtEk6xlkmxXKb411.RYw03Mn3frUN2eAO4AwgTwbuGMphMgBW."
+        },
+        {
           "name": "onetag_sid",
           "value": "Ha9ZenQZ9iwwy5nmb8YYom7g7p0bgcFOJkGtCL-Mz48"
         },
         {
           "name": "nextauth.message",
-          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1723384878}"
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"signout\"},\"timestamp\":1723457379}"
         },
         {
           "name": "io_f604be51-ccf5-4d26-9cc2-3c44e1fdceb9",
@@ -480,12 +524,16 @@
           "value": "{\"isVisualizzazioneEstesa\":false}"
         },
         {
-          "name": "_fs_uid",
-          "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:9713db65-9301-4525-8605-74b38b5d6a31:1723384879367::1#/1754920880"
+          "name": "gc_web_sdk_xas11x",
+          "value": "YZC0MXE4bDgzMg=="
         },
         {
           "name": "num_versamento",
           "value": "21"
+        },
+        {
+          "name": "_fs_uid",
+          "value": "#o-43NK-eu1#c8873fc7-4d1e-4b04-94ff-416848a688e8:b7766d86-225a-41c0-b128-57086c35e75e:1723457385824::1#/1754920882"
         },
         {
           "name": "~sportTicket",
@@ -494,6 +542,10 @@
         {
           "name": "cartaceo",
           "value": "1"
+        },
+        {
+          "name": "gc_web_sdk_6ajjrw",
+          "value": "E=KoeyJlbmdpbmVfdXJsIjoiaHR0cHM6Ly91czMtZXMuZ2VvY29tcGx5LmNvbS9lbmgtZW5naW5lLnBocCIsImVuZ2luZV90aW1lb3V0Ijo2MDAwMCwicmV0cmFuc21pc3Npb25fYXR0ZW1wdHNfY291bnQiOjMsInNvbHVzX2VuYWJsZV9obWFjIjpmYWxzZSwic29sdXNfYmFja2dyb3VuZF90aHJlc2hvbGQiOjMwMDAwLCJzb2x1c19yZXF1aXJlc19yZWFzb25fY29kZSI6ZmFsc2UsInNvbHVzX3N1Ym1pdF9ub25fZXJyb3JfbG9ncyI6MCwic29sdXNfZW5hYmxlX3ByZWNvbm5lY3QiOmZhbHNlLCJodG1sNV9lbmFibGVkIjp0cnVlLCJodG1sNV90aW1lb3V0IjoyMDAwMCwiaHRtbDVfbWF4aW11bV9hZ2UiOjYwMDAwLCJodG1sNV9oaWdoX2FjY3VyYWN5Ijp0cnVlLCJzb2x1c19sb2NhdGlvbl9oaXN0b3J5X3JldXNhYmxlX2FnZSI6NjAwMDAwLCJzb2x1c19sb2NhdGlvbl9oaXN0b3J5X21heF9hZ2UiOjg2NDAwMDAwLCJzb2x1c19sb2NhdGlvbl9oaXN0b3J5X2xpbWl0IjowLCJzb2x1c193YXRjaCI6dHJ1ZSwic29sdXNfZ2V0X2xvY2F0aW9uX2ludGVydmFsIjo2MDAwMCwic29sdXNfd2F0Y2hfcGVtX2FueSI6ZmFsc2UsInNvbHVzX2hpc3Rvcnlfc3BlZWQiOnRydWUsIm15aXBfdXJsIjoiaHR0cHM6Ly9teWlwLmdlb2NvbXBseS5jb20iLCJteWlwX3RpbWVvdXQiOjEwMDAwLCJzb2x1c19teWlwX3BpbmdfaW50ZXJ2YWwiOjAsInNvbHVzX2FkZF9sYXRlc3RfaXBfY2hhbmdlX2luZm8iOmZhbHNlLCJzb2x1c19kZXRlY3RfbG9jYXRpb25fc3Bvb2ZpbmciOnRydWUsInNvbHVzX2xvY2F0aW9uX3Nwb29maW5nX2RldGFpbHMiOlsiaGFzaCIsImVzY2FwZSIsIm5hbWUiXSwic29sdXNfb3ZlcndyaXRlX3Nwb29mZWRfbWV0aG9kcyI6dHJ1ZSwic29sdXNfZGV2dG9vbHNfZGVidWdnZXIiOnRydWUsInNvbHVzX2ZpcmVmb3hfc2Nhbm5pbmdfYXR0ZW1wdHMiOjAsInNvbHVzX3JkcF9lbmFibGVkIjpmYWxzZSwic29sdXNfc2Nhbl9wb3J0c19tYWNvcyI6WyI3MDcwIiwiNzA3MSJdLCJzb2x1c19zY2FuX3BvcnRzX3dpbmRvd3MiOlsiMzcwMTQiLCIzNzExNCIsIjU5MzkiLCI2MDM5IiwiMzM4OSIsIjcwNzAiLCI4MDQwIiwiODA0MSIsIjgwMjAiLCI4MzgzIiwiODAyNyIsIjU5NDgiLCI1ODAwIiwiNTkwMCJdLCJzb2x1c19zY2FuX3BvcnRzX3JlcGVhdF9pbnRlcnZhbHMiOjMwMDAwMCwic29sdXNfcG9ydF9jYWNoZV9tYXhfYWdlIjozNjAwMDAwLCJzb2x1c19yZHBfZXZlbnRzIjpbIm1vdXNlbW92ZSIsInRvdWNobW92ZSIsInBvaW50ZXJtb3ZlIl0sInNvbHVzX3JkcF9ldmVudF9pbnRlcnZhbCI6MzAwMCwic29sdXNfcmRwX2V2ZW50X2NvdW50IjozMCwic29sdXNfcmRwX2V2ZW50X2xvZ3MiOnRydWUsInNvbHVzX3JkcF9mb250cyI6WyJUZWFtVmlld2VyMTUiLCJUZWFtVmlld2VyMTQiLCJUZWFtVmlld2VyMTMiLCJUZWFtVmlld2VyMTIiLCJUZWFtVmlld2VyMTEiLCJUZWFtVmlld2VyMTAiLCJUZWFtVmlld2VyOSJdLCJzb2x1c190b3VjaF9jb3VudCI6MjAsInNvbHVzX3RvdWNoX21heF9hZ2UiOjMwMDAwMCwic29sdXNfcmRwX3BvbGxpbmdfcmF0ZSI6dHJ1ZSwic29sdXNfcmRwX3BvbGxpbmdfcmF0ZV9jb3VudCI6MTAwLCJzb2x1c19yZHBfcG9pbnRlcl9jb2FsZXNjZWQiOnRydWUsInNvbHVzX3JkcF9wb2ludGVyX2NvYWxlc2NlZF9jb3VudCI6NTAsInNvbHVzX3JkcF9jYWNoZV9kdXJhdGlvbiI6MCwic29sdXNfZW11bGF0b3JfZXZlbnRzIjp0cnVlLCJzb2x1c19lbXVsYXRvcl9rZXlib2FyZCI6dHJ1ZSwic29sdXNfZGV2aWNlX29yaWVudGF0aW9uX2NvdW50Ijo1MCwic29sdXNfZ3lyb3Njb3BlX2NvdW50Ijo1MCwic29sdXNfZmFhc19jZG5fdXJsIjoiIiwiaHRtbDVfZmFhc19pbl9jdXN0b20iOmZhbHNlLCJodG1sNV93YWl0aW5nX2Zvcl9mYWFzX2lkX2luIjowLCJzb2x1c19lbmFibGVfZnBfZXh0ZW5zaW9ucyI6ZmFsc2UsInNvbHVzX2VuYWJsZV9sb2NhdGlvbl9kaXNhYmxlZF9hbGVydCI6ZmFsc2UsInNvbHVzX2FsZXJ0X2RlbmllZF91c2VycyI6ZmFsc2UsInNvbHVzX2FsZXJ0X3VudGlsX2NvdW50ZXIiOjAsInNvbHVzX2FsZXJ0X3VudGlsX3RpbWVyIjowLCJzb2x1c19kZXNrdG9wX2Jyb3dzZXJnZW9fYWxlcnRfbXNnIjoiIiwic29sdXNfZW5hYmxlX2Rlc2t0b3BfYnJvd3Nlcmdlb19hbGVydCI6ZmFsc2UsInNvbHVzX2Rlc2t0b3BfZW5hYmxlX2xvY2F0aW9uX2Rpc2FibGVkX2FsZXJ0IjpmYWxzZSwic29sdXNfZGVza3RvcF9sb2NhdGlvbl9kaXNhYmxlZF9hbGVydF9tZXNzYWdlIjoiIiwic29sdXNfZGVza3RvcF9icm93c2VyZ2VvX2FsZXJ0X2ludGVydmFsIjowLCJzb2x1c19kZXNrdG9wX2NoZWNrX3Bhc3RfdHJhbnNhY3Rpb25fYWxlcnQiOjAsInNvbHVzX2Rlc2t0b3BfYWxlcnRfZGVuaWVkX3VzZXJzIjpmYWxzZSwic29sdXNfZGVza3RvcF9hbGVydF91bnRpbF9jb3VudGVyIjowLCJzb2x1c19kZXNrdG9wX2FsZXJ0X3VudGlsX3RpbWVyIjowLCJzb2x1c19lbmFibGVfbW9iaWxlX2Jyb3dzZXJnZW9fYWxlcnQiOmZhbHNlLCJzb2x1c19tb2JpbGVfbG9jYXRpb25fZGlzYWJsZWRfYWxlcnRfbWVzc2FnZSI6IjAiLCJzb2x1c19tb2JpbGVfYnJvd3Nlcmdlb19hbGVydF9tc2ciOiIiLCJzb2x1c19tb2JpbGVfYnJvd3Nlcmdlb19hbGVydF9pbnRlcnZhbCI6ODY0MDAwMDAsInNvbHVzX21vYmlsZV9jaGVja19wYXN0X3RyYW5zYWN0aW9uX2FsZXJ0IjowLCJzb2x1c19lbmFibGVfY2xpZW50X2kxOG4iOmZhbHNlLCJzb2x1c191eF9jb25maWdzX2VuX3VzIjoiIiwic29sdXNfdXhfY29uZmlnc19lbiI6IiIsInNvbHVzX3V4X2NvbmZpZ3MiOiIiLCJ2ZXJzaW9uIjoiMTczIiwiYWtleSI6IlNuYWlJVHByb2QiLCJ1cmwiOiJodHRwczovL3VzMy1lcy5nZW9jb21wbHkuY29tL2NvbmZpZy5waHAifQ=="
         },
         {
           "name": "tot_versamenti",
@@ -508,12 +560,20 @@
           "value": "MjAyNC8wOC8wNCAxNTo0MToyMC4wMDg7MTZhNmZhY2UtOTQ2MS03NGJjLTZhN2MtMzJjMmRlNzg3N2U1O2NyP2RhZTJjNGVhOTFjZGIyYmQ4N2E4NmMyOWVlNmEyZDljODZmNmVmZDY="
         },
         {
+          "name": "gc_web_sdk_1s57uui",
+          "value": "MjxoZmFsc2U="
+        },
+        {
           "name": "_fs_lua",
-          "value": "1.1723384879367"
+          "value": "1.1723457385824"
+        },
+        {
+          "name": "gc_web_sdk_1mqjl2g",
+          "value": "bALoMQ=="
         },
         {
           "name": "~dashboard",
-          "value": "{\"isSaldoVisible\":true,\"saldo\":0,\"bonusGold\":0,\"captainUpError\":true}"
+          "value": "{\"isSaldoVisible\":true,\"saldo\":628,\"bonusGold\":0,\"saldoPrelevabile\":3,\"updateWalletTimestamp\":1723457697969}"
         },
         {
           "name": "cod_contratto",
@@ -525,11 +585,40 @@
         },
         {
           "name": "gc_web_sdk_1485w2e",
-          "value": "STf0"
+          "value": "/uY0"
         },
         {
           "name": "tabCount",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "origin": "https://thegame.snai.it",
+      "localStorage": [
+        {
+          "name": "captain-user",
+          "value": "lasagnaalforno"
+        },
+        {
+          "name": "platform-from",
           "value": "1"
+        },
+        {
+          "name": "snai-active-cu",
+          "value": "1"
+        },
+        {
+          "name": "captain-userid",
+          "value": "X0G8KQK3Kvdbq7pZDfep95jgFZrQ=="
+        },
+        {
+          "name": "snai-token",
+          "value": "594bd9bae4a26d641a6f3e1b52a43ab0"
+        },
+        {
+          "name": "snai-carta",
+          "value": "6031980021915722"
         }
       ]
     }
