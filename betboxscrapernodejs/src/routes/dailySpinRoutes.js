@@ -16,12 +16,14 @@ router.post('/snai', async (req, res) => {
 router.post('/goldbet', async (req, res) => {
   try {
     const result = await spinGoldBetterWheel('Goldbet');
+    console.log('Risposta del server per Goldbet:', result);
     res.json(result);
   } catch (error) {
     console.error('Errore durante lo spin Goldbet:', error);
     res.status(500).json({ error: 'Errore durante l\'esecuzione dello spin' });
   }
 });
+
 
 router.post('/lottomatica', async (req, res) => {
   try {
