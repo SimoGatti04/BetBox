@@ -4,7 +4,7 @@ import Combine
 struct SpinView: View {
     @ObservedObject private var spinManager = SpinManager.shared
     
-    let sites = ["goldbet", "bet365", "eurobet"]
+    let sites = ["goldbet", "lottomatica", "snai"]
     
     var body: some View {
         NavigationView {
@@ -178,12 +178,12 @@ class SpinManager: ObservableObject {
 }
 
 struct SpinResponse: Codable {
-    let success: Bool
-    let bonus: String?
+    let bonusInfo: BonusInfo
 }
 
 struct BonusInfo: Codable, Identifiable {
     let id = UUID()
+    let type : String
     let amount: String
     let date: Date
 }
