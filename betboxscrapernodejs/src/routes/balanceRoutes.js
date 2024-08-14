@@ -83,11 +83,11 @@ router.get('/all', async (req, res) => {
   };
 
   try {
-    const goldbetBalance = await getGoldbetBalance().catch(error => ({ error: error.message }));
+    const goldbetBalance = await getGoldBetterBalance("Goldbet").catch(error => ({ error: error.message }));
     sendBalance('Goldbet', goldbetBalance);
     balances.push({ site: 'Goldbet', balance: goldbetBalance });
 
-    const lottomaticaBalance = await getLottomaticaBalance().catch(error => ({ error: error.message }));
+    const lottomaticaBalance = await getGoldBetterBalance("Lottomatica").catch(error => ({ error: error.message }));
     sendBalance('Lottomatica', lottomaticaBalance);
     balances.push({ site: 'Lottomatica', balance: lottomaticaBalance });
 

@@ -41,14 +41,13 @@ async function spinSnaiWheel() {
     const popupTitolo = await page.$('font#popup_titolo');
       const testo = await popupTitolo.innerText();
       if (testo.includes('NON HAI VINTO')) {
-        bonusInfo = { tipo: "perso", valore: "0" };
+        bonusInfo = { tipo: "Perso", valore: "0" };
       } else if (testo.includes('HAI VINTO'))
       {
-        // Qui dovresti aggiungere la logica per estrarre il valore in caso di vittoria
-        bonusInfo = { tipo: "vinto", valore: "da implementare" };
+        bonusInfo = { tipo: "Vinto", valore: "0.50 €"  };
       }
       else {
-      bonusInfo = { tipo: "-", valore: "-" };
+      bonusInfo = { tipo: "Nullo", valore: "Nullo" };
       }
     console.log ("Bonus Info: ", bonusInfo);
   } catch (error) {

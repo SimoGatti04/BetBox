@@ -58,9 +58,10 @@ async function spinGoldBetterWheel(site, isTestMode = false){
           tipo: bonusType,
           valore: bonusValue
         };
+        await browser.close();
       } catch (error) {
         console.log('Spin non trovato: ', error);
-        bonusInfo = { tipo: "-", valore : "-" };
+        bonusInfo = { tipo: "Nullo", valore : "Nullo" };
         try {
           console.log("Clicco sul pulsante per chiudere la finestra");
           await newPage.click('a:has-text("CHIUDI")');
