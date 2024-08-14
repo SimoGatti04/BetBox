@@ -2,10 +2,10 @@
   "cookies": [
     {
       "name": "_GRECAPTCHA",
-      "value": "09AJ8j0XeoJ6yxKxpTP5FkB0V9Y3bIlkABT3dRv74h9O3si-kx1-ZL4GSQRl8mnDt81mpcwDZULY71U9-KVcvW0eM",
+      "value": "09ACHFztmUVHFyhUgEi5NqLPHl8lHos0JuE0k7Sc21IaPT3IswFFc_mJrSCq8Vykm1K_rEw3KZn6UArStCxFn0Z7c",
       "domain": "www.google.com",
       "path": "/recaptcha",
-      "expires": 1738338487.431526,
+      "expires": 1739009450.236181,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -15,37 +15,27 @@
       "value": "GA1.1.582838020.1722781544",
       "domain": ".cplay.it",
       "path": "/",
-      "expires": 1757346468.473953,
+      "expires": 1758017427.876451,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "RT",
-      "value": "\"z=1&dm=cplay.it&si=d4f0be8e-9590-41dc-9d8b-940f2c3ae9cd&ss=lzfqkqxk&sl=0&tt=0\"",
+      "value": "\"z=1&dm=cplay.it&si=26ac5878-ddac-4648-a556-b52bef02bfbe&ss=lzqu1o29&sl=1&tt=1z0&rl=1&ld=1z4\"",
       "domain": ".cplay.it",
       "path": "/",
-      "expires": 1723391260,
+      "expires": 1724062217,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
-      "name": "__cf_bm",
-      "value": "03hi6d709Zr.SZnBsqaNBiWPEZkdAdz66JiumZ_x7zQ-1722786462-1.0.1.1-iZvxfp343cwDqBlKbp0KWtf1ygzNQH.HJ09ZgdM12K5uYRuh3yhrE2KjqGq19azaXagY56YM3_3etT8KnyVNgg",
-      "domain": ".onesignal.com",
-      "path": "/",
-      "expires": 1722788261.864258,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "mp_7e975e3812cd3ba21516f8f9a76c4a7e_mixpanel",
-      "value": "%7B%22distinct_id%22%3A%20%22%24device%3A1911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24device_id%22%3A%20%221911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24search_engine%22%3A%20%22google%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%0A%5D%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%0A%5D%7D",
+      "value": "%7B%22distinct_id%22%3A%20%22%24device%3A1911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24device_id%22%3A%20%221911dc7f3d57ff-05f3ac057f1ba4-18525637-e1000-1911dc7f3d67ff%22%2C%22%24search_engine%22%3A%20%22google%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.google.it%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.google.it%22%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%2C%0A%20%20%20%20%22cplay%22%0A%5D%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22skin%22%3A%20%5B%0A%20%20%20%20%22cplay%22%0A%5D%7D",
       "domain": ".cplay.it",
       "path": "/",
-      "expires": 1754322462,
+      "expires": 1754993417,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -65,34 +55,34 @@
       "value": "%7B%22uspString%22%3A%221YN-%22%2C%22firstAcknowledgeDate%22%3A%222024-08-04T14%3A25%3A43.094Z%22%2C%22optOutDate%22%3Anull%7D",
       "domain": ".cplay.it",
       "path": "/",
-      "expires": 1754322467,
+      "expires": 1754993426,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_ga_119N2ND7M1",
-      "value": "GS1.1.1722786468.2.1.1722786488.0.0.0",
+      "value": "GS1.1.1723457427.3.1.1723457451.0.0.0",
       "domain": ".cplay.it",
       "path": "/",
-      "expires": 1757346488.518981,
+      "expires": 1758017451.315704,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__smartico_ls_id",
-      "value": "b2d54dd3-6af7-4256-a7d1-50c35e3204de",
+      "value": "bb8aaf2a-bccb-4388-8627-afec4792f28e",
       "domain": "cplay.it",
       "path": "/",
-      "expires": 1757346488.539509,
+      "expires": 1758017451.363007,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "__smartico_ls_create_t",
-      "value": "1722786488539",
+      "value": "1723457451363",
       "domain": "cplay.it",
       "path": "/",
       "expires": -1,
@@ -102,13 +92,23 @@
     },
     {
       "name": "__smartico_ls_use_t",
-      "value": "1722786488540",
+      "value": "1723457451363",
       "domain": "cplay.it",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "PUGziHRhbz8YF4wTHt_hp63_QVvbGmN79WNAtr5_ThA-1723457451-1.0.1.1-tQQtKhrBbtg9TLvIlGawKNatPLiBchX7yFgwljPT5sZr3.wPyAJYTcPY4KSp.98QB8XhtGvJoPQ3S2BYRn910g",
+      "domain": ".onesignal.com",
+      "path": "/",
+      "expires": 1723459251.497879,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
     }
   ],
   "origins": [
@@ -117,7 +117,7 @@
       "localStorage": [
         {
           "name": "__smartico_login_tracker1",
-          "value": "{\"dt\":1722786489257,\"ext_user_id\":9962950}"
+          "value": "{\"dt\":1723457452106,\"ext_user_id\":9962950}"
         },
         {
           "name": "IsLoggedIn",
@@ -125,27 +125,23 @@
         },
         {
           "name": "V3_UserSettings",
-          "value": "{\"UserId\":\"00d8c993-21e2-457e-a5dd-8c805b0b9c6f\",\"AvancedPlayer\":false,\"GamesAdvancedPlayer\":false,\"Layout\":{\"DisableCordovaAppInstallAppBar\":false,\"DisableBackToOldVersion\":false,\"DisableVibration\":false,\"PrematchHome_GiocanoOraLiveCollapsed\":false,\"__dirty_PrematchHome_GiocanoOraLiveCollapsed\":false,\"PrematchHome_PiuGiocatiCollapsed\":false,\"__dirty_PrematchHome_PiuGiocatiCollapsed\":false,\"PrematchHome_AndamentoMercatoCollapsed\":false,\"__dirty_PrematchHome_AndamentoMercatoCollapsed\":false,\"PrematchHome_PopolariCollapsed\":false,\"__dirty_PrematchHome_PopolariCollapsed\":false,\"PrematchHome_PromosCollapsed\":false,\"__dirty_PrematchHome_PromosCollapsed\":false,\"PrematchEventDetail_TopCollapsed\":false,\"__dirty_PrematchEventDetail_TopCollapsed\":false,\"LiveEventDetail_TopCollapsed\":false,\"__dirty_LiveEventDetail_TopCollapsed\":false,\"OddsRangePicker_Hidden\":true,\"__dirty_OddsRangePicker_Hidden\":false,\"TypesFilters_StartCollapsed\":true,\"__dirty_TypesFilters_StartCollapsed\":true,\"PrematchGroup_MainOddsExpanded\":false,\"__dirty_PrematchGroup_MainOddsExpanded\":false,\"LiveEventDetail_BetRadarVisualization2\":true,\"__dirty_LiveEventDetail_BetRadarVisualization2\":false},\"History\":[],\"Favourites\":[],\"PurchasedEvents\":[],\"LastSportsOpened\":[],\"Cart\":{\"LiveFastBet\":false,\"ConfirmBeforePurchase\":false,\"KeepCartAfterPurchase\":false,\"PrintTicketAfterPurchase\":false,\"AcceptVariations\":null,\"CartDefaultAmount\":1},\"CouponsActivated\":[],\"CouponActivatedWhenNotLogged\":null,\"RegistrationSettings\":[],\"ServerMessages\":[{\"Id\":\"0757a33a-18fb-35b7-9e7a-c14ba5040ec4\",\"ViewCount\":2,\"InsDate\":\"2024-08-04T14:25:30.436Z\"},{\"Id\":\"f2f3e837-a110-4819-a384-5598579013f5\",\"ViewCount\":1,\"InsDate\":\"2024-08-04T14:26:21.274Z\"}],\"LastWhatsNewVersion\":null,\"LastDepositValues\":null,\"UseSportBookClassic\":false,\"ForceUseSportBookOolixy\":false,\"UseSportBookClassicMobile\":false,\"ForceUseSportBookOolixyMobile\":false,\"PrimaRicaricaRecoveryChecked\":true,\"PrimaRicaricaRecoveryValue\":false,\"PromosPasswordProtected\":[],\"PrematchWelcomePage\":null,\"LastUpdateTimeStamp\":\"2024-08-04T15:47:42.779Z\"}"
+          "value": "{\"UserId\":\"00d8c993-21e2-457e-a5dd-8c805b0b9c6f\",\"AvancedPlayer\":false,\"GamesAdvancedPlayer\":false,\"Layout\":{\"DisableCordovaAppInstallAppBar\":false,\"DisableBackToOldVersion\":false,\"DisableVibration\":false,\"PrematchHome_GiocanoOraLiveCollapsed\":false,\"__dirty_PrematchHome_GiocanoOraLiveCollapsed\":false,\"PrematchHome_PiuGiocatiCollapsed\":false,\"__dirty_PrematchHome_PiuGiocatiCollapsed\":false,\"PrematchHome_AndamentoMercatoCollapsed\":false,\"__dirty_PrematchHome_AndamentoMercatoCollapsed\":false,\"PrematchHome_PopolariCollapsed\":false,\"__dirty_PrematchHome_PopolariCollapsed\":false,\"PrematchHome_PromosCollapsed\":false,\"__dirty_PrematchHome_PromosCollapsed\":false,\"PrematchEventDetail_TopCollapsed\":false,\"__dirty_PrematchEventDetail_TopCollapsed\":false,\"LiveEventDetail_TopCollapsed\":false,\"__dirty_LiveEventDetail_TopCollapsed\":false,\"OddsRangePicker_Hidden\":true,\"__dirty_OddsRangePicker_Hidden\":false,\"TypesFilters_StartCollapsed\":true,\"__dirty_TypesFilters_StartCollapsed\":true,\"PrematchGroup_MainOddsExpanded\":false,\"__dirty_PrematchGroup_MainOddsExpanded\":false,\"LiveEventDetail_BetRadarVisualization2\":true,\"__dirty_LiveEventDetail_BetRadarVisualization2\":false},\"History\":[],\"Favourites\":[],\"PurchasedEvents\":[],\"LastSportsOpened\":[],\"Cart\":{\"LiveFastBet\":false,\"ConfirmBeforePurchase\":false,\"KeepCartAfterPurchase\":false,\"PrintTicketAfterPurchase\":false,\"AcceptVariations\":null,\"CartDefaultAmount\":1},\"CouponsActivated\":[],\"CouponActivatedWhenNotLogged\":null,\"RegistrationSettings\":[],\"ServerMessages\":[{\"Id\":\"0757a33a-18fb-35b7-9e7a-c14ba5040ec4\",\"ViewCount\":2,\"InsDate\":\"2024-08-04T14:25:30.436Z\"},{\"Id\":\"f2f3e837-a110-4819-a384-5598579013f5\",\"ViewCount\":1,\"InsDate\":\"2024-08-04T14:26:21.274Z\"}],\"LastWhatsNewVersion\":null,\"LastDepositValues\":null,\"UseSportBookClassic\":false,\"ForceUseSportBookOolixy\":false,\"UseSportBookClassicMobile\":false,\"ForceUseSportBookOolixyMobile\":false,\"PrimaRicaricaRecoveryChecked\":true,\"PrimaRicaricaRecoveryValue\":false,\"PromosPasswordProtected\":[],\"PrematchWelcomePage\":null,\"LastUpdateTimeStamp\":\"2024-08-12T10:10:17.743Z\"}"
         },
         {
           "name": "os_pageViews",
-          "value": "2"
+          "value": "3"
         },
         {
           "name": "__smartico_identify_last_time1",
-          "value": "1722786489162"
-        },
-        {
-          "name": "_boomr_akamaiXhrRetry",
-          "value": "{\"items\":{},\"expires\":1722788262385}"
+          "value": "1723457452035"
         },
         {
           "name": "Token",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmltYXJ5c2lkIjoiMTU2Njk5NSIsInVuaXF1ZV9uYW1lIjoiTGFzYWFsZm9ybm8iLCJnaXZlbl9uYW1lIjoiU0lNT05FIiwiaXNfYWRtaW4iOiJGYWxzZSIsImF1dGhfaWQiOiJlODUzNDdkYS1lMTkwLTRlM2QtYWE1Yi0yZGUwMzVkOWFmOGQiLCJuYmYiOjE3MjI3ODY0ODgsImV4cCI6MTcyMjg3Mjg4OCwiaWF0IjoxNzIyNzg2NDg4LCJpc3MiOiJodHRwOi8vYXBpMi5jcGxheS5pdCIsImF1ZCI6Imh0dHA6Ly9hcGkyLmNwbGF5Lml0In0.9fTRycIlayElYhuFQyqBvOVBJdq2ofVhp7jtKKDB0H4"
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcmltYXJ5c2lkIjoiMTU2Njk5NSIsInVuaXF1ZV9uYW1lIjoiTGFzYWFsZm9ybm8iLCJnaXZlbl9uYW1lIjoiU0lNT05FIiwiaXNfYWRtaW4iOiJGYWxzZSIsImF1dGhfaWQiOiI3NzNmOTc2NS0yY2NlLTQ4MjAtOWExZC0zNWYyZDkzNjBmYWUiLCJuYmYiOjE3MjM0NTc0NTEsImV4cCI6MTcyMzU0Mzg1MSwiaWF0IjoxNzIzNDU3NDUxLCJpc3MiOiJodHRwOi8vYXBpMi5jcGxheS5pdCIsImF1ZCI6Imh0dHA6Ly9hcGkyLmNwbGF5Lml0In0.BtR0VmNgkz3gbZfW1fg0vJEa9S5D2OqvF2jE1KIXNEU"
         },
         {
           "name": "_grecaptcha",
-          "value": "09AJ8j0XfPKSzU4M6Pbj_Bn9aG_7PeCvJEgajU0fFaC0qLrgAdk3xzN5p8RBACwxqPSwP1Y1Ic-UoLVMiY3m_IaKW3Dry_VmxsTdmegw"
+          "value": "09ACHFztkx4i_o4MONcXk7htpioyCU_YLBGf-aIDhDXiTlLY8StCoCqvRnuSgDiqMwEg-mUDFd1AcJbDIzy4PVNRSdM6RQIuOeQHDhbw"
         },
         {
           "name": "__smartico_device_id",
@@ -174,7 +170,7 @@
         },
         {
           "name": "rc::f",
-          "value": "0aAJ8j0Xf68IuLL5x1NG2bG3cufvmaPwCt3SgO0xoaDolj4M4FNC1rMsUc_DbTiYojAX28BWA"
+          "value": "0aACHFztmC6Nm9cFzXM4mtFBqv5XQ19HkDIF7wftmFu7Aj-ZPgoADBpCZmcwZNhDWRK1jgSlw"
         }
       ]
     }

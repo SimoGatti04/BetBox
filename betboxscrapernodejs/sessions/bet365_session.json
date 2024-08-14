@@ -1,16 +1,6 @@
 {
   "cookies": [
     {
-      "name": "aps03",
-      "value": "ct=97&cst=229&lng=6",
-      "domain": "casino.bet365.it",
-      "path": "/",
-      "expires": 1757343057.411131,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "LandingVisited",
       "value": "True",
       "domain": "casino.bet365.it",
@@ -25,7 +15,7 @@
       "value": "True",
       "domain": "casino.bet365.it",
       "path": "/",
-      "expires": 1738344590,
+      "expires": 1739012375,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -35,7 +25,7 @@
       "value": "2",
       "domain": "casino.bet365.it",
       "path": "/",
-      "expires": 1726676990,
+      "expires": 1727344776,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -55,7 +45,7 @@
       "value": "842",
       "domain": "login.c365download.com",
       "path": "/",
-      "expires": 1726676990.447568,
+      "expires": 1727344775.893461,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -84,16 +74,6 @@
       "name": "session",
       "value": "processform=0",
       "domain": "members.bet365.it",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "pstk",
-      "value": "25D7B6F9615247E3B005AE5234396CAC000004",
-      "domain": ".bet365.it",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
@@ -131,8 +111,88 @@
       "sameSite": "None"
     },
     {
+      "name": "bet365_FavouriteGameIds",
+      "value": "r=&f=",
+      "domain": "casino.bet365.it",
+      "path": "/",
+      "expires": 1754992774.276747,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "platform",
+      "value": "1",
+      "domain": "members.bet365.it",
+      "path": "/",
+      "expires": 1757977216.352433,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "aps03",
+      "value": "ct=97&cst=276&lng=6",
+      "domain": "casino.bet365.it",
+      "path": "/",
+      "expires": 1757977216.757478,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "iOFGm1dFeG1qLGfCkkXJLgGi5FmF9sXHCnzreCLhdxE-1723456757-1.0.1.1-ep7e8NZ.cDD0hFaxuw8OKcrsqS0dNyN.pDa7dF9NwbrwcDbOpp4isfm0IW2usWzieL_4sF0FMax7aOGUF_g99g",
+      "domain": ".bet365.it",
+      "path": "/",
+      "expires": 1723458557.901211,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "HPoTtpl3RUoMgbBOkTyGTYnUpcc3qB9U.HXsFJ9rLkU-1723456762-1.0.1.1-6Pf.DuaWPOSXAiBHVd2rbIZ492LU5w8e9KYSVi274xxiSxxCe47QgGii30JL8HgvEdoHcqkvt4wHc3I4XI92Cw",
+      "domain": ".c365download.com",
+      "path": "/",
+      "expires": 1723458562.855451,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "StJrDFujnxNGeZV_LBrH9rACLnAuzmHc4UG8KCj11Ro-1723456762-1.0.1.1-1Mt7FAytn9LWUZnL4PsL5RQHkvpW_3XbNwd44.rYd21vBYQjHSM0RSQCHqgkBxfB_uAyRBCQqk0OZLmHqtA3pg",
+      "domain": ".365lpodds.com",
+      "path": "/",
+      "expires": 1723458563.002125,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "18SCAKfGECjC1A8W2NV.oUJBwnC3NSY1oB2T3.Hy.T0-1723456763-1.0.1.1-QIRmEqbo22T96nJWJm6vU3mXp_4yyvEH0y8oFNv3OdMt6AU_FfXjFu7.N0uyylQ1.rnKUnwRtMZ7wEcYhM.rqA",
+      "domain": ".sagala365.it",
+      "path": "/",
+      "expires": 1723458563.213869,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "pstk",
+      "value": "3F14E0F58D4F11579B67A5E877269070000004",
+      "domain": ".bet365.it",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
       "name": "gstk",
-      "value": "25D7B6F9615247E3B005AE5234396CAC000004",
+      "value": "3F14E0F58D4F11579B67A5E877269070000004",
       "domain": ".bet365.it",
       "path": "/",
       "expires": -1,
@@ -142,61 +202,11 @@
     },
     {
       "name": "bet365Casino",
-      "value": "settings=0,0,0,0,0,4,0,EUR,0,1,2,1,1,1,1",
+      "value": "settings=0,0,0,0,0,4,0,EUR,0,1,2,3,1,1,1",
       "domain": "casino.bet365.it",
       "path": "/",
-      "expires": 1754324991.396402,
+      "expires": 1754992776.58402,
       "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "KRMiuwmLgyJmy4fcbQkOQQ548iRzcxWFswRZDyP.z_Q-1722788988-1.0.1.1-JmASopvwKGmOymqw1wNbLalqfJQ51fyNBIASJyKqVR3xho9DOlm2aVHclssgS3rUmUMqJB.nb3Xt04NuiiyS8w",
-      "domain": ".bet365.it",
-      "path": "/",
-      "expires": 1722790788.094843,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "bet365_FavouriteGameIds",
-      "value": "r=&f=",
-      "domain": "casino.bet365.it",
-      "path": "/",
-      "expires": 1754324988.349694,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "EsrsHeoPjpz2Hw3ZZrqdySx2eqXl9LIns3N9ndpfTUQ-1722788990-1.0.1.1-Yc_DESiuJdqVFLPb4mPFkU4rYzwIbL49iLSK3b1stzpQHbJSRBf1EB74UdkPg13.n_tUe2uszotI4HVM47nvYA",
-      "domain": ".c365download.com",
-      "path": "/",
-      "expires": 1722790790.447716,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "Q3MPZIWEpGlqUjVhwSq6mptN6KCJxEjLSxGSN56r3IQ-1722788991-1.0.1.1-hxuuuOR_EEjV.7VVq_rUpCQvqOwcip5d9Fz2sA5EqJjwENB9MuPnswp_A95OKzPX3YbSmoMSz9WThpr8mVrsIA",
-      "domain": ".365lpodds.com",
-      "path": "/",
-      "expires": 1722790790.980564,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__cf_bm",
-      "value": "hDsob11Rghrm4Y1NCaoLoX05eNAqaj79BiLuZuZtOm0-1722788991-1.0.1.1-1nC0KKIUVF4Sa.m4LyP8c0gNZO0nlozGPniFNVThCstnPslD3BaKltdlvVqFFof5PtYu05EIK2uexX9d1RU1fQ",
-      "domain": ".sagala365.it",
-      "path": "/",
-      "expires": 1722790790.990248,
-      "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     }
@@ -211,15 +221,19 @@
         },
         {
           "name": "CookieConsentModal",
-          "value": "{\"pageVisitCount\":3}"
+          "value": "{\"pageVisitCount\":8}"
         },
         {
           "name": "PrimaryNavVisibility",
           "value": "{\"hidden\":false}"
         },
         {
+          "name": "redirectionsCount",
+          "value": "0"
+        },
+        {
           "name": "Monocle",
-          "value": "{\"expiry_ttl\":1722792590478,\"error_percentage\":\"1\",\"metrics_percentage\":\"0.5\",\"config_ttl\":\"3600\"}"
+          "value": "{\"expiry_ttl\":1723460362719,\"error_percentage\":\"1\",\"metrics_percentage\":\"0.5\",\"config_ttl\":\"3600\"}"
         }
       ]
     }
