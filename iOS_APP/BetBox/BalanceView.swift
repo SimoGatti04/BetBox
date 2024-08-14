@@ -1,21 +1,92 @@
 import SwiftUI
+import Combine
 
 class BalanceManager: ObservableObject {
     @Published var balances: [String: String] = [:]
+    static let shared = BalanceManager()
+    private var cancellables = Set<AnyCancellable>()
+    
+    private init() {
+        loadSavedBalances()
+    }
     
     func loadSavedBalances() {
-        if let savedBalances = UserDefaults.standard.dictionary(forKey: "balances") as? [String: String] {
+        if let data = try? Data(contentsOf: getBalancesFileURL()),
+           let savedBalances = try? JSONDecoder().decode([String: String].self, from: data) {
             balances = savedBalances
         }
     }
     
     func saveBalances() {
-        UserDefaults.standard.set(balances, forKey: "balances")
+        if let data = try? JSONEncoder().encode(balances) {
+            try? data.write(to: getBalancesFileURL())
+        }
+        NotificationCenter.default.post(name: Notification.Name("BalancesUpdated"), object: nil)
+    }
+    
+    func updateBalance(for site: String, balance: String) {
+        balances[site.lowercased()] = balance
+        saveBalances()
+    }
+    
+    private func getBalancesFileURL() -> URL {
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentsDirectory.appendingPathComponent("balances.json")
+    }
+    
+    func loadBalance(for site: String) {
+        LogManager.shared.prepareForAPIRequest()
+        
+        let urlString = "https://legally-modest-joey.ngrok-free.app/balances/\(site)"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: Balance.self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("Error loading balance for \(site): \(error)")
+                }
+                LogManager.shared.finishAPIRequest()
+            }, receiveValue: { [weak self] balance in
+                self?.updateBalance(for: balance.site, balance: balance.balance)
+            })
+            .store(in: &cancellables)
+    }
+    
+    func loadAllBalances() {
+        LogManager.shared.prepareForAPIRequest()
+        
+        let urlString = "https://legally-modest-joey.ngrok-free.app/balances/all"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: [Balance].self, decoder: JSONDecoder())
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    print("Error loading all balances: \(error)")
+                }
+                LogManager.shared.finishAPIRequest()
+            }, receiveValue: { [weak self] balances in
+                for balance in balances {
+                    self?.updateBalance(for: balance.site, balance: balance.balance)
+                }
+            })
+            .store(in: &cancellables)
     }
 }
 
 struct BalanceView: View {
-    @StateObject private var balanceManager = BalanceManager()
+    @ObservedObject private var balanceManager = BalanceManager.shared
     @State private var isLoading = false
     
     let sites = ["goldbet", "bet365", "eurobet", "sisal", "snai", "lottomatica", "cplay"]
@@ -26,7 +97,7 @@ struct BalanceView: View {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(sites, id: \.self) { site in
                         SiteBalanceView(site: site, balance: balanceManager.balances[site.lowercased()] ?? "N/A") {
-                            loadBalance(for: site)
+                            balanceManager.loadBalance(for: site)
                         }
                     }
                 }
@@ -35,7 +106,7 @@ struct BalanceView: View {
             .navigationTitle("Balances")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: loadAllBalances) {
+                    Button(action: balanceManager.loadAllBalances) {
                         Image(systemName: "arrow.clockwise")
                     }
                     .disabled(isLoading)
@@ -43,61 +114,6 @@ struct BalanceView: View {
             }
         }
         .onAppear(perform: balanceManager.loadSavedBalances)
-    }
-    
-    func loadAllBalances() {
-        isLoading = true
-        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/all") else {
-            print("Invalid URL")
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            defer { isLoading = false }
-            if let data = data {
-                do {
-                    let decodedBalances = try JSONDecoder().decode([Balance].self, from: data)
-                    DispatchQueue.main.async {
-                        for balance in decodedBalances {
-                            balanceManager.balances[balance.site.lowercased()] = balance.balance
-                        }
-                        balanceManager.saveBalances()
-                        NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
-                    }
-                } catch {
-                    print("Errore di decodifica: \(error)")
-                    if let dataString = String(data: data, encoding: .utf8) {
-                        print("Dati ricevuti: \(dataString)")
-                    }
-                }
-            }
-        }.resume()
-    }
-    
-    func loadBalance(for site: String) {
-        guard let url = URL(string: "https://legally-modest-joey.ngrok-free.app/balances/\(site)") else {
-            print("Invalid URL")
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let data = data {
-                do {
-                    let decodedBalance = try JSONDecoder().decode(Balance.self, from: data)
-                    DispatchQueue.main.async {
-                        balanceManager.balances[decodedBalance.site.lowercased()] = decodedBalance.balance
-                        balanceManager.saveBalances()
-                        print("Saldo aggiornato per \(decodedBalance.site): \(decodedBalance.balance)")
-                        NotificationCenter.default.post(name: Notification.Name("BalanceLoaded"), object: nil)
-                    }
-                } catch {
-                    print("Errore di decodifica: \(error)")
-                    if let dataString = String(data: data, encoding: .utf8) {
-                        print("Dati ricevuti: \(dataString)")
-                    }
-                }
-            }
-        }.resume()
     }
 }
 
@@ -129,19 +145,13 @@ struct SiteBalanceView: View {
         .padding()
         .background(Color.gray.opacity(0.1))
         .cornerRadius(10)
-        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("BalanceLoaded"))) { _ in
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("BalancesUpdated"))) { _ in
             isLoading = false
         }
     }
 }
 
-struct Balance: Decodable {
+struct Balance: Codable {
     let site: String
     let balance: String
-}
-
-struct BalanceView_Previews: PreviewProvider {
-    static var previews: some View {
-        BalanceView()
-    }
 }

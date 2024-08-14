@@ -1,8 +1,15 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
 const { setupGoldBetterBrowser, goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType } = require('../../utils/goldBetterUtils');
 
-async function spinGoldBetterWheel(site){
+async function spinGoldBetterWheel(site, isTestMode = false){
   console.log(`Inizio del processo di daily spin su ${site}`);
+
+  if (isTestMode) {
+    console.log("Modalità test attivata");
+    const testResponse = simulateSpinResponse();
+    console.log("Bonus Info di test:", testResponse.bonusInfo);
+    return testResponse.bonusInfo;
+  }
 
   const {browser, context, page} = await setupBrowser(site.toLowerCase());
   let bonusInfo = null;
@@ -40,9 +47,15 @@ async function spinGoldBetterWheel(site){
         console.log("Clicco sul pulsante per effettuare il spin");
         await newPage.click('#spin_button');
 
+        const bonusType = await extractBonusType(newPage);
+        const bonusValue = await extractBonusValue(newPage);
+
+        console.log("Tipo di bonus estratto: ", bonusType);
+        console.log("Valore del bonus estratto: ", bonusValue);
+
         bonusInfo = {
-          tipo: await extractBonusType(newPage),
-          valore: await extractBonusValue(newPage)
+          tipo: bonusType,
+          valore: bonusValue
         };
       } catch (error) {
         console.log('Spin non trovato: ', error);
@@ -62,6 +75,16 @@ async function spinGoldBetterWheel(site){
     await browser.close();
   }
   return bonusInfo;
+}
+
+
+function simulateSpinResponse() {
+  return {
+    bonusInfo: {
+      tipo: "Bonus di Test",
+      valore: "10.00 €"
+    }
+  };
 }
 
 module.exports = { spinGoldBetterWheel };

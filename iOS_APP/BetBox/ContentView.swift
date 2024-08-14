@@ -19,6 +19,18 @@ struct ContentView: View {
                 .tabItem {
                     Label("Active Bets", systemImage: "list.bullet")
                 }
+
+            SpinView()
+                .tabItem {
+                    Image(systemName: "arrow.2.circlepath")
+                    Text("Spin")
+                }
+                
+            TerminalView()
+                .tabItem {
+                Image(systemName: "terminal")
+                Text("Terminale")
+                }
         }
     }
 }
