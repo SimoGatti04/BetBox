@@ -48,7 +48,7 @@ async function goldBetterLogin(page, site) {
   let isUserLoggedIn = false;
   try {
     console.log('Attesa del pulsante "Accedi"');
-    await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 5000});
+    await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 7000});
   } catch (error) {
     isUserLoggedIn = true;
     console.log('Utente già loggato o errore durante la verifica del pulsante "Accedi".');

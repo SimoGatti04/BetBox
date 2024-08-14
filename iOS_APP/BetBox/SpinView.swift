@@ -11,7 +11,7 @@ struct SpinView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(sites, id: \.self) { site in
-                        SiteSpinView(site: site, spinStatus: spinManager.spinStatus[site] ?? false, bonusHistory: spinManager.bonusHistory[site] ?? []) {
+                        SiteSpinView(site: site, spinStatus: spinManager.isSpinPerformedToday(for: site), bonusHistory: spinManager.bonusHistory[site] ?? []) {
                             spinManager.performSpin(for: site)
                         }
                     }
@@ -82,7 +82,6 @@ struct BonusHistoryView: View {
 }
 
 class SpinManager: ObservableObject {
-    @Published var spinStatus: [String: Bool] = [:]
     @Published var bonusHistory: [String: [BonusInfo]] = [:]
     static let shared = SpinManager()
     private var cancellables = Set<AnyCancellable>()
@@ -92,16 +91,8 @@ class SpinManager: ObservableObject {
     }
     
     func loadSavedData() {
-        loadSavedSpinStatus()
         loadSavedBonusHistory()
         cleanupOldBonuses()
-    }
-    
-    func loadSavedSpinStatus() {
-        if let data = try? Data(contentsOf: getSpinStatusFileURL()),
-           let savedStatus = try? JSONDecoder().decode([String: Bool].self, from: data) {
-            spinStatus = savedStatus
-        }
     }
     
     func loadSavedBonusHistory() {
@@ -111,21 +102,10 @@ class SpinManager: ObservableObject {
         }
     }
     
-    func saveSpinStatus() {
-        if let data = try? JSONEncoder().encode(spinStatus) {
-            try? data.write(to: getSpinStatusFileURL())
-        }
-    }
-    
     func saveBonusHistory() {
         if let data = try? JSONEncoder().encode(bonusHistory) {
             try? data.write(to: getBonusHistoryFileURL())
         }
-    }
-    
-    private func getSpinStatusFileURL() -> URL {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return documentsDirectory.appendingPathComponent("spinStatus.json")
     }
     
     private func getBonusHistoryFileURL() -> URL {
@@ -134,12 +114,17 @@ class SpinManager: ObservableObject {
     }
     
     func performSpin(for site: String) {
+        guard !isSpinPerformedToday(for: site) else { return }
+        
         LogManager.shared.prepareForAPIRequest()
         
         let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
         guard let url = URL(string: urlString) else { return }
         
-        URLSession.shared.dataTaskPublisher(for: url)
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        URLSession.shared.dataTaskPublisher(for: request)
             .retry(3)
             .map(\.data)
             .decode(type: SpinResponse.self, decoder: JSONDecoder())
@@ -153,42 +138,18 @@ class SpinManager: ObservableObject {
                 }
                 LogManager.shared.finishAPIRequest()
             }, receiveValue: { [weak self] response in
-                self?.spinStatus[site] = response.success
                 if let bonus = response.bonus {
                     self?.addBonusToHistory(site: site, bonus: bonus)
                 }
-                self?.saveSpinStatus()
                 self?.saveBonusHistory()
             })
             .store(in: &cancellables)
     }
     
     func checkAllSpinStatus() {
-        LogManager.shared.prepareForAPIRequest()
-        
-        let urlString = "https://legally-modest-joey.ngrok-free.app/spin/status"
-        guard let url = URL(string: urlString) else { return }
-        
-        URLSession.shared.dataTaskPublisher(for: url)
-            .retry(3)
-            .map(\.data)
-            .decode(type: [SpinStatus].self, decoder: JSONDecoder())
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(let error):
-                    print("Error checking spin status: \(error)")
-                }
-                LogManager.shared.finishAPIRequest()
-            }, receiveValue: { [weak self] statuses in
-                for status in statuses {
-                    self?.spinStatus[status.site] = status.spinPerformed
-                }
-                self?.saveSpinStatus()
-            })
-            .store(in: &cancellables)
+        for site in ["goldbet", "bet365", "eurobet"] {
+            objectWillChange.send()
+        }
     }
     
     private func addBonusToHistory(site: String, bonus: String) {
@@ -208,16 +169,17 @@ class SpinManager: ObservableObject {
         }
         saveBonusHistory()
     }
+    
+    func isSpinPerformedToday(for site: String) -> Bool {
+        guard let siteHistory = bonusHistory[site] else { return false }
+        let today = Calendar.current.startOfDay(for: Date())
+        return siteHistory.contains { Calendar.current.isDate($0.date, inSameDayAs: today) }
+    }
 }
 
 struct SpinResponse: Codable {
     let success: Bool
     let bonus: String?
-}
-
-struct SpinStatus: Codable {
-    let site: String
-    let spinPerformed: Bool
 }
 
 struct BonusInfo: Codable, Identifiable {
