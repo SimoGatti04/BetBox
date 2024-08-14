@@ -43,7 +43,7 @@ struct ActiveBetsView: View {
         self.activeBets = [
             Bet(
                 id: "1",
-                siteName: "Goldbet",
+                siteName: "goldbet",
                 events: [
                     Event(name: "Event 1", odds: 1.5, outcome: "In corso"),
                     Event(name: "Event 2", odds: 2.0, outcome: "Vincente")
@@ -54,7 +54,7 @@ struct ActiveBetsView: View {
             ),
             Bet(
                 id: "2",
-                siteName: "Bet365",
+                siteName: "bet365",
                 events: [
                     Event(name: "Event 3", odds: 1.8, outcome: "Perdente"),
                     Event(name: "Event 4", odds: 1.6, outcome: "In corso")

@@ -6,22 +6,21 @@ class LogManager: ObservableObject {
     static let shared = LogManager()
     private var isConnected = false
 
-    func connect() {
+    init() {
+        connetti()
+    }
+
+    private func connetti() {
         guard !isConnected else { return }
-        let url = URL(string: "wss://legally-modest-joey.ngrok-free.app/logs")!
+        let url = URL(string: "wss://legally-modest-joey.ngrok-free.app")!
         let session = URLSession(configuration: .default)
         webSocketTask = session.webSocketTask(with: url)
         webSocketTask?.resume()
         isConnected = true
-        receiveMessage()
+        riceviMessaggio()
     }
 
-    func disconnect() {
-        webSocketTask?.cancel(with: .normalClosure, reason: nil)
-        isConnected = false
-    }
-
-    private func receiveMessage() {
+    private func riceviMessaggio() {
         webSocketTask?.receive { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -36,27 +35,28 @@ class LogManager: ObservableObject {
                 @unknown default:
                     break
                 }
-                if self.isConnected {
-                    self.receiveMessage()
-                }
+                self.riceviMessaggio()
             case .failure(let error):
-                print("Error receiving message: \(error)")
+                print("Errore nella ricezione del messaggio: \(error)")
                 self.isConnected = false
+                self.connetti()
             }
         }
     }
 
-    func clearLog() {
+    func pulisciLog() {
         logText = ""
     }
 
     func prepareForAPIRequest() {
-        clearLog()
-        connect()
+        pulisciLog()
+        connetti()
     }
 
     func finishAPIRequest() {
-        disconnect()
+        // Implementazione della funzione finishAPIRequest
+        // Qui puoi aggiungere eventuali operazioni di pulizia o chiusura
+        print("Richiesta API completata")
     }
 }
 
@@ -85,4 +85,3 @@ struct TerminalView: View {
         }
     }
 }
-
