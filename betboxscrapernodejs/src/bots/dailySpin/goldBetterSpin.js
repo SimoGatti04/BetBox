@@ -7,7 +7,8 @@ async function spinGoldBetterWheel(site, isTestMode = false){
   if (isTestMode) {
     console.log("Modalità test attivata");
     const testResponse = simulateSpinResponse();
-    console.log("Bonus Info di test:", testResponse.bonusInfo);
+    console.log("Bonus Info di test: \n tipo:", testResponse.bonusInfo.tipo
+      + "\n valore:", testResponse.bonusInfo.valore);
     return testResponse.bonusInfo;
   }
 
