@@ -11,11 +11,16 @@ const router = express.Router();
 router.get('/goldbet', async (req, res) => {
   try {
     const balance = await getGoldBetterBalance('Goldbet');
-    res.json({ site: "Goldbet", balance });
+    if (balance === 'SMS_VERIFICATION_REQUIRED') {
+    res.status(202).json({ message: 'Verifica richiesta', site: 'Goldbet', verificationType: 'SMS' });
+  } else {
+      res.json({ site: "Goldbet", balance });
+    }
   } catch (error) {
     res.status(500).json({ error: 'Errore nel recupero del saldo Goldbet' });
   }
 });
+
 
 router.get('/lottomatica', async (req, res) => {
   try {
@@ -70,6 +75,28 @@ router.get('/cplay', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+router.get('/:site', async (req, res) => {
+  const { site } = req.params;
+  try {
+    const balance = await getGoldBetterBalance(site);
+    if (balance === 'SMS_VERIFICATION_REQUIRED') {
+      console.log(`Invio richiesta di verifica per ${site}`);
+      res.status(202).json({
+        type: 'VERIFICATION_REQUIRED',
+        message: 'Verifica richiesta',
+        site: site,
+        verificationType: 'SMS_VERIFICATION_REQUIRED'
+    });
+    } else {
+      res.json({ site, balance });
+    }
+  } catch (error) {
+    console.error(`Errore durante la richiesta del saldo per ${site}:`, error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 
 router.get('/all', async (req, res) => {
   res.setHeader('Content-Type', 'application/json');

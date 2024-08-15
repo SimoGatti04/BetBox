@@ -43,10 +43,12 @@ async function acceptGoldBetterCookies(page) {
   }
 }
 
-async function goldBetterLogin(page, site) {
+async function goldBetterLogin(page, site, verificationCode = null) {
   const siteConfig = SITE_CONFIGS[site.toLowerCase()];
   let isUserLoggedIn = false;
+
   try {
+    await acceptGoldBetterCookies(page);
     console.log('Attesa del pulsante "Accedi"');
     await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 7000});
   } catch (error) {
@@ -57,77 +59,38 @@ async function goldBetterLogin(page, site) {
   if (!isUserLoggedIn) {
     console.log('Clic sul pulsante "Accedi"');
     await page.click('button.anonymous--login--button');
-
-    console.log('Attesa del campo username');
     await page.waitForSelector('input#login_username', {state: 'visible'});
-
-    console.log('Inserimento username');
     await simulateTyping(page, 'input#login_username', siteConfig.username);
-
-    console.log('Inserimento password');
     await simulateTyping(page, 'input#login_password', siteConfig.password);
-
-    console.log('Attesa del pulsante di accesso');
     await page.waitForSelector('button.login__panel--login__form--button--login', {state: 'visible'});
-
-    console.log('Scorrimento fino al pulsante di accesso');
     await page.evaluate(() => {
       document.querySelector('button.login__panel--login__form--button--login').scrollIntoView();
     });
-
     await delay(1000, 2000);
-
-    console.log('Clic sul pulsante di accesso');
     await page.click('button.login__panel--login__form--button--login');
-
-    console.log('Attesa della navigazione dopo il login');
     await page.waitForNavigation();
 
-    console.log('Ricerca della finestra di verifica SMS');
     await delay(5000, 10000);
     const smsInputSelector = 'input.mat-input-element';
     const isSmsVerificationRequired = await page.$(smsInputSelector) !== null;
 
     if (isSmsVerificationRequired) {
       console.log('Finestra di verifica SMS trovata');
-      console.log('Selettore utilizzato:', smsInputSelector);
-
-      await page.evaluate((selector) => {
-        const element = document.querySelector(selector);
-        if (element) {
-          element.style.border = '3px solid red';
-        }
-      }, smsInputSelector);
-
-      await acceptGoldBetterCookies(page);
-
-      const smsCode = await new Promise((resolve) => {
-        const rl = require('readline').createInterface({
-          input: process.stdin,
-          output: process.stdout
-        });
-        rl.question('Inserisci il codice ricevuto via SMS: ', (answer) => {
-          rl.close();
-          resolve(answer);
-        });
-      });
-
-      console.log('Inserimento del codice SMS');
-      await simulateTyping(page, smsInputSelector, smsCode);
-
+      if (!verificationCode) {
+        return 'SMS_VERIFICATION_REQUIRED';
+      }
+      await simulateTyping(page, smsInputSelector, verificationCode);
       await delay(2000, 3000);
-
       console.log('Clic sul pulsante di conferma');
       const confirmButtonSelector = 'button:has-text("CONFERMA")';
       await page.click(confirmButtonSelector);
-
-      console.log('Attesa della navigazione dopo la verifica del dispositivo');
       await page.waitForNavigation();
-    } else {
-      console.log('Finestra di verifica SMS non trovata');
     }
   }
+
+  return 'LOGIN_SUCCESSFUL';
 }
+
 
 async function extractBonusType(page) {
   try {

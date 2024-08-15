@@ -9,20 +9,27 @@ const http = require('http');
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
+const verificationRoutes = require('./routes/verificationRoutes');
 
+global.wss = wss;
+
+app.use(express.json());
 app.use('/balances', balanceRoutes);
 app.use('/spin', dailySpinRoutes);
+app.use('/verify', verificationRoutes);
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 
 // Funzione per inviare log a tutti i client connessi
 function broadcastLog(message) {
+  const jsonMessage = JSON.stringify({ type: 'LOG', message });
   wss.clients.forEach((client) => {
     if (client.readyState === WebSocket.OPEN) {
-      client.send(message);
+      client.send(jsonMessage);
     }
   });
 }
+
 
 // Gestione delle connessioni WebSocket
 wss.on('connection', (ws) => {
