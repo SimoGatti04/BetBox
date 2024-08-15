@@ -140,16 +140,31 @@ struct BonusHistoryView: View {
 struct AutomationView: View {
     @ObservedObject private var spinManager = SpinManager.shared
     @State private var showingAddAutomation = false
+    @State private var showingEditAutomation = false
     @State private var newAutomationSite = "goldbet"
     @State private var newAutomationTime = Date()
+    @State private var editingAutomation: SpinAutomation?
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(spinManager.automations) { automation in
                     AutomationRow(automation: automation)
+                        .swipeActions(edge: .leading) {
+                            Button("Modifica") {
+                                editingAutomation = automation
+                                newAutomationSite = automation.site
+                                newAutomationTime = automation.time
+                                showingEditAutomation = true
+                            }
+                            .tint(.blue)
+                        }
+                        .swipeActions(edge: .trailing) {
+                            Button("Elimina", role: .destructive) {
+                                spinManager.removeAutomation(automation)
+                            }
+                        }
                 }
-                .onDelete(perform: deleteAutomation)
             }
             .navigationTitle("Automazioni Spin")
             .toolbar {
@@ -167,15 +182,19 @@ struct AutomationView: View {
                 showingAddAutomation = false
             })
         }
-    }
-    
-    private func deleteAutomation(at offsets: IndexSet) {
-        offsets.forEach { index in
-            let automation = spinManager.automations[index]
-            spinManager.removeAutomation(automation)
+        .sheet(isPresented: $showingEditAutomation) {
+            AddAutomationView(site: $newAutomationSite, time: $newAutomationTime, onSave: {
+                if let editingAutomation = editingAutomation {
+                    let updatedAutomation = SpinAutomation(site: newAutomationSite, time: newAutomationTime, isEnabled: editingAutomation.isEnabled)
+                    spinManager.updateAutomation(updatedAutomation)
+                }
+                showingEditAutomation = false
+            })
         }
     }
 }
+
+
 
 struct AddAutomationView: View {
     @Binding var site: String
@@ -227,16 +246,25 @@ struct AutomationRow: View {
     }
 }
 
-class SpinManager: ObservableObject {
+class SpinManager: NSObject, ObservableObject {
     @Published var bonusHistory: [String: [BonusInfo]] = [:]
     @Published var automations: [SpinAutomation] = []
     static let shared = SpinManager()
     private var cancellables = Set<AnyCancellable>()
+    var backgroundCompletionHandler: (() -> Void)?
+    private var backgroundTasks: [() -> Void] = []
     
-    private init() {
+    private lazy var backgroundSession: URLSession = {
+        let config = URLSessionConfiguration.background(withIdentifier: "simogatti.BetBox.backgroundsession")
+        return URLSession(configuration: config, delegate: self, delegateQueue: nil)
+    }()
+    
+    override private init() {
+        super.init()
         loadSavedData()
         setupAutomationTimer()
     }
+
     
     func loadSavedData() {
         loadSavedBonusHistory()
@@ -295,14 +323,14 @@ class SpinManager: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func checkAndPerformAutomations() {
+    func checkAndPerformAutomations() {
         let now = Date()
         for automation in automations where automation.isEnabled {
             let automationTime = Calendar.current.dateComponents([.hour, .minute], from: automation.time)
             let currentTime = Calendar.current.dateComponents([.hour, .minute], from: now)
             
             if automationTime == currentTime && !isSpinPerformedToday(for: automation.site) {
-                performSpin(for: automation.site)
+                performSpinInBackground(for: automation.site)
             }
         }
     }
@@ -324,7 +352,6 @@ class SpinManager: ObservableObject {
             }
         }
     }
-
     
     func loadSavedBonusHistory() {
         if let data = try? Data(contentsOf: getBonusHistoryFileURL()),
@@ -357,42 +384,9 @@ class SpinManager: ObservableObject {
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.timeoutInterval = 120 // Aumentiamo il timeout a 120 secondi
         
-        print("Inizio richiesta per \(site)")
-        URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("Errore nella richiesta per \(site): \(error.localizedDescription)")
-                return
-            }
-            
-            guard let httpResponse = response as? HTTPURLResponse else {
-                print("Risposta non valida per \(site)")
-                return
-            }
-            
-            print("Codice di stato HTTP per \(site): \(httpResponse.statusCode)")
-            
-            guard let data = data else {
-                print("Nessun dato ricevuto per \(site)")
-                return
-            }
-            
-            print("Dati ricevuti per \(site): \(String(data: data, encoding: .utf8) ?? "Non decodificabile")")
-            
-            do {
-                let bonusInfo = try JSONDecoder().decode(BonusInfo.self, from: data)
-                print("Bonus decodificato per \(site): \(bonusInfo)")
-                DispatchQueue.main.async {
-                    self.addBonusToHistory(site: site, bonusInfo: bonusInfo)
-                    self.saveBonusHistory()
-                }
-            } catch {
-                print("Errore nella decodifica per \(site): \(error.localizedDescription)")
-            }
-            
-            LogManager.shared.finishAPIRequest()
-        }.resume()
+        let task = backgroundSession.dataTask(with: request)
+        task.resume()
     }
     
     func checkAllSpinStatus() {
@@ -432,6 +426,74 @@ class SpinManager: ObservableObject {
         bonusHistory[site] = []
         saveBonusHistory()
     }
+    
+    func performSpinInBackground(for site: String) {
+        backgroundTasks.append { [weak self] in
+            self?.performSpin(for: site)
+        }
+    }
+
+    func processBackgroundTasks(completion: @escaping () -> Void) {
+        let tasks = backgroundTasks
+        backgroundTasks.removeAll()
+        
+        let group = DispatchGroup()
+        
+        for task in tasks {
+            group.enter()
+            DispatchQueue.global().async {
+                task()
+                group.leave()
+            }
+        }
+        
+        group.notify(queue: .main) {
+            completion()
+            self.backgroundCompletionHandler?()
+            self.backgroundCompletionHandler = nil
+        }
+    }
+    
+    func updateAutomation(_ updatedAutomation: SpinAutomation) {
+        if let index = automations.firstIndex(where: { $0.id == updatedAutomation.id }) {
+            automations[index] = updatedAutomation
+            saveAutomations()
+            if updatedAutomation.isEnabled {
+                scheduleNotification(for: updatedAutomation)
+            } else {
+                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [updatedAutomation.id.uuidString])
+            }
+        }
+    }
+}
+
+extension SpinManager: URLSessionDelegate, URLSessionDataDelegate {
+    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+        DispatchQueue.main.async {
+            do {
+                let bonusInfo = try JSONDecoder().decode(BonusInfo.self, from: data)
+                self.addBonusToHistory(site: dataTask.originalRequest?.url?.lastPathComponent ?? "", bonusInfo: bonusInfo)
+                self.saveBonusHistory()
+            } catch {
+                print("Errore nella decodifica: \(error)")
+            }
+        }
+    }
+
+    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        if let error = error {
+            print("Errore nella richiesta: \(error)")
+        }
+        DispatchQueue.main.async {
+            LogManager.shared.finishAPIRequest()
+        }
+    }
+
+    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+        DispatchQueue.main.async {
+            self.backgroundCompletionHandler?()
+        }
+    }
 }
 
 struct BonusInfo: Codable, Identifiable {
@@ -458,3 +520,4 @@ private let itemFormatter: DateFormatter = {
     formatter.timeStyle = .short
     return formatter
 }()
+

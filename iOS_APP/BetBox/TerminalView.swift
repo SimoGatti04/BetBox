@@ -5,6 +5,7 @@ class LogManager: ObservableObject {
     private var webSocketTask: URLSessionWebSocketTask?
     static let shared = LogManager()
     private var isConnected = false
+    private var reconnectTimer: Timer?
 
     init() {
         connetti()
@@ -35,12 +36,22 @@ class LogManager: ObservableObject {
                 @unknown default:
                     break
                 }
-                self.riceviMessaggio()
+                // Pianifica la prossima ricezione con un breve ritardo
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                    self.riceviMessaggio()
+                }
             case .failure(let error):
                 print("Errore nella ricezione del messaggio: \(error)")
                 self.isConnected = false
-                self.connetti()
+                self.pianificaRiconnessione()
             }
+        }
+    }
+
+    private func pianificaRiconnessione() {
+        reconnectTimer?.invalidate()
+        reconnectTimer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { [weak self] _ in
+            self?.connetti()
         }
     }
 
@@ -54,9 +65,14 @@ class LogManager: ObservableObject {
     }
 
     func finishAPIRequest() {
-        // Implementazione della funzione finishAPIRequest
-        // Qui puoi aggiungere eventuali operazioni di pulizia o chiusura
-        print("Richiesta API completata")
+        DispatchQueue.main.async {
+            self.logText += "Richiesta API completata\n"
+        }
+    }
+
+    deinit {
+        reconnectTimer?.invalidate()
+        webSocketTask?.cancel()
     }
 }
 
