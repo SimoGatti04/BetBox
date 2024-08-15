@@ -38,18 +38,24 @@ async function spinSnaiWheel() {
 
     await delay(3000, 4000);
 
-    const popupTitolo = await page.$('font#popup_titolo');
-      const testo = await popupTitolo.innerText();
-      if (testo.includes('NON HAI VINTO')) {
-        bonusInfo = { tipo: "Perso", valore: "0" };
-      } else if (testo.includes('HAI VINTO'))
-      {
-        bonusInfo = { tipo: "Vinto", valore: "0.50 €"  };
-      }
-      else {
-      bonusInfo = { tipo: "Nullo", valore: "Nullo" };
-      }
-    console.log ("Bonus Info: ", bonusInfo);
+    console.log("Controllo del risultato dello spin");
+    const divs = await page.$$('div[id^="popup_estratto_"]');
+    const backgroundImages = await Promise.all(divs.map(div => div.evaluate(el => getComputedStyle(el).backgroundImage)));
+
+    const isWin = backgroundImages.every(img => img === backgroundImages[0]);
+
+    if (isWin) {
+      const isJackpot = backgroundImages[0] === 'url("assets/svg/icone/1.svg")';
+      bonusInfo = {
+        tipo: "Vinto",
+        valore: isJackpot ? "0.50 €" : "altro"
+      };
+    } else {
+      bonusInfo = { tipo: "Perso", valore: "0" };
+    }
+
+
+    console.log("Bonus Info: ", bonusInfo);
   } catch (error) {
     console.error('Errore durante l\'esecuzione del bot Snai:', error);
   } finally {
