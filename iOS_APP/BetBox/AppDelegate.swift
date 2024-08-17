@@ -49,13 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func scheduleSpinAutomation() {
         let request = BGAppRefreshTaskRequest(identifier: "simogatti.BetBox.spinautomation")
-        request.earliestBeginDate = Date(timeIntervalSinceNow: 15 * 60)
+        request.earliestBeginDate = Date(timeIntervalSinceNow: 60) // Esegui ogni minuto
         do {
             try BGTaskScheduler.shared.submit(request)
         } catch {
-            print("Impossibile programmare l'automazione degli spin: \(error)")
+            print("Errore nella programmazione: \(error)")
         }
     }
+
 
     func scheduleSpinProcessing() {
         let request = BGProcessingTaskRequest(identifier: "simogatti.BetBox.spinprocessing")

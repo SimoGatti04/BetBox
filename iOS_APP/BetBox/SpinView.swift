@@ -273,8 +273,11 @@ class SpinManager: NSObject, ObservableObject {
     private lazy var backgroundSession: URLSession = {
         let config = URLSessionConfiguration.background(withIdentifier: "simogatti.BetBox.backgroundsession")
         config.sessionSendsLaunchEvents = true
+        config.isDiscretionary = false
+        config.shouldUseExtendedBackgroundIdleMode = true
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)
     }()
+
     
     override private init() {
         super.init()
@@ -320,10 +323,14 @@ class SpinManager: NSObject, ObservableObject {
     }
     
     func saveAutomations() {
-        if let data = try? JSONEncoder().encode(automations) {
-            try? data.write(to: getAutomationsFileURL())
+        do {
+            let data = try JSONEncoder().encode(automations)
+            try data.write(to: getAutomationsFileURL(), options: .atomicWrite)
+        } catch {
+            print("Errore nel salvataggio delle automazioni: \(error)")
         }
     }
+
     
     private func getAutomationsFileURL() -> URL {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
@@ -366,14 +373,15 @@ class SpinManager: NSObject, ObservableObject {
     func checkAndPerformAutomations() {
         let now = Date()
         for automation in automations where automation.isEnabled {
-            let automationTime = Calendar.current.dateComponents([.hour, .minute], from: automation.time)
-            let currentTime = Calendar.current.dateComponents([.hour, .minute], from: now)
-            
-            if automationTime == currentTime && !isSpinPerformedToday(for: automation.site) {
+            if Calendar.current.isDate(now, equalTo: automation.time, toGranularity: .minute) {
                 performSpinInBackground(for: automation.site)
             }
         }
+        DispatchQueue.main.async {
+            self.objectWillChange.send()
+        }
     }
+
     
     private func scheduleNotification(for automation: SpinAutomation) {
         let content = UNMutableNotificationContent()
@@ -540,11 +548,14 @@ class SpinManager: NSObject, ObservableObject {
 
         func performSpinInBackground(for site: String) {
             let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
-            guard let url = URL(string: urlString) else { return }
-            
+            guard let url = URL(string: urlString) else {
+                print("URL non valido per il sito: \(site)")
+                return
+            }
+
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            
+
             let task = backgroundSession.dataTask(with: request)
             task.resume()
         }
@@ -566,10 +577,13 @@ extension SpinManager: URLSessionDelegate, URLSessionDataDelegate {
 
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         if let error = error {
-            print("Errore nella richiesta: \(error)")
+            print("Errore nella richiesta di spin: \(error)")
+            // Gestire l'errore, ad esempio riprovando la richiesta o notificando l'utente
+        } else {
+            print("Richiesta di spin completata con successo")
         }
         DispatchQueue.main.async {
-            LogManager.shared.finishAPIRequest()
+            self.objectWillChange.send()
         }
     }
 
