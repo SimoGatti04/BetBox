@@ -127,42 +127,32 @@ class SpinManager: NSObject, ObservableObject {
             self.backgroundCompletionHandler = nil
         }
     }
-    
-    func updateAutomation(_ updatedAutomation: SpinAutomation) {
-        print("Entro in updateAutomation")
-        if let index = automations.firstIndex(where: { $0.id == updatedAutomation.id }) {
-            print("Automazione trovata")
-            automations[index] = updatedAutomation
-            saveAutomations()
-            objectWillChange.send()
-            if updatedAutomation.isEnabled {
-                scheduleNotification(for: updatedAutomation)
-                scheduleBackgroundTask(for: updatedAutomation)
-            } else {
-                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [updatedAutomation.id.uuidString])
-                cancelBackgroundTask(for: updatedAutomation)
-            }
-            objectWillChange.send()
-        }
-    }
 
     func fetchBonusHistory() {
         let sites = ["goldbet", "lottomatica", "snai"]
-
+        
         for site in sites {
             let urlString = "https://legally-modest-joey.ngrok-free.app/spin-history/\(site)"
             guard let url = URL(string: urlString) else { continue }
-
+            
             URLSession.shared.dataTask(with: url) { data, response, error in
-                if let data = data {
-                    do {
-                        let bonusHistory = try JSONDecoder().decode([BonusInfo].self, from: data)
-                        DispatchQueue.main.async {
-                            self.bonusHistory[site] = bonusHistory
-                            self.objectWillChange.send()
+                if let data = data, let stringData = String(data: data, encoding: .utf8) {
+                    print("Risposta per \(site):")
+                    print(stringData)
+                    
+                    // Continua con la decodifica solo se i dati sembrano essere JSON valido
+                    if stringData.starts(with: "[") || stringData.starts(with: "{") {
+                        do {
+                            let bonusHistory = try JSONDecoder().decode([BonusInfo].self, from: data)
+                            DispatchQueue.main.async {
+                                self.bonusHistory[site] = bonusHistory
+                                self.objectWillChange.send()
+                            }
+                        } catch {
+                            print("Errore nella decodifica per \(site): \(error)")
                         }
-                    } catch {
-                        print("Errore nella decodifica per \(site): \(error)")
+                    } else {
+                        print("La risposta non sembra essere JSON valido per \(site)")
                     }
                 }
             }.resume()
