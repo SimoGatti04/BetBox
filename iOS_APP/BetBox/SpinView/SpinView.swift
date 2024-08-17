@@ -2,8 +2,7 @@ import SwiftUI
 
 struct SpinView: View {
     @ObservedObject private var spinManager = SpinManager.shared
-    @State private var showingAutomationView = false
-    
+
     let sites = ["goldbet", "lottomatica", "snai"]
     
     var body: some View {
@@ -20,13 +19,6 @@ struct SpinView: View {
             }
             .navigationTitle("Spin")
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {
-                        showingAutomationView = true
-                    }) {
-                        Image(systemName: "clock")
-                    }
-                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: spinManager.checkAllSpinStatus) {
                         Image(systemName: "arrow.clockwise")
@@ -34,10 +26,10 @@ struct SpinView: View {
                 }
             }
         }
-        .sheet(isPresented: $showingAutomationView) {
-            AutomationView()
-        }
         .onAppear(perform: spinManager.loadSavedData)
+        .onAppear {
+            spinManager.fetchBonusHistory()
+        }
     }
 }
 
@@ -59,13 +51,10 @@ struct SiteSpinView: View {
                 
                 Spacer()
                 
-                if let bonus = lastBonus {
-                    VStack(alignment: .leading) {
-                        Text("Ultimo bonus:")
-                        Text("\(bonus.tipo): \(bonus.valore)")
-                    }
+                if let lastBonus = bonusHistory.last {
+                    Text("Ultimo bonus: \(lastBonus.tipo) - \(lastBonus.valore)")
                 } else {
-                    Text("Nessun bonus")
+                    Text("Nessun bonus recente")
                 }
                 
                 Spacer()

@@ -10,6 +10,9 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 const verificationRoutes = require('./routes/verificationRoutes');
+require('./bots/dailySpin/schedulers/goldbetSpinScheduler')
+require('./bots/dailySpin/schedulers/lottomaticaSpinScheduler')
+require('./bots/dailySpin/schedulers/snaiSpinScheduler')
 
 global.wss = wss;
 

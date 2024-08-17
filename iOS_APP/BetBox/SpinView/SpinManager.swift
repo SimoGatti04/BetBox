@@ -5,7 +5,6 @@ import BackgroundTasks
 
 class SpinManager: NSObject, ObservableObject {
     @Published var bonusHistory: [String: [BonusInfo]] = [:]
-    @Published var automations: [SpinAutomation] = []
     static let shared = SpinManager()
     private var lastExecutionTimes: [UUID: Date] = [:]
     private var cancellables = Set<AnyCancellable>()
@@ -23,8 +22,6 @@ class SpinManager: NSObject, ObservableObject {
     override private init() {
         super.init()
         loadSavedData()
-        setupAutomationTimer()
-        registerBackgroundTasks()
     }
     
     func forceUpdate() {
@@ -33,134 +30,9 @@ class SpinManager: NSObject, ObservableObject {
     
     func loadSavedData() {
         loadSavedBonusHistory()
-        loadSavedAutomations()
         cleanupOldBonuses()
-        checkMissedAutomations()
-    }
-    
-    func appDidBecomeActive() {
-        checkMissedAutomations()
-    }
-    
-    func checkMissedAutomations() {
-        let now = Date()
-        let calendar = Calendar.current
-        
-        for (index, automation) in automations.enumerated() where automation.isEnabled {
-            let lastMidnight = calendar.startOfDay(for: now)
-            if automation.time < now && automation.time > lastMidnight {
-                // Invece di eseguire lo spin, aggiorniamo lo stato dell'automazione
-                automations[index].lastExecutionDate = automation.time
-                automations[index].status = .missed
-            }
-        }
-        
-        // Salviamo le modifiche
-        saveAutomations()
     }
 
-    
-    func loadSavedAutomations() {
-        if let data = try? Data(contentsOf: getAutomationsFileURL()),
-           let savedAutomations = try? JSONDecoder().decode([SpinAutomation].self, from: data) {
-            automations = savedAutomations
-        }
-    }
-    
-    func saveAutomations() {
-        do {
-            let data = try JSONEncoder().encode(automations)
-            try data.write(to: getAutomationsFileURL(), options: .atomicWrite)
-        } catch {
-            print("Errore nel salvataggio delle automazioni: \(error)")
-        }
-    }
-    
-    private func getAutomationsFileURL() -> URL {
-        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return documentsDirectory.appendingPathComponent("spinAutomations.json")
-    }
-    
-    func addAutomation(_ automation: SpinAutomation) {
-        automations.append(automation)
-        saveAutomations()
-        scheduleNotification(for: automation)
-    }
-    
-    func removeAutomation(_ automation: SpinAutomation) {
-        automations.removeAll { $0.id == automation.id }
-        saveAutomations()
-        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [automation.id.uuidString])
-    }
-    
-    func toggleAutomation(_ automation: SpinAutomation) {
-        if let index = automations.firstIndex(where: { $0.id == automation.id }) {
-            automations[index].isEnabled.toggle()
-            saveAutomations()
-            if automations[index].isEnabled {
-                scheduleNotification(for: automations[index])
-            } else {
-                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [automation.id.uuidString])
-            }
-        }
-    }
-    
-    private func setupAutomationTimer() {
-        Timer.publish(every: 60, on: .main, in: .common)
-            .autoconnect()
-            .sink { [weak self] _ in
-                self?.checkAndPerformAutomations()
-            }
-            .store(in: &cancellables)
-    }
-    
-    func checkAndPerformAutomations() {
-        let now = Date()
-        for automation in automations where automation.isEnabled {
-            let calendar = Calendar.current
-            if calendar.compare(now, to: automation.time, toGranularity: .minute) == .orderedSame {
-                let automationId = automation.id
-                if let lastExecution = lastExecutionTimes[automationId],
-                   calendar.isDate(lastExecution, inSameDayAs: now) {
-                    continue // Skip if already executed today
-                }
-                performSpinInBackground(for: automation.site)
-                lastExecutionTimes[automationId] = now
-                markAutomationAsCompleted(automation)
-            }
-        }
-        DispatchQueue.main.async {
-            self.objectWillChange.send()
-        }
-    }
-    
-    private func markAutomationAsCompleted(_ automation: SpinAutomation) {
-        if let index = automations.firstIndex(where: { $0.id == automation.id }) {
-            automations[index].lastExecutionDate = Date()
-            saveAutomations()
-        }
-    }
-    
-    
-    
-    private func scheduleNotification(for automation: SpinAutomation) {
-        let content = UNMutableNotificationContent()
-        content.title = "Spin Automatico"
-        content.body = "È ora di eseguire lo spin per \(automation.site)"
-        content.sound = UNNotificationSound.default
-        
-        let components = Calendar.current.dateComponents([.hour, .minute], from: automation.time)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
-        
-        let request = UNNotificationRequest(identifier: automation.id.uuidString, content: content, trigger: trigger)
-        
-        UNUserNotificationCenter.current().add(request) { error in
-            if let error = error {
-                print("Errore nella programmazione della notifica: \(error)")
-            }
-        }
-    }
-    
     func loadSavedBonusHistory() {
         if let data = try? Data(contentsOf: getBonusHistoryFileURL()),
            let savedHistory = try? JSONDecoder().decode([String: [BonusInfo]].self, from: data) {
@@ -273,53 +145,28 @@ class SpinManager: NSObject, ObservableObject {
             objectWillChange.send()
         }
     }
-    
-    private func registerBackgroundTasks() {
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
-            self.handleBackgroundTask(task: task as! BGAppRefreshTask)
+
+    func fetchBonusHistory() {
+        let sites = ["goldbet", "lottomatica", "snai"]
+
+        for site in sites {
+            let urlString = "https://legally-modest-joey.ngrok-free.app/spin-history/\(site)"
+            guard let url = URL(string: urlString) else { continue }
+
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data {
+                    do {
+                        let bonusHistory = try JSONDecoder().decode([BonusInfo].self, from: data)
+                        DispatchQueue.main.async {
+                            self.bonusHistory[site] = bonusHistory
+                            self.objectWillChange.send()
+                        }
+                    } catch {
+                        print("Errore nella decodifica per \(site): \(error)")
+                    }
+                }
+            }.resume()
         }
-    }
-    
-    private func scheduleBackgroundTask(for automation: SpinAutomation) {
-        let request = BGAppRefreshTaskRequest(identifier: "simogatti.BetBox.spinautomation")
-        request.earliestBeginDate = automation.time
-
-        do {
-            try BGTaskScheduler.shared.submit(request)
-        } catch {
-            print("Errore nella programmazione del task in background: \(error)")
-        }
-    }
-
-    
-    private func cancelBackgroundTask(for automation: SpinAutomation) {
-        BGTaskScheduler.shared.cancel(taskRequestWithIdentifier: "simogatti.BetBox.spinautomation")
-    }
-    
-    func handleBackgroundTask(task: BGAppRefreshTask) {
-        task.expirationHandler = {
-            task.setTaskCompleted(success: false)
-        }
-
-        checkAndPerformAutomations()
-
-        task.setTaskCompleted(success: true)
-    }
-    
-    func performSpinInBackground(for site: String) {
-        guard !isSpinPerformedToday(for: site) else { return }
-
-        let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
-        guard let url = URL(string: urlString) else {
-            print("URL non valido per il sito: \(site)")
-            return
-        }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-
-        let task = backgroundSession.dataTask(with: request)
-        task.resume()
     }
 }
 
