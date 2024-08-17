@@ -5,4 +5,6 @@ struct SpinAutomation: Codable, Identifiable {
     let site: String
     let time: Date
     var isEnabled: Bool
+    var lastExecutionDate: Date?
 }
+

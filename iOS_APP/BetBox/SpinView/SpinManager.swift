@@ -7,6 +7,7 @@ class SpinManager: NSObject, ObservableObject {
     @Published var bonusHistory: [String: [BonusInfo]] = [:]
     @Published var automations: [SpinAutomation] = []
     static let shared = SpinManager()
+    private var lastExecutionTimes: [UUID: Date] = [:]
     private var cancellables = Set<AnyCancellable>()
     var backgroundCompletionHandler: (() -> Void)?
     private var backgroundTasks: [() -> Void] = []
@@ -110,14 +111,31 @@ class SpinManager: NSObject, ObservableObject {
     func checkAndPerformAutomations() {
         let now = Date()
         for automation in automations where automation.isEnabled {
-            if Calendar.current.isDate(now, equalTo: automation.time, toGranularity: .minute) {
+            let calendar = Calendar.current
+            if calendar.compare(now, to: automation.time, toGranularity: .minute) == .orderedSame {
+                let automationId = automation.id
+                if let lastExecution = lastExecutionTimes[automationId],
+                   calendar.isDate(lastExecution, inSameDayAs: now) {
+                    continue // Skip if already executed today
+                }
                 performSpinInBackground(for: automation.site)
+                lastExecutionTimes[automationId] = now
+                markAutomationAsCompleted(automation)
             }
         }
         DispatchQueue.main.async {
             self.objectWillChange.send()
         }
     }
+
+    private func markAutomationAsCompleted(_ automation: SpinAutomation) {
+        if let index = automations.firstIndex(where: { $0.id == automation.id }) {
+            automations[index].lastExecutionDate = Date()
+            saveAutomations()
+        }
+    }
+
+
 
     private func scheduleNotification(for automation: SpinAutomation) {
         let content = UNMutableNotificationContent()
@@ -282,6 +300,8 @@ class SpinManager: NSObject, ObservableObject {
     }
 
     func performSpinInBackground(for site: String) {
+        guard !isSpinPerformedToday(for: site) else { return }
+
         let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
         guard let url = URL(string: urlString) else {
             print("URL non valido per il sito: \(site)")
@@ -293,8 +313,14 @@ class SpinManager: NSObject, ObservableObject {
 
         let task = backgroundSession.dataTask(with: request)
         task.resume()
+
+        // Aggiorna immediatamente lo stato locale
+        if let index = automations.firstIndex(where: { $0.site == site }) {
+            automations[index].lastExecutionDate = Date()
+            saveAutomations()
+        }
     }
-}
+
 
 extension SpinManager: URLSessionDelegate, URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
