@@ -19,7 +19,7 @@ class SpinManager: NSObject, ObservableObject {
         config.shouldUseExtendedBackgroundIdleMode = true
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)
     }()
-
+    
     override private init() {
         super.init()
         loadSavedData()
@@ -30,7 +30,7 @@ class SpinManager: NSObject, ObservableObject {
     func forceUpdate() {
         objectWillChange.send()
     }
-
+    
     func loadSavedData() {
         loadSavedBonusHistory()
         loadSavedAutomations()
@@ -46,14 +46,20 @@ class SpinManager: NSObject, ObservableObject {
         let now = Date()
         let calendar = Calendar.current
         
-        for automation in automations where automation.isEnabled {
+        for (index, automation) in automations.enumerated() where automation.isEnabled {
             let lastMidnight = calendar.startOfDay(for: now)
-            if automation.time < now && automation.time > lastMidnight && !isSpinPerformedToday(for: automation.site) {
-                performSpinInBackground(for: automation.site)
+            if automation.time < now && automation.time > lastMidnight {
+                // Invece di eseguire lo spin, aggiorniamo lo stato dell'automazione
+                automations[index].lastExecutionDate = automation.time
+                automations[index].status = .missed
             }
         }
+        
+        // Salviamo le modifiche
+        saveAutomations()
     }
 
+    
     func loadSavedAutomations() {
         if let data = try? Data(contentsOf: getAutomationsFileURL()),
            let savedAutomations = try? JSONDecoder().decode([SpinAutomation].self, from: data) {
@@ -69,7 +75,7 @@ class SpinManager: NSObject, ObservableObject {
             print("Errore nel salvataggio delle automazioni: \(error)")
         }
     }
-
+    
     private func getAutomationsFileURL() -> URL {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return documentsDirectory.appendingPathComponent("spinAutomations.json")
@@ -127,16 +133,16 @@ class SpinManager: NSObject, ObservableObject {
             self.objectWillChange.send()
         }
     }
-
+    
     private func markAutomationAsCompleted(_ automation: SpinAutomation) {
         if let index = automations.firstIndex(where: { $0.id == automation.id }) {
             automations[index].lastExecutionDate = Date()
             saveAutomations()
         }
     }
-
-
-
+    
+    
+    
     private func scheduleNotification(for automation: SpinAutomation) {
         let content = UNMutableNotificationContent()
         content.title = "Spin Automatico"
@@ -228,7 +234,7 @@ class SpinManager: NSObject, ObservableObject {
         bonusHistory[site] = []
         saveBonusHistory()
     }
-
+    
     func processBackgroundTasks(completion: @escaping () -> Void) {
         let tasks = backgroundTasks
         backgroundTasks.removeAll()
@@ -267,13 +273,13 @@ class SpinManager: NSObject, ObservableObject {
             objectWillChange.send()
         }
     }
-
+    
     private func registerBackgroundTasks() {
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
             self.handleBackgroundTask(task: task as! BGAppRefreshTask)
         }
     }
-
+    
     private func scheduleBackgroundTask(for automation: SpinAutomation) {
         let request = BGAppRefreshTaskRequest(identifier: "simogatti.BetBox.spinautomation")
         request.earliestBeginDate = automation.time
@@ -284,43 +290,43 @@ class SpinManager: NSObject, ObservableObject {
             print("Errore nella programmazione del task in background: \(error)")
         }
     }
-
+    
     private func cancelBackgroundTask(for automation: SpinAutomation) {
         BGTaskScheduler.shared.cancel(taskRequestWithIdentifier: "simogatti.BetBox.spinautomation")
     }
-
+    
     func handleBackgroundTask(task: BGAppRefreshTask) {
         task.expirationHandler = {
             task.setTaskCompleted(success: false)
         }
-
+        
         checkAndPerformAutomations()
-
+        
         task.setTaskCompleted(success: true)
     }
-
+    
     func performSpinInBackground(for site: String) {
         guard !isSpinPerformedToday(for: site) else { return }
-
+        
         let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
         guard let url = URL(string: urlString) else {
             print("URL non valido per il sito: \(site)")
             return
         }
-
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-
+        
         let task = backgroundSession.dataTask(with: request)
         task.resume()
-
+        
         // Aggiorna immediatamente lo stato locale
         if let index = automations.firstIndex(where: { $0.site == site }) {
             automations[index].lastExecutionDate = Date()
             saveAutomations()
         }
     }
-
+}
 
 extension SpinManager: URLSessionDelegate, URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
