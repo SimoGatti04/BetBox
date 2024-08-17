@@ -10,6 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 const verificationRoutes = require('./routes/verificationRoutes');
+const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
 require('./bots/dailySpin/schedulers/goldbetSpinScheduler')
 require('./bots/dailySpin/schedulers/lottomaticaSpinScheduler')
 require('./bots/dailySpin/schedulers/snaiSpinScheduler')
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use('/balances', balanceRoutes);
 app.use('/spin', dailySpinRoutes);
 app.use('/verify', verificationRoutes);
+app.use('/spin-history', spinHistoryRoutes)
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 
