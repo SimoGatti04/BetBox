@@ -10,35 +10,6 @@ import UIKit
 import BackgroundTasks
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        SpinManager.shared.appDidBecomeActive()
-    }
-
-    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
-        SpinManager.shared.backgroundCompletionHandler = completionHandler
-    }
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
-            SpinManager.shared.handleBackgroundTask(task: task as! BGAppRefreshTask)
-        }
-        return true
-    }
-
-    func registerBackgroundTasks() {
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
-            SpinManager.shared.handleBackgroundTask(task: task as! BGAppRefreshTask)
-        }
-    }
-    func handleSpinAutomation(task: BGAppRefreshTask) {
-        scheduleSpinAutomation()
-        task.expirationHandler = {
-            task.setTaskCompleted(success: false)
-        }
-        SpinManager.shared.checkAndPerformAutomations()
-        task.setTaskCompleted(success: true)
-    }
-
     func handleSpinProcessing(task: BGProcessingTask) {
         scheduleSpinProcessing()
         task.expirationHandler = {
