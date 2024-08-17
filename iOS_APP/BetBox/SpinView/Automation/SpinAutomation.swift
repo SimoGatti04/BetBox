@@ -6,5 +6,11 @@ struct SpinAutomation: Codable, Identifiable {
     let time: Date
     var isEnabled: Bool
     var lastExecutionDate: Date?
+    var status: AutomationStatus = .pending
 }
+
+enum AutomationStatus: String, Codable {
+    case pending, executed, missed
+}
+
 

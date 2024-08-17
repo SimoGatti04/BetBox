@@ -45,14 +45,20 @@ class SpinManager: NSObject, ObservableObject {
     func checkMissedAutomations() {
         let now = Date()
         let calendar = Calendar.current
-        
-        for automation in automations where automation.isEnabled {
+
+        for (index, automation) in automations.enumerated() where automation.isEnabled {
             let lastMidnight = calendar.startOfDay(for: now)
-            if automation.time < now && automation.time > lastMidnight && !isSpinPerformedToday(for: automation.site) {
-                performSpinInBackground(for: automation.site)
+            if automation.time < now && automation.time > lastMidnight {
+                // Invece di eseguire lo spin, aggiorniamo lo stato dell'automazione
+                automations[index].lastExecutionDate = automation.time
+                automations[index].status = .missed
             }
         }
+
+        // Salviamo le modifiche
+        saveAutomations()
     }
+
 
     func loadSavedAutomations() {
         if let data = try? Data(contentsOf: getAutomationsFileURL()),
