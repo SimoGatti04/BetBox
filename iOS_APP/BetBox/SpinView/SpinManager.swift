@@ -283,13 +283,14 @@ class SpinManager: NSObject, ObservableObject {
     private func scheduleBackgroundTask(for automation: SpinAutomation) {
         let request = BGAppRefreshTaskRequest(identifier: "simogatti.BetBox.spinautomation")
         request.earliestBeginDate = automation.time
-        
+
         do {
             try BGTaskScheduler.shared.submit(request)
         } catch {
             print("Errore nella programmazione del task in background: \(error)")
         }
     }
+
     
     private func cancelBackgroundTask(for automation: SpinAutomation) {
         BGTaskScheduler.shared.cancel(taskRequestWithIdentifier: "simogatti.BetBox.spinautomation")
@@ -299,32 +300,26 @@ class SpinManager: NSObject, ObservableObject {
         task.expirationHandler = {
             task.setTaskCompleted(success: false)
         }
-        
+
         checkAndPerformAutomations()
-        
+
         task.setTaskCompleted(success: true)
     }
     
     func performSpinInBackground(for site: String) {
         guard !isSpinPerformedToday(for: site) else { return }
-        
+
         let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
         guard let url = URL(string: urlString) else {
             print("URL non valido per il sito: \(site)")
             return
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        
+
         let task = backgroundSession.dataTask(with: request)
         task.resume()
-        
-        // Aggiorna immediatamente lo stato locale
-        if let index = automations.firstIndex(where: { $0.site == site }) {
-            automations[index].lastExecutionDate = Date()
-            saveAutomations()
-        }
     }
 }
 
