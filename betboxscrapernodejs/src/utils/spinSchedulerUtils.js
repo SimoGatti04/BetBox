@@ -4,9 +4,12 @@ const path = require('path');
 const SPIN_HISTORY_DIR = path.join(__dirname, '..', '..', 'spinHistory');
 
 function getRandomTime() {
-    const minute = Math.floor(Math.random() * 3) + 15;
-    return `${minute} 00 * * *`;
+    const hour = Math.floor(Math.random() * 4) + 3; // 2-6
+    const minute = Math.floor(Math.random() * 60); // 0-59
+    const second = Math.floor(Math.random() * 60); // 0-59
+    return `${second} ${minute} ${hour} * * *`;
 }
+
 
 function updateSpinHistory(site, result) {
     const spinHistoryFile = path.join(SPIN_HISTORY_DIR, `${site}SpinHistory.json`);
