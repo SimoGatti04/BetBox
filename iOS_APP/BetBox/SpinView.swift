@@ -1,6 +1,7 @@
 import SwiftUI
 import Combine
 import UserNotifications
+import BackgroundTasks
 
 struct SpinAutomation: Codable, Identifiable {
     let id = UUID()
@@ -166,6 +167,12 @@ struct AutomationView: View {
                         }
                 }
             }
+            .onAppear {
+                    spinManager.loadSavedAutomations()
+            }
+            .onAppear {
+                spinManager.forceUpdate()
+            }
             .navigationTitle("Automazioni Spin")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -187,6 +194,11 @@ struct AutomationView: View {
                 if let editingAutomation = editingAutomation {
                     let updatedAutomation = SpinAutomation(site: newAutomationSite, time: newAutomationTime, isEnabled: editingAutomation.isEnabled)
                     spinManager.updateAutomation(updatedAutomation)
+                    print("Automazione aggiornata: \(updatedAutomation)")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        spinManager.forceUpdate()
+                        print("Aggiornamento forzato")
+                    }
                 }
                 showingEditAutomation = false
             })
@@ -197,6 +209,7 @@ struct AutomationView: View {
 
 
 struct AddAutomationView: View {
+    @ObservedObject private var spinManager = SpinManager.shared
     @Binding var site: String
     @Binding var time: Date
     let onSave: () -> Void
@@ -218,8 +231,11 @@ struct AddAutomationView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Salva") {
-                        onSave()
+                        onSave();
                         presentationMode.wrappedValue.dismiss()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                            spinManager.objectWillChange.send()
+                        }
                     }
                 }
             }
@@ -256,6 +272,7 @@ class SpinManager: NSObject, ObservableObject {
     
     private lazy var backgroundSession: URLSession = {
         let config = URLSessionConfiguration.background(withIdentifier: "simogatti.BetBox.backgroundsession")
+        config.sessionSendsLaunchEvents = true
         return URLSession(configuration: config, delegate: self, delegateQueue: nil)
     }()
     
@@ -263,6 +280,11 @@ class SpinManager: NSObject, ObservableObject {
         super.init()
         loadSavedData()
         setupAutomationTimer()
+        registerBackgroundTasks()
+    }
+    
+    func forceUpdate() {
+        objectWillChange.send()
     }
 
     
@@ -270,7 +292,25 @@ class SpinManager: NSObject, ObservableObject {
         loadSavedBonusHistory()
         loadSavedAutomations()
         cleanupOldBonuses()
+        checkMissedAutomations()
     }
+    
+    func appDidBecomeActive() {
+        checkMissedAutomations()
+    }
+    
+    func checkMissedAutomations() {
+        let now = Date()
+        let calendar = Calendar.current
+        
+        for automation in automations where automation.isEnabled {
+            let lastMidnight = calendar.startOfDay(for: now)
+            if automation.time < now && automation.time > lastMidnight && !isSpinPerformedToday(for: automation.site) {
+                performSpinInBackground(for: automation.site)
+            }
+        }
+    }
+
     
     func loadSavedAutomations() {
         if let data = try? Data(contentsOf: getAutomationsFileURL()),
@@ -426,12 +466,6 @@ class SpinManager: NSObject, ObservableObject {
         bonusHistory[site] = []
         saveBonusHistory()
     }
-    
-    func performSpinInBackground(for site: String) {
-        backgroundTasks.append { [weak self] in
-            self?.performSpin(for: site)
-        }
-    }
 
     func processBackgroundTasks(completion: @escaping () -> Void) {
         let tasks = backgroundTasks
@@ -455,17 +489,67 @@ class SpinManager: NSObject, ObservableObject {
     }
     
     func updateAutomation(_ updatedAutomation: SpinAutomation) {
+        print ("entro in updateAutomation")
         if let index = automations.firstIndex(where: { $0.id == updatedAutomation.id }) {
+            print ("Automazione trovata")
             automations[index] = updatedAutomation
             saveAutomations()
+            objectWillChange.send()
             if updatedAutomation.isEnabled {
                 scheduleNotification(for: updatedAutomation)
+                scheduleBackgroundTask(for: updatedAutomation)
             } else {
                 UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [updatedAutomation.id.uuidString])
+                cancelBackgroundTask(for: updatedAutomation)
             }
+            objectWillChange.send()
         }
     }
-}
+
+
+        private func registerBackgroundTasks() {
+            BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
+                self.handleBackgroundTask(task: task as! BGAppRefreshTask)
+            }
+        }
+
+        private func scheduleBackgroundTask(for automation: SpinAutomation) {
+            let request = BGAppRefreshTaskRequest(identifier: "simogatti.BetBox.spinautomation")
+            request.earliestBeginDate = automation.time
+            
+            do {
+                try BGTaskScheduler.shared.submit(request)
+            } catch {
+                print("Errore nella programmazione del task in background: \(error)")
+            }
+        }
+
+        private func cancelBackgroundTask(for automation: SpinAutomation) {
+            BGTaskScheduler.shared.cancel(taskRequestWithIdentifier: "simogatti.BetBox.spinautomation")
+        }
+
+        func handleBackgroundTask(task: BGAppRefreshTask) {
+            task.expirationHandler = {
+                task.setTaskCompleted(success: false)
+            }
+
+            checkAndPerformAutomations()
+
+            task.setTaskCompleted(success: true)
+        }
+
+        func performSpinInBackground(for site: String) {
+            let urlString = "https://legally-modest-joey.ngrok-free.app/spin/\(site)"
+            guard let url = URL(string: urlString) else { return }
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            
+            let task = backgroundSession.dataTask(with: request)
+            task.resume()
+        }
+    }
+
 
 extension SpinManager: URLSessionDelegate, URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {

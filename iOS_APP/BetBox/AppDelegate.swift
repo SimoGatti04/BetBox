@@ -10,11 +10,12 @@ import UIKit
 import BackgroundTasks
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        SpinManager.shared.appDidBecomeActive()
+    }
+    
     func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
         SpinManager.shared.backgroundCompletionHandler = completionHandler
-        if identifier == "simogatti.BetBox.balancebackgroundsession" {
-            BalanceManager.shared.backgroundCompletionHandler = completionHandler
-        }
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -24,13 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func registerBackgroundTasks() {
         BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinautomation", using: nil) { task in
-            self.handleSpinAutomation(task: task as! BGAppRefreshTask)
-        }
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "simogatti.BetBox.spinprocessing", using: nil) { task in
-            self.handleSpinProcessing(task: task as! BGProcessingTask)
+            SpinManager.shared.handleBackgroundTask(task: task as! BGAppRefreshTask)
         }
     }
-
     func handleSpinAutomation(task: BGAppRefreshTask) {
         scheduleSpinAutomation()
         task.expirationHandler = {
