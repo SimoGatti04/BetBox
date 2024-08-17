@@ -2,7 +2,7 @@ import SwiftUI
 
 struct SpinView: View {
     @ObservedObject private var spinManager = SpinManager.shared
-
+    
     let sites = ["goldbet", "lottomatica", "snai"]
     
     var body: some View {
@@ -18,6 +18,9 @@ struct SpinView: View {
                 .padding()
             }
             .navigationTitle("Spin")
+            .onAppear {
+                spinManager.fetchBonusHistory()
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: spinManager.checkAllSpinStatus) {
@@ -51,11 +54,14 @@ struct SiteSpinView: View {
                 
                 Spacer()
                 
-                if let lastBonus = bonusHistory.last {
-                    Text("Ultimo bonus: \(lastBonus.tipo) - \(lastBonus.valore)")
-                } else {
-                    Text("Nessun bonus recente")
-                }
+                if let bonus = lastBonus {
+                    VStack(alignment: .leading) {
+                        Text("Ultimo bonus:")
+                        Text("\(bonus.result.tipo): \(bonus.result.valore)")
+                        }
+                    } else {
+                        Text("Nessun bonus recente")
+                    }
                 
                 Spacer()
                 
@@ -64,11 +70,13 @@ struct SiteSpinView: View {
                         .font(.system(size: 30))
                 }
             }
-            
             Button("Visualizza log bonus") {
                 showingBonusHistory = true
+                }
+                .padding(.top)
             }
-            .padding(.top)
+            .sheet(isPresented: $showingBonusHistory) {
+            BonusHistoryView(bonusHistory: bonusHistory, site: site)
         }
         .padding()
         .background(spinStatus ? Color.green.opacity(0.2) : Color.gray.opacity(0.1))
@@ -90,8 +98,8 @@ struct BonusHistoryView: View {
         VStack {
             List(bonusHistory) { bonus in
                 VStack(alignment: .leading) {
-                    Text("Tipo: \(bonus.tipo)")
-                    Text("Valore: \(bonus.valore)")
+                    Text("Tipo: \(bonus.result.tipo)")
+                    Text("Valore: \(bonus.result.valore)")
                     Text("Data: \(bonus.date, formatter: itemFormatter)")
                 }
             }

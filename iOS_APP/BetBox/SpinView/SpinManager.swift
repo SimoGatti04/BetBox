@@ -98,10 +98,6 @@ class SpinManager: NSObject, ObservableObject {
         return siteHistory.contains { Calendar.current.isDate($0.date, inSameDayAs: today) }
     }
     
-    func getLastBonus(for site: String) -> BonusInfo? {
-        return bonusHistory[site]?.last
-    }
-    
     func clearBonusHistory(for site: String) {
         bonusHistory[site] = []
         saveBonusHistory()
@@ -130,33 +126,33 @@ class SpinManager: NSObject, ObservableObject {
 
     func fetchBonusHistory() {
         let sites = ["goldbet", "lottomatica", "snai"]
-        
+
         for site in sites {
             let urlString = "https://legally-modest-joey.ngrok-free.app/spin-history/\(site)"
             guard let url = URL(string: urlString) else { continue }
-            
+
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data = data, let stringData = String(data: data, encoding: .utf8) {
-                    print("Risposta per \(site):")
+                    print("Risposta integrale per \(site):")
                     print(stringData)
                     
-                    // Continua con la decodifica solo se i dati sembrano essere JSON valido
-                    if stringData.starts(with: "[") || stringData.starts(with: "{") {
-                        do {
-                            let bonusHistory = try JSONDecoder().decode([BonusInfo].self, from: data)
-                            DispatchQueue.main.async {
-                                self.bonusHistory[site] = bonusHistory
-                                self.objectWillChange.send()
-                            }
-                        } catch {
-                            print("Errore nella decodifica per \(site): \(error)")
+                    do {
+                        let bonusHistory = try JSONDecoder().decode([BonusInfo].self, from: data)
+                        DispatchQueue.main.async {
+                            self.bonusHistory[site] = bonusHistory
+                            print("Bonus history decodificata per \(site): \(bonusHistory)")
+                            self.objectWillChange.send()
                         }
-                    } else {
-                        print("La risposta non sembra essere JSON valido per \(site)")
+                    } catch {
+                        print("Errore nella decodifica per \(site): \(error)")
                     }
                 }
             }.resume()
         }
+    }
+
+    func getLastBonus(for site: String) -> BonusInfo? {
+        return bonusHistory[site]?.last { $0.result.tipo != nil && $0.result.valore != nil }
     }
 }
 

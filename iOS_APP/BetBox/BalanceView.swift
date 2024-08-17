@@ -4,7 +4,7 @@ import Combine
 import SwiftUI
 import Combine
 
-class BalanceManager: NSObject, ObservableObject {
+class BalanceManager: NSObject, ObservableObject, URLSessionDelegate, URLSessionDataDelegate {
     @Published var balances: [String: String] = [:]
     @Published var showingVerificationPopup = false
     @Published var verificationSite = ""
@@ -80,6 +80,8 @@ class BalanceManager: NSObject, ObservableObject {
             }
         }
     }
+
+
     
     func loadAllBalances() {
         LogManager.shared.prepareForAPIRequest()
@@ -195,7 +197,7 @@ class BalanceManager: NSObject, ObservableObject {
     }
 }
 
-extension BalanceManager: URLSessionDelegate, URLSessionDataDelegate {
+extension BalanceManager {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         do {
             if let httpResponse = dataTask.response as? HTTPURLResponse, httpResponse.statusCode == 202 {
