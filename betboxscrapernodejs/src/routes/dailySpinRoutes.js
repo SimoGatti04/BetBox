@@ -2,10 +2,37 @@ const express = require('express');
 const { spinGoldBetterWheel } = require('../bots/dailySpin/goldBetterSpin');
 const router = express.Router();
 const { spinSnaiWheel } = require('../bots/dailySpin/snaiDailySpin');
+const fs = require('fs');
+const path = require('path');
+const spinHistoryDir = path.join(__dirname, '..','..','spinHistory');
+
+function updateSpinHistory(site, result) {
+    const spinHistoryFile = path.join(spinHistoryDir, `${site}SpinHistory.json`);
+
+    if (!fs.existsSync(spinHistoryDir)){
+        fs.mkdirSync(spinHistoryDir, { recursive: true });
+    }
+
+    let history = [];
+    if (fs.existsSync(spinHistoryFile)) {
+        history = JSON.parse(fs.readFileSync(spinHistoryFile, 'utf8'));
+    }
+
+    const newEntry = {
+        date: new Date().toISOString(),
+        result: result
+    };
+
+    history.push(newEntry);
+    history = history.filter(entry => new Date(entry.date) >= new Date(Date.now() - 5 * 24 * 60 * 60 * 1000));
+
+    fs.writeFileSync(spinHistoryFile, JSON.stringify(history, null, 2));
+}
 
 router.post('/snai', async (req, res) => {
   try {
     const result = await spinSnaiWheel();
+    updateSpinHistory('snai', result);
     res.json(result);
   } catch (error) {
     console.error('Errore durante lo spin Snai:', error);
@@ -16,6 +43,7 @@ router.post('/snai', async (req, res) => {
 router.post('/goldbet', async (req, res) => {
   try {
     const result = await spinGoldBetterWheel('Goldbet');
+    updateSpinHistory('goldbet', result);
     console.log('Risposta del server per Goldbet:', JSON.stringify(result, null, 2));
     res.json(result);
   } catch (error) {
@@ -24,10 +52,10 @@ router.post('/goldbet', async (req, res) => {
   }
 });
 
-
 router.post('/lottomatica', async (req, res) => {
   try {
     const result = await spinGoldBetterWheel('Lottomatica');
+    updateSpinHistory('lottomatica', result);
     res.json(result);
   } catch (error) {
     console.error('Errore durante lo spin Lottomatica:', error);
