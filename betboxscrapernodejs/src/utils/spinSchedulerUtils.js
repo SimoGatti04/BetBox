@@ -2,13 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SPIN_HISTORY_DIR = path.join(__dirname, '..', '..', 'spinHistory');
-
-function getRandomTime() {
-    const hour = Math.floor(Math.random() * 4) + 2; // 2-5
-    const minute = Math.floor(Math.random() * 60); // 0-59
-    const second = Math.floor(Math.random() * 60); // 0-59
-    return `${second} ${minute} ${hour} * * *`;
-}
+const LAST_SPIN_FILE = path.join(__dirname, '..', '..', 'lastSpinDates.json');
 
 function updateSpinHistory(site, result) {
     const spinHistoryFile = path.join(SPIN_HISTORY_DIR, `${site}SpinHistory.json`);
@@ -28,25 +22,33 @@ function updateSpinHistory(site, result) {
     };
 
     history.push(newEntry);
-    history = history.filter(entry => new Date(entry.date) >= new Date(Date.now() - 5 * 24 * 60 * 60 * 1000));
+
+    const fiveDaysAgo = new Date();
+    fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
+    history = history.filter(entry => new Date(entry.date) >= fiveDaysAgo);
 
     fs.writeFileSync(spinHistoryFile, JSON.stringify(history, null, 2));
 }
 
-function getNextExecutionDate(cronExpression) {
-    const [minute, hour] = cronExpression.split(' ');
-    const now = new Date();
-    const nextDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(hour), parseInt(minute));
-
-    if (nextDate <= now) {
-        nextDate.setDate(nextDate.getDate() + 1);
+function getLastSpinDate(site) {
+    if (fs.existsSync(LAST_SPIN_FILE)) {
+        const lastSpinDates = JSON.parse(fs.readFileSync(LAST_SPIN_FILE, 'utf8'));
+        return lastSpinDates[site] || null;
     }
+    return null;
+}
 
-    return nextDate;
+function saveLastSpinDate(site, date) {
+    let lastSpinDates = {};
+    if (fs.existsSync(LAST_SPIN_FILE)) {
+        lastSpinDates = JSON.parse(fs.readFileSync(LAST_SPIN_FILE, 'utf8'));
+    }
+    lastSpinDates[site] = date;
+    fs.writeFileSync(LAST_SPIN_FILE, JSON.stringify(lastSpinDates, null, 2));
 }
 
 module.exports = {
-    getRandomTime,
     updateSpinHistory,
-    getNextExecutionDate
+    getLastSpinDate,
+    saveLastSpinDate
 };

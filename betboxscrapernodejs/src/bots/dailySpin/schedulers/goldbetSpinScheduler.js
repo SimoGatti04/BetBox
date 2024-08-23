@@ -1,19 +1,20 @@
 const cron = require('node-cron');
 const { spinGoldBetterWheel } = require('../goldBetterSpin');
-const { getRandomTime, updateSpinHistory, getNextExecutionDate } = require('../../..//utils/spinSchedulerUtils');
+const { updateSpinHistory, getLastSpinDate, saveLastSpinDate } = require('../../../utils/spinSchedulerUtils');
 
 const cronExpression = '0 * 2-5 * * *';
 
 async function performGoldbetSpin() {
     const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
+    const today = now.toISOString().split('T')[0];
+    const lastSpinDate = await getLastSpinDate('goldbet');
 
-    if (hour >= 2 && hour <= 5) {
-        if (minute === Math.floor(Math.random() * 60)) {
+    if (lastSpinDate !== today && now.getHours() >= 2 && now.getHours() <= 5) {
+        if (now.getMinutes() === Math.floor(Math.random() * 60)) {
             console.log(`[${now.toISOString()}] Esecuzione spin Goldbet`);
             const result = await spinGoldBetterWheel('Goldbet');
             updateSpinHistory('goldbet', result);
+            saveLastSpinDate('goldbet', today);
         }
     }
 }
@@ -23,6 +24,4 @@ const goldbetTask = cron.schedule(cronExpression, performGoldbetSpin, {
     timezone: "Europe/Rome"
 });
 
-
 goldbetTask.start();
-console.log(`Scheduler Goldbet avviato. Prossima esecuzione: ${getNextExecutionDate(cronExpression)}`);
