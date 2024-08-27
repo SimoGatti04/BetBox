@@ -99,7 +99,7 @@ async function extractBonusType(page) {
     const bonusLines = bonusText.split('\n');
     let bonusType;
     if (bonusLines.length > 1) {
-      bonusType = bonusLines[1];
+      bonusType = bonusLines[1].trim();
     } else {
       bonusType = bonusText.replace("COMPLIMENTI HAI VINTO UN ", "");
     }
