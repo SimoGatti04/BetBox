@@ -1,15 +1,11 @@
 workflows:
-  react-native-ios:
-    name: React Native iOS
+  ios-swift-workflow:
+    name: iOS Swift Workflow
     environment:
-      node: latest
       xcode: latest
     scripts:
-      - name: Install dependencies
-        script: yarn install
-      - name: Build iOS
+      - name: Build iOS app
         script: |
-          cd ios
-          ../node_modules/.bin/react-native run-ios --configuration Release
+          xcodebuild build -project YourProject.xcodeproj -scheme YourScheme -sdk iphonesimulator -configuration Release
     artifacts:
-      - build/ios/build/Products/Release-iphonesimulator/*.app
+      - build/ios/iphoneos/*.app
