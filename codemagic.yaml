@@ -5,6 +5,9 @@ workflows:
       xcode: 16.0
       vars:
         BUNDLE_ID: "simogatti.BetBox"
+        FASTLANE_DISABLE_COLORS: 1
+        FASTLANE_OPT_OUT_USAGE: 1
+        FASTLANE_SKIP_UPDATE_CHECK: 1
     scripts:
       - name: Install Fastlane
         script: |
@@ -13,7 +16,8 @@ workflows:
       - name: Create Fastfile
         script: |
           cd iOS_APP
-          cat > Fastfile << EOL
+          mkdir fastlane
+          cat > fastlane/Fastfile << EOL
           default_platform(:ios)
           
           platform :ios do
