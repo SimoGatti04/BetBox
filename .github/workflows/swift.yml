@@ -17,7 +17,7 @@ jobs:
     - name: Build
       run: |
         cd iOS_APP
-        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 13,OS=18.0" -configuration Release
+        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 14,OS=18.0" -configuration Release
     - name: Run tests
       run: |
         cd iOS_APP
