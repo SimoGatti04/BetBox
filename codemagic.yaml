@@ -3,14 +3,12 @@ workflows:
     name: iOS Swift Workflow
     environment:
       xcode: 16.0
+      vars:
+        BUNDLE_ID: "simogatti.BetBox"
     scripts:
       - name: Build iOS app
         script: |
           cd iOS_APP
-          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphoneos -configuration Release -allowProvisioningUpdates
-      - name: Export IPA
-        script: |
-          cd iOS_APP
-          xcodebuild -exportArchive -archivePath build/BetBox.xcarchive -exportOptionsPlist exportOptions.plist -exportPath ./
+          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator -configuration Debug
     artifacts:
-      - iOS_APP/BetBox.ipa
+      - iOS_APP/build/Debug-iphonesimulator/BetBox.app
