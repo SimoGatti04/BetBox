@@ -2,9 +2,9 @@ name: iOS CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -16,12 +16,23 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_16.1_beta.app
 
-    - name: Build
+    - name: Build and Test
       run: |
         cd iOS_APP
-        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" -configuration Release
+        xcodebuild build-for-testing test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" -enableCodeCoverage YES
 
-    - name: Run tests
+    - name: Archive app
       run: |
         cd iOS_APP
-        xcodebuild test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" -configuration Release
+        xcodebuild -project BetBox.xcodeproj -scheme BetBox -sdk iphoneos -configuration Release archive -archivePath $PWD/build/BetBox.xcarchive
+
+    - name: Export .ipa
+      run: |
+        cd iOS_APP
+        xcodebuild -exportArchive -archivePath $PWD/build/BetBox.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
+
+    - name: Upload .ipa
+      uses: actions/upload-artifact@v2
+      with:
+        name: app
+        path: iOS_APP/build/BetBox.ipa
