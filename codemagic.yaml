@@ -6,9 +6,13 @@ workflows:
       vars:
         BUNDLE_ID: "simogatti.BetBox"
     scripts:
-      - name: Build iOS app
+      - name: Build and Archive iOS app
         script: |
           cd iOS_APP
-          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator -configuration Debug
+          xcodebuild clean archive -project BetBox.xcodeproj -scheme BetBox -archivePath BetBox.xcarchive
+      - name: Export IPA
+        script: |
+          cd iOS_APP
+          xcodebuild -exportArchive -archivePath BetBox.xcarchive -exportOptionsPlist exportOptions.plist -exportPath ./
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - iOS_APP/BetBox.ipa
