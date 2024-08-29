@@ -101,7 +101,7 @@ async function extractBonusType(page) {
     if (bonusLines.length > 1) {
       bonusType = bonusLines[1].trim();
     } else {
-      bonusType = bonusText.replace("COMPLIMENTI HAI VINTO UN ", "");
+      bonusType = bonusText.replace("COMPLIMENTI HAI VINTO UN ", "").trim();
     }
     return bonusType;
   } catch (error) {
