@@ -2,7 +2,7 @@ workflows:
   ios-swift-workflow:
     name: iOS Swift Workflow
     environment:
-      xcode: edge
+      xcode: 16.0
     scripts:
       - name: Build iOS app
         script: |
