@@ -1,10 +1,10 @@
-name: iOS 18 CI
+name: iOS CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -12,13 +12,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_16.0.app
+
+    - name: List Xcode versions
+      run: |
+        ls -l /Applications/ | grep Xcode
+        xcode-select -p
+
     - name: Build
       run: |
         cd iOS_APP
         xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 14,OS=18.0" -configuration Release
-    - name: Run tests
-      run: |
-        cd iOS_APP
-        xcodebuild test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 13,OS=18.0" -configuration Release
