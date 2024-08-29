@@ -6,6 +6,6 @@ workflows:
     scripts:
       - name: Build iOS app
         script: |
-          xcodebuild build -project YourProject.xcodeproj -scheme YourScheme -sdk iphonesimulator -configuration Release
+          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator -configuration Release
     artifacts:
       - build/ios/iphoneos/*.app
