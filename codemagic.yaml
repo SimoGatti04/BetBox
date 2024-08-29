@@ -6,9 +6,32 @@ workflows:
       vars:
         BUNDLE_ID: "simogatti.BetBox"
     scripts:
-      - name: Build iOS app
+      - name: Install Fastlane
         script: |
           cd iOS_APP
-          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator18.0 -configuration Debug
+          gem install fastlane
+      - name: Create Fastfile
+        script: |
+          cd iOS_APP
+          cat > Fastfile << EOL
+          default_platform(:ios)
+          
+          platform :ios do
+            desc "Build IPA"
+            lane :build_ipa do
+              gym(
+                project: "BetBox.xcodeproj",
+                scheme: "BetBox",
+                export_method: "development",
+                output_directory: "./build",
+                output_name: "BetBox.ipa"
+              )
+            end
+          end
+          EOL
+      - name: Build IPA
+        script: |
+          cd iOS_APP
+          fastlane build_ipa
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - iOS_APP/build/BetBox.ipa

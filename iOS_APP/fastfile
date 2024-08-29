@@ -1,0 +1,14 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build IPA"
+  lane :build_ipa do
+    gym(
+      project: "BetBox.xcodeproj",
+      scheme: "BetBox",
+      export_method: "development",
+      output_directory: "./build",
+      output_name: "BetBox.ipa"
+    )
+  end
+end
