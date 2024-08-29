@@ -13,12 +13,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: List Xcode versions
-      run: |
-        ls -l /Applications/ | grep Xcode
-        xcode-select -p
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_16.1_beta.app
 
     - name: Build
       run: |
         cd iOS_APP
-        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 14,OS=18.0" -configuration Release
+        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.0" -configuration Release
+
+    - name: Run tests
+      run: |
+        cd iOS_APP
+        xcodebuild test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.0" -configuration Release
