@@ -24,7 +24,9 @@ workflows:
                 scheme: "BetBox",
                 export_method: "development",
                 output_directory: "./build",
-                output_name: "BetBox.ipa"
+                output_name: "BetBox.ipa",
+                silent: true,
+                suppress_xcode_output: true
               )
             end
           end
@@ -32,6 +34,6 @@ workflows:
       - name: Build IPA
         script: |
           cd iOS_APP
-          fastlane build_ipa
+          fastlane build_ipa --verbose
     artifacts:
       - iOS_APP/build/BetBox.ipa
