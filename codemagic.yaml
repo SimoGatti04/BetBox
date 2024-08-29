@@ -8,6 +8,8 @@ workflows:
       - name: Install dependencies
         script: yarn install
       - name: Build iOS
-        script: npx react-native run-ios --configuration Release
+        script: |
+          cd ios
+          ../node_modules/.bin/react-native run-ios --configuration Release
     artifacts:
       - build/ios/build/Products/Release-iphonesimulator/*.app
