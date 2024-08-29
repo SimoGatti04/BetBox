@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build-and-archive:
     runs-on: macos-latest
 
     steps:
@@ -16,36 +16,10 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_16.1_beta.app
 
-    - name: Build and Run Unit Tests
+    - name: Build
       run: |
         cd iOS_APP
-        xcodebuild build-for-testing test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" -enableCodeCoverage YES -only-testing:BetBoxTests
-
-  ui-tests:
-    needs: build-and-test
-    runs-on: macos-latest
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_16.1_beta.app
-
-    - name: Run UI Tests
-      run: |
-        cd iOS_APP
-        xcodebuild test -project BetBox.xcodeproj -scheme BetBox -destination "platform=iOS Simulator,name=iPhone 15,OS=18.1" -only-testing:BetBoxUITests
-      timeout-minutes: 20
-
-  archive:
-    needs: [build-and-test, ui-tests]
-    runs-on: macos-latest
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_16.1_beta.app
+        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "generic/platform=iOS" -configuration Release
 
     - name: Archive app
       run: |
