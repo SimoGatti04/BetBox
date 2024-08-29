@@ -6,7 +6,7 @@ workflows:
     scripts:
       - name: Build iOS app
         script: |
-          cd BetBox/iOS_APP
+          cd iOS_APP
           xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator -configuration Release
     artifacts:
       - BetBox/iOS_APP/build/ios/iphoneos/*.app
