@@ -1,0 +1,15 @@
+workflows:
+  react-native-ios:
+    name: React Native iOS
+    environment:
+      node: latest
+      xcode: latest
+    scripts:
+      - name: Install dependencies
+        script: yarn install
+      - name: Install CocoaPods dependencies
+        script: cd ios && pod install
+      - name: Build iOS
+        script: npx react-native run-ios --configuration Release
+    artifacts:
+      - build/ios/build/Products/Release-iphonesimulator/*.app
