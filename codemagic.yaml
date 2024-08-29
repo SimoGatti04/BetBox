@@ -7,7 +7,7 @@ workflows:
       - name: Build iOS app
         script: |
           cd iOS_APP
-          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphoneos -configuration Release
+          xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphoneos -configuration Release -allowProvisioningUpdates
       - name: Export IPA
         script: |
           cd iOS_APP
