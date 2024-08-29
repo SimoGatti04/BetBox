@@ -11,4 +11,4 @@ workflows:
           cd iOS_APP
           xcodebuild build -project BetBox.xcodeproj -scheme BetBox -sdk iphonesimulator -configuration Debug
     artifacts:
-      - iOS_APP/build/Debug-iphonesimulator/BetBox.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
