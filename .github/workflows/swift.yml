@@ -19,7 +19,7 @@ jobs:
     - name: Build
       run: |
         cd iOS_APP
-        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "generic/platform=iOS" -configuration Release
+        xcodebuild clean build -project BetBox.xcodeproj -scheme BetBox -destination "generic/platform=iOS" -configuration Release -allowProvisioningUpdates
 
     - name: Archive app
       run: |
