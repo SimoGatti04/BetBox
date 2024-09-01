@@ -1,0 +1,34 @@
+.balance-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-logo {
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
+}
+
+.refresh-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #0a84ff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.balance-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
