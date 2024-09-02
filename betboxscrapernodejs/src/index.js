@@ -1,29 +1,21 @@
+// @.../betboxscrapernodejs/src/index.js
+
 require('dotenv').config(); // Importa e configura dotenv
 const express = require('express');
-const cors = require('cors'); // Import the cors package
 const balanceRoutes = require('./routes/balanceRoutes');
 const dailySpinRoutes = require('./routes/dailySpinRoutes');
+const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
+const verificationRoutes = require('./routes/verificationRoutes');
 const { cleanupResources } = require("./services/cleanupService");
+const scheduleDailyBalanceFetch = require('./utils/balanceScheduler');
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
 const http = require('http');
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
-const verificationRoutes = require('./routes/verificationRoutes');
-const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
-require('./bots/dailySpin/schedulers/goldbetSpinScheduler');
-require('./bots/dailySpin/schedulers/lottomaticaSpinScheduler');
-require('./bots/dailySpin/schedulers/snaiSpinScheduler');
 
 global.wss = wss;
-
-// Use the CORS middleware with explicit configuration
-app.use(cors({
-  origin: '*', // Allow all origins
-  methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allow specific methods
-  allowedHeaders: 'Content-Type,Authorization,ngrok-skip-browser-warning', // Allow specific headers
-}));
 
 app.use(express.json());
 app.use('/balances', balanceRoutes);
@@ -61,4 +53,5 @@ global.console.log = function(...args) {
 
 server.listen(port, () => {
   console.log(`Server in ascolto sulla porta ${port}`);
+  scheduleDailyBalanceFetch(); // Avvia la schedulazione per il recupero del saldo giornaliero
 });
