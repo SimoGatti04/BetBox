@@ -1,7 +1,7 @@
 const express = require('express');
 const { spinGoldBetterWheel } = require('../bots/dailySpin/goldBetterSpin');
 const { spinSnaiWheel } = require('../bots/dailySpin/snaiDailySpin');
-const RequestQueue = require('../utils/RequestQueue');
+const RequestQueue = require('../utils/requestQueue');
 const fs = require('fs');
 const path = require('path');
 const spinHistoryDir = path.join(__dirname, '..', '..', 'spinHistory');
