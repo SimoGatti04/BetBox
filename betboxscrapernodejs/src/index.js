@@ -1,8 +1,9 @@
 require('dotenv').config(); // Importa e configura dotenv
 const express = require('express');
+const cors = require('cors'); // Import the cors package
 const balanceRoutes = require('./routes/balanceRoutes');
 const dailySpinRoutes = require('./routes/dailySpinRoutes');
-const {cleanupResources} = require("./services/cleanupService");
+const { cleanupResources } = require("./services/cleanupService");
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
 const http = require('http');
@@ -11,17 +12,24 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 const verificationRoutes = require('./routes/verificationRoutes');
 const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
-require('./bots/dailySpin/schedulers/goldbetSpinScheduler')
-require('./bots/dailySpin/schedulers/lottomaticaSpinScheduler')
-require('./bots/dailySpin/schedulers/snaiSpinScheduler')
+require('./bots/dailySpin/schedulers/goldbetSpinScheduler');
+require('./bots/dailySpin/schedulers/lottomaticaSpinScheduler');
+require('./bots/dailySpin/schedulers/snaiSpinScheduler');
 
 global.wss = wss;
+
+// Use the CORS middleware with explicit configuration
+app.use(cors({
+  origin: '*', // Allow all origins
+  methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allow specific methods
+  allowedHeaders: 'Content-Type,Authorization,ngrok-skip-browser-warning', // Allow specific headers
+}));
 
 app.use(express.json());
 app.use('/balances', balanceRoutes);
 app.use('/spin', dailySpinRoutes);
 app.use('/verify', verificationRoutes);
-app.use('/spin-history', spinHistoryRoutes)
+app.use('/spin-history', spinHistoryRoutes);
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 
@@ -34,7 +42,6 @@ function broadcastLog(message) {
     }
   });
 }
-
 
 // Gestione delle connessioni WebSocket
 wss.on('connection', (ws) => {
