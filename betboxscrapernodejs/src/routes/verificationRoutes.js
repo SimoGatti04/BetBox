@@ -1,6 +1,6 @@
 const express = require('express');
 const { verificationEmitter } = require('../bots/balances/goldBetterBot');
-const RequestQueue = require('../utils/RequestQueue');
+const RequestQueue = require('../utils/requestQueue');
 
 const router = express.Router();
 const requestQueue = new RequestQueue();

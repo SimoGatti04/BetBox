@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const RequestQueue = require('../utils/RequestQueue');
+const RequestQueue = require('../utils/requestQueue');
 
 const router = express.Router();
 const requestQueue = new RequestQueue();
