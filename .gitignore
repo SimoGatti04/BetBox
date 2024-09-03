@@ -2,10 +2,12 @@
 
 betboxscrapernodejs/node_modules/
 betboxscrapernodejs/.idea/
-betboxscrapernodejs/.env
 betboxscrapernodejs/spinHistory
 betboxscrapernodejs/sessions
 betboxscrapernodejs/balanceHistory
+betboxscrapernodejs/.env
+betboxscrapernodejs/lastBalanceDates.json
+betboxscrapernodejs/lastSpinDates.json
 
 
 
