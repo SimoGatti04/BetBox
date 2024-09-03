@@ -1,14 +1,27 @@
+-- BETBOXSCRAPERNODEJS --
+
 betboxscrapernodejs/node_modules/
 betboxscrapernodejs/.idea/
 betboxscrapernodejs/.env
+betboxscrapernodejs/spinHistory
+betboxscrapernodejs/sessions
+betboxscrapernodejs/balanceHistory
+
+
+
+-- IOS_APP --
+
 iOS_APP/BetBox.xcodeproj/project.xcworkspace/xcuserdata
-*.DS_Store
 /iOS_APP/BetBox.xcodeproj/xcuserdata/simo.xcuserdatad
 /iOS_APP/._BetBox.xcodeproj
 /iOS_APP/BetBox.xcodeproj/._project.xcworkspace
 /iOS_APP/BetBox/._ContentView.swift
 /iOS_APP/BetBox/._SpinView.swift
-/.idea
-/betboxscrapernodejs/spinHistory
-/betboxscrapernodejs/sessions
+
+
+
+-- OTHER --
+
 /PWA_React
+/.idea
+*.DS_Store
