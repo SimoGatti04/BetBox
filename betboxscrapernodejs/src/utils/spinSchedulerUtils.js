@@ -1,3 +1,4 @@
+const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
 
@@ -30,6 +31,7 @@ function updateSpinHistory(site, result) {
     fs.writeFileSync(spinHistoryFile, JSON.stringify(history, null, 2));
 }
 
+
 function getLastSpinDate(site) {
     if (fs.existsSync(LAST_SPIN_FILE)) {
         const lastSpinDates = JSON.parse(fs.readFileSync(LAST_SPIN_FILE, 'utf8'));
@@ -47,8 +49,43 @@ function saveLastSpinDate(site, date) {
     fs.writeFileSync(LAST_SPIN_FILE, JSON.stringify(lastSpinDates, null, 2));
 }
 
+function scheduleSpinExecution(site, spinFunction) {
+    cron.schedule('0 0 * * *', () => {
+        const randomHour = Math.floor(Math.random() * 10);
+        const randomMinute = Math.floor(Math.random() * 60);
+
+        const scheduledTime = new Date();
+        scheduledTime.setHours(randomHour, randomMinute, 0, 0);
+
+        const delay = scheduledTime.getTime() - Date.now();
+
+        setTimeout(async () => {
+            const now = new Date();
+            const today = now.toISOString().split('T')[0];
+            const lastSpinDate = await getLastSpinDate(site);
+
+            if (lastSpinDate !== today) {
+                console.log(`[${now.toISOString()}] Esecuzione spin ${site}`);
+                const result = await spinFunction();
+                updateSpinHistory(site, result);
+                saveLastSpinDate(site, today);
+            }
+        }, delay);
+    }, {
+        scheduled: true,
+        timezone: "Europe/Rome"
+    });
+}
+
+function initializeAllSpinSchedulers() {
+    const { spinGoldBetterWheel } = require('../bots/dailySpin/goldBetterSpin');
+    const { spinSnaiWheel } = require('../bots/dailySpin/snaiDailySpin');
+
+    scheduleSpinExecution('goldbet', () => spinGoldBetterWheel('Goldbet'));
+    scheduleSpinExecution('lottomatica', () => spinGoldBetterWheel('Lottomatica'));
+    scheduleSpinExecution('snai', spinSnaiWheel);
+}
+
 module.exports = {
-    updateSpinHistory,
-    getLastSpinDate,
-    saveLastSpinDate
+    initializeAllSpinSchedulers,
 };

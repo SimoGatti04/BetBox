@@ -1,13 +1,14 @@
-// @.../betboxscrapernodejs/src/index.js
-
-require('dotenv').config(); // Importa e configura dotenv
+require('dotenv').config();
 const express = require('express');
 const balanceRoutes = require('./routes/balanceRoutes');
+const balanceHistoryRoutes = require('./routes/balanceHistoryRoutes');
 const dailySpinRoutes = require('./routes/dailySpinRoutes');
 const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
 const verificationRoutes = require('./routes/verificationRoutes');
 const { cleanupResources } = require("./services/cleanupService");
-const scheduleDailyBalanceFetch = require('./utils/balanceScheduler');
+const { initializeAllBalanceSchedulers } = require('./utils/balanceSchedulerUtils');
+const { initializeAllSpinSchedulers } = require('./utils/spinSchedulerUtils');
+
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
 const http = require('http');
@@ -19,13 +20,13 @@ global.wss = wss;
 
 app.use(express.json());
 app.use('/balances', balanceRoutes);
+app.use('/balance-history', balanceHistoryRoutes);
 app.use('/spin', dailySpinRoutes);
 app.use('/verify', verificationRoutes);
 app.use('/spin-history', spinHistoryRoutes);
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 
-// Funzione per inviare log a tutti i client connessi
 function broadcastLog(message) {
   const jsonMessage = JSON.stringify({ type: 'LOG', message });
   wss.clients.forEach((client) => {
@@ -35,7 +36,6 @@ function broadcastLog(message) {
   });
 }
 
-// Gestione delle connessioni WebSocket
 wss.on('connection', (ws) => {
   console.log('Nuovo client connesso');
 
@@ -44,7 +44,6 @@ wss.on('connection', (ws) => {
   });
 });
 
-// Sostituisci tutti i console.log con questa funzione
 global.console.log = function(...args) {
   const message = args.join(' ');
   process.stdout.write(message + '\n');
@@ -53,5 +52,8 @@ global.console.log = function(...args) {
 
 server.listen(port, () => {
   console.log(`Server in ascolto sulla porta ${port}`);
-  scheduleDailyBalanceFetch(); // Avvia la schedulazione per il recupero del saldo giornaliero
+  console.log('Avvio schedulazione recupero saldi e spin giornalieri');
+  initializeAllBalanceSchedulers();
+  initializeAllSpinSchedulers();
 });
+
