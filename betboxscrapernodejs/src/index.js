@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const balanceRoutes = require('./routes/balanceRoutes');
 const balanceHistoryRoutes = require('./routes/balanceHistoryRoutes');
 const dailySpinRoutes = require('./routes/dailySpinRoutes');
@@ -17,6 +18,12 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 global.wss = wss;
+
+app.use(cors({
+  origin: ['https://simogatti04.github.io', 'http://localhost:3000'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning']
+}));
 
 app.use(express.json());
 app.use('/balances', balanceRoutes);
@@ -56,4 +63,3 @@ server.listen(port, () => {
   initializeAllBalanceSchedulers();
   initializeAllSpinSchedulers();
 });
-
