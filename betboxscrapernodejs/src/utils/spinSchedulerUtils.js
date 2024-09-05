@@ -31,7 +31,6 @@ function updateSpinHistory(site, result) {
     fs.writeFileSync(spinHistoryFile, JSON.stringify(history, null, 2));
 }
 
-
 function getLastSpinDate(site) {
     if (fs.existsSync(LAST_SPIN_FILE)) {
         const lastSpinDates = JSON.parse(fs.readFileSync(LAST_SPIN_FILE, 'utf8'));
@@ -49,15 +48,46 @@ function saveLastSpinDate(site, date) {
     fs.writeFileSync(LAST_SPIN_FILE, JSON.stringify(lastSpinDates, null, 2));
 }
 
+function logSchedule(site, type, scheduledTime) {
+    const logFile = path.join(SPIN_HISTORY_DIR, `${site}ScheduleLog.json`);
+
+    if (!fs.existsSync(SPIN_HISTORY_DIR)) {
+        fs.mkdirSync(SPIN_HISTORY_DIR, { recursive: true });
+    }
+
+    let log = [];
+    if (fs.existsSync(logFile)) {
+        log = JSON.parse(fs.readFileSync(logFile, 'utf8'));
+    }
+
+    const newEntry = {
+        date: new Date().toISOString(),
+        type: type,
+        scheduledTime: scheduledTime.toISOString() // Salva l'orario programmato
+    };
+
+    log.push(newEntry);
+
+    // Mantieni solo le ultime 3 programmazioni
+    if (log.length > 3) {
+        log = log.slice(-3);
+    }
+
+    fs.writeFileSync(logFile, JSON.stringify(log, null, 2));
+}
+
 function scheduleSpinExecution(site, spinFunction) {
-    cron.schedule('0 0 * * *', () => {
-        const randomHour = Math.floor(Math.random() * 10);
+    cron.schedule('0 0 * * *', () => { // Questo programma l'esecuzione alle 11:30 ogni giorno
+        const randomHour = Math.floor(Math.random() * 5) + 2;
         const randomMinute = Math.floor(Math.random() * 60);
 
         const scheduledTime = new Date();
         scheduledTime.setHours(randomHour, randomMinute, 0, 0);
 
         const delay = scheduledTime.getTime() - Date.now();
+
+        // Salva l'orario programmato
+        logSchedule(site, 'spin', scheduledTime);
 
         setTimeout(async () => {
             const now = new Date();
@@ -66,9 +96,13 @@ function scheduleSpinExecution(site, spinFunction) {
 
             if (lastSpinDate !== today) {
                 console.log(`[${now.toISOString()}] Esecuzione spin ${site}`);
-                const result = await spinFunction();
-                updateSpinHistory(site, result);
-                saveLastSpinDate(site, today);
+                try {
+                    const result = await spinFunction();
+                    updateSpinHistory(site, result);
+                    saveLastSpinDate(site, today);
+                } catch (error) {
+                    console.error(`Errore durante l'esecuzione dello spin per ${site}:`, error);
+                }
             }
         }, delay);
     }, {

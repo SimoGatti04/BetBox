@@ -49,6 +49,33 @@ function saveLastBalanceDate(site, date) {
     fs.writeFileSync(LAST_BALANCE_FILE, JSON.stringify(lastBalanceDates, null, 2));
 }
 
+function logSchedule(site, type) {
+    const logFile = path.join(BALANCE_HISTORY_DIR, `${site}ScheduleLog.json`);
+
+    if (!fs.existsSync(BALANCE_HISTORY_DIR)) {
+        fs.mkdirSync(BALANCE_HISTORY_DIR, { recursive: true });
+    }
+
+    let log = [];
+    if (fs.existsSync(logFile)) {
+        log = JSON.parse(fs.readFileSync(logFile, 'utf8'));
+    }
+
+    const newEntry = {
+        date: new Date().toISOString(),
+        type: type
+    };
+
+    log.push(newEntry);
+
+    // Mantieni solo le ultime 3 programmazioni
+    if (log.length > 3) {
+        log = log.slice(-3);
+    }
+
+    fs.writeFileSync(logFile, JSON.stringify(log, null, 2));
+}
+
 // Funzioni di pianificazione
 function scheduleBalanceFetch(site, getBalanceFunction) {
     cron.schedule('0 0 * * *', () => {
@@ -67,9 +94,14 @@ function scheduleBalanceFetch(site, getBalanceFunction) {
 
             if (lastBalanceDate !== today) {
                 console.log(`[${now.toISOString()}] Recupero saldo ${site}`);
-                const balance = await getBalanceFunction();
-                updateBalanceHistory(site, balance);
-                saveLastBalanceDate(site, today);
+                try {
+                    const balance = await getBalanceFunction();
+                    updateBalanceHistory(site, balance);
+                    saveLastBalanceDate(site, today);
+                    logSchedule(site, 'balance'); // Log della programmazione
+                } catch (error) {
+                    console.error(`Errore durante il recupero del saldo per ${site}:`, error);
+                }
             }
         }, delay);
     }, {
@@ -97,5 +129,5 @@ function initializeAllBalanceSchedulers() {
 
 module.exports = {
     initializeAllBalanceSchedulers,
+    updateBalanceHistory,
 };
-
