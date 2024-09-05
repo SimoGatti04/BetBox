@@ -20,7 +20,7 @@ const wss = new WebSocket.Server({ server });
 global.wss = wss;
 
 app.use(cors({
-  origin: ['https://simogatti04.github.io', 'http://localhost:3000', 'http://101.58.58.233:8080'],
+  origin: ['https://simogatti04.github.io', 'http://localhost:8080/', 'http://192.168.0.58:8080'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning']
 }));
