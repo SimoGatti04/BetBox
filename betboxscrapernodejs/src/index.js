@@ -9,6 +9,8 @@ const verificationRoutes = require('./routes/verificationRoutes');
 const { cleanupResources } = require("./services/cleanupService");
 const { initializeAllBalanceSchedulers } = require('./utils/balanceSchedulerUtils');
 const { initializeAllSpinSchedulers } = require('./utils/spinSchedulerUtils');
+const activeBetsRoutes = require('./routes/activeBetsRoutes');
+
 
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
@@ -31,6 +33,8 @@ app.use('/balance-history', balanceHistoryRoutes);
 app.use('/spin', dailySpinRoutes);
 app.use('/verify', verificationRoutes);
 app.use('/spin-history', spinHistoryRoutes);
+app.use('/bets', activeBetsRoutes);
+
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 

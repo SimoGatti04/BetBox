@@ -5,9 +5,11 @@ betboxscrapernodejs/.idea/
 betboxscrapernodejs/spinHistory
 betboxscrapernodejs/sessions
 betboxscrapernodejs/balanceHistory
+betboxscrapernodejs/activeBets
 betboxscrapernodejs/.env
 betboxscrapernodejs/lastBalanceDates.json
 betboxscrapernodejs/lastSpinDates.json
+/betboxscrapernodejs/htmlDaAnalizzare.html
 
 
 
