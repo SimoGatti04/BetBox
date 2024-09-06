@@ -27,7 +27,7 @@ router.get('/lottomatica', async (req, res) => {
 });
 
 router.get('/all-active-bets', async (req, res) => {
-    const activeBetsDir = path.join(__dirname, '..', 'activeBets');
+    const activeBetsDir = path.join(__dirname, '..', '..', 'activeBets');
     const files = await fs.readdir(activeBetsDir);
     const allBets = {};
 
