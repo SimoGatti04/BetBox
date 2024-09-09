@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const SPIN_HISTORY_DIR = path.join(__dirname, '..', '..', 'spinHistory');
-const LAST_SPIN_FILE = path.join(__dirname, '..', '..', 'lastSpinDates.json');
+const LAST_SPIN_FILE = path.join(__dirname, '..', '..', 'spinHistory', 'lastSpinDates.json');
 
 function updateSpinHistory(site, result) {
     const spinHistoryFile = path.join(SPIN_HISTORY_DIR, `${site}SpinHistory.json`);

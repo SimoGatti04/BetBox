@@ -58,13 +58,15 @@ async function getGoldBetterActiveBets(site) {
                     }
 
                     return {
+                        site: site,
                         date: date.getTime(),
                         competition: eventRow.querySelector('.sport')?.textContent?.trim() || '',
                         name: eventRow.querySelector('.game')?.textContent?.trim() || '',
                         marketType: eventRow.querySelector('td.mat-column-Scommessa .lh-2')?.textContent?.trim() || '',
                         selection: eventRow.querySelector('.d-inline-block:nth-child(2) .lh-2')?.textContent?.trim() || '',
                         odds: eventRow.querySelector('td.mat-column-Quota .lh-2')?.textContent?.trim() || '',
-                        result: result
+                        result: result,
+                        matchResult: "N/A"
                     };
                 });
 

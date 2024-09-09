@@ -10,6 +10,8 @@ const { cleanupResources } = require("./services/cleanupService");
 const { initializeAllBalanceSchedulers } = require('./utils/balanceSchedulerUtils');
 const { initializeAllSpinSchedulers } = require('./utils/spinSchedulerUtils');
 const activeBetsRoutes = require('./routes/activeBetsRoutes');
+const axios = require('axios');
+const proxyRoutes = require('./routes/proxyRoutes');
 
 
 const port = process.env.PORT || 3000;
@@ -22,10 +24,12 @@ const wss = new WebSocket.Server({ server });
 global.wss = wss;
 
 app.use(cors({
-  origin: ['https://simogatti04.github.io', 'http://localhost:8080/', 'http://192.168.0.58:8080'],
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning']
+  allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning', 'X-Auth-Token']
 }));
+
+app.options('*', cors());
 
 app.use(express.json());
 app.use('/balances', balanceRoutes);
@@ -34,7 +38,7 @@ app.use('/spin', dailySpinRoutes);
 app.use('/verify', verificationRoutes);
 app.use('/spin-history', spinHistoryRoutes);
 app.use('/bets', activeBetsRoutes);
-
+app.use('/proxy', proxyRoutes);
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 

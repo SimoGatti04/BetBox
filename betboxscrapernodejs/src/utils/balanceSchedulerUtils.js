@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BALANCE_HISTORY_DIR = path.join(__dirname, '..', '..', 'balanceHistory');
-const LAST_BALANCE_FILE = path.join(__dirname, '..', '..', 'lastBalanceDates.json');
+const LAST_BALANCE_FILE = path.join(__dirname, '..', '..', 'balanceHistory', 'lastBalanceDates.json');
 
 // Funzioni di utilità
 function updateBalanceHistory(site, balance) {
