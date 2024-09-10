@@ -1,44 +1,36 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { getActiveBets } = require('../../utils/activeBetsUtils');
 const { setupGoldBetterBrowser, goldBetterLogin, acceptGoldBetterCookies } = require('../../utils/goldBetterUtils');
-const fs = require('fs').promises;
-const path = require('path');
 
 async function getGoldBetterActiveBets(site) {
-    console.log(`Inizio del processo di recupero scommesse attive su ${site}`);
-
-    const {browser, context, page} = await setupBrowser(site.toLowerCase());
-    await setupGoldBetterBrowser(page, site);
-
-    let betsData = [];
-
-    try {
-        await goldBetterLogin(page, site);
-        await acceptGoldBetterCookies(page);
-
-        await page.click('div.conto a span.material-icons');
-        console.log("Cliccato pulsante conto")
-        await page.click('span.fa-stack i.material-icons-outlined');
-        console.log("Cliccato pulsante giocate")
-        await page.waitForSelector('table tbody tr', { timeout: 10000 });
-
-        // Select period from dropdown
-        await page.click('mat-select[name="periodo"]');
-        await page.waitForSelector('mat-option');
-        await page.click('mat-option:has-text("7 giorni")');
-        await page.click('button:has-text("Cerca")');
-        console.log("Selezionato periodo '7 giorni' e cliccato 'Cerca'");
-
-        await delay(1500, 2000);
-        const betElements = await page.$$('tbody[role="rowgroup"] > tr');
-        console.log("Trovate giocate:", betElements.length);
-
-        for (const betElement of betElements) {
+    return getActiveBets(site, {
+        setupSiteBrowser: setupGoldBetterBrowser,
+        siteLogin: goldBetterLogin,
+        acceptCookies: acceptGoldBetterCookies,
+        navigateToActiveBets: async (page) => {
+            await page.click('div.conto a span.material-icons');
+            console.log("Clicked account button");
+            await page.click('span.fa-stack i.material-icons-outlined');
+            console.log("Clicked bets button");
+            await page.waitForSelector('table tbody tr', { timeout: 10000 });
+        },
+        selectTimePeriod: async (page) => {
+            await page.click('mat-select[name="periodo"]');
+            await page.waitForSelector('mat-option');
+            await page.click('mat-option:has-text("7 giorni")');
+            await page.click('button:has-text("Cerca")');
+            console.log("Selected '7 days' period and clicked 'Search'");
+            await delay(1500, 2000);
+        },
+        getBetElements: async (page) => {
+            return page.$$('tbody[role="rowgroup"] > tr');
+        },
+        extractBetDetails: async (page, betElement) => {
             const betId = await betElement.$eval('td:first-child .lh-2', el => el.textContent.trim());
 
             await betElement.click();
             await page.waitForSelector('.dialog-content', { visible: true, timeout: 5000 });
 
-            const betDetails = await page.evaluate(() => {
+            return page.evaluate((site) => {
                 const importoGiocato = document.querySelector('.top-row-info.light-bg span:last-child')?.textContent.trim() || '';
                 const esitoTotale = document.querySelector('.top-row-info.short span:last-child')?.textContent.trim() || '';
                 const quotaTotale = document.querySelector('.quotation span:last-child')?.textContent.trim() || '';
@@ -72,32 +64,13 @@ async function getGoldBetterActiveBets(site) {
 
                 const latestEventDate = new Date(Math.max(...events.map(e => e.date)));
 
-                return { importoGiocato, esitoTotale, quotaTotale, vincitaPotenziale, events, latestEventDate };
-            });
-
-            const oneDayAgo = new Date();
-            oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-
-            if (betDetails.latestEventDate > oneDayAgo) {
-                betsData.push({ betId, ...betDetails });
-            }
-
+                return { betId, importoGiocato, esitoTotale, quotaTotale, vincitaPotenziale, events, latestEventDate };
+            }, site);
+        },
+        closeBetDetails: async (page) => {
             await page.click('mat-icon.close-icon');
         }
-
-        const jsonData = JSON.stringify(betsData, null, 2);
-        const filePath = path.join(__dirname, '..', '..', '..', 'activeBets', `${site.toLowerCase()}ActiveBets.json`);
-        await fs.writeFile(filePath, jsonData);
-
-        console.log(`Active bets data saved to ${filePath}`);
-
-    } catch (error) {
-        console.error(`Errore durante il recupero delle scommesse attive su ${site}: `, error);
-    } finally {
-        await browser.close();
-    }
-
-    return JSON.stringify(betsData, null, 2);
+    });
 }
 
 module.exports = { getGoldBetterActiveBets };

@@ -1,31 +1,41 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
 const config = require('../../../config/config');
 
-async function getSisalBalance() {
-  console.log('Inizio del processo di recupero del saldo da Sisal');
-
+async function setupSisalBrowser() {
   const { browser, context, page } = await setupBrowser('sisal');
+  await page.setExtraHTTPHeaders({
+    'Accept-Language': 'it-IT,it;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://www.google.it/',
+    'DNT': '1'
+  });
+  return { browser, context, page };
+}
+
+async function acceptSisalCookies(page) {
+  try {
+    await page.waitForSelector('#onetrust-accept-btn-handler', { timeout: 5000 });
+    await page.click('#onetrust-accept-btn-handler');
+    console.log('Cookies accepted successfully');
+  } catch (error) {
+    console.log('Cookie acceptance button not found or already accepted');
+  }
+}
+
+
+async function sisalLogin(page) {
   let isUserLoggedIn = false;
+  console.log('Navigazione verso https://www.sisal.it/');
+  await page.goto('https://www.sisal.it/', {waitUntil: 'networkidle'});
 
   try {
-    await page.setExtraHTTPHeaders({
-      'Accept-Language': 'it-IT,it;q=0.9',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Referer': 'https://www.google.it/',
-      'DNT': '1'
-    });
-
-    console.log('Navigazione verso https://www.sisal.it/');
-    await page.goto('https://www.sisal.it/', {waitUntil: 'networkidle'});
-
-    try {
-      console.log('Attesa del pulsante "Accedi"');
-      await page.waitForSelector('a.utils-user-logger.btn.btn-outline-primary.btn-sm.js-login.analytics-element', {state: 'visible'});
-    } catch (error) {
-      isUserLoggedIn = true;
-    }
+    console.log('Attesa del pulsante "Accedi"');
+    await page.waitForSelector('a.utils-user-logger.btn.btn-outline-primary.btn-sm.js-login.analytics-element', {state: 'visible'});
+  } catch (error) {
+    isUserLoggedIn = true;
+  }
     if (!isUserLoggedIn) {
-      try {
+    try {
         console.log('Clic sul pulsante "Accedi"');
         await page.click('a.utils-user-logger.btn.btn-outline-primary.btn-sm.js-login.analytics-element');
 
@@ -68,25 +78,33 @@ async function getSisalBalance() {
         console.log('Nessun pulsante di accesso trovato o errore durante il clic:', error);
       }
     }
-      console.log('Attesa dell\'elemento del saldo');
-      await page.waitForSelector('div.js-balance', {state: 'visible'});
+}
 
-      console.log('Recupero del saldo');
-      const saldo = await page.$eval('div.js-balance', el => el.textContent.trim());
+      async function getSisalBalance() {
+  console.log('Inizio del processo di recupero del saldo da Sisal');
+  const { browser, context, page } = await setupSisalBrowser();
 
-      console.log('Il tuo saldo è:', saldo);
+  try {
+    await sisalLogin(page);
 
-      await context.storageState({path: getSessionFile('sisal')});
-      await browser.close();
-      return saldo;
-    }
-  catch
-    (error)
-    {
-      console.error('Errore durante il processo di recupero del saldo:', error);
-      await browser.close();
-      throw error;
-    }
+    console.log('Attesa dell\'elemento del saldo');
+    await page.waitForSelector('div.js-balance', {state: 'visible'});
+
+    console.log('Recupero del saldo');
+    const saldo = await page.$eval('div.js-balance', el => el.textContent.trim());
+
+    console.log('Il tuo saldo è:', saldo);
+
+    await context.storageState({path: getSessionFile('sisal')});
+    return saldo;
+  } catch (error) {
+    console.error('Errore durante il processo di recupero del saldo:', error);
+    throw error;
+  } finally {
+    await browser.close();
   }
+}
 
-module.exports = { getSisalBalance };
+module.exports = { getSisalBalance, setupSisalBrowser, sisalLogin , acceptSisalCookies};
+
+
