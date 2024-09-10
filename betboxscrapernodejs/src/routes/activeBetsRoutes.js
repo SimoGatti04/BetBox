@@ -4,6 +4,8 @@ const fs = require('fs').promises;
 const path = require('path');
 const { getGoldBetterActiveBets } = require('../bots/activeBets/goldBetterActiveBets');
 const { getSisalActiveBets } = require('../bots/activeBets/sisalActiveBets');
+const { getSnaiActiveBets } = require('../bots/activeBets/snaiActiveBets');
+
 
 router.get('/goldbet', async (req, res) => {
     try {
@@ -35,9 +37,20 @@ router.get('/sisal', async (req, res) => {
     }
 });
 
+router.get('/snai', async (req, res) => {
+    try {
+        const activeBets = await getSnaiActiveBets();
+        res.json(JSON.parse(activeBets));
+    } catch (error) {
+        console.error(`Error fetching active bets for Snai:`, error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+
 router.post('/all-active-bets', async (req, res) => {
     const activeBetsDir = path.join(__dirname, '..', '..', 'activeBets');
-    const sites = ['goldbet', 'lottomatica', 'sisal'];
+    const sites = ['goldbet', 'lottomatica', 'sisal', 'snai'];
     const serverBets = {};
     const comparison = {};
 
@@ -91,17 +104,18 @@ router.post('/all-active-bets', async (req, res) => {
 });
 
 router.post('/fetch-active-bets', async (req, res) => {
-    const sites = ['Goldbet', 'Lottomatica', 'Sisal'];
+    const sites = ['Goldbet', 'Lottomatica', 'Sisal', 'Snai'];
     const results = {};
 
     for (const site of sites) {
         try {
             console.log(`Starting active bets retrieval for ${site}`);
             let bets;
-            if (site === 'Sisal') {
-                bets = await getSisalActiveBets();
-            } else {
+            if (['Goldbet', 'Lottomatica'].includes(site)) {
                 bets = await getGoldBetterActiveBets(site);
+            } else {
+                const getBetsFunction = require(`../bots/activeBets/${site.toLowerCase()}ActiveBets`)[`get${site}ActiveBets`];
+                bets = await getBetsFunction();
             }
             results[site] = JSON.parse(bets);
             console.log(`Active bets retrieval completed for ${site}`);
@@ -114,8 +128,5 @@ router.post('/fetch-active-bets', async (req, res) => {
     res.json(results);
 });
 
-function isJsonFile(filename) {
-    return filename.endsWith('.json');
-}
 
 module.exports = router;

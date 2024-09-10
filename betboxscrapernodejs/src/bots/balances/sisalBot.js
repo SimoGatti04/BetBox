@@ -1,17 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
 const config = require('../../../config/config');
 
-async function setupSisalBrowser() {
-  const { browser, context, page } = await setupBrowser('sisal');
-  await page.setExtraHTTPHeaders({
-    'Accept-Language': 'it-IT,it;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://www.google.it/',
-    'DNT': '1'
-  });
-  return { browser, context, page };
-}
-
 async function acceptSisalCookies(page) {
   try {
     await page.waitForSelector('#onetrust-accept-btn-handler', { timeout: 5000 });
@@ -80,9 +69,9 @@ async function sisalLogin(page) {
     }
 }
 
-      async function getSisalBalance() {
+async function getSisalBalance() {
   console.log('Inizio del processo di recupero del saldo da Sisal');
-  const { browser, context, page } = await setupSisalBrowser();
+  const { browser, context, page } = await setupBrowser('sisal');
 
   try {
     await sisalLogin(page);
@@ -105,6 +94,6 @@ async function sisalLogin(page) {
   }
 }
 
-module.exports = { getSisalBalance, setupSisalBrowser, sisalLogin , acceptSisalCookies};
+module.exports = { getSisalBalance, sisalLogin , acceptSisalCookies};
 
 

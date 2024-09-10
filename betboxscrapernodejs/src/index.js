@@ -13,7 +13,6 @@ const activeBetsRoutes = require('./routes/activeBetsRoutes');
 const axios = require('axios');
 const proxyRoutes = require('./routes/proxyRoutes');
 
-
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
 const http = require('http');

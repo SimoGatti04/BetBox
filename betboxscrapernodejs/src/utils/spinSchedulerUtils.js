@@ -1,6 +1,7 @@
 const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment-timezone');
 
 const SPIN_HISTORY_DIR = path.join(__dirname, '..', '..', 'spinHistory');
 const LAST_SPIN_FILE = path.join(__dirname, '..', '..', 'spinHistory', 'lastSpinDates.json');
@@ -18,15 +19,14 @@ function updateSpinHistory(site, result) {
     }
 
     const newEntry = {
-        date: new Date().toISOString(),
+        date: moment().tz('Europe/Rome').toISOString(),
         result: result
     };
 
     history.push(newEntry);
 
-    const fiveDaysAgo = new Date();
-    fiveDaysAgo.setDate(fiveDaysAgo.getDate() - 5);
-    history = history.filter(entry => new Date(entry.date) >= fiveDaysAgo);
+    const fiveDaysAgo = moment().tz('Europe/Rome').subtract(5, 'days');
+    history = history.filter(entry => moment(entry.date).isAfter(fiveDaysAgo));
 
     fs.writeFileSync(spinHistoryFile, JSON.stringify(history, null, 2));
 }
@@ -61,41 +61,41 @@ function logSchedule(site, type, scheduledTime) {
     }
 
     const newEntry = {
-        date: new Date().toISOString(),
+        date: moment().tz('Europe/Rome').toISOString(),
         type: type,
-        scheduledTime: scheduledTime.toISOString() // Salva l'orario programmato
+        scheduledTime: scheduledTime.tz('Europe/Rome').toISOString() // Salva l'orario programmato
     };
 
     log.push(newEntry);
-
-    // Mantieni solo le ultime 3 programmazioni
-    if (log.length > 3) {
-        log = log.slice(-3);
-    }
 
     fs.writeFileSync(logFile, JSON.stringify(log, null, 2));
 }
 
 function scheduleSpinExecution(site, spinFunction) {
-    cron.schedule('0 0 * * *', () => { // Questo programma l'esecuzione alle 11:30 ogni giorno
+    cron.schedule('0 0 * * *', () => { // Questo programma l'esecuzione alle 00:34 ogni giorno
+        console.log(`Cron job triggered for site: ${site}`);
         const randomHour = Math.floor(Math.random() * 5) + 2;
         const randomMinute = Math.floor(Math.random() * 60);
 
-        const scheduledTime = new Date();
-        scheduledTime.setHours(randomHour, randomMinute, 0, 0);
+        const scheduledTime = moment().tz('Europe/Rome').set({ hour: randomHour, minute: randomMinute, second: 0, millisecond: 0 });
 
-        const delay = scheduledTime.getTime() - Date.now();
+        const now = moment().tz('Europe/Rome');
+        const delay = scheduledTime.valueOf() - now.valueOf();
+
+        console.log(`Scheduled time for ${site}: ${scheduledTime.tz('Europe/Rome').format()}`);
+        console.log(`Current time: ${now.format()}`);
+        console.log(`Delay: ${delay} ms`);
 
         // Salva l'orario programmato
         logSchedule(site, 'spin', scheduledTime);
 
         setTimeout(async () => {
-            const now = new Date();
-            const today = now.toISOString().split('T')[0];
+            const now = moment().tz('Europe/Rome');
+            const today = now.format('YYYY-MM-DD');
             const lastSpinDate = await getLastSpinDate(site);
 
             if (lastSpinDate !== today) {
-                console.log(`[${now.toISOString()}] Esecuzione spin ${site}`);
+                console.log(`[${now.format()}] Esecuzione spin ${site}`);
                 try {
                     const result = await spinFunction();
                     updateSpinHistory(site, result);
@@ -115,6 +115,7 @@ function initializeAllSpinSchedulers() {
     const { spinGoldBetterWheel } = require('../bots/dailySpin/goldBetterSpin');
     const { spinSnaiWheel } = require('../bots/dailySpin/snaiDailySpin');
 
+    console.log('Initializing all spin schedulers');
     scheduleSpinExecution('goldbet', () => spinGoldBetterWheel('Goldbet'));
     scheduleSpinExecution('lottomatica', () => spinGoldBetterWheel('Lottomatica'));
     scheduleSpinExecution('snai', spinSnaiWheel);

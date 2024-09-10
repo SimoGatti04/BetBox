@@ -1,5 +1,5 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const { setupGoldBetterBrowser, goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType } = require('../../utils/goldBetterUtils');
+const { goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType } = require('../../utils/goldBetterUtils');
 
 async function spinGoldBetterWheel(site, isTestMode = false){
   console.log(`Inizio del processo di daily spin su ${site}`);
@@ -14,7 +14,7 @@ async function spinGoldBetterWheel(site, isTestMode = false){
 
   const {browser, context, page} = await setupBrowser(site.toLowerCase());
   let bonusInfo = null;
-  await setupGoldBetterBrowser(page, site);
+  await setupBrowser(site);
   try {
     await goldBetterLogin(page, site);
     await acceptGoldBetterCookies(page);

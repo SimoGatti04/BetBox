@@ -3,7 +3,6 @@ const fs = require('fs').promises;
 const path = require('path');
 
 async function getActiveBets(site, {
-    setupSiteBrowser,
     siteLogin,
     acceptCookies,
     navigateToActiveBets,
@@ -14,7 +13,7 @@ async function getActiveBets(site, {
 }) {
     console.log(`Starting active bets retrieval process for ${site}`);
 
-    const {browser, context, page} = await setupBrowser(site.toLowerCase());
+    const { browser, context, page } = await setupBrowser(site);
 
     let betsData = [];
 
@@ -25,29 +24,19 @@ async function getActiveBets(site, {
         await navigateToActiveBets(page);
         await selectTimePeriod(page);
 
-        const betElements = await getBetElements(page);
-        console.log(`Found bets: ${betElements.length}`);
 
-        for (const betElement of betElements) {
-            const betDetails = await extractBetDetails(page, betElement);
-
-            const oneDayAgo = new Date();
-            oneDayAgo.setDate(oneDayAgo.getDate() - 1);
-
-            if (betDetails.latestEventDate > oneDayAgo) {
-                const bet = {
-                    betId: `${betDetails.betId.replace(/[/:\s,€]/g, '')}${betDetails.quotaTotale.replace(/[.,€]/g, '')}`,
-                    betDate: betDetails.betId,
-                    ...betDetails
-                };
-                await saveBet(bet, site);
-                betsData.push(bet);
-            }
-
-            await closeBetDetails(page);
+        if (site.toLowerCase() === 'snai'){
+            const { firstSectionBets, firstButtonCoordinates, closedSectionBets, secondButtonCoordinates } = await getBetElements(page);
+            console.log('Found bets: ', firstSectionBets.length + closedSectionBets.length);
+            await extractAndSaveSnai(firstSectionBets, firstButtonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails);
+            await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Chiuse")');
+            await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
+            await extractAndSaveSnai(closedSectionBets, secondButtonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails);
+        } else {
+            const betElements = await getBetElements(page);
+            console.log(`Found bets: ${betElements.length}`);
+            await extractAndSave(betElements, extractBetDetails, site, page, betsData, closeBetDetails);
         }
-
-        console.log(`Active bets data saved individually`);
 
     } catch (error) {
         console.error(`Error retrieving active bets for ${site}: `, error);
@@ -63,6 +52,41 @@ async function saveBet(bet, site) {
     const betPath = path.join(__dirname, '..', '..', 'activeBets', site.toLowerCase(), fileName);
     await fs.mkdir(path.dirname(betPath), { recursive: true });
     await fs.writeFile(betPath, JSON.stringify(bet, null, 2));
+}
+
+async function checkIfAndSave(site, page, betDetails, betsData, closeBetDetails){
+    const oneDayAgo = new Date();
+            oneDayAgo.setDate(oneDayAgo.getDate() - 1);
+
+            if (betDetails.latestEventDate > oneDayAgo) {
+                const bet = {
+                    ...betDetails
+                };
+                await saveBet(bet, site);
+                betsData.push(bet);
+            }
+
+            await closeBetDetails(page);
+
+}
+
+async function extractAndSave(betElements, extractBetDetails, site, page, betsData, closeBetDetails) {
+    for (const betElement of betElements) {
+        const betDetails = await extractBetDetails(page, betElement);
+        await checkIfAndSave(site, page, betDetails, betsData, closeBetDetails);
+    }
+    console.log(`Active bets data saved individually`);
+}
+
+async function extractAndSaveSnai(betElements, buttonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails) {
+    for (let i = 0; i < betElements.length; i++) {
+        const betElement = betElements[i];
+        const buttonCoordinate = buttonCoordinates[i];
+        const betDetails = await extractBetDetails(page, betElement, buttonCoordinate);
+
+        await checkIfAndSave(site, page, betDetails, betsData, closeBetDetails);
+    }
+    console.log(`Active bets data saved individually`);
 }
 
 module.exports = { getActiveBets };

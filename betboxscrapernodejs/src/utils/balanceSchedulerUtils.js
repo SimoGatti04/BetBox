@@ -1,6 +1,7 @@
 const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
+const moment = require('moment-timezone');
 
 const BALANCE_HISTORY_DIR = path.join(__dirname, '..', '..', 'balanceHistory');
 const LAST_BALANCE_FILE = path.join(__dirname, '..', '..', 'balanceHistory', 'lastBalanceDates.json');
@@ -19,15 +20,14 @@ function updateBalanceHistory(site, balance) {
     }
 
     const newEntry = {
-        date: new Date().toISOString(),
+        date: moment().tz('Europe/Rome').toISOString(),
         balance: balance
     };
 
     history.push(newEntry);
 
-    const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-    history = history.filter(entry => new Date(entry.date) >= thirtyDaysAgo);
+    const thirtyDaysAgo = moment().tz('Europe/Rome').subtract(30, 'days');
+    history = history.filter(entry => moment(entry.date).isAfter(thirtyDaysAgo));
 
     fs.writeFileSync(balanceHistoryFile, JSON.stringify(history, null, 2));
 }
@@ -49,7 +49,7 @@ function saveLastBalanceDate(site, date) {
     fs.writeFileSync(LAST_BALANCE_FILE, JSON.stringify(lastBalanceDates, null, 2));
 }
 
-function logSchedule(site, type) {
+function logSchedule(site, type, scheduledTime) {
     const logFile = path.join(BALANCE_HISTORY_DIR, `${site}ScheduleLog.json`);
 
     if (!fs.existsSync(BALANCE_HISTORY_DIR)) {
@@ -62,43 +62,46 @@ function logSchedule(site, type) {
     }
 
     const newEntry = {
-        date: new Date().toISOString(),
-        type: type
+        date: moment().tz('Europe/Rome').toISOString(),
+        type: type,
+        scheduledTime: scheduledTime.tz('Europe/Rome').toISOString() // Salva l'orario programmato
     };
 
     log.push(newEntry);
-
-    // Mantieni solo le ultime 3 programmazioni
-    if (log.length > 3) {
-        log = log.slice(-3);
-    }
 
     fs.writeFileSync(logFile, JSON.stringify(log, null, 2));
 }
 
 // Funzioni di pianificazione
 function scheduleBalanceFetch(site, getBalanceFunction) {
-    cron.schedule('0 0 * * *', () => {
-        const randomHour = Math.floor(Math.random() * 10);
-        const randomMinute = Math.floor(Math.random() * 60);
+    cron.schedule('30 0 * * *', () => {
+        console.log(`Cron job triggered for site: ${site}`);
+        const randomHour = Math.floor(Math.random() * 2) + 1; // 1-2 ore
+        const randomMinute = Math.floor(Math.random() * 60); // 0-59 minuti
 
-        const scheduledTime = new Date();
-        scheduledTime.setHours(randomHour, randomMinute, 0, 0);
+        const scheduledTime = moment().tz('Europe/Rome').set({ hour: randomHour, minute: randomMinute, second: 0, millisecond: 0 });
 
-        const delay = scheduledTime.getTime() - Date.now();
+        const now = moment().tz('Europe/Rome');
+        const delay = scheduledTime.valueOf() - now.valueOf();
+
+        console.log(`Scheduled time for ${site}: ${scheduledTime.tz('Europe/Rome').format()}`);
+        console.log(`Current time: ${now.format()}`);
+        console.log(`Delay: ${delay} ms`);
+
+        // Salva l'orario programmato
+        logSchedule(site, 'balance', scheduledTime);
 
         setTimeout(async () => {
-            const now = new Date();
-            const today = now.toISOString().split('T')[0];
+            const now = moment().tz('Europe/Rome');
+            const today = now.format('YYYY-MM-DD');
             const lastBalanceDate = await getLastBalanceDate(site);
 
             if (lastBalanceDate !== today) {
-                console.log(`[${now.toISOString()}] Recupero saldo ${site}`);
+                console.log(`[${now.format()}] Recupero saldo ${site}`);
                 try {
                     const balance = await getBalanceFunction();
                     updateBalanceHistory(site, balance);
                     saveLastBalanceDate(site, today);
-                    logSchedule(site, 'balance'); // Log della programmazione
                 } catch (error) {
                     console.error(`Errore durante il recupero del saldo per ${site}:`, error);
                 }
@@ -118,6 +121,7 @@ function initializeAllBalanceSchedulers() {
     const { getSisalBalance } = require('../bots/balances/sisalBot');
     const { getCplayBalance } = require('../bots/balances/cplayBot');
 
+    console.log('Initializing all balance schedulers');
     scheduleBalanceFetch('goldbet', () => getGoldBetterBalance('Goldbet'));
     scheduleBalanceFetch('lottomatica', () => getGoldBetterBalance('Lottomatica'));
     scheduleBalanceFetch('bet365', getBet365Balance);

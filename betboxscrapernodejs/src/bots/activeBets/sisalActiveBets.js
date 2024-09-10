@@ -1,12 +1,9 @@
 const { getActiveBets } = require('../../utils/activeBetsUtils');
-const { sisalLogin, setupSisalBrowser, acceptSisalCookies } = require('../balances/sisalBot');
-const {delay} = require("../../utils/botUtils");
+const { sisalLogin, acceptSisalCookies } = require('../balances/sisalBot');
+const { delay } = require("../../utils/botUtils");
 
 async function getSisalActiveBets() {
     return getActiveBets('Sisal', {
-        setupSiteBrowser: async (page, site) => {
-            await setupSisalBrowser()
-        },
         siteLogin: sisalLogin,
         acceptCookies: async (page) => {
            await acceptSisalCookies(page)
@@ -38,14 +35,9 @@ async function getSisalActiveBets() {
                     else if (background.includes('191, 215, 47')) esitoTotale = 'Vincente';
                 }
 
-                const dateTimeElement = row.querySelector('div[data-date-time="true"]');
-                const date = dateTimeElement.querySelector('span:first-of-type').textContent;
-                const time = dateTimeElement.querySelector('span:last-of-type').textContent;
-                const dateTime = `${date} ${time}`;
+                const importoGiocato = row.querySelector('div[role="columnbody"]:nth-child(3) .sc-imwsjW .sc-epALIP span').textContent.trim();
 
-                const importoGiocato = row.querySelector('div[role="columnbody"] .sc-imwsjW .sc-epALIP span').textContent.trim();
-
-                return { esitoTotale, dateTime, importoGiocato };
+                return { esitoTotale, importoGiocato };
             });
 
             await betElement.$eval('button:has-text("Ricevuta")', button => button.click());
@@ -53,16 +45,17 @@ async function getSisalActiveBets() {
             await delay(1000,1500)
 
             const betDetails = await page.evaluate(() => {
-                let quotaTotale, vincitaPotenziale;
+                let quotaTotale, vincitaPotenziale, dateTime;
                 try {
-                    quotaTotale = document.querySelector('p.tw-fr-m-0.tw-fr-font-roboto-medium.tw-fr-font-medium.tw-fr-text-paragraph-s.tw-fr-uppercase.tw-fr-text-tdt-blue-dark').textContent.trim();
-                    console.log("ok quota");
-                    vincitaPotenziale = document.querySelectorAll('p.tw-fr-m-0.tw-fr-font-roboto-medium.tw-fr-font-medium.tw-fr-text-paragraph-s.tw-fr-uppercase.tw-fr-text-tdt-blue-dark')[1].textContent.trim();
-                    console.log("ok vincita");
+                    quotaTotale = document.querySelector('div.tw-fr-flex.tw-fr-items-center.tw-fr-bg-tdt-light-grey:has(i.icon-Summary-Quote) p.tw-fr-m-0.tw-fr-font-roboto-medium.tw-fr-font-medium.tw-fr-text-paragraph-s.tw-fr-uppercase.tw-fr-text-tdt-blue-dark').textContent.trim();
+                    vincitaPotenziale = document.querySelector('div.tw-fr-flex.tw-fr-items-center.tw-fr-bg-tdt-light-grey:has(i.icon-Summary-Union) p.tw-fr-m-0.tw-fr-font-roboto-medium.tw-fr-font-medium.tw-fr-text-paragraph-s.tw-fr-uppercase.tw-fr-text-tdt-blue-dark').textContent.trim();
+                    dateTime = document.querySelector('.bettimestamp').textContent.trim();
+
                 } catch (error) {
                     console.error('Errore durante l\'estrazione dei dettagli della scommessa:', error);
                     quotaTotale = 'N/A';
                     vincitaPotenziale = 'N/A';
+                    dateTime = 'N/A';
                 }
                 const events = Array.from(document.querySelectorAll('.events-list-container > div')).map(event => {
                     let date;
@@ -97,21 +90,27 @@ async function getSisalActiveBets() {
                     else if (event.querySelector('i.icon-Status-Won')) result = 'Vinto';
 
                     return {
-                        date,
-                        competition,
-                        name,
-                        marketType,
+                        date: date,
+                        competition: competition,
+                        name: name,
+                        marketType: marketType,
                         selection: selection.trim(),
                         odds: odds ? odds.replace(')', '') : '',
-                        result,
-                        matchResult: null
+                        result: result,
+                        matchResult: "N/A"
                     };
                 });
                 const latestEventDate = new Date(Math.max(...events.map(e => e.date)));
-                return { quotaTotale, vincitaPotenziale, events, latestEventDate };
+                return {
+                    quotaTotale: quotaTotale,
+                    vincitaPotenziale: vincitaPotenziale,
+                    dateTime: dateTime,
+                    events: events,
+                    latestEventDate: latestEventDate
+                };
             });
 
-            const betId = betData.dateTime.replace(/[/:\s]/g, '') + betDetails.quotaTotale.replace('.', '');
+            const betId = betDetails.dateTime.replace(/[/:\s-]/g, '') + betDetails.quotaTotale.replace('.', '');
 
             return {
                 site: 'Sisal',

@@ -1,4 +1,4 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping } = require('./botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser} = require('./botUtils');
 const config = require('../../config/config');
 
 const SITE_CONFIGS = {
@@ -14,24 +14,6 @@ const SITE_CONFIGS = {
   }
 };
 
-async function setupGoldBetterBrowser(page, site) {
-  const siteConfig = SITE_CONFIGS[site.toLowerCase()];
-  try {
-    await page.setExtraHTTPHeaders({
-      'Accept-Language': 'it-IT,it;q=0.9',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Referer': 'https://www.google.it/',
-      'DNT': '1'
-    });
-
-    console.log(`Navigazione verso ${siteConfig.url}`);
-    await page.goto(siteConfig.url, {waitUntil: 'networkidle'});
-  } catch (error) {
-    console.log(`Errore durante la navigazione verso ${site}: ${error}`);
-  }
-  return page;
-}
-
 async function acceptGoldBetterCookies(page) {
   try {
     const acceptCookiesSelector = 'button#onetrust-accept-btn-handler';
@@ -46,6 +28,9 @@ async function acceptGoldBetterCookies(page) {
 async function goldBetterLogin(page, site, verificationCode = null) {
   const siteConfig = SITE_CONFIGS[site.toLowerCase()];
   let isUserLoggedIn = false;
+
+  console.log(`Navigazione verso ${siteConfig.url}`);
+  await page.goto(siteConfig.url, {waitUntil: 'networkidle'});
 
   try {
     await acceptGoldBetterCookies(page);
@@ -137,4 +122,4 @@ async function extractBonusValue(page) {
   }
 }
 
-module.exports = { setupGoldBetterBrowser, goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType };
+module.exports = { goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType };

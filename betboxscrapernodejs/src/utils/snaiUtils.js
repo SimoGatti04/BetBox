@@ -1,22 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping} = require('../utils/botUtils');
 const config = require('../../config/config');
-
-async function setupSnaiBrowser(page) {
-  try {
-    await page.setExtraHTTPHeaders({
-      'Accept-Language': 'it-IT,it;q=0.9',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Referer': 'https://www.google.it/',
-      'DNT': '1'
-    });
-
-    console.log('Navigazione verso https://www.snai.it/');
-    await page.goto('https://www.snai.it/', {waitUntil: 'networkidle'});
-  } catch (error) {
-    console.log('Errore durante la navigazione verso Snai: ', error);
-  }
-  return page
-}
+const {setupBrowser} = require("./botUtils");
 
 async function acceptSnaiCookies(page) {
   try {
@@ -31,11 +15,15 @@ async function acceptSnaiCookies(page) {
 
 async function snaiLogin(page){
   let isUserLoggedIn = false;
+
+  console.log('Navigazione verso https://www.snai.it/');
+  await page.goto('https://www.snai.it/', {waitUntil: 'networkidle', timeout: 60000});
+
   await acceptSnaiCookies(page);
 
   try {
     console.log('Attesa del pulsante "Accedi"');
-    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 5000 });
+    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
   } catch (error) {
     console.log('Pulsante accedi non trovato: ', error);
     isUserLoggedIn = true
@@ -62,4 +50,4 @@ async function snaiLogin(page){
   }
 }
 
-module.exports = { setupSnaiBrowser , snaiLogin, acceptSnaiCookies}
+module.exports = { snaiLogin, acceptSnaiCookies}

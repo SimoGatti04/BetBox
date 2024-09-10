@@ -1,9 +1,9 @@
 const { getActiveBets } = require('../../utils/activeBetsUtils');
-const { setupGoldBetterBrowser, goldBetterLogin, acceptGoldBetterCookies } = require('../../utils/goldBetterUtils');
+const { goldBetterLogin, acceptGoldBetterCookies } = require('../../utils/goldBetterUtils');
+const {delay} = require("../../utils/botUtils");
 
 async function getGoldBetterActiveBets(site) {
     return getActiveBets(site, {
-        setupSiteBrowser: setupGoldBetterBrowser,
         siteLogin: goldBetterLogin,
         acceptCookies: acceptGoldBetterCookies,
         navigateToActiveBets: async (page) => {
@@ -11,7 +11,7 @@ async function getGoldBetterActiveBets(site) {
             console.log("Clicked account button");
             await page.click('span.fa-stack i.material-icons-outlined');
             console.log("Clicked bets button");
-            await page.waitForSelector('table tbody tr', { timeout: 10000 });
+            await page.waitForSelector('mat-tab-group.mat-tab-group.dark-tab.mat-primary', { timeout: 10000 });
         },
         selectTimePeriod: async (page) => {
             await page.click('mat-select[name="periodo"]');
@@ -25,7 +25,7 @@ async function getGoldBetterActiveBets(site) {
             return page.$$('tbody[role="rowgroup"] > tr');
         },
         extractBetDetails: async (page, betElement) => {
-            const betId = await betElement.$eval('td:first-child .lh-2', el => el.textContent.trim());
+            const date = await betElement.$eval('td:first-child .lh-2', el => el.textContent.trim());
 
             await betElement.click();
             await page.waitForSelector('.dialog-content', { visible: true, timeout: 5000 });
@@ -50,7 +50,6 @@ async function getGoldBetterActiveBets(site) {
                     }
 
                     return {
-                        site: site,
                         date: date.getTime(),
                         competition: eventRow.querySelector('.sport')?.textContent?.trim() || '',
                         name: eventRow.querySelector('.game')?.textContent?.trim() || '',
@@ -63,8 +62,19 @@ async function getGoldBetterActiveBets(site) {
                 });
 
                 const latestEventDate = new Date(Math.max(...events.map(e => e.date)));
+                const betId = date.replace(/[/:\s]/g, '') + quotaTotale.replace('.', '');
 
-                return { betId, importoGiocato, esitoTotale, quotaTotale, vincitaPotenziale, events, latestEventDate };
+                return {
+                    site: site,
+                    date: date,
+                    betId: betId,
+                    importoGiocato: importoGiocato,
+                    esitoTotale: esitoTotale,
+                    quotaTotale: quotaTotale,
+                    vincitaPotenziale: vincitaPotenziale,
+                    events: events,
+                    latestEventDate: latestEventDate
+                };
             }, site);
         },
         closeBetDetails: async (page) => {

@@ -74,6 +74,13 @@ async function setupBrowser(botName) {
   const page = await context.newPage();
   console.log('Nuova pagina creata');
 
+  await page.setExtraHTTPHeaders({
+    'Accept-Language': 'it-IT,it;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://www.google.it/',
+    'DNT': '1'
+  });
+
   console.log(`Setup del browser completato per ${botName}`);
   return { browser, context, page };
 }

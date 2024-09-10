@@ -1,5 +1,5 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const { setupGoldBetterBrowser, goldBetterLogin } = require('../../utils/goldBetterUtils');
+const { goldBetterLogin } = require('../../utils/goldBetterUtils');
 const EventEmitter = require('events');
 const verificationEmitter = new EventEmitter();
 const config = require('../../../config/config');
@@ -7,9 +7,7 @@ const WebSocket = require('ws');
 
 async function getGoldBetterBalance(site) {
   console.log(`Inizio del processo di recupero del saldo da ${site}`);
-
-  const { browser, context, page } = await setupBrowser(site.toLowerCase());
-  await setupGoldBetterBrowser(page, site);
+  const { browser, context, page} = await setupBrowser(site);
 
   try {
     const loginResult = await goldBetterLogin(page, site);
@@ -50,7 +48,7 @@ async function getGoldBetterBalance(site) {
 verificationEmitter.on('smsCode', async (site, code) => {
   console.log(`Codice ricevuto per ${site}: ${code}`);
   const { browser, context, page } = await setupBrowser(site.toLowerCase());
-  await setupGoldBetterBrowser(page, site);
+  await setupBrowser(site);
   await inserisciCodiceVerifica(page, code);
   await cliccaPulsanteConferma(page);
 });

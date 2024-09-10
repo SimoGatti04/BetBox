@@ -1,21 +1,20 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const {setupSnaiBrowser, snaiLogin} = require('../../utils/snaiUtils');
+const {snaiLogin} = require('../../utils/snaiUtils');
 const config = require('../../../config/config');
 
 async function getSnaiBalance() {
+  const { browser, context, page } = await setupBrowser('snai');
   console.log('Inizio del processo di recupero del saldo da Snai');
 
-  const { browser, context, page } = await setupBrowser('snai');
-  await setupSnaiBrowser(page);
   try {
     await snaiLogin(page);
     await delay(3000, 4000);
 
     console.log('Attesa del pulsante per accedere al saldo');
-    await page.waitForSelector('button.UserNavigation_btnLink__vk3Hf', { state: 'visible', timeout: 60000 });
+    await page.waitForSelector('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf', { state: 'visible', timeout: 60000 });
 
     console.log('Clic sul pulsante per accedere al saldo');
-    await page.click('button.UserNavigation_btnLink__vk3Hf');
+    await page.click('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf');
 
     await delay(3000, 4000);
 
