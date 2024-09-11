@@ -11,7 +11,7 @@ async function getGoldBetterActiveBets(site) {
             console.log("Clicked account button");
             await page.click('span.fa-stack i.material-icons-outlined');
             console.log("Clicked bets button");
-            await page.waitForSelector('mat-tab-group.mat-tab-group.dark-tab.mat-primary', { timeout: 10000 });
+            await delay (4000,5000);
         },
         selectTimePeriod: async (page) => {
             await page.click('mat-select[name="periodo"]');
@@ -30,7 +30,7 @@ async function getGoldBetterActiveBets(site) {
             await betElement.click();
             await page.waitForSelector('.dialog-content', { visible: true, timeout: 5000 });
 
-            return page.evaluate((site) => {
+            return page.evaluate(({site, date}) => {
                 const importoGiocato = document.querySelector('.top-row-info.light-bg span:last-child')?.textContent.trim() || '';
                 const esitoTotale = document.querySelector('.top-row-info.short span:last-child')?.textContent.trim() || '';
                 const quotaTotale = document.querySelector('.quotation span:last-child')?.textContent.trim() || '';
@@ -75,7 +75,7 @@ async function getGoldBetterActiveBets(site) {
                     events: events,
                     latestEventDate: latestEventDate
                 };
-            }, site);
+            }, {site, date});
         },
         closeBetDetails: async (page) => {
             await page.click('mat-icon.close-icon');
