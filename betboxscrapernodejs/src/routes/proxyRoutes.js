@@ -15,14 +15,14 @@ function getLeagueId(competitionName) {
 }
 
 router.post('/football-data/match-results', async (req, res) => {
-  await handleMatchResults(req, res, fetchFromFootballData, filterMatchesByCompetitionFDATA, findBestMatchFDATA, formatMatchResultFDATA);
+  await handleMatchResults(req, res, fetchFromFootballData, filterMatchesByCompetitionFDATA, findBestMatchFDATA, formatMatchResultFDATA, false);
 });
 
 router.post('/football-api/match-results', async (req, res) => {
-  await handleMatchResults(req, res, fetchFromFootballAPI, filterMatchesByCompetitionFAPI, findBestMatchFAPI, formatMatchResultFAPI);
+  await handleMatchResults(req, res, fetchFromFootballAPI, filterMatchesByCompetitionFAPI, findBestMatchFAPI, formatMatchResultFAPI, true);
 });
 
-async function handleMatchResults(req, res, fetchFunction, filterFunction, findBestFunction, formatMatchResultFunction) {
+async function handleMatchResults(req, res, fetchFunction, filterFunction, findBestFunction, formatMatchResultFunction, isFootballAPI) {
   const { events } = req.body;
   const results = {};
 
@@ -36,6 +36,8 @@ async function handleMatchResults(req, res, fetchFunction, filterFunction, findB
           const match = findBestFunction(filteredMatches, homeTeam, awayTeam);
           if (match) {
             results[event.name] = formatMatchResultFunction(match, competition);
+          } else if (isFootballAPI) {
+            results[event.name] = "?";
           }
         }
       }
@@ -47,15 +49,24 @@ async function handleMatchResults(req, res, fetchFunction, filterFunction, findB
   }
 }
 
+
+
 function filterMatchesByCompetitionFAPI(matches, competition) {
   const cleanedCompetition = competition.replace('Calcio - ', '').toLowerCase();
-  return matches.filter(match => match.league.name.toLowerCase() === cleanedCompetition);
+  return matches.filter(match => {
+    const similarity = stringSimilarity.compareTwoStrings(cleanedCompetition, match.league.name.toLowerCase());
+    return similarity > 0.30; // You can adjust this threshold as needed
+  });
 }
 
 function filterMatchesByCompetitionFDATA(matches, competition) {
   const cleanedCompetition = competition.replace('Calcio - ', '').toLowerCase();
-  return matches.filter(match => match.competition.name.toLowerCase() === cleanedCompetition);
+  return matches.filter(match => {
+    const similarity = stringSimilarity.compareTwoStrings(cleanedCompetition, match.competition.name.toLowerCase());
+    return similarity > 0.30; // You can adjust this threshold as needed
+  });
 }
+
 
 
 async function fetchFromFootballData(date) {
