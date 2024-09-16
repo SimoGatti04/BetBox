@@ -87,7 +87,14 @@ router.post('/all-active-bets', async (req, res) => {
         for (const serverBet of serverSiteBets) {
             const existingBet = appSiteBets.find(appBet => appBet.betId === serverBet.betId);
             if (existingBet) {
-                comparison[site].toKeep.push(serverBet.betId);
+                comparison[site].toKeep.push({
+                    betId: serverBet.betId,
+                    esitoTotale: serverBet.esitoTotale,
+                    events: serverBet.events.map(event => ({
+                        name: event.name,
+                        status: event.status
+                    }))
+                });
             } else {
                 comparison[site].toAdd.push(serverBet);
             }

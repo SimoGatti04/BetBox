@@ -83,12 +83,12 @@ async function getSisalActiveBets() {
                     console.log("ok marketType")
                     const selectionAndOdds = event.querySelector('p.tw-fr-text-paragraph-s').textContent.trim();
                     console.log("ok selectionAndOdds")
-                    const [selection, odds] = selectionAndOdds.split('(');
+                    const [selection, odd] = selectionAndOdds.split('(');
                     console.log("ok selectionAndOdds")
 
-                    let result = 'In corso';
-                    if (event.querySelector('i.icon-Status-Lose')) result = 'Perso';
-                    else if (event.querySelector('i.icon-Status-Won')) result = 'Vinto';
+                    let status = 'In corso';
+                    if (event.querySelector('i.icon-Status-Lose')) status = 'Perso';
+                    else if (event.querySelector('i.icon-Status-Won')) status = 'Vinto';
 
                     return {
                         date: date,
@@ -96,8 +96,8 @@ async function getSisalActiveBets() {
                         name: name,
                         marketType: marketType,
                         selection: selection.trim(),
-                        odds: odds ? odds.replace(')', '') : '',
-                        result: result,
+                        odd: odd ? odd.replace(')', '') : '',
+                        status: status,
                         matchResult: "N/A"
                     };
                 });

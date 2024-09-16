@@ -30,8 +30,12 @@ async function getActiveBets(site, {
             console.log('Found bets: ', firstSectionBets.length + closedSectionBets.length);
             await extractAndSaveSnai(firstSectionBets, firstButtonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails);
             await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Chiuse")');
-            await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
-            await extractAndSaveSnai(closedSectionBets, secondButtonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails);
+            try{
+                await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
+                await extractAndSaveSnai(closedSectionBets, secondButtonCoordinates, extractBetDetails, site, page, betsData, closeBetDetails);
+            } catch (error) {
+                console.log ("No closed bets found");
+            }
         } else {
             const betElements = await getBetElements(page);
             console.log(`Found bets: ${betElements.length}`);

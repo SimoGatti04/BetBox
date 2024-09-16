@@ -9,6 +9,7 @@ const verificationRoutes = require('./routes/verificationRoutes');
 const { cleanupResources } = require("./services/cleanupService");
 const { initializeAllBalanceSchedulers } = require('./utils/balanceSchedulerUtils');
 const { initializeAllSpinSchedulers } = require('./utils/spinSchedulerUtils');
+const { scheduleBetCleanup } = require('./utils/betCleanupSchedulerUtils');
 const activeBetsRoutes = require('./routes/activeBetsRoutes');
 const axios = require('axios');
 const proxyRoutes = require('./routes/proxyRoutes');
@@ -69,4 +70,5 @@ server.listen(port, () => {
   console.log('Avvio schedulazione recupero saldi e spin giornalieri');
   initializeAllBalanceSchedulers();
   initializeAllSpinSchedulers();
+  scheduleBetCleanup();
 });

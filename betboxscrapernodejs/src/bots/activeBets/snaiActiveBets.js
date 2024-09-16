@@ -16,33 +16,40 @@ async function getSnaiActiveBets() {
             // Implement if there's a time period selection for Snai
         },
         getBetElements: async (page) => {
-            const highlightElements = async (elements) => {
-                await page.evaluate((els) => {
-                    els.forEach(el => {
-                        el.style.border = '3px solid red';
-                        el.style.backgroundColor = 'yellow';
-                    });
-                }, elements);
-            };
+            let firstSectionBets = [];
+            let firstButtonCoordinates = null;
+            let closedSectionBets = [];
+            let secondButtonCoordinates = null;
+            try {
+                const highlightElements = async (elements) => {
+                    await page.evaluate((els) => {
+                        els.forEach(el => {
+                            el.style.border = '3px solid red';
+                            el.style.backgroundColor = 'yellow';
+                        });
+                    }, elements);
+                };
 
-            // Get bets from the first section
-            await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
-            const firstSectionBets = await page.$$('.MieScommesseTableRow_container__ATvwj');
-            await highlightElements(firstSectionBets);
-            const firstButtonCoordinates = await getButtonCoordinates(page);
+                // Get bets from the first section
+                await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
+                firstSectionBets = await page.$$('.MieScommesseTableRow_container__ATvwj');
+                await highlightElements(firstSectionBets);
+                firstButtonCoordinates = await getButtonCoordinates(page);
 
-            // Click on the "Chiuse" tab
-            await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Chiuse")');
-            await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
+                // Click on the "Chiuse" tab
+                await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Chiuse")');
+                await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
 
-            // Get bets from the "Chiuse" section
-            const closedSectionBets = await page.$$('.MieScommesseTableRow_container__ATvwj');
-            await highlightElements(closedSectionBets);
-            const secondButtonCoordinates = await getButtonCoordinates(page);
+                // Get bets from the "Chiuse" section
+                closedSectionBets = await page.$$('.MieScommesseTableRow_container__ATvwj');
+                await highlightElements(closedSectionBets);
+                secondButtonCoordinates = await getButtonCoordinates(page);
 
-            await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Aperte")');
-            await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
-
+                await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Aperte")');
+                await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
+            } catch (error) {
+                console.log("Errore nel recupero delle bet di snai: ",error)
+            }
             return { firstSectionBets, firstButtonCoordinates, closedSectionBets, secondButtonCoordinates };
         },
         extractBetDetails: async (page, betElement, buttonCoordinate) => {
@@ -81,8 +88,8 @@ async function getSnaiActiveBets() {
                     name: event.querySelector('.BetEventTableRow_team__ATJs7').textContent.trim(),
                     marketType: event.querySelector('.BetEventTableRow_resultLabel__ZU5Zm').textContent.split(':')[0].trim(),
                     selection: event.querySelector('.BetEventTableRow_resultLabelBold__wd8FY').textContent.trim(),
-                    odds: event.querySelector('.BetEventTableRow_match__T20aH:nth-child(3) p').textContent.trim(),
-                    result: event.querySelector('.BetEventTableRow_statusText__UetJ_').textContent.trim(),
+                    odd: event.querySelector('.BetEventTableRow_match__T20aH:nth-child(3) p').textContent.trim(),
+                    status: event.querySelector('.BetEventTableRow_statusText__UetJ_').textContent.trim(),
                     matchResult: "N/A"
                 }));
                 const lastDate = new Date();
@@ -97,8 +104,8 @@ async function getSnaiActiveBets() {
                     vincitaPotenziale: vincitaPotenziale,
                     events: events.map(event => ({
                         ...event,
-                        result: event.result === 'Aperta' ? 'In corso' :
-                                (event.result === 'Vincente' ? 'Vincente' : 'Perdente')
+                        status: event.status === 'Aperta' ? 'In corso' :
+                                (event.status === 'Vincente' ? 'Vincente' : 'Perdente')
                     })),
                     latestEventDate: new Date(Math.max(...events.map(e => e.date))),
                 };
