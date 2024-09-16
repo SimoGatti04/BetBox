@@ -76,7 +76,8 @@ async function getSisalActiveBets() {
                     }
                     const competition = event.querySelector('p.tw-fr-text-paragraph-xs').textContent.trim();
                     console.log("ok competition")
-                    const name = event.querySelector('ul.tw-fr-flex.tw-fr-flex-col').textContent.replace(/\n/g, ' - ').trim();
+                    const teamElements = event.querySelectorAll('ul.tw-fr-flex.tw-fr-flex-col li');
+                    const name = Array.from(teamElements).map(el => el.textContent.trim()).join(' - ');
                     console.log("ok name")
                     const marketType = event.querySelector('div.tw-fr-text-\\[12px\\]').textContent.trim();
                     console.log("ok marketType")
