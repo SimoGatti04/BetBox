@@ -82,6 +82,13 @@ async function getSnaiActiveBets() {
                     const quotaTotale = getFieldValue('Quota totale');
                     const betId = dateTime.replace(/[/:\s]/g, '') + quotaTotale.replace('.', '');
 
+                    const parseDate = (dateString) => {
+                        const [datePart, timePart] = dateString.split(' ');
+                        const [day, month, year] = datePart.split('/');
+                        const [hour, minute] = timePart.split(':');
+                        return new Date(year, month - 1, day, hour, minute);
+                    };
+
                 const events = Array.from(document.querySelectorAll('.BetEventTableRow_container__paVmw')).map(event => ({
                     date: event.querySelector('.BetEventTableRow_match__T20aH p').textContent.trim(),
                     competition: event.querySelector('.BetEventTableRow_details__U_lmE').textContent.trim(),
@@ -92,7 +99,8 @@ async function getSnaiActiveBets() {
                     status: event.querySelector('.BetEventTableRow_statusText__UetJ_').textContent.trim(),
                     matchResult: "N/A"
                 }));
-                const lastDate = new Date();
+
+                const latestEventDate = new Date(Math.max(...events.map(e => parseDate(e.date).getTime())));
 
                 return {
                     site: "Snai",
@@ -107,9 +115,11 @@ async function getSnaiActiveBets() {
                         status: event.status === 'Aperta' ? 'In corso' :
                                 (event.status === 'Vincente' ? 'Vincente' : 'Perdente')
                     })),
-                    latestEventDate: new Date(Math.max(...events.map(e => e.date))),
+                    latestEventDate: latestEventDate,
                 };
             });
+
+            console.log("data: ", betDetails.latestEventDate);
 
             return betDetails;
         },
@@ -133,7 +143,5 @@ async function getButtonCoordinates(page) {
         });
     });
 }
-
-
 
 module.exports = { getSnaiActiveBets };
