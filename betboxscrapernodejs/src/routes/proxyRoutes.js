@@ -109,8 +109,8 @@ function groupEventsByDateAndCompetition(events) {
 
 function findBestMatchFAPI(matches, homeTeam, awayTeam) {
   return matches.reduce((best, match) => {
-    const homeScore = stringSimilarity.compareTwoStrings(homeTeam, match.teams.home.name);
-    const awayScore = stringSimilarity.compareTwoStrings(awayTeam, match.teams.away.name);
+    const homeScore = stringSimilarity.compareTwoStrings(homeTeam.toLowerCase(), match.teams.home.name.toLowerCase());
+    const awayScore = stringSimilarity.compareTwoStrings(awayTeam.toLowerCase(), match.teams.away.name.toLowerCase());
     const score = homeScore + awayScore;
     return score > best.score ? { match, score } : best;
   }, { match: null, score: 0 }).match;
@@ -118,8 +118,8 @@ function findBestMatchFAPI(matches, homeTeam, awayTeam) {
 
 function findBestMatchFDATA(matches, homeTeam, awayTeam) {
   return matches.reduce((best, match) => {
-    const homeScore = stringSimilarity.compareTwoStrings(homeTeam, match.homeTeam.name);
-    const awayScore = stringSimilarity.compareTwoStrings(awayTeam, match.awayTeam.name);
+    const homeScore = stringSimilarity.compareTwoStrings(homeTeam.toLowerCase(), match.homeTeam.name.toLowerCase());
+    const awayScore = stringSimilarity.compareTwoStrings(awayTeam.toLowerCase(), match.awayTeam.name.toLowerCase());
     const score = homeScore + awayScore;
     return score > best.score ? { match, score } : best;
   }, { match: null, score: 0 }).match;

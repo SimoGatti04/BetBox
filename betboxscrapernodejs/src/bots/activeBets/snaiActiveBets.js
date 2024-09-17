@@ -89,8 +89,12 @@ async function getSnaiActiveBets() {
                         return new Date(year, month - 1, day, hour, minute);
                     };
 
-                const events = Array.from(document.querySelectorAll('.BetEventTableRow_container__paVmw')).map(event => ({
-                    date: event.querySelector('.BetEventTableRow_match__T20aH p').textContent.trim(),
+                const events = Array.from(document.querySelectorAll('.BetEventTableRow_container__paVmw')).map(event => {
+                const dateString = event.querySelector('.BetEventTableRow_match__T20aH p').textContent.trim();
+                const timestamp = parseDate(dateString).getTime();
+
+                return {
+                    date: timestamp,
                     competition: event.querySelector('.BetEventTableRow_details__U_lmE').textContent.trim(),
                     name: event.querySelector('.BetEventTableRow_team__ATJs7').textContent.trim(),
                     marketType: event.querySelector('.BetEventTableRow_resultLabel__ZU5Zm').textContent.split(':')[0].trim(),
@@ -98,9 +102,10 @@ async function getSnaiActiveBets() {
                     odd: event.querySelector('.BetEventTableRow_match__T20aH:nth-child(3) p').textContent.trim(),
                     status: event.querySelector('.BetEventTableRow_statusText__UetJ_').textContent.trim(),
                     matchResult: "N/A"
-                }));
+                };
+            });
 
-                const latestEventDate = new Date(Math.max(...events.map(e => parseDate(e.date).getTime())));
+            const latestEventDate = Math.max(...events.map(e => e.date));
 
                 return {
                     site: "Snai",

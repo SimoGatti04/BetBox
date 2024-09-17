@@ -29,3 +29,4 @@ iOS_APP/BetBox.xcodeproj/project.xcworkspace/xcuserdata
 /PWA_React
 /.idea
 *.DS_Store
+/betboxscrapernodejs/jsonBetExample.json
