@@ -107,13 +107,22 @@ async function getSnaiActiveBets() {
                     date: dateTime,
                     betId: betId,
                     importoGiocato: importoGiocato,
-                    esitoTotale: esitoTotale === 'Aperta' ? 'In corso' : (esitoTotale === 'Vincente' ? 'Vincente' : 'Perdente'),
+                    esitoTotale: (() => {
+                        const lowerEsito = esitoTotale.toLowerCase();
+                        if (['aperta', 'aperto', 'live'].includes(lowerEsito)) return 'In corso';
+                        if (['vincente', 'vinta'].includes(lowerEsito)) return 'Vincente';
+                        return 'Perdente';
+                    })(),
                     quotaTotale: quotaTotale,
                     vincitaPotenziale: vincitaPotenziale,
                     events: events.map(event => ({
                         ...event,
-                        status: event.status === 'Aperta' ? 'In corso' :
-                                (event.status === 'Vincente' ? 'Vincente' : 'Perdente')
+                        status: (() => {
+                            const lowerStatus = event.status.toLowerCase();
+                            if (['aperta', 'aperto', 'live'].includes(lowerStatus)) return 'In corso';
+                            if (['vincente', 'vinta'].includes(lowerStatus)) return 'Vincente';
+                            return 'Perdente';
+                        })()
                     })),
                     latestEventDate: latestEventDate,
                 };
