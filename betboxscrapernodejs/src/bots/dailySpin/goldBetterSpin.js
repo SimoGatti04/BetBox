@@ -14,7 +14,6 @@ async function spinGoldBetterWheel(site, isTestMode = false){
 
   const {browser, context, page} = await setupBrowser(site.toLowerCase());
   let bonusInfo = null;
-  await setupBrowser(site);
   try {
     await goldBetterLogin(page, site);
     await acceptGoldBetterCookies(page);
