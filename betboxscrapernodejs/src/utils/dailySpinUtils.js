@@ -121,6 +121,8 @@ function initializeAllSpinSchedulers() {
     scheduleSpinExecution('snai', spinSnaiWheel);
 }
 
+
 module.exports = {
     initializeAllSpinSchedulers,
+    updateSpinHistory,
 };

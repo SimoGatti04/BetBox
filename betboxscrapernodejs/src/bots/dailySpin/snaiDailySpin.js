@@ -1,5 +1,6 @@
 const { delay, setupBrowser } = require('../../utils/botUtils');
 const config = require('../../../config/config');
+const { updateSpinHistory} = require("../../utils/dailySpinUtils");
 
 async function spinSnaiWheel() {
   console.log('Inizio del processo per il daily spin di Snai');
@@ -60,6 +61,7 @@ async function spinSnaiWheel() {
     console.error('Errore durante l\'esecuzione del bot Snai:', error);
   } finally {
     await browser.close();
+    updateSpinHistory('snai', bonusInfo);
   }
 
   return bonusInfo;

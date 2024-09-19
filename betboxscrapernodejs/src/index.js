@@ -8,10 +8,9 @@ const spinHistoryRoutes = require('./routes/spinHistoryRoutes');
 const verificationRoutes = require('./routes/verificationRoutes');
 const { cleanupResources } = require("./services/cleanupService");
 const { initializeAllBalanceSchedulers } = require('./utils/balanceSchedulerUtils');
-const { initializeAllSpinSchedulers } = require('./utils/spinSchedulerUtils');
+const { initializeAllSpinSchedulers } = require('./utils/dailySpinUtils');
 const { scheduleBetCleanup } = require('./utils/betCleanupSchedulerUtils');
 const activeBetsRoutes = require('./routes/activeBetsRoutes');
-const axios = require('axios');
 const proxyRoutes = require('./routes/proxyRoutes');
 
 const port = process.env.PORT || 3000;

@@ -1,5 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
 const { goldBetterLogin, acceptGoldBetterCookies, extractBonusValue, extractBonusType } = require('../../utils/goldBetterUtils');
+const {updateSpinHistory} = require("../../utils/dailySpinUtils");
 
 async function spinGoldBetterWheel(site, isTestMode = false){
   console.log(`Inizio del processo di daily spin su ${site}`);
@@ -74,6 +75,9 @@ async function spinGoldBetterWheel(site, isTestMode = false){
   } catch (error) {
     console.error(`Errore durante l'esecuzione del bot su ${site}: `, error);
     await browser.close();
+  }
+  finally {
+    updateSpinHistory(site, bonusInfo);
   }
   return bonusInfo;
 }
