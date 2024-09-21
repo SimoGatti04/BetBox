@@ -170,7 +170,7 @@ function formatMatchResultSportDevs(match, competition) {
 function formatMatchResultFAPI(match, competition) {
   return {
     status: match.fixture.status.long,
-    score: `${match.score.fulltime.home} - ${match.score.fulltime.away}`,
+    score: `${match.goals.home} - ${match.goals.away}`,
     competition: match.league.name,
     date: match.fixture.date
   };
