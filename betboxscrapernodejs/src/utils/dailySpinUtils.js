@@ -7,7 +7,7 @@ const SPIN_HISTORY_DIR = path.join(__dirname, '..', '..', 'spinHistory');
 const LAST_SPIN_FILE = path.join(__dirname, '..', '..', 'spinHistory', 'lastSpinDates.json');
 
 function updateSpinHistory(site, result) {
-    const spinHistoryFile = path.join(SPIN_HISTORY_DIR, `${site}SpinHistory.json`);
+    const spinHistoryFile = path.join(SPIN_HISTORY_DIR, `${site.toLowerCase()}SpinHistory.json`);
 
     if (!fs.existsSync(SPIN_HISTORY_DIR)){
         fs.mkdirSync(SPIN_HISTORY_DIR, { recursive: true });
