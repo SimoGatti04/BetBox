@@ -9,20 +9,19 @@ const path = require('path');
 const leaguesPath = path.join(__dirname, '..', '..', 'data', 'leagues.json');
 const leaguesData = JSON.parse(fs.readFileSync(leaguesPath, 'utf8'));
 
-function getLeagueId(competitionName) {
-  const league = leaguesData.find(l => l.name.toLowerCase() === competitionName.toLowerCase());
-  return league ? league.id : null;
-}
+router.post('/sportdevs/match-results', async (req, res) => {
+  await handleMatchResults(req, res, fetchFromSportDevs, filterMatchesByCompetitionSportDevs, findBestMatchSportDevs, formatMatchResultSportDevs, true);
+});
 
 router.post('/football-data/match-results', async (req, res) => {
   await handleMatchResults(req, res, fetchFromFootballData, filterMatchesByCompetitionFDATA, findBestMatchFDATA, formatMatchResultFDATA, false);
 });
 
 router.post('/football-api/match-results', async (req, res) => {
-  await handleMatchResults(req, res, fetchFromFootballAPI, filterMatchesByCompetitionFAPI, findBestMatchFAPI, formatMatchResultFAPI, true);
+  await handleMatchResults(req, res, fetchFromFootballAPI, filterMatchesByCompetitionFAPI, findBestMatchFAPI, formatMatchResultFAPI, false);
 });
 
-async function handleMatchResults(req, res, fetchFunction, filterFunction, findBestFunction, formatMatchResultFunction, isFootballAPI) {
+async function handleMatchResults(req, res, fetchFunction, filterFunction, findBestFunction, formatMatchResultFunction, isSportsDevs) {
   const { events } = req.body;
   const results = {};
 
@@ -36,7 +35,7 @@ async function handleMatchResults(req, res, fetchFunction, filterFunction, findB
           const match = findBestFunction(filteredMatches, homeTeam, awayTeam);
           if (match) {
             results[event.name] = formatMatchResultFunction(match, competition);
-          } else if (isFootballAPI) {
+          } else if (isSportsDevs) {
             results[event.name] = "?";
           }
         }
@@ -49,6 +48,20 @@ async function handleMatchResults(req, res, fetchFunction, filterFunction, findB
   }
 }
 
+
+function filterMatchesByCompetitionSportDevs(matchData, competition) {
+  const cleanedCompetition = competition.replace('Calcio - ', '').toLowerCase();
+  const matchesObject = matchData[0];
+  return matchesObject.matches.filter(match => {
+    if (match.league_name) {
+      const similarity = stringSimilarity.compareTwoStrings(cleanedCompetition, match.league_name.toLowerCase());
+      return similarity > 0.30;
+    }
+    else {
+      return false;
+    }
+  });
+}
 
 
 function filterMatchesByCompetitionFAPI(matches, competition) {
@@ -68,6 +81,15 @@ function filterMatchesByCompetitionFDATA(matches, competition) {
 }
 
 
+async function fetchFromSportDevs(date) {
+  const url = `https://football.sportdevs.com/matches-by-date?date=eq.${date}`;
+  const response = await axios.get(url, {
+    headers: {
+      'Authorization': 'Bearer pNVoUCBg2kaeoFcNNJpaSA'
+    }
+  });
+  return response.data;
+}
 
 async function fetchFromFootballData(date) {
   const url = `https://api.football-data.org/v4/matches?date=${date}`;
@@ -107,10 +129,11 @@ function groupEventsByDateAndCompetition(events) {
   return grouped;
 }
 
-function findBestMatchFAPI(matches, homeTeam, awayTeam) {
+
+function findBestMatchSportDevs(matches, homeTeam, awayTeam) {
   return matches.reduce((best, match) => {
-    const homeScore = stringSimilarity.compareTwoStrings(homeTeam.toLowerCase(), match.teams.home.name.toLowerCase());
-    const awayScore = stringSimilarity.compareTwoStrings(awayTeam.toLowerCase(), match.teams.away.name.toLowerCase());
+    const homeScore = stringSimilarity.compareTwoStrings(homeTeam.toLowerCase(), match.home_team_name.toLowerCase());
+    const awayScore = stringSimilarity.compareTwoStrings(awayTeam.toLowerCase(), match.away_team_name.toLowerCase());
     const score = homeScore + awayScore;
     return score > best.score ? { match, score } : best;
   }, { match: null, score: 0 }).match;
@@ -123,6 +146,25 @@ function findBestMatchFDATA(matches, homeTeam, awayTeam) {
     const score = homeScore + awayScore;
     return score > best.score ? { match, score } : best;
   }, { match: null, score: 0 }).match;
+}
+
+function findBestMatchFAPI(matches, homeTeam, awayTeam) {
+  return matches.reduce((best, match) => {
+    const homeScore = stringSimilarity.compareTwoStrings(homeTeam.toLowerCase(), match.teams.home.name.toLowerCase());
+    const awayScore = stringSimilarity.compareTwoStrings(awayTeam.toLowerCase(), match.teams.away.name.toLowerCase());
+    const score = homeScore + awayScore;
+    return score > best.score ? { match, score } : best;
+  }, { match: null, score: 0 }).match;
+}
+
+
+function formatMatchResultSportDevs(match, competition) {
+  return {
+    status: match.status,
+    score: `${match.home_team_score} - ${match.away_team_score}`,
+    competition: match.league_name,
+    date: match.start_time
+  };
 }
 
 function formatMatchResultFAPI(match, competition) {
@@ -143,25 +185,5 @@ function formatMatchResultFDATA(match, competition) {
   };
 }
 
-function getCompetitionCode(competition) {
-  const competitionMap = {
-    'FIFA World Cup': 'WC',
-    'UEFA Champions League': 'CL',
-    'Bundesliga': 'BL1',
-    'Eredivisie': 'DED',
-    'Campeonato Brasileiro Serie A': 'BSA',
-    'Primera Division': 'PD',
-    'Ligue 1': 'FL1',
-    'Championship': 'ELC',
-    'Primeira Liga': 'PPL',
-    'European Championship': 'EC',
-    'Serie A': 'SA',
-    'Premier League': 'PL',
-    'Copa Libertadores': 'CLI'
-  };
-
-  const competitionName = competition.replace('Calcio - ', '');
-  return competitionMap[competitionName] || null;
-}
 
 module.exports = router;
