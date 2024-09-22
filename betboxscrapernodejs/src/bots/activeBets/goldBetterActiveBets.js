@@ -42,11 +42,11 @@ async function getGoldBetterActiveBets(site) {
                     const [day, month, year] = datePart.split('/');
                     const date = new Date(`${year}-${month}-${day}T${timePart}`);
                     const dotElement = eventRow.querySelector('.dot');
-                    let result = '';
+                    let status = '';
                     if (dotElement) {
-                        if (dotElement.classList.contains('yellow')) result = 'In corso';
-                        else if (dotElement.classList.contains('green')) result = 'Vinto';
-                        else if (dotElement.classList.contains('red')) result = 'Perso';
+                        if (dotElement.classList.contains('yellow')) status = 'In corso';
+                        else if (dotElement.classList.contains('green')) status = 'Vinto';
+                        else if (dotElement.classList.contains('red')) status = 'Perso';
                     }
 
                     return {
@@ -56,7 +56,7 @@ async function getGoldBetterActiveBets(site) {
                         marketType: eventRow.querySelector('td.mat-column-Scommessa .lh-2')?.textContent?.trim() || '',
                         selection: eventRow.querySelector('.d-inline-block:nth-child(2) .lh-2')?.textContent?.trim() || '',
                         odds: eventRow.querySelector('td.mat-column-Quota .lh-2')?.textContent?.trim() || '',
-                        result: result,
+                        status: status,
                         matchResult: "N/A"
                     };
                 });

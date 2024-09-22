@@ -99,7 +99,7 @@ async function getSnaiActiveBets() {
                     name: event.querySelector('.BetEventTableRow_team__ATJs7').textContent.trim(),
                     marketType: event.querySelector('.BetEventTableRow_resultLabel__ZU5Zm').textContent.split(':')[0].trim(),
                     selection: event.querySelector('.BetEventTableRow_resultLabelBold__wd8FY').textContent.trim(),
-                    odd: event.querySelector('.BetEventTableRow_match__T20aH:nth-child(3) p').textContent.trim(),
+                    odda: event.querySelector('.BetEventTableRow_match__T20aH:nth-child(3) p').textContent.trim(),
                     status: event.querySelector('.BetEventTableRow_statusText__UetJ_').textContent.trim(),
                     matchResult: "N/A"
                 };

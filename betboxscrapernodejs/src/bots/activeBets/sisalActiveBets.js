@@ -96,7 +96,7 @@ async function getSisalActiveBets() {
                         name: name,
                         marketType: marketType,
                         selection: selection.trim(),
-                        odd: odd ? odd.replace(')', '') : '',
+                        odds: odd ? odd.replace(')', '') : '',
                         status: status,
                         matchResult: "N/A"
                     };
