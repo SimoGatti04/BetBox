@@ -30,7 +30,7 @@ async function goldBetterLogin(page, site, verificationCode = null) {
   let isUserLoggedIn = false;
 
   console.log(`Navigazione verso ${siteConfig.url}`);
-  await page.goto(siteConfig.url , {waitUntil: 60000});
+  await page.goto(siteConfig.url , {timeout: 60000});
 
   try {
     await acceptGoldBetterCookies(page);
