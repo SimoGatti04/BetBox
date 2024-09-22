@@ -30,7 +30,7 @@ async function goldBetterLogin(page, site, verificationCode = null) {
   let isUserLoggedIn = false;
 
   console.log(`Navigazione verso ${siteConfig.url}`);
-  await page.goto(siteConfig.url, {waitUntil: 'networkidle'});
+  await page.goto(siteConfig.url);
 
   try {
     await acceptGoldBetterCookies(page);
@@ -43,6 +43,7 @@ async function goldBetterLogin(page, site, verificationCode = null) {
 
   if (!isUserLoggedIn) {
     console.log('Clic sul pulsante "Accedi"');
+    await page.waitForSelector('button.anonymous--login--button')
     await page.click('button.anonymous--login--button');
     await page.waitForSelector('input#login_username', {state: 'visible'});
     await simulateTyping(page, 'input#login_username', siteConfig.username);
