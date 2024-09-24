@@ -1,32 +1,31 @@
 -- BETBOXSCRAPERNODEJS --
 
-betboxscrapernodejs/node_modules/
-betboxscrapernodejs/.idea/
-betboxscrapernodejs/spinHistory
-betboxscrapernodejs/sessions
-betboxscrapernodejs/balanceHistory
-betboxscrapernodejs/activeBets
-betboxscrapernodejs/.env
-betboxscrapernodejs/lastBalanceDates.json
-betboxscrapernodejs/lastSpinDates.json
-/betboxscrapernodejs/htmlDaAnalizzare.html
+server/node_modules/
+server/.idea/
+server/spinHistory
+server/sessions
+server/balanceHistory
+server/activeBets
+server/.env
+server/lastBalanceDates.json
+server/lastSpinDates.json
+/server/htmlDaAnalizzare.html
 
 
 
 -- IOS_APP --
 
-iOS_APP/BetBox.xcodeproj/project.xcworkspace/xcuserdata
-/iOS_APP/BetBox.xcodeproj/xcuserdata/simo.xcuserdatad
-/iOS_APP/._BetBox.xcodeproj
-/iOS_APP/BetBox.xcodeproj/._project.xcworkspace
-/iOS_APP/BetBox/._ContentView.swift
-/iOS_APP/BetBox/._SpinView.swift
+iOS/BetBox.xcodeproj/project.xcworkspace/xcuserdata
+/iOS/BetBox.xcodeproj/xcuserdata/simo.xcuserdatad
+/iOS/._BetBox.xcodeproj
+/iOS/BetBox.xcodeproj/._project.xcworkspace
+/iOS/BetBox/._ContentView.swift
+/iOS/BetBox/._SpinView.swift
 
 
 
 -- OTHER --
 
-/PWA_BetBox
 /.idea
 *.DS_Store
-/betboxscrapernodejs/jsonBetExample.json
+/server/jsonBetExample.json
