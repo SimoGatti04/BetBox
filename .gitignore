@@ -30,3 +30,7 @@ iOS_APP/BetBox.xcodeproj/project.xcworkspace/xcuserdata
 /.idea
 *.DS_Store
 /betboxscrapernodejs/jsonBetExample.json
+
+-- gh-pages --
+/betboxscrapernodejs
+/iOS_APP
