@@ -1,0 +1,16 @@
+name: Deploy PWA to GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'PWA/**'
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: PWA
