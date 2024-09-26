@@ -163,7 +163,7 @@ function formatMatchResultSportDevs(match, competition) {
     status: match.status,
     score: `${match.home_team_score} - ${match.away_team_score}`,
     competition: match.league_name,
-    date: match.start_time
+    date: match.start_time,
   };
 }
 
@@ -172,7 +172,8 @@ function formatMatchResultFAPI(match, competition) {
     status: match.fixture.status.long,
     score: `${match.goals.home} - ${match.goals.away}`,
     competition: match.league.name,
-    date: match.fixture.date
+    date: match.fixture.date,
+    minute: match.fixture.status.elapsed
   };
 }
 
