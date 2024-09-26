@@ -86,7 +86,7 @@
     font-weight: bold;
     margin-top: 2px;
     position: relative;
-    left: 18.25rem;
+    left: 18.5rem;
     bottom: 6.672rem;
     background-color: transparent;
     width: 2.4rem;
@@ -142,11 +142,12 @@
     max-height: 1rem;
 }
 
-.event-minute{
+.event-minute {
     position: relative;
-    top: -6rem;
-    left: 38rem;
+    top: -6.3rem;
+    left: 19.3rem;
     font-size: 0.8rem;
+    width: 1rem;
 }
 
 @media (min-width: 600px) {
