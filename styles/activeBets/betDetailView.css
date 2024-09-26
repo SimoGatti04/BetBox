@@ -137,6 +137,13 @@
     color: #fff;
 }
 
+.event-selection{
+    max-width: 20rem;
+    max-height: 1rem;
+}
+
+
+
 @media (min-width: 600px) {
 
     .result {
@@ -155,7 +162,7 @@
         align-self: center;
         font-weight: bold;
         position: relative;
-        bottom: 2.13rem;
+        bottom: 2.2rem;
         left: 37.6rem;
         max-width: 3rem;
     }
