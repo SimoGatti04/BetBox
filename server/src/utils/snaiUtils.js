@@ -1,6 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping} = require('../utils/botUtils');
 const config = require('../../config/config');
-const {setupBrowser} = require("./botUtils");
+const { setupBrowser } = require("./botUtils");
 
 async function acceptSnaiCookies(page) {
   try {

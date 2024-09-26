@@ -80,7 +80,7 @@ async function getSnaiActiveBets() {
                     const esitoTotale = stateField ? stateField.querySelector('.StateField_betData__SBG_g').textContent.trim() : 'N/A';
                     const dateTime = getFieldValue('Emesso');
                     const quotaTotale = getFieldValue('Quota totale');
-                    const betId = dateTime.replace(/[/:\s]/g, '') + quotaTotale.replace('.', '');
+                    const betId = dateTime.split(' ')[0].replace(/\D/g, '') + quotaTotale.replace(/\D/g, '') + importoGiocato.replace(/\D/g, '');
 
                     const parseDate = (dateString) => {
                         const [datePart, timePart] = dateString.split(' ');
