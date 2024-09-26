@@ -32,12 +32,12 @@ async function spinSnaiWheel() {
     console.log("Clicco sul pulsante di login");
     await page.click('div#accedi_click_MONEY');
 
-    await delay(5000, 6000);
+    await delay(7000, 8000);
 
     console.log("Ricarico la pagina");
     await page.reload();
 
-    await delay(3000, 4000);
+    await delay(4000, 5000);
 
     console.log("Controllo del risultato dello spin");
     const divs = await page.$$('div[id^="popup_estratto_"]');
