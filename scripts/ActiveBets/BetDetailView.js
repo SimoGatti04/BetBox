@@ -80,8 +80,9 @@ function createBetDetailContent(bet, isHistorical) {
             matchResult.status && matchResult.status.toUpperCase() === status
         );
         let resultClass = isLive ? 'result in-play' : (isNotStarted ? 'result not-started' : 'result');
-
         let resultString = isNotStarted ? '0-0' : (matchResult.score || '');
+
+        let minuteString = matchResult.minute ? `${matchResult.minute}'` : '';
 
         return `
             <li class="event-item">
@@ -91,6 +92,7 @@ function createBetDetailContent(bet, isHistorical) {
                     <p class="event-selection">${event.marketType}: ${event.selection}</p>
                     <div class="event-odds" style="color: ${getStatusColor(event.status, true)}">${event.odds}</div>
                     <div class="${resultClass}">${resultString}</div>
+                    <div class="event-minute">${minuteString}</div>
                 </div>
             </li>
         `;
