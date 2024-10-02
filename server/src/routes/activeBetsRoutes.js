@@ -148,4 +148,57 @@ router.post('/fetch-active-bets', async (req, res) => {
     res.json({ message: "Richiesta ricevuta"});
 });
 
+// Add a new bet
+router.post('/:site', async (req, res) => {
+    const { site } = req.params;
+    const newBet = req.body;
+
+    try {
+        const filePath = path.join(__dirname, '..', '..', 'activeBets', site, `${newBet.betId}.json`);
+        await fs.writeFile(filePath, JSON.stringify(newBet, null, 2));
+
+        res.status(201).json({ message: 'Bet added successfully', bet: newBet });
+    } catch (error) {
+        res.status(500).json({ message: 'Error adding bet', error: error.message });
+    }
+});
+
+// Update an existing bet
+router.put('/:site/:betId', async (req, res) => {
+    const { site, betId } = req.params;
+    const updatedBet = req.body;
+
+    try {
+        const filePath = path.join(__dirname, '..', '..', 'activeBets', site, `${betId}.json`);
+        await fs.access(filePath);
+        await fs.writeFile(filePath, JSON.stringify(updatedBet, null, 2));
+
+        res.json({ message: 'Bet updated successfully', bet: updatedBet });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            res.status(404).json({ message: 'Bet not found' });
+        } else {
+            res.status(500).json({ message: 'Error updating bet', error: error.message });
+        }
+    }
+});
+
+// Delete a bet
+router.delete('/:site/:betId', async (req, res) => {
+    const { site, betId } = req.params;
+
+    try {
+        const filePath = path.join(__dirname, '..', '..', 'activeBets', site, `${betId}.json`);
+        await fs.unlink(filePath);
+
+        res.json({ message: 'Bet deleted successfully' });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            res.status(404).json({ message: 'Bet not found' });
+        } else {
+            res.status(500).json({ message: 'Error deleting bet', error: error.message });
+        }
+    }
+});
+
 module.exports = router;

@@ -229,3 +229,9 @@ function createBetPreview(site, bet) {
     preview.addEventListener('click', () => showBetDetails(bet, true));
     return preview;
 }
+
+document.addEventListener('betDeleted', (event) => {
+    const deletedBetId = event.detail;
+    // Refresh the bet list or update the UI as needed
+    renderBetList(); // Assuming you have a function to re-render the bet list
+});

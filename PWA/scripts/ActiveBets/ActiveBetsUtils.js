@@ -33,3 +33,16 @@ export function formatDate(timestamp) {
         minute: '2-digit'
     });
 }
+
+export function findBetInLocalStorage(betId) {
+    const storedBets = JSON.parse(localStorage.getItem('activeBets') || '{}');
+
+    for (const site in storedBets) {
+        const foundBet = storedBets[site].find(bet => bet.betId === betId);
+        if (foundBet) {
+            return foundBet;
+        }
+    }
+
+    return null; // Bet not found
+}

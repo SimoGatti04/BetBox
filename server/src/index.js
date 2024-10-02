@@ -12,6 +12,7 @@ const { initializeAllSpinSchedulers } = require('./utils/dailySpinUtils');
 const { scheduleBetCleanup } = require('./utils/betCleanupSchedulerUtils');
 const activeBetsRoutes = require('./routes/activeBetsRoutes');
 const proxyRoutes = require('./routes/proxyRoutes');
+const predictionRoutes = require('./routes/predictionRoutes');
 
 const port = process.env.PORT || 3000;
 const WebSocket = require('ws');
@@ -25,7 +26,7 @@ global.wss = wss;
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning', 'X-Auth-Token']
+  allowedHeaders: ['Content-Type', 'Authorization', 'ngrok-skip-browser-warning', 'X-Auth-Token', 'Use-Different-Token']
 }));
 
 app.options('*', cors());
@@ -38,6 +39,7 @@ app.use('/verify', verificationRoutes);
 app.use('/spin-history', spinHistoryRoutes);
 app.use('/bets', activeBetsRoutes);
 app.use('/proxy', proxyRoutes);
+app.use('/predictions', predictionRoutes.router);
 
 setInterval(cleanupResources, 6 * 60 * 60 * 1000);
 

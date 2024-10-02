@@ -23,11 +23,12 @@ router.post('/football-api/match-results', async (req, res) => {
 
 async function handleMatchResults(req, res, fetchFunction, filterFunction, findBestFunction, formatMatchResultFunction, isSportsDevs) {
   const { events } = req.body;
+  const differentToken = req.headers["use-different-token"] === 'true';
   const results = {};
 
   try {
     for (const [date, competitions] of groupEventsByDateAndCompetition(events)) {
-      const matches = await fetchFunction(date);
+      const matches = await fetchFunction(date, differentToken);
       for (const [competition, matchEvents] of competitions) {
         const filteredMatches = filterFunction(matches, competition);
         for (const event of matchEvents) {
@@ -81,7 +82,7 @@ function filterMatchesByCompetitionFDATA(matches, competition) {
 }
 
 
-async function fetchFromSportDevs(date) {
+async function fetchFromSportDevs(date, differentToken = false) {
   const url = `https://football.sportdevs.com/matches-by-date?date=eq.${date}`;
   const response = await axios.get(url, {
     headers: {
@@ -91,7 +92,7 @@ async function fetchFromSportDevs(date) {
   return response.data;
 }
 
-async function fetchFromFootballData(date) {
+async function fetchFromFootballData(date, differentToken = false) {
   const url = `https://api.football-data.org/v4/matches?date=${date}`;
   const response = await axios.get(url, {
     headers: {
@@ -102,12 +103,16 @@ async function fetchFromFootballData(date) {
 }
 
 
-async function fetchFromFootballAPI(date) {
+async function fetchFromFootballAPI(date, differentToken = false) {
   const url = `https://v3.football.api-sports.io/fixtures?date=${date}`;
+  let apiKey = `768a9443fec4b4ce3c8a3b7cbff1de19`;
+  if (differentToken){
+    apiKey = `477820afb5b0085835d5518f2a648917`;
+  }
   const response = await axios.get(url, {
     headers: {
       'x-rapidapi-host': 'v3.football.api-sports.io',
-      'x-rapidapi-key': '768a9443fec4b4ce3c8a3b7cbff1de19'
+      'x-rapidapi-key': apiKey
     }
   });
   return response.data.response;
