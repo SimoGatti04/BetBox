@@ -81,7 +81,7 @@ async function getMatchPrediction(team1, team2, matchDate) {
     };
 
     // Get fixture ID
-    const fixtureResponse = await fetch(`https://v3.football.api-sports.io/fixtures?date=${matchDate}`, { headers });
+    const fixtureResponse = await fetch(`https://v3.football.api-sports.io/fixtures?date=${matchDate}`, {headers});
     const fixtureData = await fixtureResponse.json();
 
     let bestMatch = null;
@@ -100,22 +100,24 @@ async function getMatchPrediction(team1, team2, matchDate) {
 
     // Get prediction
     await new Promise(resolve => setTimeout(resolve, 15000)); // Wait for 15 seconds
-    const predictionResponse = await fetch(`https://v3.football.api-sports.io/predictions?fixture=${bestMatch}`, { headers });
+    const predictionResponse = await fetch(`https://v3.football.api-sports.io/predictions?fixture=${bestMatch}`, {headers});
     const predictionData = await predictionResponse.json();
 
     // Add matchDate to the prediction data
     predictionData.matchDate = matchDate;
 
-    // Cache the prediction
-    try {
-        const dir = path.dirname(filename);
-        await fs.mkdir(dir, { recursive: true });
-        await fs.writeFile(filename, JSON.stringify(predictionData, null, 2));
-        console.log(`Prediction saved to ${filename}`);
-    } catch (error) {
-        console.error('Error saving prediction:', error);
+    if (predictionData.errors.length === 0){
+        try {
+            const dir = path.dirname(filename);
+            await fs.mkdir(dir, { recursive: true });
+            await fs.writeFile(filename, JSON.stringify(predictionData, null, 2));
+            console.log(`Prediction saved to ${filename}`);
+        } catch (error) {
+            console.error('Error saving prediction:', error);
+        }
     }
 
+    // Cache the prediction
     return predictionData;
 }
 
