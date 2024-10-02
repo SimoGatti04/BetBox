@@ -11,8 +11,15 @@ async function getMatchResult(events) {
 
     try {
         // First, try to get results from SportDevs API
-        let results = await getResultsFromFootballAPI(eventsToFetch);
+        let results = await getResultsFromFootballAPI(eventsToFetch, false);
         let remainingEvents = eventsToFetch.filter(e => !results[e.name]);
+
+        // Try again with different key
+        /*if (remainingEvents.length > 0) {
+            const footballDataResults = await getResultsFromFootballAPI(remainingEvents, true);
+            results = { ...results, ...footballDataResults };
+            remainingEvents = remainingEvents.filter(e => !results[e.name]);
+        }*/
 
         // If there are any remaining events, try Football-Data API
         if (remainingEvents.length > 0) {
@@ -51,19 +58,28 @@ async function getResultsFromFootballData(events) {
     return await fetchResults(`${config.apiBaseUrl}/proxy/football-data/match-results`, events);
 }
 
-async function getResultsFromFootballAPI(events) {
-    return await fetchResults(`${config.apiBaseUrl}/proxy/football-api/match-results`, events);
+async function getResultsFromFootballAPI(events, differentToken = false) {
+    return await fetchResults(`${config.apiBaseUrl}/proxy/football-api/match-results`, events, differentToken);
 }
 
-async function fetchResults(url, events) {
+async function fetchResults(url, events, differentToken = false) {
+    const headers = {
+        'Content-Type': 'application/json'
+    };
+
+    if (differentToken) {
+        headers['Use-Different-Token'] = 'true';
+    }
+
     const response = await fetch(url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: headers,
         body: JSON.stringify({ events })
     });
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     return await response.json();
 }
+
 
 function updateEventResults(events, results, now) {
     events.forEach(event => {

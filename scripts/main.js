@@ -2,6 +2,7 @@ import { createBalanceView, fetchAllRecentBalances } from './BalanceView/Balance
 import { createSpinView } from './SpinView/SpinView.js';
 import { createActiveBetsView } from './ActiveBets/ActiveBetsView.js';
 import { createLogView } from './ApiLogs/LogView.js';
+import { createPredictionPreviewView } from './PredictionView/predictionPreviewView.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -21,10 +22,14 @@ function createNavigation() {
     const spinLink = createNavLink('Spin', 'fa-sync', showSpinView);
     const activeBetsLink = createNavLink('Scommesse', 'fa-ticket-alt', showActiveBetsView);
     const logLink = createNavLink('Log', 'fa-terminal', showLogView); // Aggiungiamo il link per i log
+    const predictionLink = createNavLink('Predictions', 'fa-chart-line', showPredictionView);
+
     nav.appendChild(balanceLink);
     nav.appendChild(spinLink);
     nav.appendChild(activeBetsLink);
     nav.appendChild(logLink);
+    nav.appendChild(predictionLink);
+
     return nav;
 }
 
@@ -100,3 +105,11 @@ function showLogView() {
         contentContainer.appendChild(createLogView());
     });
 }
+
+function showPredictionView() {
+    updateHeaderTitle('Predictions');
+    const contentContainer = document.querySelector('main#content');
+    contentContainer.innerHTML = '';
+    contentContainer.appendChild(createPredictionPreviewView());
+}
+

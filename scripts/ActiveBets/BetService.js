@@ -13,6 +13,8 @@ export const BET_UPDATED_EVENT = 'betUpdated';
 export const LIVE_STATUSES = ['IN_PLAY', 'LIVE', 'PAUSED', 'HALFTIME', 'FIRST HALF', 'SECOND HALF'];
 export const UPCOMING_STATUSES = ['NOT STARTED', 'TIMED', 'MATCH POSTPONED', 'DELAYED', 'POSTPONED'];
 export const FINISHED_STATUSES = ['FINISHED', 'CANCELED', 'POSTPONED', 'SUSPENDED', 'ABANDONED', 'VOID', 'CANCELLED']
+let isUpdatingMatchResults = false;
+
 
 export async function recoverActiveBets() {
     try {
@@ -73,6 +75,10 @@ export async function updateSiteBets(site) {
 }
 
 export function updateMatchResultsIfNeeded(bets, betList) {
+    if (isUpdatingMatchResults) {
+        return; // Don't start a new update if one is already in progress
+    }
+
     const now = new Date(getRomeTime()).getTime();
     const lastRequestTime = localStorage.getItem('lastResultRequestTime') || 0;
     const oneMinute = 60 * 1000;
@@ -95,9 +101,15 @@ export function updateMatchResultsIfNeeded(bets, betList) {
         )
     );
 
-    if (eventsToUpdate.length > 0) {
-        updateMatchResults(eventsToUpdate, bets, betList);
-        localStorage.setItem('lastResultRequestTime', now.toString());
+     if (eventsToUpdate.length > 0) {
+        isUpdatingMatchResults = true;
+        updateMatchResults(eventsToUpdate, bets, betList)
+            .then(() => {
+                localStorage.setItem('lastResultRequestTime', now.toString());
+            })
+            .finally(() => {
+                isUpdatingMatchResults = false;
+            });
     }
 }
 

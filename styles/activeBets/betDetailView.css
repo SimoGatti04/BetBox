@@ -44,7 +44,7 @@
 
 .event-name {
     margin-bottom: 2px;
-    max-width: 15.5rem;
+    max-width: 16.5rem;
 }
 
 .event-date {
@@ -150,6 +150,61 @@
     width: 1rem;
 }
 
+.bet-detail-edit-button i {
+    color: #0a84ff;
+    font-size: 1.5rem;
+}
+
+.bet-detail-edit-button {
+    border: 0rem;
+    background: transparent;
+    position: absolute;
+    right: -8rem;
+    top: -1.4rem;
+}
+
+.bet-edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bet-edit-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+.bet-edit-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bet-edit-form input,
+.bet-edit-form select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.bet-edit-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 @media (min-width: 600px) {
 
     .result {
@@ -198,4 +253,11 @@
         color: #fff;
     }
 
+    .bet-detail-edit-button {
+    border: 0rem;
+    background: transparent;
+    position: absolute;
+    right: -25.5rem;
+    top: -1rem;
+}
 }

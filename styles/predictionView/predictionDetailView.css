@@ -1,0 +1,43 @@
+.prediction-detail-view {
+    padding: 20px;
+    background-color: black;
+    color: #e0e0e0;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.prediction-details {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.prediction-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+.prediction-details strong {
+    color: #0a84ff;
+}
+
+.btn-secondary {
+    background-color: #0a84ff;
+    color: #121212;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0a84ff;
+}

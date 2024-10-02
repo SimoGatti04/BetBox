@@ -1,16 +1,26 @@
-import { formatDate, getStatusColor } from './ActiveBetsUtils.js';
+import {findBetInLocalStorage, formatDate, getStatusColor} from './ActiveBetsUtils.js';
 import {loadBetsFromLocalStorage} from "./BetStorageService.js";
 import {updateMatchResultsIfNeeded} from "./BetService.js";
+import {toggleEditForm} from "./ManualBetsUtils.js";
+import {renderBetList} from "./ActiveBetsView.js";
 
 const BET_UPDATED_EVENT = 'betUpdated';
 
-export function showBetDetails(bet, isHistorical = false) {
+export function showBetDetails(betPassed, isHistorical = false) {
+    const bet = findBetInLocalStorage(betPassed.betId)
     const detailScreen = createBetDetailsScreen(bet, isHistorical);
     detailScreen.dataset.betId = bet.betId;
     detailScreen.dataset.site = bet.site; // Assicurati che 'site' sia una proprietà di 'bet'
 
     const keyDownHandler = handleKeyDown(detailScreen);
     const updateHandler = updateDetailScreen(bet, detailScreen, isHistorical);
+
+    const editButton = document.createElement('button');
+    editButton.className = 'bet-detail-edit-button';
+    editButton.innerHTML = '<i class="fas fa-edit"></i>';
+    editButton.addEventListener('click', () => toggleEditForm(bet, detailScreen));
+    detailScreen.querySelector('.bet-detail-header').appendChild(editButton);
+
 
     detailScreen.style.transform = 'translateX(100%)';
     document.body.appendChild(detailScreen);
@@ -38,7 +48,7 @@ export function showBetDetails(bet, isHistorical = false) {
 }
 
 
-function handleKeyDown(detailScreen) {
+export function handleKeyDown(detailScreen) {
     return (event) => {
         if (event.key === 'ArrowLeft') {
             closeBetDetails(detailScreen);
@@ -46,7 +56,7 @@ function handleKeyDown(detailScreen) {
     };
 }
 
-function updateDetailScreen(bet, detailScreen, isHistorical) {
+export function updateDetailScreen(bet, detailScreen, isHistorical) {
     return (event) => {
         if (!isHistorical) {
             const updatedBets = event.detail;
@@ -61,13 +71,15 @@ function updateDetailScreen(bet, detailScreen, isHistorical) {
     };
 }
 
-function closeBetDetails(detailScreen, keyDownHandler, updateHandler) {
+export function closeBetDetails(detailScreen, keyDownHandler, updateHandler) {
+    const savedBets = JSON.parse(localStorage.getItem('activeBets') || '{}')
     detailScreen.style.transform = 'translateX(100%)';
     setTimeout(() => {
         document.body.removeChild(detailScreen);
         window.removeEventListener('keydown', keyDownHandler);
         window.removeEventListener(BET_UPDATED_EVENT, updateHandler);
     }, 150);
+    renderBetList(savedBets, document.querySelector('.bet-list'));
 }
 
 function createBetDetailContent(bet, isHistorical) {
@@ -114,7 +126,7 @@ function createBetDetailContent(bet, isHistorical) {
     `;
 }
 
-function createBetDetailsScreen(bet, isHistorical = false) {
+export function createBetDetailsScreen(bet, isHistorical = false) {
     const detailScreen = document.createElement('div');
     detailScreen.className = 'bet-detail-screen';
 
