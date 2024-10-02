@@ -27,8 +27,8 @@ function createNavigation() {
     nav.appendChild(balanceLink);
     nav.appendChild(spinLink);
     nav.appendChild(activeBetsLink);
-    nav.appendChild(logLink);
     nav.appendChild(predictionLink);
+    nav.appendChild(logLink);
 
     return nav;
 }
