@@ -185,10 +185,11 @@ router.put('/:site/:betId', async (req, res) => {
 
 // Delete a bet
 router.delete('/:site/:betId', async (req, res) => {
-    const { site, betId } = req.params;
+    let { site, betId } = req.params;
+    const siteLowered = site.toLowerCase();
 
     try {
-        const filePath = path.join(__dirname, '..', '..', 'activeBets', site, `${betId}.json`);
+        const filePath = path.join(__dirname, '..', '..', 'activeBets', siteLowered, `${betId}.json`);
         await fs.unlink(filePath);
 
         res.json({ message: 'Bet deleted successfully' });
