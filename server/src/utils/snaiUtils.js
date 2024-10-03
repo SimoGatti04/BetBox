@@ -30,8 +30,6 @@ async function snaiLogin(page){
   }
 
   if (!isUserLoggedIn){
-    const loginButton = await page.$('button.Header_btnLogin__O68th');
-
     console.log('Clic sul pulsante "Accedi"');
     await page.click('button.Header_btnLogin__O68th');
 
@@ -52,8 +50,10 @@ async function snaiLogin(page){
 
     await delay (3000, 4000);
 
+    const loginButton = await page.$('button.Header_btnLogin__O68th');
+
     if (loginButton){
-      await page.click(loginButton)
+      await page.click('div.Button_childrenContainer__YUfnj');
     }
   }
 }
