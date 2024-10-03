@@ -53,8 +53,14 @@ async function handlePredictionSubmit(e) {
 
 async function fetchPredictionPreviews(view) {
     try {
-        const response = await fetch(`${config.apiBaseUrl}/predictions/all`);
-        const predictions = await response.json();
+        const response = await fetch(`${config.apiBaseUrl}/predictions/all`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        });
+        const text = await response.text();
+        const predictions = JSON.parse(text);
         predictions.forEach(prediction => displayPredictionPreview(prediction, view));
     } catch (error) {
         console.error('Error fetching prediction previews:', error);
