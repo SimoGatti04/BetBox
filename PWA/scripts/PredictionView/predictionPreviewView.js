@@ -62,7 +62,7 @@ async function fetchPredictionPreviews(view) {
 }
 
 function displayPredictionPreview(data, view) {
-    const previewsContainer = view.querySelector('#prediction-previews');
+    const previewsContainer = document.querySelector('#prediction-previews');
     const previewElement = document.createElement('div');
     previewElement.className = 'prediction-card';
 

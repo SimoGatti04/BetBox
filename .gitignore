@@ -10,6 +10,8 @@ server/.env
 server/lastBalanceDates.json
 server/lastSpinDates.json
 /server/htmlDaAnalizzare.html
+/server/jsonBetExample.json
+/server/data/predictions/*
 
 
 
@@ -28,4 +30,3 @@ iOS/BetBox.xcodeproj/project.xcworkspace/xcuserdata
 
 /.idea
 *.DS_Store
-/server/jsonBetExample.json
