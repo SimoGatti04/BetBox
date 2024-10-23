@@ -27,7 +27,7 @@ async function getEurobetBalance() {
     });
 
     console.log('Navigazione verso https://www.eurobet.it/');
-    await page.goto('https://www.eurobet.it/', { waitUntil: 'networkidle' });
+    await page.goto('https://www.eurobet.it/', { timeout: 30000 });
 
     const loggedIn = await isUserLoggedIn(page);
 
