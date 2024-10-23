@@ -4,7 +4,8 @@ const isiPhoneDebug = false;
 let apiBaseUrl;
 
 if (!isTestMode) {
-    apiBaseUrl = 'https://legally-modest-joey.ngrok-free.app';
+    //apiBaseUrl = 'https://legally-modest-joey.ngrok-free.app';
+    apiBaseUrl = 'https://betbox.simogatti.site';
 } else if (isTestMode && !isiPhoneDebug) {
     apiBaseUrl = 'http://localhost:3000';
 } else if (isTestMode && isiPhoneDebug) {

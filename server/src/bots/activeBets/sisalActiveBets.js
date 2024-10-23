@@ -34,8 +34,12 @@ async function getSisalActiveBets() {
                     if (background.includes('234, 43, 31')) esitoTotale = 'Perdente';
                     else if (background.includes('191, 215, 47')) esitoTotale = 'Vincente';
                 }
-
-                const importoGiocato = row.querySelector('div[role="columnbody"]:nth-child(3) .sc-imwsjW .sc-epALIP span').textContent.trim();
+                let importoGiocato = '0';
+                try{
+                    importoGiocato = row.querySelector('div[role="columnbody"]:nth-child(3) .sc-imwsjW .sc-epALIP span').textContent.trim();
+                } catch (error) {
+                    console.log("Error getting importo giocato: ", error);
+                }
 
                 return { esitoTotale, importoGiocato };
             });
