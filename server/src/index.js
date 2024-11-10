@@ -61,10 +61,12 @@ wss.on('connection', (ws) => {
 });
 
 global.console.log = function(...args) {
+  const timestamp = new Date().toLocaleTimeString();
   const message = args.join(' ');
-  process.stdout.write(message + '\n');
-  broadcastLog(message);
+  process.stdout.write(`[${timestamp}] ${message}\n`);
+  broadcastLog(`[${timestamp}] ${message}`);
 };
+
 
 server.listen(port, () => {
   console.log(`Server in ascolto sulla porta ${port}`);

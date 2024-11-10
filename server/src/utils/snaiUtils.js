@@ -17,7 +17,7 @@ async function snaiLogin(page){
   let isUserLoggedIn = false;
 
   console.log('Navigazione verso https://www.snai.it/');
-  await page.goto('https://www.snai.it/', {waitUntil: 'networkidle', timeout: 60000});
+  await page.goto('https://www.snai.it/', {timeout: 60000});
 
   await acceptSnaiCookies(page);
 
@@ -26,7 +26,14 @@ async function snaiLogin(page){
     await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
   } catch (error) {
     console.log('Pulsante accedi non trovato: ', error);
-    isUserLoggedIn = true
+    await page.reload()
+    try {
+      console.log('Attesa del pulsante "Accedi"');
+      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+    } catch (error) {
+        console.log('Pulsante accedi non trovato: ', error);
+        isUserLoggedIn = true;
+    }
   }
 
   if (!isUserLoggedIn){

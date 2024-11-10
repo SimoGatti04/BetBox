@@ -8,8 +8,8 @@ async function getSnaiActiveBets() {
         acceptCookies: acceptSnaiCookies,
         navigateToActiveBets: async (page) => {
             await page.click('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf');
-            await page.waitForSelector('div.PersonalAreaMobileMenu_item__9qOUI > a[href="/dashboard/le-mie-scommesse"]');
-            await page.click('div.PersonalAreaMobileMenu_item__9qOUI > a[href="/dashboard/le-mie-scommesse"]');
+            await page.waitForSelector('div:has-text("le mie scommesse")')
+            await page.click('div:has-text("le mie scommesse")')
             await page.waitForNavigation();
         },
         selectTimePeriod: async (page) => {
