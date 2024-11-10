@@ -10,7 +10,7 @@ async function getSnaiActiveBets() {
             await page.click('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf');
             await page.waitForSelector('div:has-text("le mie scommesse")')
             await page.click('div:has-text("le mie scommesse")')
-            await page.waitForNavigation();
+            await page.waitForNavigation({timeout:60000});
         },
         selectTimePeriod: async (page) => {
             // Implement if there's a time period selection for Snai
