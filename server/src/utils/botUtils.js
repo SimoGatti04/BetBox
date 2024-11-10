@@ -47,7 +47,7 @@ async function setupBrowser(botName) {
   console.log(`Inizializzazione del browser per ${botName}`);
 
   console.log('Avvio di chromium...');
-  const browser = await chromium.launch({ headless: false});
+  const browser = await chromium.launch({ headless: headless});
   console.log('Browser avviato con successo');
 
   const sessionFile = getSessionFile(botName);
