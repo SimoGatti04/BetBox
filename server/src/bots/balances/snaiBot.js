@@ -1,6 +1,7 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile, saveSession} = require('../../utils/botUtils');
 const {snaiLogin} = require('../../utils/snaiUtils');
 const config = require('../../../config/config');
+const fs = require("fs");
 
 async function getSnaiBalance() {
   const { browser, context, page } = await setupBrowser('snai');
@@ -25,6 +26,8 @@ async function getSnaiBalance() {
     const saldo = await page.$eval('p.MyAccount_text__yOR_J', el => el.textContent.trim());
 
     console.log('Il tuo saldo è:', saldo);
+
+    await saveSession(page, 'snai');
 
     await browser.close();
     return saldo;

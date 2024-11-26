@@ -1,5 +1,6 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile, saveSession} = require('../../utils/botUtils');
 const config = require('../../../config/config');
+const fs = require("fs");
 
 async function acceptSisalCookies(page) {
   try {
@@ -32,9 +33,11 @@ async function sisalLogin(page) {
         const usernameInput = await page.waitForSelector(`xpath=//form//div//div[.//label[contains(text(), "Email / Username")]]//input`);
         await usernameInput.click();
 
-        console.log('Inserimento username');
-        await page.keyboard.type(config.sisal.username);
-        await delay(1000, 2000);
+        const inputValue = await page.$eval('input[name="usernameEtc"]', el => el.value);
+          if (!inputValue || inputValue!==config.sisal.username){
+            console.log('Inserimento username');
+            await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
+          }
 
         console.log('Inserimento password');
         await page.click('input[name="password"]');
@@ -54,14 +57,18 @@ async function sisalLogin(page) {
           console.log('Login non riuscito. Ricarico la pagina e riprovo.');
           await page.reload({waitUntil: 'networkidle0'});
 
-          console.log('Reinserimento username');
-          await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
+          const inputValue = await page.$eval('input[name="usernameEtc"]', el => el.value);
+          if (!inputValue || inputValue!==config.sisal.username){
+              console.log('Reinserimento username');
+              await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
+          }
 
           console.log('Reinserimento password');
           await simulateTyping(page, 'input[name="password"]', config.sisal.password);
 
           console.log('Clic sul pulsante di invio accesso (secondo tentativo)');
-          await page.click('button#buttonAuth');
+          await page.waitForSelector(accediButton);
+          await page.click(accediButton);
 
           await page.waitForNavigation({waitUntil: 'networkidle0', timeout: 60000});
         }
@@ -79,12 +86,14 @@ async function getSisalBalance() {
     await sisalLogin(page);
 
     console.log('Attesa dell\'elemento del saldo');
-    await page.waitForSelector('div.js-balance', {state: 'visible'});
+    await page.waitForSelector('div.js-balance');
 
     console.log('Recupero del saldo');
     const saldo = await page.$eval('div.js-balance', el => el.textContent.trim());
 
     console.log('Il tuo saldo è:', saldo);
+
+    await saveSession(page, 'sisal');
 
     return saldo;
   } catch (error) {

@@ -1,6 +1,7 @@
 const { connect } = require('puppeteer-real-browser');
 const path = require('path');
 const { headless } = require('../../config.js');
+const fs = require('fs');
 
 async function setupBrowser(botName) {
     console.log(`Inizializzazione del browser per ${botName}`);
@@ -22,6 +23,28 @@ async function setupBrowser(botName) {
         'Referer': 'https://www.google.it/',
         'DNT': '1'
     });
+
+    try {
+        const sessionFile = getSessionFile(botName);
+        if (fs.existsSync(sessionFile)) {
+            const sessionData = JSON.parse(fs.readFileSync(sessionFile).toString());
+            if(!botName.contains("goldbet")||!botName.contains("lottomatica")){
+                await page.setCookie(...sessionData.cookies);
+            }
+            page.on('load', async () => {
+                if (sessionData.localStorage) {
+                    await page.evaluate((storageData) => {
+                        for (const [key, value] of Object.entries(storageData)) {
+                            window.localStorage.setItem(key, value);
+                        }
+                    }, sessionData.localStorage);
+                }
+            });
+            console.log(`Session loaded for ${botName}`);
+        }
+    } catch (error) {
+        console.log(`No previous session found for ${botName}`);
+    }
 
     return { browser, page };
 }
@@ -143,6 +166,28 @@ async function waitForVerificationCode(){
     });
 }
 
+function caseInsensitiveXPath(path, text) {
+    return `xpath=//${path}[contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "${text.toLowerCase()}")]`;
+}
+
+async function saveSession(page, siteName) {
+    const cookies = await page.cookies();
+    const localStorage = await page.evaluate(() => {
+        const data = {};
+        for (let i = 0; i < window.localStorage.length; i++) {
+            const key = window.localStorage.key(i);
+            data[key] = window.localStorage.getItem(key);
+        }
+        return data;
+    });
+
+    const sessionData = { cookies, localStorage };
+    fs.writeFileSync(getSessionFile(siteName), JSON.stringify(sessionData, null, 2));
+    console.log(`Session saved for ${siteName}`);
+}
+
+
+
 module.exports = {
     delay,
     simulateHumanBehavior,
@@ -151,5 +196,7 @@ module.exports = {
     smoothMouseMoveToElement,
     setupBrowser,
     getSessionFile,
-    waitForVerificationCode
+    waitForVerificationCode,
+    caseInsensitiveXPath,
+    saveSession
 };

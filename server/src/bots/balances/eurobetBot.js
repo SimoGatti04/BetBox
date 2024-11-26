@@ -1,5 +1,6 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile, saveSession} = require('../../utils/botUtils');
 const config = require('../../../config/config');
+const fs = require("fs");
 
 async function isUserLoggedIn(page) {
   try {
@@ -44,20 +45,21 @@ async function getEurobetBalance() {
       } catch (error) {
         console.log("Errore nell'accesso secondario: ", error)
         saldo = await estraiSecondario(page, browser);
-        await browser.close();
       }
     } else {
       try {
         saldo = await processoPrincipale(page, browser);
       } catch (error) {
         console.log("Errore nell'accesso primario: ", error)
-        await browser.close();
       }
     }
   } catch (error) {
     console.log("Errore negli accessi o nell'estrazione: ",error)
-    await browser.close();
   }
+
+  await saveSession(page, 'eurobet');
+  await browser.close();
+
   return `${saldo} €`;
 }
 
@@ -136,11 +138,11 @@ async function estraiPrincipale(page, browser){
 
   console.log('Il tuo saldo è:', saldo);
 
-  await browser.close();
   return saldo;
 }
 
 async function estraiSecondario(page, browser){
+  await delay (4000,5000)
   console.log("Recupero saldo")
   const saldo = await page.evaluate(() => {
       const integerPart = document.querySelector('.odometer-value').textContent;
@@ -151,7 +153,6 @@ async function estraiSecondario(page, browser){
 
   console.log('Saldo:', saldo + ' €');
 
-  browser.close();
   return saldo;
 }
 

@@ -1,5 +1,8 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile,
+  caseInsensitiveXPath, saveSession
+} = require('../../utils/botUtils');
 const config = require('../../../config/config');
+const fs = require('fs')
 
 async function acceptCookies(page) {
   try {
@@ -16,9 +19,6 @@ async function login(page) {
     await page.waitForSelector('button.buttons.button--primary.button--medium.ng-star-inserted');
     await page.click('button.buttons.button--primary.button--medium.ng-star-inserted');
 
-    const { width, height } = await page.viewportSize();
-    await smoothMouseMove(page, width / 2, height / 2);
-
     await page.waitForSelector('input[name="username"]');
     await simulateTyping(page, 'input[name="username"]', config.cplay.username);
     await simulateTyping(page, 'input[name="password"]', config.cplay.password);
@@ -32,8 +32,8 @@ async function login(page) {
 
 async function handleDeviceVerification(page) {
   try {
-    await page.waitForSelector('span:has-text("Autorizza il dispositivo")', { timeout: 10000 });
-    const verificationText = await page.$eval('span:has-text("Autorizza il dispositivo")', el => el.textContent);
+    await page.waitForSelector(caseInsensitiveXPath("span", "autorizza il dispositivo"), { timeout: 10000 });
+    const verificationText = await page.$eval(caseInsensitiveXPath("span", "autorizza il dispositivo"), el => el.textContent);
 
     if (verificationText.includes('Autorizza il dispositivo')) {
       console.log('Verifica del dispositivo richiesta');
@@ -49,8 +49,8 @@ async function handleDeviceVerification(page) {
       });
 
       console.log('Attendo la comparsa del pulsante "Ricevuta!"');
-      await page.waitForSelector('button:has-text("Ricevuta!")', { state: 'visible', timeout: 30000 });
-      await page.click('button:has-text("Ricevuta!")');
+      await page.waitForSelector(caseInsensitiveXPath("core-button/button/content", "ricevuta!"), { state: 'visible', timeout: 20000 });
+      await page.click(caseInsensitiveXPath("core-button/button/content", "ricevuta!"));
       console.log('Pulsante "Ricevuta!" cliccato');
 
       await delay(2000, 4000);
@@ -101,7 +101,8 @@ async function getCplayBalance() {
     const balance = await getBalance(page);
     console.log('Saldo Cplay:', balance);
 
-    await context.storageState({ path: getSessionFile('cplay') });
+    await saveSession(page, 'cplay');
+
     await browser.close();
     return balance;
   } catch (error) {

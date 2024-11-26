@@ -1,5 +1,6 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, getSessionFile, saveSession} = require('../../utils/botUtils');
 const config = require('../../../config/config');
+const fs = require("fs");
 
 async function getBet365Balance() {
   console.log('Inizio del processo di recupero del saldo da Bet365');
@@ -61,6 +62,8 @@ async function getBet365Balance() {
       saldo = await page.evaluate(() =>
         document.querySelector('span.members-dropdown-component__total-balance-amount').textContent.trim()
       );
+
+      await saveSession(page, 'bet365');
 
       console.log('Il tuo saldo è:', saldo);
     }
