@@ -1,4 +1,4 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser} = require('./botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser, waitForVerificationCode} = require('./botUtils');
 const config = require('../../config/config');
 
 const SITE_CONFIGS = {
@@ -25,7 +25,7 @@ async function acceptGoldBetterCookies(page) {
   }
 }
 
-async function goldBetterLogin(page, site, verificationCode = null) {
+async function goldBetterLogin(page, site) {
   const siteConfig = SITE_CONFIGS[site.toLowerCase()];
   let isUserLoggedIn = false;
 
@@ -62,14 +62,12 @@ async function goldBetterLogin(page, site, verificationCode = null) {
 
     if (isSmsVerificationRequired) {
       console.log('Finestra di verifica SMS trovata');
-      if (!verificationCode) {
-        return 'SMS_VERIFICATION_REQUIRED';
-      }
+      const verificationCode = await waitForVerificationCode();
       await simulateTyping(page, smsInputSelector, verificationCode);
       await delay(2000, 3000);
       console.log('Clic sul pulsante di conferma');
-      const confirmButtonSelector = 'button:has-text("CONFERMA")';
-      await page.click(confirmButtonSelector);
+      const confirmButtonSelector = `//button[.//span[contains(text(),'CONFERMA')]]`;
+      await page.click(`xpath=${confirmButtonSelector}`);
       await page.waitForNavigation();
     }
   }

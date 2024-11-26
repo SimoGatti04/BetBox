@@ -35,7 +35,16 @@ async function getGoldBetterBalance(site) {
 
     console.log(`Il tuo saldo su ${site} è:`, saldo);
 
-    await context.storageState({ path: getSessionFile(site.toLowerCase()) });
+    const cookies = await page.cookies();
+    const sessionData = {
+        cookies: cookies,
+        localStorage: await page.evaluate(() => Object.assign({}, window.localStorage)),
+        sessionStorage: await page.evaluate(() => Object.assign({}, window.sessionStorage))
+    };
+
+    const fs = require('fs');
+    fs.writeFileSync(getSessionFile(site.toLowerCase()), JSON.stringify(sessionData));
+
     await browser.close();
     return saldo;
   } catch (error) {

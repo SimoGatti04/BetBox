@@ -55,14 +55,14 @@ async function snaiLogin(page){
     console.log('Clic sul pulsante di invio accesso');
     await page.click('div.Button_childrenContainer__YUfnj', {timeout: 120000});
 
-    await delay (3000, 4000);
+    await delay (4000, 5000);
 
   }
   console.log('Clic sul pulsante dashboard');
-  const loginButton = await page.$('.UserNavigation_btnLink__vk3Hf');
+  const loginButton = await page.$('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf');
 
   if (loginButton){
-    await page.click('.UserNavigation_btnLink__vk3Hf', {timeout: 120000});
+    await page.click('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf', {timeout: 120000});
   }
 }
 

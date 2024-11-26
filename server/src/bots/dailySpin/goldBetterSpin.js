@@ -37,13 +37,19 @@ async function spinGoldBetterWheel(site, isTestMode = false){
     await page.click('button[type="submit"][title="Gioca"]');
 
     console.log("Navigo verso la finestra nuova");
-    const newPage = await context.waitForEvent('page');
-    await newPage.waitForLoadState();
-    if (await newPage.title() === 'Ruota dei Bonus') {
+    const newPage = await new Promise(resolve => {
+        browser.once('targetcreated', async target => {
+            const newPage = await target.page();
+            resolve(newPage);
+        });
+    });
+    await delay (1000, 2000)
+    const pageTitle = await newPage.evaluate(() => document.title);
+    if (pageTitle === 'Ruota dei Bonus') {
       console.log('Finestra trovata');
       try {
         console.log("Cerco il pulsante per effettuare lo spin");
-        await newPage.waitForSelector('#spin_button', {state: 'visible', timeout: 15000});
+        await newPage.waitForSelector('#spin_button', {visible: true, timeout: 15000});
 
         console.log("Clicco sul pulsante per effettuare il spin");
         await newPage.click('#spin_button');
@@ -64,12 +70,12 @@ async function spinGoldBetterWheel(site, isTestMode = false){
         bonusInfo = { tipo: "Nullo", valore : "Nullo" };
         try {
           console.log("Clicco sul pulsante per chiudere la finestra");
-          await newPage.click('a:has-text("CHIUDI")');
+          await newPage.click('#bottoneVincitaRuota');
           console.log("Cliccato");
+          return bonusInfo;
         } catch (error){
           console.log('Chiudi non trovato: ', error);
         }
-        throw error;
       }
     }
   } catch (error) {
@@ -78,6 +84,7 @@ async function spinGoldBetterWheel(site, isTestMode = false){
   }
   finally {
     updateSpinHistory(site, bonusInfo);
+    await browser.close();
   }
   return bonusInfo;
 }

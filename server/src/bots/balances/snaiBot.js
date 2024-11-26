@@ -26,7 +26,6 @@ async function getSnaiBalance() {
 
     console.log('Il tuo saldo è:', saldo);
 
-    await context.storageState({ path: getSessionFile('snai') });
     await browser.close();
     return saldo;
   } catch (error) {
