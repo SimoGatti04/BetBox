@@ -90,7 +90,6 @@ async function extractBonusType(page) {
     return bonusType;
   } catch (error) {
     console.error(`Error: ${error}`);
-    await page.context().browser().close();
     return null;
   }
 }
@@ -116,7 +115,6 @@ async function extractBonusValue(page) {
     return valueParts.join('');
   } catch (error) {
     console.error(`Error: ${error}`);
-    await page.context().browser().close();
     return null;
   }
 }
