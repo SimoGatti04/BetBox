@@ -30,7 +30,7 @@ async function getEurobetBalance() {
 
     console.log('Navigazione verso https://www.eurobet.it/');
 
-    await page.goto('https://www.eurobet.it/');
+    await page.goto('https://www.eurobet.it/', {timeout: 120000});
     await delay(6000, 7000);
     const loggedIn = await isUserLoggedIn(page);
 
@@ -109,14 +109,13 @@ async function processoSecondario(page, browser){
   console.log("Inserisco username")
   page.waitForSelector('input[name="username"]');
   page.click('input[name="username"]')
-  await delay (1000,2000)
+  await delay (3000,4000)
   page.keyboard.type(config.eurobet.username)
-  await delay (1000,2000)
 
   console.log("Inserisco password")
   page.waitForSelector('input[name="password"]');
   page.click('input[name="password"]')
-  await delay (1000,2000)
+  await delay (3000,4000)
   page.keyboard.type(config.eurobet.password)
 
   console.log("Accedo")
@@ -142,7 +141,7 @@ async function estraiPrincipale(page, browser){
 }
 
 async function estraiSecondario(page, browser){
-  await delay (4000,5000)
+  await delay(9000,10000);
   console.log("Recupero saldo")
   const saldo = await page.evaluate(() => {
       const integerPart = document.querySelector('.odometer-value').textContent;

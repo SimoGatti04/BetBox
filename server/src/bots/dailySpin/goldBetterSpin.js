@@ -22,7 +22,7 @@ async function spinGoldBetterWheel(site, isTestMode = false){
     await delay(3000, 4000);
 
     console.log("Vado al sito dello spin");
-    await page.goto(`https://www.${site.toLowerCase()}.it/casino/table-games/giochi/ruota-dei-bonus`);
+    await page.goto(`https://www.${site.toLowerCase()}.it/casino/table-games/giochi/ruota-dei-bonus`, {timeout: 120000});
 
     console.log("Aspetto il pulsante per l'apparizione della finestra di conferma");
     await page.waitForSelector('button.game__detail__desktop--button--play[title="Gioca a Ruota dei Bonus"]');

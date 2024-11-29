@@ -8,7 +8,7 @@ const fs = require("fs");
 
 async function getGoldBetterBalance(site) {
   console.log(`Inizio del processo di recupero del saldo da ${site}`);
-  const { browser, context, page} = await setupBrowser(site);
+  const { browser, page, screenshotInterval} = await setupBrowser(site);
 
   try {
     const loginResult = await goldBetterLogin(page, site);
@@ -29,7 +29,7 @@ async function getGoldBetterBalance(site) {
     }
 
     console.log('Attesa dell\'elemento del saldo');
-    await page.waitForSelector('div.saldo--cash span[title="Saldo"]', { state: 'visible' });
+    await page.waitForSelector('div.saldo--cash span[title="Saldo"]');
 
     console.log('Recupero del saldo');
     const saldo = await page.$eval('div.saldo--cash span[title="Saldo"]', el => el.textContent);
@@ -45,11 +45,16 @@ async function getGoldBetterBalance(site) {
     await browser.close();
     throw error;
   }
+  finally {
+    if (screenshotInterval) clearInterval(screenshotInterval);{
+      await browser.close();
+    }
+  }
 }
 
 verificationEmitter.on('smsCode', async (site, code) => {
   console.log(`Codice ricevuto per ${site}: ${code}`);
-  const { browser, context, page } = await setupBrowser(site.toLowerCase());
+  const { browser, page, screenshotInterval } = await setupBrowser(site.toLowerCase());
   await setupBrowser(site);
   await inserisciCodiceVerifica(page, code);
   await cliccaPulsanteConferma(page);

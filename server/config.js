@@ -1,3 +1,4 @@
-const headless = true;
+const headless = false;
+const record = false;
 
-module.exports = { headless };
+module.exports = { headless, record };

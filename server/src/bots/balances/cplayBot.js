@@ -86,8 +86,7 @@ async function getCplayBalance() {
       'DNT': '1'
     });
 
-    await page.goto('https://www.cplay.it', { waitUntil: 'networkidle0', timeout: 60000 });
-    await delay(2000, 5000);
+    await page.goto('https://www.cplay.it', { waitUntil: 'networkidle0', timeout: 120000 });
 
     await delay(4000, 6000);
     await acceptCookies(page);

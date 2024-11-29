@@ -23,13 +23,13 @@ async function snaiLogin(page){
 
   try {
     console.log('Attesa del pulsante "Accedi"');
-    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 30000 });
   } catch (error) {
     console.log('Pulsante accedi non trovato: ', error);
     await page.reload()
     try {
       console.log('Attesa del pulsante "Accedi"');
-      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 30000 });
     } catch (error) {
         console.log('Pulsante accedi non trovato: ', error);
         isUserLoggedIn = true;

@@ -2,6 +2,7 @@ const { connect } = require('puppeteer-real-browser');
 const path = require('path');
 const { headless } = require('../../config.js');
 const fs = require('fs');
+const {record} = require("../../config");
 
 async function setupBrowser(botName) {
     console.log(`Inizializzazione del browser per ${botName}`);
@@ -13,7 +14,9 @@ async function setupBrowser(botName) {
             defaultViewport: {
                 width: 1240,
                 height: 1080
-            }
+            },
+            waitUntil: 'domcontentloaded',
+            timeout: 30000
         }
     });
 
@@ -28,7 +31,7 @@ async function setupBrowser(botName) {
         const sessionFile = getSessionFile(botName);
         if (fs.existsSync(sessionFile)) {
             const sessionData = JSON.parse(fs.readFileSync(sessionFile).toString());
-            if(!botName.contains("goldbet")||!botName.contains("lottomatica")){
+            if(!botName.toLowerCase().includes("goldbet") && !botName.toLowerCase().includes("lottomatica")){
                 await page.setCookie(...sessionData.cookies);
             }
             page.on('load', async () => {
@@ -46,7 +49,27 @@ async function setupBrowser(botName) {
         console.log(`No previous session found for ${botName}`);
     }
 
-    return { browser, page };
+    let screenshotInterval;
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+
+    if (record) {
+        const screenshotsDir = path.resolve(__dirname, '..', '..', 'recordings', 'screenshots', botName, timestamp);
+        fs.mkdirSync(screenshotsDir, {recursive: true});
+
+        // Take screenshot every 500ms
+         screenshotInterval = setInterval(async () => {
+            try {
+                await page.screenshot({
+                    path: path.join(screenshotsDir, `${Date.now()}.png`),
+                    fullPage: true
+                });
+            } catch (error) {
+                console.log('Screenshot error:', error);
+            }
+        }, 500);
+    }
+
+    return { browser, page, screenshotInterval };
 }
 
 function delay(min, max) {
