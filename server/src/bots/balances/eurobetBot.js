@@ -122,6 +122,8 @@ async function processoSecondario(page, browser){
   await page.waitForSelector(`xpath=//button[contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "accedi")]`);
   await page.click(`xpath=//button[contains(translate(text(), "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"), "accedi")]`);
 
+  await delay(3000,4000)
+
   return estraiSecondario(page, browser);
 }
 

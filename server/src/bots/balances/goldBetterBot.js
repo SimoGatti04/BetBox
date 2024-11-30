@@ -46,9 +46,10 @@ async function getGoldBetterBalance(site) {
     throw error;
   }
   finally {
-    if (screenshotInterval) clearInterval(screenshotInterval);{
-      await browser.close();
+    if (screenshotInterval) {
+      clearInterval(screenshotInterval);
     }
+    await browser.close();
   }
 }
 
