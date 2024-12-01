@@ -4,7 +4,7 @@ const config = require('../../config/config');
 async function acceptSnaiCookies(page) {
   try {
     const cookieButtonSelector = 'button#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll';
-    await page.waitForSelector(cookieButtonSelector, { state: 'visible', timeout: 10000 });
+    await page.waitForSelector(cookieButtonSelector, { state: 'visible', timeout: 30000 });
     await page.click(cookieButtonSelector);
     console.log('Pulsante per accettare i cookies cliccato.');
   } catch (error) {
@@ -16,19 +16,19 @@ async function snaiLogin(page){
   let isUserLoggedIn = false;
 
   console.log('Navigazione verso https://www.snai.it/');
-  await page.goto('https://www.snai.it/', {timeout: 60000});
+  await page.goto('https://www.snai.it/', {timeout: 120000});
 
   await acceptSnaiCookies(page);
 
   try {
     console.log('Attesa del pulsante "Accedi"');
-    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 120000 });
   } catch (error) {
     console.log('Pulsante accedi non trovato: ', error);
     await page.reload()
     try {
       console.log('Attesa del pulsante "Accedi"');
-      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 120000 });
     } catch (error) {
         console.log('Pulsante accedi non trovato: ', error);
         isUserLoggedIn = true;
