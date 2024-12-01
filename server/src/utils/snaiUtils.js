@@ -13,6 +13,40 @@ async function acceptSnaiCookies(page) {
 }
 
 async function snaiLogin(page){
+  await page.route('**/*', async (route) => {
+      const request = route.request();
+      const url = request.url();
+
+      // Allow essential resources
+      if (url.includes('main') ||
+          url.includes('bundle') ||
+          url.includes('vendor') ||
+          url.includes('critical')) {
+          await route.continue();
+      }
+      // Block tracking, analytics, ads
+      else if (url.includes('analytics') ||
+               url.includes('tracking') ||
+               url.includes('ads') ||
+               url.includes('marketing')) {
+          await route.abort();
+      }
+      // Allow other essential resource types
+      else if (request.resourceType() in {
+          'document': true,
+          'script': true,
+          'xhr': true,
+          'fetch': true,
+          'stylesheet': true
+      }) {
+          await route.continue();
+      }
+      // Block non-essential resources
+      else {
+          await route.abort();
+      }
+  });
+
   let isUserLoggedIn = false;
 
   console.log('Navigazione verso https://www.snai.it/');
@@ -43,8 +77,8 @@ async function snaiLogin(page){
   if (!isUserLoggedIn){
     try{
       console.log('Clic sul pulsante "Accedi"');
-      await page.locator('button.Header_btnLogin__O68th').waitFor({ state: 'visible', timeout: 10000});
-      await page.click('button.Header_btnLogin__O68th', {timeout: 10000});
+      await page.locator('button.Header_btnLogin__O68th').waitFor({ state: 'visible', timeout: 120000});
+      await page.click('button.Header_btnLogin__O68th', {timeout: 120000});
     } catch (error) {
       console.log('Errore durante il clic sul pulsante "Accedi": ', error);
       isUserLoggedIn = true;
@@ -63,7 +97,7 @@ async function snaiLogin(page){
       await page.waitForSelector('div.Button_childrenContainer__YUfnj', {state: 'visible'});
 
       console.log('Clic sul pulsante di invio accesso');
-      await page.click('div.Button_childrenContainer__YUfnj', {timeout: 10000});
+      await page.click('div.Button_childrenContainer__YUfnj', {timeout: 120000});
 
       await delay(3000, 4000);
     }
