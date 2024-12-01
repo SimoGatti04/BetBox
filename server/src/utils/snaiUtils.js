@@ -20,6 +20,11 @@ async function snaiLogin(page){
 
   await acceptSnaiCookies(page);
 
+  await Promise.race([
+    page.waitForLoadState('networkidle', { timeout: 120000 }),
+    page.waitForLoadState('domcontentloaded', { timeout: 120000 })
+  ]);
+
   try {
     console.log('Attesa del pulsante "Accedi"');
     await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 120000 });
