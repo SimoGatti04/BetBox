@@ -1,14 +1,15 @@
-const { delay, simulateHumanBehavior, smoothMouseMove,
-    simulateTyping, setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const { goldBetterLogin } = require('../../utils/goldBetterUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping,
+  setupBrowser, getSessionFile, saveSession} = require('../../../utils/puppeteer/botUtils');
+const { goldBetterLogin } = require('../../../utils/puppeteer/goldBetterUtils');
 const EventEmitter = require('events');
 const verificationEmitter = new EventEmitter();
-const config = require('../../../config/config');
+const config = require('../../../../config/config');
 const WebSocket = require('ws');
+const fs = require("fs");
 
 async function getGoldBetterBalance(site) {
   console.log(`Inizio del processo di recupero del saldo da ${site}`);
-  const { browser, context, page} = await setupBrowser(site);
+  const { browser, page, screenshotInterval} = await setupBrowser(site);
 
   try {
     const loginResult = await goldBetterLogin(page, site);
@@ -29,14 +30,15 @@ async function getGoldBetterBalance(site) {
     }
 
     console.log('Attesa dell\'elemento del saldo');
-    await page.waitForSelector('div.saldo--cash span[title="Saldo"]', { state: 'visible' });
+    await page.waitForSelector('div.saldo--cash span[title="Saldo"]');
 
     console.log('Recupero del saldo');
     const saldo = await page.$eval('div.saldo--cash span[title="Saldo"]', el => el.textContent);
 
     console.log(`Il tuo saldo su ${site} è:`, saldo);
 
-    await context.storageState({ path: getSessionFile(site.toLowerCase()) });
+    await saveSession(page, `${site}`);
+
     await browser.close();
     return saldo;
   } catch (error) {
@@ -44,11 +46,17 @@ async function getGoldBetterBalance(site) {
     await browser.close();
     throw error;
   }
+  finally {
+    if (screenshotInterval) {
+      clearInterval(screenshotInterval);
+    }
+    await browser.close();
+  }
 }
 
 verificationEmitter.on('smsCode', async (site, code) => {
   console.log(`Codice ricevuto per ${site}: ${code}`);
-  const { browser, context, page } = await setupBrowser(site.toLowerCase());
+  const { browser, page, screenshotInterval } = await setupBrowser(site.toLowerCase());
   await setupBrowser(site);
   await inserisciCodiceVerifica(page, code);
   await cliccaPulsanteConferma(page);

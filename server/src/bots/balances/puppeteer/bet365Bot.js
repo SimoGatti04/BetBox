@@ -1,11 +1,12 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping,
-    setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const config = require('../../../config/config');
+  setupBrowser, getSessionFile, saveSession} = require('../../../utils/puppeteer/botUtils');
+const config = require('../../../../config/config');
+const fs = require("fs");
 
 async function getBet365Balance() {
   console.log('Inizio del processo di recupero del saldo da Bet365');
 
-  const { browser, context, page } = await setupBrowser('bet365');
+  const { browser, page } = await setupBrowser('bet365');
   let saldo = 0;
 
   try {
@@ -16,7 +17,7 @@ async function getBet365Balance() {
       'DNT': '1'
     });
 
-    await page.goto('https://casino.bet365.it', { waitUntil: 'networkidle', timeout: 60000 });
+    await page.goto('https://casino.bet365.it');
     await delay(2000, 5000);
 
     const loginButton = await page.$('button#header__logged-out-log-in-link');
@@ -28,9 +29,11 @@ async function getBet365Balance() {
       await loginButton.click();
       await delay(1000, 2000);
 
-      // Utilizzo di smoothMouseMove prima di inserire le credenziali
-      const { width, height } = page.viewportSize();
-      await smoothMouseMove(page, width / 2, height / 2);
+      const viewport = await page.evaluate(() => ({
+        width: window.innerWidth,
+        height: window.innerHeight
+      }));
+      await smoothMouseMove(page, viewport.width / 2, viewport.height / 2);
 
       await simulateTyping(page, 'input#txtUsername', config.bet365.username);
       await delay(500, 1500);
@@ -39,34 +42,33 @@ async function getBet365Balance() {
 
       await simulateHumanBehavior(page);
       await page.click('button.modal__button.login-modal-component__login-button');
-
-      const balanceSelector = 'div.regulatory-last-login-modal__balance-amount-value';
-      await page.waitForSelector(balanceSelector, { timeout: 30000 });
-
-      await context.storageState({ path: getSessionFile('bet365') });
+      await delay(5000, 8000);
 
       console.log('Recupero del saldo');
+      await page.waitForSelector('div.regulatory-last-login-modal__balance-amount-value');
       await delay(1000, 3000);
-      saldo = await page.$eval(balanceSelector, el => el.textContent.trim());
+      saldo = await page.evaluate(() =>
+        document.querySelector('div.regulatory-last-login-modal__balance-amount-value').textContent.trim()
+      );
       console.log('Il tuo saldo è:', saldo);
     }
     else {
       const userMenuButtonSelector = 'button.members-dropdown-component__members-icon';
       console.log('Utente già loggato. Recupero del saldo dal menu utente.');
 
-      // Clic sul pulsante del menu utente
       await page.click(userMenuButtonSelector);
+      await delay(2000, 3000);
 
-      // Attesa del caricamento del menu
-      await page.waitForSelector('span.members-dropdown-component__total-balance-amount', { state: 'visible' });
+      await page.waitForSelector('span.members-dropdown-component__total-balance-amount');
+      saldo = await page.evaluate(() =>
+        document.querySelector('span.members-dropdown-component__total-balance-amount').textContent.trim()
+      );
 
-      // Recupero del saldo
-      saldo = await page.$eval('span.members-dropdown-component__total-balance-amount', el => el.textContent.trim());
+      await saveSession(page, 'bet365');
 
       console.log('Il tuo saldo è:', saldo);
     }
 
-    await context.storageState({ path: getSessionFile('bet365') });
     await browser.close();
     return saldo;
   } catch (error) {

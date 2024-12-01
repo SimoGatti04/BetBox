@@ -1,5 +1,5 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping} = require('../utils/botUtils');
-const config = require('../../config/config');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser} = require('./botUtils');
+const config = require('../../../config/config');
 
 async function acceptSnaiCookies(page) {
   try {
@@ -22,13 +22,13 @@ async function snaiLogin(page){
 
   try {
     console.log('Attesa del pulsante "Accedi"');
-    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+    await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 30000 });
   } catch (error) {
     console.log('Pulsante accedi non trovato: ', error);
     await page.reload()
     try {
       console.log('Attesa del pulsante "Accedi"');
-      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 10000 });
+      await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 30000 });
     } catch (error) {
         console.log('Pulsante accedi non trovato: ', error);
         isUserLoggedIn = true;
@@ -54,12 +54,15 @@ async function snaiLogin(page){
     console.log('Clic sul pulsante di invio accesso');
     await page.click('div.Button_childrenContainer__YUfnj', {timeout: 120000});
 
-    await delay (3000, 4000);
+    await delay (4000, 5000);
 
   }
   console.log('Clic sul pulsante dashboard');
-  await page.waitForSelector('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf', {timeout: 120000});
-  await page.click('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf');
+  const loginButton = await page.$('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf');
+
+  if (loginButton){
+    await page.click('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf', {timeout: 120000});
+  }
 }
 
 module.exports = { snaiLogin, acceptSnaiCookies}

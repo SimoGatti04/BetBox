@@ -1,7 +1,8 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping,
-  setupBrowser, getSessionFile } = require('../../utils/botUtils');
-const {snaiLogin} = require('../../utils/snaiUtils');
-const config = require('../../../config/config');
+  setupBrowser, getSessionFile, saveSession} = require('../../../utils/puppeteer/botUtils');
+const {snaiLogin} = require('../../../utils/puppeteer/snaiUtils');
+const config = require('../../../../config/config');
+const fs = require("fs");
 
 async function getSnaiBalance() {
   const { browser, context, page } = await setupBrowser('snai');
@@ -11,12 +12,11 @@ async function getSnaiBalance() {
     await snaiLogin(page);
     await delay(3000, 4000);
 
-    /*console.log('Attesa del pulsante per accedere al saldo');
-    await page.waitForSelector('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf', { state: 'visible', timeout: 120000 });
+    console.log('Attesa del pulsante per accedere al saldo');
+    await page.waitForSelector('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf', { timeout: 120000 });
 
     console.log('Clic sul pulsante per accedere al saldo');
     await page.click('div.UserNavigation_btnLinkContainer__Lc20b > button.UserNavigation_btnLink__vk3Hf');
-    */
 
     await delay(3000, 4000);
 
@@ -28,7 +28,8 @@ async function getSnaiBalance() {
 
     console.log('Il tuo saldo è:', saldo);
 
-    await context.storageState({ path: getSessionFile('snai') });
+    await saveSession(page, 'snai');
+
     await browser.close();
     return saldo;
   } catch (error) {

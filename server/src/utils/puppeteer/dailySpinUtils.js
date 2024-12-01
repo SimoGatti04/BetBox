@@ -118,7 +118,7 @@ function initializeAllSpinSchedulers() {
     console.log('Initializing all spin schedulers');
     scheduleSpinExecution('goldbet', () => spinGoldBetterWheel('Goldbet'));
     scheduleSpinExecution('lottomatica', () => spinGoldBetterWheel('Lottomatica'));
-    scheduleSpinExecution('snai', spinSnaiWheel);
+    //scheduleSpinExecution('snai', spinSnaiWheel);
 }
 
 
