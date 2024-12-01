@@ -43,7 +43,7 @@ async function snaiLogin(page){
   if (!isUserLoggedIn){
     console.log('Clic sul pulsante "Accedi"');
     await page.locator('button.Header_btnLogin__O68th').waitFor({ state: 'visible', timeout: 120000});
-    await page.click('button.Header_btnLogin__O68th');
+    await page.click('button.Header_btnLogin__O68th', {timeout: 120000});
 
     console.log('Attesa del campo username');
     await page.waitForSelector('input[name="username"]', { state: 'visible' });
