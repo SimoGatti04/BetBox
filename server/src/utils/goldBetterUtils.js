@@ -1,4 +1,4 @@
-const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping, setupBrowser} = require('./botUtils');
+const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping} = require('./botUtils');
 const config = require('../../config/config');
 
 const SITE_CONFIGS = {
@@ -25,12 +25,12 @@ async function acceptGoldBetterCookies(page) {
   }
 }
 
-async function goldBetterLogin(page, site, verificationCode = null) {
+async function goldBetterLogin(page, site) {
   const siteConfig = SITE_CONFIGS[site.toLowerCase()];
   let isUserLoggedIn = false;
 
   console.log(`Navigazione verso ${siteConfig.url}`);
-  await page.goto(siteConfig.url , {timeout: 60000});
+  await page.goto(siteConfig.url, {timeout: 60000});
 
   try {
     await acceptGoldBetterCookies(page);
@@ -38,9 +38,9 @@ async function goldBetterLogin(page, site, verificationCode = null) {
     await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 10000});
   } catch (error) {
     await page.reload()
-    try{
+    try {
       await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 20000});
-    } catch (error){
+    } catch (error) {
       isUserLoggedIn = true;
       console.log('Utente già loggato o errore durante la verifica del pulsante "Accedi".');
     }
@@ -67,19 +67,46 @@ async function goldBetterLogin(page, site, verificationCode = null) {
 
     if (isSmsVerificationRequired) {
       console.log('Finestra di verifica SMS trovata');
-      if (!verificationCode) {
-        return 'SMS_VERIFICATION_REQUIRED';
-      }
+
+      // Notify clients through WebSocket
+      global.wss.clients.forEach((client) => {
+        if (client.readyState === WebSocket.OPEN) {
+          client.send(JSON.stringify({
+            type: 'VERIFICATION_REQUIRED',
+            site: site
+          }));
+        }
+      });
+
+      // Create promise that resolves with verification code from either source
+      const verificationCode = await new Promise((resolve) => {
+        // Setup terminal input
+        const readline = require('readline').createInterface({
+          input: process.stdin,
+          output: process.stdout
+        });
+
+        readline.question('Inserisci codice SMS: ', (code) => {
+          readline.close();
+          resolve(code);
+        });
+
+        // Setup WebSocket listener
+        global.wss.once('verification-code', (code) => {
+          readline.close();
+          resolve(code);
+        });
+      });
+
       await simulateTyping(page, smsInputSelector, verificationCode);
       await delay(2000, 3000);
       console.log('Clic sul pulsante di conferma');
-      const confirmButtonSelector = 'button:has-text("CONFERMA")';
-      await page.click(confirmButtonSelector);
+      await page.click('button:has-text("CONFERMA")');
       await page.waitForNavigation();
     }
-  }
 
-  return 'LOGIN_SUCCESSFUL';
+    return 'LOGIN_SUCCESSFUL';
+  }
 }
 
 
