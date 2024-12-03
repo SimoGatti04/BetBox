@@ -1,7 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping,
-    etupBrowser, getSessionFile, saveSession} = require('../../../utils/puppeteer/botUtils');
-const config = require('../../../../config/config');
-const fs = require("fs");
+    setupBrowser, getSessionFile } = require('../../utils/botUtils');
+const config = require('../../../config/config');
 
 async function acceptSisalCookies(page) {
   try {
@@ -17,7 +16,7 @@ async function acceptSisalCookies(page) {
 async function sisalLogin(page) {
   let isUserLoggedIn = false;
   console.log('Navigazione verso https://www.sisal.it/');
-  await page.goto('https://www.sisal.it/', {waitUntil: 'networkidle0'});
+  await page.goto('https://www.sisal.it/', {waitUntil: 'networkidle'});
 
   try {
     console.log('Attesa del pulsante "Accedi"');
@@ -31,47 +30,50 @@ async function sisalLogin(page) {
         await page.click('a.utils-user-logger.btn.btn-outline-primary.btn-sm.js-login.analytics-element');
 
         console.log('Attesa del campo username');
-        const usernameInput = await page.waitForSelector(`xpath=//form//div//div[.//label[contains(text(), "Email / Username")]]//input`);
-        await usernameInput.click();
+        await page.waitForSelector('input[name="usernameEtc"]', {state: 'visible'});
 
-        const inputValue = await page.$eval('input[name="usernameEtc"]', el => el.value);
-          if (!inputValue || inputValue!==config.sisal.username){
-            console.log('Inserimento username');
-            await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
-          }
+        console.log('Inserimento username');
+        await page.fill('input[name="usernameEtc"]', config.sisal.username);
+        await delay(1000, 2000);
 
         console.log('Inserimento password');
-        await page.click('input[name="password"]');
-        await page.keyboard.type(config.sisal.password);
+        await page.fill('input[name="password"]', config.sisal.password);
         await delay(1000, 2000);
 
         console.log('Attesa del pulsante di invio accesso');
-        const accediButton = await page.waitForSelector(`xpath=//form//button[contains(text(), "Accedi") and not(@disabled)]`);
+        await page.waitForSelector('button[type="submit"]:has-text("Accedi")', {state: 'visible'});
 
         console.log('Clic sul pulsante di invio accesso');
-        await accediButton.click();
+        await page.click('button[type="submit"]:has-text("Accedi")');
 
         await delay(7500, 10000);
 
         let currentUrl = await page.url();
         if (currentUrl.startsWith('https://areaprivata.sisal.it/')) {
           console.log('Login non riuscito. Ricarico la pagina e riprovo.');
-          await page.reload({waitUntil: 'networkidle0'});
+          await page.reload({waitUntil: 'networkidle'});
 
-          const inputValue = await page.$eval('input[name="usernameEtc"]', el => el.value);
-          if (!inputValue || inputValue!==config.sisal.username){
-              console.log('Reinserimento username');
+          const usernameField = await page.locator('input[name="usernameEtc"]');
+          const currentValue = await usernameField.inputValue();
+
+          if (!currentValue) {
+              console.log('Campo username vuoto, inserisco username');
               await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
+          } else if (currentValue !== config.sisal.username) {
+              console.log('Username diverso trovato, lo sostituisco');
+              await usernameField.fill('');
+              await simulateTyping(page, 'input[name="usernameEtc"]', config.sisal.username);
+          } else {
+              console.log('Username già corretto');
           }
 
           console.log('Reinserimento password');
           await simulateTyping(page, 'input[name="password"]', config.sisal.password);
 
           console.log('Clic sul pulsante di invio accesso (secondo tentativo)');
-          await page.waitForSelector(accediButton);
-          await page.click(accediButton);
+          await page.click('button[type="submit"]:has-text("Accedi")');
 
-          await page.waitForNavigation({waitUntil: 'networkidle0', timeout: 60000});
+          await page.waitForNavigation({waitUntil: 'networkidle', timeout: 60000});
         }
       } catch (error) {
         console.log('Nessun pulsante di accesso trovato o errore durante il clic:', error);
@@ -87,15 +89,14 @@ async function getSisalBalance() {
     await sisalLogin(page);
 
     console.log('Attesa dell\'elemento del saldo');
-    await page.waitForSelector('div.js-balance');
+    await page.waitForSelector('div.js-balance', {state: 'visible'});
 
     console.log('Recupero del saldo');
     const saldo = await page.$eval('div.js-balance', el => el.textContent.trim());
 
     console.log('Il tuo saldo è:', saldo);
 
-    await saveSession(page, 'sisal');
-
+    await context.storageState({path: getSessionFile('sisal')});
     return saldo;
   } catch (error) {
     console.error('Errore durante il processo di recupero del saldo:', error);
@@ -106,5 +107,4 @@ async function getSisalBalance() {
 }
 
 module.exports = { getSisalBalance, sisalLogin , acceptSisalCookies};
-
 

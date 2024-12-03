@@ -1,6 +1,6 @@
-const { getActiveBets } = require('../../../utils/activeBetsUtils');
-const { sisalLogin, acceptSisalCookies } = require('../../balances/puppeteer/sisalBot');
-const { delay } = require("../../../utils/puppeteer/botUtils");
+const { getActiveBets } = require('../../utils/activeBetsUtils');
+const { sisalLogin, acceptSisalCookies } = require('../balances/sisalBot');
+const { delay } = require("../../utils/botUtils");
 
 async function getSisalActiveBets() {
     return getActiveBets('Sisal', {
@@ -10,12 +10,12 @@ async function getSisalActiveBets() {
         },
         navigateToActiveBets: async (page) => {
             await page.click('a.utils-user.js-private-area.js-jwt-link');
-            await page.waitForNavigation({waitUntil: 'networkidle0', timeout:60000});
+            await page.waitForNavigation();
             await page.click('#SidebarNav_Movimenti_conto a');
-            await delay(1000, 2000);
+            await delay(1000,2000);
             await page.click('#ID_UltimiMovimenti_Vedi_tutti');
-            await delay(1000, 2000);
-            await page.$eval(`xpath=//div[@role='tab']//span[contains(., 'Scommesse')]`, element => element.click());
+            await delay(1000,2000);
+            await page.click('div[role="tab"] span:has-text("Scommesse")');
             await page.waitForSelector('div[role="table"]');
         },
         selectTimePeriod: async (page) => {
@@ -44,7 +44,7 @@ async function getSisalActiveBets() {
                 return { esitoTotale, importoGiocato };
             });
 
-            await page.$eval(`xpath=//button[contains(., 'Ricevuta')]`, element => element.click());
+            await betElement.$eval('button:has-text("Ricevuta")', button => button.click());
             await page.waitForSelector('.main.betslip-container', { state: 'visible', timeout: 10000 });
             await delay(1000,1500)
 
@@ -131,6 +131,7 @@ async function getSisalActiveBets() {
         },
         closeBetDetails: async (page) => {
             await page.click('div.text-center.closeItem.extended-touch');
+            await page.waitForSelector('.main.betslip-container', { state: 'hidden' });
         }
     });
 }

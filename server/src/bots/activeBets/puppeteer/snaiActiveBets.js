@@ -1,18 +1,14 @@
-const { getActiveBets } = require('../../../utils/activeBetsUtils');
-const { snaiLogin, acceptSnaiCookies } = require('../../../utils/snaiUtils');
-const { delay } = require("../../../utils/puppeteer/botUtils");
+const { getActiveBets } = require('../../utils/activeBetsUtils');
+const { snaiLogin, acceptSnaiCookies } = require('../../utils/snaiUtils');
+const { delay } = require("../../utils/botUtils");
 
 async function getSnaiActiveBets() {
     return getActiveBets('Snai', {
         siteLogin: snaiLogin,
         acceptCookies: acceptSnaiCookies,
         navigateToActiveBets: async (page) => {
-            /*await delay(4000, 5000)
-            await page.click('div.UserNavigation_btnLinkContainer__Lc20b button.UserNavigation_btnLink__vk3Hf');
-            await delay (3000, 4000)*/
-            await page.waitForSelector('div.PersonalAreaMobileMenu_item__9qOUI a[href="/dashboard/le-mie-scommesse"]')
-            await page.click('div.PersonalAreaMobileMenu_item__9qOUI a[href="/dashboard/le-mie-scommesse"]')
-            await page.waitForNavigation({timeout:60000});
+            await page.waitForSelector('div:has-text("le mie scommesse")')
+            await page.locator('div:text-is("le mie scommesse")').click();
         },
         selectTimePeriod: async (page) => {
             // Implement if there's a time period selection for Snai
@@ -24,12 +20,12 @@ async function getSnaiActiveBets() {
             let secondButtonCoordinates = null;
             try {
                 const highlightElements = async (elements) => {
-                    for (const element of elements) {
-                        await page.evaluate((el) => {
+                    await page.evaluate((els) => {
+                        els.forEach(el => {
                             el.style.border = '3px solid red';
                             el.style.backgroundColor = 'yellow';
-                        }, element);
-                    }
+                        });
+                    }, elements);
                 };
 
                 // Get bets from the first section
@@ -39,7 +35,7 @@ async function getSnaiActiveBets() {
                 firstButtonCoordinates = await getButtonCoordinates(page);
 
                 // Click on the "Chiuse" tab
-                await page.$eval(`xpath=//a[contains(., 'Chiuse')]`, element => element.click());
+                await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Chiuse")');
                 await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
 
                 // Get bets from the "Chiuse" section
@@ -47,7 +43,7 @@ async function getSnaiActiveBets() {
                 await highlightElements(closedSectionBets);
                 secondButtonCoordinates = await getButtonCoordinates(page);
 
-                await page.$eval(`xpath=//a[contains(., 'Aperte')]`, element => element.click());
+                await page.click('li.InternalMenu_item__6gG2H a.InternalMenu_link__a8VCz:has-text("Aperte")');
                 await page.waitForSelector('.MieScommesseTableRow_container__ATvwj');
             } catch (error) {
                 console.log("Errore nel recupero delle bet di snai: ",error)
@@ -140,15 +136,13 @@ async function getSnaiActiveBets() {
             return betDetails;
         },
         closeBetDetails: async (page) => {
-            await page.click('button.ActionButton_buttonText__E5G8G.ActionButton_flexIcon__O6_rp[class*="ActionButton_buttonText"]');
+            await page.click('button.ActionButton_buttonText__E5G8G:has-text("indietro")');
         }
     });
 }
 
 async function getButtonCoordinates(page) {
-    console.log("ARRIVATO")
     return await page.evaluate(() => {
-        console.log("ARRIVATO")
         const buttons = document.querySelectorAll('button.Button_buttonContainer__X4FDJ.Button_large__1ioa8.MieScommesseTableRow_iconContainer__r6d_e');
         return Array.from(buttons).map(button => {
             const rect = button.getBoundingClientRect();
