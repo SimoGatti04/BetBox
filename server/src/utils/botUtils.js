@@ -69,31 +69,48 @@ async function setupBrowser(botName) {
 
   let context;
   if (fs.existsSync(sessionFile)) {
-    console.log('File di sessione esistente trovato, caricamento...');
-    context = await browser.newContext({
-      storageState: sessionFile,
-      userAgent: userAgent,
-      ...(record ? {
-        recordVideo: {
-          dir: './recordings',
-          size: {width: 1240, height: 1080}
-        }
-      } : {}),
-    });
-    console.log('Contesto creato con stato di archiviazione esistente');
+      console.log('File di sessione esistente trovato, caricamento...');
+      const fullSession = JSON.parse(fs.readFileSync(sessionFile, 'utf8'));
+
+      let storageState = fullSession;
+
+      switch(botName) {
+          case 'goldbet':
+              storageState = filterGoldbetSession(fullSession);
+              break;
+          case 'lottomatica':
+              storageState = filterLottomaticaSession(fullSession);
+              break;
+          case 'snai':
+              storageState = filterSnaiSession(fullSession);
+              break;
+      }
+
+      context = await browser.newContext({
+          storageState: storageState,
+          userAgent: userAgent,
+          ...(record ? {
+              recordVideo: {
+                  dir: './recordings',
+                  size: {width: 1240, height: 1080}
+              }
+          } : {})
+      });
+      console.log(`Contesto creato per ${botName}`);
   } else {
-    console.log('Nessun file di sessione trovato, creazione di un nuovo contesto...');
-    context = await browser.newContext({
-      userAgent: userAgent,
-      ...(record ? {
-        recordVideo: {
-          dir: './recordings',
-          size: {width: 1240, height: 1080}
-        }
-      } : {}),
-    });
-    console.log('Nuovo contesto creato');
+      context = await browser.newContext({
+          userAgent: userAgent,
+          ...(record ? {
+              recordVideo: {
+                  dir: './recordings',
+                  size: {width: 1240, height: 1080}
+              }
+          } : {})
+      });
+      console.log('Nuovo contesto creato');
   }
+
+
 
   console.log('Creazione di una nuova pagina...');
   const page = await context.newPage();
@@ -109,6 +126,72 @@ async function setupBrowser(botName) {
   console.log(`Setup del browser completato per ${botName}`);
   return { browser, context, page };
 }
+
+function filterGoldbetSession(fullSession) {
+    const essentialCookies = fullSession.cookies.filter(cookie =>
+        cookie.name === 'jIDsession' ||
+        cookie.name === 'persist_website'
+    );
+
+    const essentialStorage = {
+        origins: [{
+            origin: 'https://www.goldbet.it',
+            localStorage: fullSession.origins[0].localStorage.filter(item =>
+                item.name === 'authData'
+            )
+        }]
+    };
+
+    return {
+        cookies: essentialCookies,
+        ...essentialStorage
+    };
+}
+
+function filterLottomaticaSession(fullSession) {
+    const essentialCookies = fullSession.cookies.filter(cookie =>
+        cookie.name === 'jIDsession' ||
+        cookie.name === 'c_prof'
+    );
+
+    const essentialStorage = {
+        origins: [{
+            origin: 'https://www.lottomatica.it',
+            localStorage: fullSession.origins[0].localStorage.filter(item =>
+                item.name === 'authData'
+            )
+        }]
+    };
+
+    return {
+        cookies: essentialCookies,
+        ...essentialStorage
+    };
+}
+
+function filterSnaiSession(fullSession) {
+    const essentialCookies = fullSession.cookies.filter(cookie =>
+        cookie.name === '__it-snai-auth:token' ||
+        cookie.name === '__it-snai-auth:logged' ||
+        cookie.name === '__it-snai:token'
+    );
+
+    const essentialStorage = {
+        origins: [{
+            origin: 'https://www.snai.it',
+            localStorage: fullSession.origins[0].localStorage.filter(item =>
+                item.name === 'snai-token' ||
+                item.name === 'snai-carta'
+            )
+        }]
+    };
+
+    return {
+        cookies: essentialCookies,
+        ...essentialStorage
+    };
+}
+
 
 
 module.exports = {
