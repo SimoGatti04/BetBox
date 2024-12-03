@@ -1,8 +1,8 @@
-const { chromium } = require('playwright-extra');
+const { chromium, firefox, webkit } = require('playwright-extra');
 const stealth = require('puppeteer-extra-plugin-stealth')();
 const path = require('path');
 const fs = require('fs');
-const { headless, record } = require('../../config.js');
+const { headless, record, browsers } = require('../../config.js');
 
 chromium.use(stealth);
 
@@ -46,8 +46,14 @@ async function simulateTyping(page, selector, text) {
 async function setupBrowser(botName) {
   console.log(`Inizializzazione del browser per ${botName}`);
 
+  const browserType = {
+    'chromium': chromium,
+    'firefox': firefox,
+    'webkit': webkit
+  }[browsers?.[botName]] || chromium;
+
   console.log('Avvio di chromium...');
-  const browser = await chromium.launch({
+  const browser = await browserType.launch({
     headless: headless,
     args: [
       '--disable-gpu',

@@ -25,17 +25,6 @@ async function snaiLogin(page){
     page.waitForLoadState('domcontentloaded', { timeout: 120000 })
   ]);
 
-  await page.goto("https://www.snai.it/registrati?provenienza=newsnai_home&COD_PROM=BB_SPORT")
-  await Promise.race([
-    page.waitForLoadState('networkidle', { timeout: 120000 }),
-    page.waitForLoadState('domcontentloaded', { timeout: 120000 })
-  ]);
-  await page.goBack()
-  await Promise.race([
-    page.waitForLoadState('networkidle', { timeout: 120000 }),
-    page.waitForLoadState('domcontentloaded', { timeout: 120000 })
-  ]);
-
     try {
     console.log('Attesa del pulsante "Accedi"');
     await page.waitForSelector('button.Header_btnLogin__O68th', { state: 'visible', timeout: 120000 });
