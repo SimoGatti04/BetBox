@@ -1,4 +1,4 @@
-const { chromium, webkit } = require('playwright-extra');
+const { chromium } = require('playwright-extra');
 const stealth = require('puppeteer-extra-plugin-stealth')();
 const path = require('path');
 const fs = require('fs');
@@ -47,7 +47,7 @@ async function setupBrowser(botName) {
   console.log(`Inizializzazione del browser per ${botName}`);
 
   console.log('Avvio di chromium...');
-  const browser = await webkit.launch({
+  const browser = await chromium.launch({
     headless: headless,
     args: [
       '--disable-gpu',

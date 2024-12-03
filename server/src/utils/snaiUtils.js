@@ -13,40 +13,6 @@ async function acceptSnaiCookies(page) {
 }
 
 async function snaiLogin(page){
-  await page.route('**/*', async (route) => {
-      const request = route.request();
-      const url = request.url();
-
-      // Allow essential resources
-      if (url.includes('main') ||
-          url.includes('bundle') ||
-          url.includes('vendor') ||
-          url.includes('critical')) {
-          await route.continue();
-      }
-      // Block tracking, analytics, ads
-      else if (url.includes('analytics') ||
-               url.includes('tracking') ||
-               url.includes('ads') ||
-               url.includes('marketing')) {
-          await route.abort();
-      }
-      // Allow other essential resource types
-      else if (request.resourceType() in {
-          'document': true,
-          'script': true,
-          'xhr': true,
-          'fetch': true,
-          'stylesheet': true
-      }) {
-          await route.continue();
-      }
-      // Block non-essential resources
-      else {
-          await route.abort();
-      }
-  });
-
   let isUserLoggedIn = false;
 
   console.log('Navigazione verso https://www.snai.it/');

@@ -38,6 +38,7 @@ async function goldBetterLogin(page, site) {
     await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 10000});
   } catch (error) {
     await page.reload()
+    await acceptGoldBetterCookies(page);
     try {
       await page.waitForSelector('button.anonymous--login--button', {state: 'visible', timeout: 20000});
     } catch (error) {
