@@ -2,7 +2,7 @@ const { chromium, firefox, webkit } = require('playwright-extra');
 const stealth = require('puppeteer-extra-plugin-stealth')();
 const path = require('path');
 const fs = require('fs');
-const { headless, browsers } = require('../../config.js');
+const { headless, browsers, record } = require('../../config.js');
 
 chromium.use(stealth);
 
