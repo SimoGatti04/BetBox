@@ -55,17 +55,32 @@ async function setupBrowser(botName) {
     const browserType = browserMap[browsers?.[botName]] || chromium;
 
     console.log(`Avvio di ${browsers?.[botName] || 'chromium'}...`);
-    const browser = await browserType.launch({
-    headless: headless,
-    args: [
-      '--disable-gpu',
-      '--no-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-web-security',
-      '--disable-features=IsolateOrigins,site-per-process',
-      '--disable-blink-features=AutomationControlled'
-    ]
-  });
+    let browser;
+    if (botName==="snai"){
+        browser = await webkit.launch({
+        headless: headless,
+        args: [
+          '--disable-gpu',
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-web-security',
+          '--disable-features=IsolateOrigins,site-per-process',
+          '--disable-blink-features=AutomationControlled'
+        ]
+      });
+    } else {
+        browser = await chromium.launch({
+        headless: headless,
+        args: [
+          '--disable-gpu',
+          '--no-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-web-security',
+          '--disable-features=IsolateOrigins,site-per-process',
+          '--disable-blink-features=AutomationControlled'
+        ]
+      });
+    }
   console.log('Browser avviato con successo');
 
   const sessionFile = getSessionFile(botName);
