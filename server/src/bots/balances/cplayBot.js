@@ -38,16 +38,38 @@ async function handleDeviceVerification(page) {
 
     if (verificationText.includes('Autorizza il dispositivo')) {
       console.log('Verifica del dispositivo richiesta');
-      await new Promise(resolve => {
-        const readline = require('readline').createInterface({
-          input: process.stdin,
-          output: process.stdout
-        });
-        readline.question('Approva l\'accesso via email e premi Invio...', () => {
-          readline.close();
-          resolve();
-        });
+
+      global.wss.clients.forEach((client) => {
+          if (client.readyState === WebSocket.OPEN) {
+              client.send(JSON.stringify({
+                  type: 'DEVICE_VERIFICATION_REQUIRED',
+                  site: site
+              }));
+          }
       });
+
+      await Promise.race([
+          new Promise((resolve) => {
+              const readline = require('readline').createInterface({
+                  input: process.stdin,
+                  output: process.stdout
+              });
+
+              readline.question('Approva l\'accesso via email e premi Invio...', () => {
+                  readline.close();
+                  resolve();
+              });
+
+              global.wss.once('device-verification-approved', () => {
+                  readline.close();
+                  resolve();
+              });
+          }),
+          new Promise((_, reject) =>
+              setTimeout(() => reject('Timeout: nessuna approvazione ricevuta entro 10 minuti'), 600000)
+          )
+      ]);
+
 
       console.log('Attendo la comparsa del pulsante "Ricevuta!"');
       await page.waitForSelector('button:has-text("Ricevuta!")', { state: 'visible', timeout: 30000 });

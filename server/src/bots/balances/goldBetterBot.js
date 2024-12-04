@@ -11,22 +11,7 @@ async function getGoldBetterBalance(site) {
   const { browser, context, page} = await setupBrowser(site);
 
   try {
-    const loginResult = await goldBetterLogin(page, site);
-    if (loginResult === 'SMS_VERIFICATION_REQUIRED') {
-      console.log(`Invio richiesta di verifica SMS per ${site}`);
-      global.wss.clients.forEach((client) => {
-        if (client.readyState === WebSocket.OPEN) {
-          client.send(JSON.stringify({
-            type: 'VERIFICATION_REQUIRED',
-            site: site,
-            verificationType: 'SMS'
-          }));
-        }
-      });
-      console.log(`Verifica SMS richiesta. In attesa del codice dall'app...`);
-      await new Promise(resolve => verificationEmitter.once(`smsCode:${site}`, resolve));
-      console.log(`Codice ricevuto, continuo con il recupero del saldo`);
-    }
+    await goldBetterLogin(page, site);
 
     console.log('Attesa dell\'elemento del saldo');
     await page.waitForSelector('div.saldo--cash span[title="Saldo"]', { state: 'visible' });

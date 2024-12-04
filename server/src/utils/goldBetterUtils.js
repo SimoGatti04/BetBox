@@ -80,24 +80,27 @@ async function goldBetterLogin(page, site) {
       });
 
       // Create promise that resolves with verification code from either source
-      const verificationCode = await new Promise((resolve) => {
-        // Setup terminal input
-        const readline = require('readline').createInterface({
-          input: process.stdin,
-          output: process.stdout
-        });
+      const verificationCode = await Promise.race([
+        new Promise((resolve) => {
+          const readline = require('readline').createInterface({
+            input: process.stdin,
+            output: process.stdout
+          });
 
-        readline.question('Inserisci codice SMS: ', (code) => {
-          readline.close();
-          resolve(code);
-        });
+          readline.question('Inserisci codice SMS: ', (code) => {
+            readline.close();
+            resolve(code);
+          });
 
-        // Setup WebSocket listener
-        global.wss.once('verification-code', (code) => {
-          readline.close();
-          resolve(code);
-        });
-      });
+          global.wss.once('verification-code', (code) => {
+            readline.close();
+            resolve(code);
+          });
+        }),
+        new Promise((_, reject) =>
+          setTimeout(() => reject('Timeout: nessun codice inserito entro 10 minuti'), 600000)
+        )
+      ]);
 
       await simulateTyping(page, smsInputSelector, verificationCode);
       await delay(2000, 3000);
