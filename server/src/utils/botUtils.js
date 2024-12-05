@@ -56,7 +56,7 @@ async function setupBrowser(botName) {
 
     console.log(`Avvio di ${browsers?.[botName] || 'chromium'}...`);
     let browser;
-    if (botName==="snai"){
+    if (botName.toLowerCase().includes("snai")){
         browser = await webkit.launch({
         headless: headless,
         args: [
