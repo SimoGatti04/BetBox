@@ -30,3 +30,4 @@ iOS/BetBox.xcodeproj/project.xcworkspace/xcuserdata
 
 /.idea
 *.DS_Store
+/server/remote-debug-client.sh
