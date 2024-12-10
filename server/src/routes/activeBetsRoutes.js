@@ -6,7 +6,7 @@ const { getGoldBetterActiveBets } = require('../bots/activeBets/goldBetterActive
 const { getSisalActiveBets } = require('../bots/activeBets/sisalActiveBets');
 const { getSnaiActiveBets } = require('../bots/activeBets/snaiActiveBets');
 const RequestQueue = require("../utils/requestQueue");
-
+const { getBot } = require("../utils/botFactory");
 const requestQueue = new RequestQueue();
 
 
@@ -49,7 +49,7 @@ router.get('/sisal', async (req, res) => {
 router.get('/snai', async (req, res) => {
     requestQueue.enqueue(async () =>{
         try {
-            await getSnaiActiveBets();
+            await getBot("snai", "activeBets");
         } catch (error) {
             console.error(`Error fetching active bets for Snai:`, error);
             res.status(500).json({ error: 'Internal Server Error' });

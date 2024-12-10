@@ -1,9 +1,16 @@
-const headless = false;
+const headless = true;
 const record = false;
 
 const browsers = {
-    snai: 'webkit',
+    //snai: 'webkit',
 };
 
+const plugins = {
+    /*snai: {
+        balances: 'puppeteer',
+        activeBets: 'puppeteer',
+        dailySpin: 'playwright'
+    }*/
+}
 
-module.exports = { headless, record, browsers };
+module.exports = { headless, record, browsers, plugins };

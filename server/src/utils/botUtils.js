@@ -56,16 +56,21 @@ async function setupBrowser(botName) {
 
     console.log(`Avvio di ${browsers?.[botName] || 'chromium'}...`);
         const browser = await browserType.launch({
-        headless: headless,
-        args: [
-          '--disable-gpu',
-          '--no-sandbox',
-          '--disable-dev-shm-usage',
-          '--disable-web-security',
-          '--disable-features=IsolateOrigins,site-per-process',
-          '--disable-blink-features=AutomationControlled'
-        ]
-    })
+            headless: headless,
+            args: [
+              '--disable-gpu',
+              '--disable-setuid-sandbox',
+              '--disable-automation',
+              '--no-sandbox',
+              '--disable-blink-features=AutomationControlled',
+              '--disable-dev-shm-usage',
+              '--ignore-certificate-errors',
+              '--disable-web-security',
+              '--disable-features=IsolateOrigins,site-per-process',
+              '--disable-blink-features=AutomationControlled'
+            ],
+            ignoreHTTPSErrors: true,
+        })
   console.log('Browser avviato con successo');
 
   const sessionFile = getSessionFile(botName);
@@ -90,19 +95,26 @@ async function setupBrowser(botName) {
               storageState = filterLottomaticaSession(fullSession);
               break;
           case 'snai':
-              storageState = filterSnaiSession(fullSession);
+              //storageState = filterSnaiSession(fullSession);
               break;
       }
 
       context = await browser.newContext({
           storageState: storageState,
           userAgent: userAgent,
+          javaScriptEnabled: true,
+          bypassCSP: true,
+          ignoreHTTPSErrors: true,
+          permissions: ['geolocation'],
           ...(record ? {
               recordVideo: {
                   dir: './recordings',
                   size: {width: 1240, height: 1080}
               }
-          } : {})
+          } : {}),
+          deviceScaleFactor: 1,
+          hasTouch: false,
+          isMobile: false
       });
       console.log(`Contesto creato per ${botName}`);
   } else {
@@ -122,14 +134,27 @@ async function setupBrowser(botName) {
 
   console.log('Creazione di una nuova pagina...');
   const page = await context.newPage();
+  await page.addInitScript(() => {
+        Object.defineProperty(navigator, 'webdriver', {
+            get: () => undefined
+        });
+    });
+
+  await page.addInitScript(() => {
+    delete window.webkit;
+    delete window.navigator.webdriver;
+  });
+
   console.log('Nuova pagina creata');
 
-  await page.setExtraHTTPHeaders({
-    'Accept-Language': 'it-IT,it;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://www.google.it/',
-    'DNT': '1'
-  });
+    await page.setExtraHTTPHeaders({
+        'Accept-Language': 'it-IT,it;q=0.9',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1'
+    });
 
   console.log(`Setup del browser completato per ${botName}`);
   return { browser, context, page };
@@ -178,28 +203,31 @@ function filterLottomaticaSession(fullSession) {
 }
 
 function filterSnaiSession(fullSession) {
+    console.log('Filtering session data...');
+
     const essentialCookies = fullSession.cookies.filter(cookie =>
         cookie.name === '__it-snai-auth:token' ||
         cookie.name === '__it-snai-auth:logged' ||
-        cookie.name === '__it-snai:token'
+        cookie.name === '__it-snai:token' ||
+        cookie.name === '__it-snai:refresh' ||
+        cookie.name === 'sessiontime'
     );
+    console.log('Filtered cookies:', essentialCookies.map(c => c.name));
 
-    const essentialStorage = {
-        origins: [{
-            origin: 'https://www.snai.it',
-            localStorage: fullSession.origins[0].localStorage.filter(item =>
-                item.name === 'snai-token' ||
-                item.name === 'snai-carta'
-            )
-        }]
-    };
+    const localStorage = fullSession.origins[0].localStorage.filter(item =>
+        item.name === 'card_number' ||
+        item.name === 'cod_contratto'
+    );
+    console.log('Filtered localStorage:', JSON.stringify(localStorage, null, 2));
 
     return {
         cookies: essentialCookies,
-        ...essentialStorage
+        origins: [{
+            origin: 'https://www.snai.it',
+            localStorage: localStorage
+        }]
     };
 }
-
 
 
 module.exports = {

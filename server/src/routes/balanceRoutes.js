@@ -6,7 +6,8 @@ const { getSisalBalance } = require('../bots/balances/sisalBot');
 const { getSnaiBalance } = require('../bots/balances/snaiBot');
 const { getCplayBalance } = require('../bots/balances/cplayBot');
 const RequestQueue = require("../utils/requestQueue");
-const { updateBalanceHistory } = require('../utils/balanceSchedulerUtils'); // Importa la funzione
+const { updateBalanceHistory } = require('../utils/balanceSchedulerUtils');
+const {getBot} = require("../utils/botFactory"); // Importa la funzione
 
 const router = express.Router();
 const requestQueue = new RequestQueue();
@@ -78,8 +79,18 @@ router.get('/sisal', (req, res) => {
 router.get('/snai', (req, res) => {
   requestQueue.enqueue(async () => {
     try {
-      const balance = await getSnaiBalance();
-      updateBalanceHistory('snai', balance); // Salva il saldo nella cronologia dei saldi
+      let balanceBot
+      try {
+        const balanceBotPath = getBot("snai", "balances");
+        console.log("Bot path:", balanceBotPath);
+        balanceBot = require(balanceBotPath);
+        console.log("Bot loaded:", balanceBot);
+      } catch (error) {
+        console.error("Error loading bot:", error);
+      }
+      console.log("balanceBot:", balanceBot);
+      const balance = await balanceBot.getSnaiBalance();
+      updateBalanceHistory('snai', balance);
       res.json({ site: 'Snai', balance });
     } catch (error) {
       res.status(500).json({ error: error.message });

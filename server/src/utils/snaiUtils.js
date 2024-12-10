@@ -1,5 +1,6 @@
 const { delay, simulateHumanBehavior, smoothMouseMove, simulateTyping} = require('../utils/botUtils');
 const config = require('../../config/config');
+const debug = require('./debugUtils');
 
 async function acceptSnaiCookies(page) {
   try {
@@ -15,8 +16,16 @@ async function acceptSnaiCookies(page) {
 async function snaiLogin(page){
   let isUserLoggedIn = false;
 
+  /*
+  await debug.setupNetworkDebug(page);
+  await debug.setupConsoleDebug(page);
+  await debug.checkAutomationFlags(page);
+  */
+
   console.log('Navigazione verso https://www.snai.it/');
   await page.goto('https://www.snai.it/', {timeout: 120000});
+
+  await simulateHumanBehavior(page)
 
   await acceptSnaiCookies(page);
 

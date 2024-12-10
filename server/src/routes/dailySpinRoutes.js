@@ -2,6 +2,7 @@ const express = require('express');
 const { spinGoldBetterWheel } = require('../bots/dailySpin/goldBetterSpin');
 const { spinSnaiWheel } = require('../bots/dailySpin/snaiDailySpin');
 const RequestQueue = require('../utils/requestQueue');
+const {getBot} = require("../utils/botFactory");
 
 const router = express.Router();
 const requestQueue = new RequestQueue();
@@ -9,7 +10,7 @@ const requestQueue = new RequestQueue();
 router.post('/snai', (req, res) => {
   requestQueue.enqueue(async () => {
     try {
-      await spinSnaiWheel();
+      await getBot('Snai', 'dailySpin');
     } catch (error) {
       console.error('Errore durante lo spin Snai:', error);
       res.status(500).json({ error: 'Errore durante l\'esecuzione dello spin' });
