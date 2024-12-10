@@ -12,7 +12,8 @@ server/lastSpinDates.json
 /server/htmlDaAnalizzare.html
 /server/jsonBetExample.json
 /server/data/predictions/*
-
+server/start-remote-debug.bat
+server/start-remote-debug.bat - link.lnk
 
 
 -- IOS_APP --
